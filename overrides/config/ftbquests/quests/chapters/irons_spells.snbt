@@ -1,0 +1,610 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "irons_spells"
+	group: ""
+	icon: {
+		Count: 1
+		id: "irons_spellbooks:dragonskin_spell_book"
+		tag: {
+			ISB_Spells: {
+				data: [ ]
+				maxSpells: 12
+				mustEquip: 1b
+				spellWheel: 1b
+			}
+		}
+	}
+	id: "60A0699B260A312E"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["6B0D0E79B97A7F79"]
+			hide_until_deps_complete: true
+			icon: "irons_spellbooks:ender_rune"
+			id: "0361ECAB302D394C"
+			rewards: [{
+				id: "36F1DB508D805512"
+				item: {
+					Count: 1
+					id: "irons_spellbooks:iron_spell_book"
+					tag: {
+						ISB_Spells: {
+							data: [ ]
+							maxSpells: 6
+							mustEquip: 1b
+							spellWheel: 1b
+						}
+					}
+				}
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 2.0d
+			subtitle: "\"The Visions reveal The End, and to it, I shall march towards.\""
+			tasks: [{
+				id: "526DBB492133C1FD"
+				title: "Ender"
+				type: "checkmark"
+			}]
+			title: "The Path of the Visitor"
+			x: -1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6B0D0E79B97A7F79"]
+			hide_until_deps_complete: true
+			icon: "irons_spellbooks:nature_rune"
+			id: "5885E13BA510D824"
+			rewards: [{
+				id: "3387D7D50132C9E3"
+				item: {
+					Count: 1
+					id: "irons_spellbooks:iron_spell_book"
+					tag: {
+						ISB_Spells: {
+							data: [ ]
+							maxSpells: 6
+							mustEquip: 1b
+							spellWheel: 1b
+						}
+					}
+				}
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 2.0d
+			subtitle: "\"Mother Nature is the true caretaker of the world.\""
+			tasks: [{
+				id: "353E09777C653B03"
+				title: "Nature"
+				type: "checkmark"
+			}]
+			title: "The Path of the Druid"
+			x: 1.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["6B0D0E79B97A7F79"]
+			description: [
+				"\"What truly is &o\"cold\"&r? What truly is &otemperature&r? Well, &o\"Temperature\"&r merely describes &ohow fast particles move around in a certain space&r. Make the particles move around fast enough, you will get a warmer temperature. Make the particles move slower, you get a colder temperature.\""
+				""
+				"\"Now, there is an ultimate \"cold\" temperature. A state in which all particles submitted to it cease movement immediately: &bThe Absolute Zero&r. Numerous times scientists on this planet tried to achieve this temperature, to reach the true meaning of Cold.\""
+				""
+				"\"All of them failed... &nUntil now.&r\""
+			]
+			hide_until_deps_complete: true
+			icon: "irons_spellbooks:ice_rune"
+			id: "4D5A0ACC606BED9D"
+			rewards: [{
+				id: "7936EC1F340DF73D"
+				item: {
+					Count: 1
+					id: "irons_spellbooks:iron_spell_book"
+					tag: {
+						ISB_Spells: {
+							data: [ ]
+							maxSpells: 6
+							mustEquip: 1b
+							spellWheel: 1b
+						}
+					}
+				}
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 2.0d
+			subtitle: "\"I'd rather die in the cold. Hell is warm for a reason.\""
+			tasks: [{
+				id: "54AFEFD7EFD412A1"
+				title: "Ice"
+				type: "checkmark"
+			}]
+			title: "The Path of Frost"
+			x: -2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6B0D0E79B97A7F79"]
+			hide_until_deps_complete: true
+			icon: "irons_spellbooks:lightning_rune"
+			id: "17B03B393A44FB09"
+			rewards: [{
+				id: "3D497900EF988B5A"
+				item: {
+					Count: 1
+					id: "irons_spellbooks:iron_spell_book"
+					tag: {
+						ISB_Spells: {
+							data: [ ]
+							maxSpells: 6
+							mustEquip: 1b
+							spellWheel: 1b
+						}
+					}
+				}
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 2.0d
+			subtitle: "thunderbolts and lightning, very very frightening me!"
+			tasks: [{
+				id: "44D146C312E0F3A1"
+				title: "Lightning"
+				type: "checkmark"
+			}]
+			title: "The Path of Thunder"
+			x: 1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6B0D0E79B97A7F79"]
+			hide_until_deps_complete: true
+			icon: "irons_spellbooks:blood_rune"
+			id: "6E0163C23A925C32"
+			rewards: [{
+				id: "6E3935FB12A1D2AB"
+				item: {
+					Count: 1
+					id: "irons_spellbooks:iron_spell_book"
+					tag: {
+						ISB_Spells: {
+							data: [ ]
+							maxSpells: 6
+							mustEquip: 1b
+							spellWheel: 1b
+						}
+					}
+				}
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 2.0d
+			subtitle: "\"Death is a mere illusion; Imortality is the greatest power.\""
+			tasks: [{
+				id: "53BA46FBA92624C6"
+				title: "Blood"
+				type: "checkmark"
+			}]
+			title: "The Corrupted Path"
+			x: 3.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6B0D0E79B97A7F79"]
+			description: ["\"For one to truly harness the power of &6&lThe Fire&r&r, they must first feel it's &6&lHeat&r&r on themselves. They must feel it's &6&lṔower&r&r melting their fragile skin, they must feel it's hot &6&lEmbers&r&r blistering their muscles, they must feel it's ubearable &6&lWarmth&r&r tearing through their bones. And then, and only then, they will become One with the true power of &6&lThe Fire&r&r.\""]
+			hide_until_deps_complete: true
+			icon: "irons_spellbooks:fire_rune"
+			id: "73B7FF99D7680294"
+			rewards: [{
+				id: "3C56968922AA56F1"
+				item: {
+					Count: 1
+					id: "irons_spellbooks:iron_spell_book"
+					tag: {
+						ISB_Spells: {
+							data: [ ]
+							maxSpells: 6
+							mustEquip: 1b
+							spellWheel: 1b
+						}
+					}
+				}
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 2.0d
+			subtitle: "\"Make them burn for their Sins.\""
+			tasks: [{
+				id: "6666843EBFE86901"
+				title: "Flame"
+				type: "checkmark"
+			}]
+			title: "The Path of Fire"
+			x: 4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6B0D0E79B97A7F79"]
+			hide_until_deps_complete: true
+			icon: "irons_spellbooks:evocation_rune"
+			id: "43687AC2C34B500C"
+			max_completable_dependents: 1
+			rewards: [{
+				id: "3EB93D35F9F8EBCB"
+				item: {
+					Count: 1
+					id: "irons_spellbooks:iron_spell_book"
+					tag: {
+						ISB_Spells: {
+							data: [ ]
+							maxSpells: 6
+							mustEquip: 1b
+							spellWheel: 1b
+						}
+					}
+				}
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 2.0d
+			subtitle: "\"They are real, and They will hurt you.\""
+			tasks: [{
+				id: "2F51670C4FDBD85B"
+				title: "Evocation"
+				type: "checkmark"
+			}]
+			title: "The Path of Companions"
+			x: 3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["6B0D0E79B97A7F79"]
+			hide_until_deps_complete: true
+			icon: "irons_spellbooks:holy_rune"
+			id: "155B7A7E83585FCD"
+			rewards: [{
+				id: "1EB417589D43CAEC"
+				item: {
+					Count: 1
+					id: "irons_spellbooks:iron_spell_book"
+					tag: {
+						ISB_Spells: {
+							data: [ ]
+							maxSpells: 6
+							mustEquip: 1b
+							spellWheel: 1b
+						}
+					}
+				}
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 2.0d
+			subtitle: "\"Mercy is a gift from mankind, and all are entitled to experience it.\""
+			tasks: [{
+				id: "24D5DF04F53B163B"
+				title: "Holy"
+				type: "checkmark"
+			}]
+			title: "The Path of the Healer"
+			x: -1.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["73B7FF99D7680294"]
+			hide_until_deps_complete: true
+			id: "22FA0CC18983894A"
+			rewards: [{
+				id: "1D8AAF7BCCE30A73"
+				item: "irons_spellbooks:fireward_ring"
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "minecraft:story/enter_the_nether"
+				criterion: ""
+				icon: "chipped:offset_netherrack_bricks"
+				id: "47C48CEEF2073223"
+				title: "Scorching World"
+				type: "advancement"
+			}]
+			x: 7.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["4D5A0ACC606BED9D"]
+			hide_until_deps_complete: true
+			id: "3A1EF514F1064260"
+			rewards: [{
+				id: "553DF0B1DCDDE790"
+				item: "irons_spellbooks:frostward_ring"
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "minecraft:adventure/walk_on_powder_snow_with_leather_boots"
+				criterion: ""
+				icon: "minecraft:powder_snow_bucket"
+				id: "0D751A08F88C9973"
+				title: "Snowflake"
+				type: "advancement"
+			}]
+			x: -5.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["5885E13BA510D824"]
+			hide_until_deps_complete: true
+			id: "2A3D5B32DDD8D75D"
+			rewards: [{
+				id: "007BD9A8390101DD"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"cold_sweat:item_insulation": {
+							Insulation: [ ]
+						}
+					}
+					id: "minecraft:iron_chestplate"
+					tag: {
+						Damage: 0
+						ISBUpgrades: [{
+							id: "irons_spellbooks:nature_power"
+							slot: "chest"
+							upgrades: 1
+						}]
+						Trim: {
+							material: "minecraft:emerald"
+							pattern: "minecraft:host"
+						}
+						display: {
+							Name: "{\"text\":\"Mossy Iron Chestplate\"}"
+						}
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "minecraft:husbandry/plant_seed"
+				criterion: ""
+				icon: "minecraft:wheat_seeds"
+				id: "0B041FFF47D817CB"
+				title: "Growing a garden"
+				type: "advancement"
+			}]
+			x: 1.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["17B03B393A44FB09"]
+			hide_until_deps_complete: true
+			icon: "irons_spellbooks:energized_core"
+			id: "7BCC4D107AFADF8E"
+			rewards: [{
+				id: "28156AF14BB6BD6C"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"cold_sweat:item_insulation": {
+							Insulation: [ ]
+						}
+					}
+					id: "minecraft:iron_chestplate"
+					tag: {
+						Damage: 0
+						ISBUpgrades: [{
+							id: "irons_spellbooks:lightning_power"
+							slot: "chest"
+							upgrades: 1
+						}]
+						Trim: {
+							material: "minecraft:diamond"
+							pattern: "minecraft:coast"
+						}
+						display: {
+							Name: "{\"text\":\"Conductive Iron Chestplate\"}"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 1.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["78B2EA1380861578"]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "simplyswords:runefused_gem"
+				tag: { }
+			}
+			id: "6B0D0E79B97A7F79"
+			max_completable_dependents: 1
+			rewards: [{
+				auto: "enabled"
+				exclude_from_claim_all: true
+				id: "433C0E2BD460DF8B"
+				item: "irons_spellbooks:inscription_table"
+				only_one: true
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 4.0d
+			tasks: [{
+				dimension: "minecraft:overworld"
+				id: "4EDCC17BF5A95B2E"
+				type: "dimension"
+			}]
+			x: 1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6E0163C23A925C32"]
+			hide_until_deps_complete: true
+			id: "3AC7C93A8DDE3EA4"
+			rewards: [{
+				id: "270669B74858405F"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"cold_sweat:item_insulation": {
+							Insulation: [ ]
+						}
+					}
+					id: "minecraft:iron_chestplate"
+					tag: {
+						Damage: 0
+						ISBUpgrades: [{
+							id: "irons_spellbooks:blood_power"
+							slot: "chest"
+							upgrades: 1
+						}]
+						Trim: {
+							material: "minecraft:redstone"
+							pattern: "minecraft:rib"
+						}
+						display: {
+							Name: "{\"text\":\"Exiled Iron Chestplate\"}"
+						}
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "4E3FEDE98F2B983A"
+				item: "minecraft:redstone"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["43687AC2C34B500C"]
+			hide_until_deps_complete: true
+			id: "5CA8BC15A3BA1259"
+			rewards: [{
+				id: "060CACEE1532B5F5"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"cold_sweat:item_insulation": {
+							Insulation: [ ]
+						}
+					}
+					id: "minecraft:iron_chestplate"
+					tag: {
+						Damage: 0
+						ISBUpgrades: [{
+							id: "irons_spellbooks:evocation_power"
+							slot: "chest"
+							upgrades: 1
+						}]
+						Trim: {
+							material: "minecraft:netherite"
+							pattern: "minecraft:vex"
+						}
+						display: {
+							Name: "{\"text\":\"Forgotten Iron Chestplate\"}"
+						}
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "0ECE05FCC75184B9"
+				item: "minecraft:book"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["155B7A7E83585FCD"]
+			hide_until_deps_complete: true
+			id: "7546276ACAC9628A"
+			rewards: [{
+				id: "530F6DCB353DEB36"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"cold_sweat:item_insulation": {
+							Insulation: [ ]
+						}
+					}
+					id: "minecraft:iron_chestplate"
+					tag: {
+						Damage: 0
+						ISBUpgrades: [{
+							id: "irons_spellbooks:holy_power"
+							slot: "chest"
+							upgrades: 1
+						}]
+						Trim: {
+							material: "minecraft:gold"
+							pattern: "minecraft:snout"
+						}
+						display: {
+							Name: "{\"text\":\"Blessed Iron Chestplate\"}"
+						}
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "5E3FA0AB27BEFB93"
+				item: {
+					Count: 1
+					id: "minecraft:potion"
+					tag: {
+						Potion: "minecraft:regeneration"
+					}
+				}
+				type: "item"
+			}]
+			x: -3.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["0361ECAB302D394C"]
+			hide_until_deps_complete: true
+			id: "17A088E77AF152C6"
+			rewards: [{
+				id: "7EFCFA71678A4DCD"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"cold_sweat:item_insulation": {
+							Insulation: [ ]
+						}
+					}
+					id: "minecraft:iron_chestplate"
+					tag: {
+						Damage: 0
+						ISBUpgrades: [{
+							id: "irons_spellbooks:ender_power"
+							slot: "chest"
+							upgrades: 1
+						}]
+						Trim: {
+							material: "minecraft:amethyst"
+							pattern: "minecraft:raiser"
+						}
+						display: {
+							Name: "{\"text\":\"Ancient Iron Chestplate\"}"
+						}
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "46F243DE892ABBA3"
+				item: "minecraft:ender_eye"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 3.5d
+		}
+	]
+	title: "Iron's Spells"
+}

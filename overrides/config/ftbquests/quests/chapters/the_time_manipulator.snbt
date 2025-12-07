@@ -1,0 +1,116 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "diamond"
+	filename: "the_time_manipulator"
+	group: ""
+	icon: "minecraft:candle"
+	id: "0EABD2911CD0B088"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			id: "6F1EB8E7DA8C213F"
+			max_completable_dependents: 1
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1AB123892807E448"
+				table_id: 8084438677455463158L
+				type: "choice"
+			}]
+			size: 1.5d
+			tasks: [{
+				dimension: "minecraft:overworld"
+				icon: "minecraft:candle"
+				id: "1B2F715349813A30"
+				title: "Welcome!"
+				type: "dimension"
+			}]
+			x: -2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["6F1EB8E7DA8C213F"]
+			icon: "architects_palette:olivestone_pillar"
+			id: "6B69050AB855E0A6"
+			invisible_until_tasks: 2
+			require_sequential_tasks: true
+			shape: "hexagon"
+			size: 1.0d
+			subtitle: "Worship the Holy Substances"
+			tasks: [{
+				id: "386AEA452B3DF35E"
+				item: "minecraft:jungle_door"
+				type: "item"
+			}]
+			title: "The Titanborn"
+			x: 0.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6F1EB8E7DA8C213F"]
+			dependency_requirement: "one_started"
+			description: ["&8The monster drops an old, worn book with a mysterious&r &7colored paper&r &8attatched to it.&r"]
+			icon: "irons_spellbooks:blank_rune"
+			id: "78B2EA1380861578"
+			invisible_until_tasks: 2
+			max_completable_dependents: 2
+			rewards: [{
+				exclude_from_claim_all: true
+				icon: "irons_spellbooks:upgrade_orb"
+				id: "0CE1AE58B801D118"
+				table_id: 7827365250929914412L
+				title: "Magical Knowledge"
+				type: "choice"
+			}]
+			shape: "gear"
+			size: 1.0d
+			subtitle: "Show them the truth!"
+			tasks: [{
+				advancement: "minecraft:adventure/kill_a_mob"
+				criterion: ""
+				icon: {
+					Count: 1
+					id: "minecraft:wooden_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "3B3463C7D42A39E0"
+				title: "Prove your humanity by killing a monster"
+				type: "advancement"
+			}]
+			title: "The Wizards"
+			x: -2.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["6F1EB8E7DA8C213F"]
+			icon: "eidolon:raven_feather"
+			id: "55E7CB32F93F6125"
+			rewards: [{
+				id: "3E8D740D9BD3A76D"
+				item: {
+					Count: 1
+					id: "minecraft:potion"
+					tag: {
+						Potion: "minecraft:long_slow_falling"
+					}
+				}
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 1.0d
+			subtitle: "Embrace The Dove"
+			tasks: [{
+				id: "34DA15BA93CB647B"
+				item: "minecraft:book"
+				title: "Find/craft a book"
+				type: "item"
+			}]
+			title: "The Avians"
+			x: -4.5d
+			y: -1.0d
+		}
+	]
+	title: "The Start"
+}

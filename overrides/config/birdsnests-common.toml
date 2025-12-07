@@ -1,0 +1,14 @@
+
+#Bird Nest Settings
+[general]
+	#[range: 0 ~ 1000, default: 40]
+	#Range: 0 ~ 1000
+	NEST_DROP_RARITY = 40
+	#Allows to enable/disable nests dropping from decaying leaves [default: true]
+	ALLOW_DECAY_DROPS = true
+	#Allows to enable/disable nests stacking [default: false]
+	ALLOW_STACKING = false
+	#This makes nests more (or less ) rare from decaying leaves. Leave at 1 for no change. [range: 0 ~ 1000, default: 4]
+	#Range: 0 ~ 1000
+	NEST_DECAY_DROP_MULTIPLIER = 4
+

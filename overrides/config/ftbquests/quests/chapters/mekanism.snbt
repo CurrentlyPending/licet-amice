@@ -1,0 +1,372 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "mekanism"
+	group: ""
+	icon: "immersiveengineering:bottling_machine"
+	id: "32C976C47706243C"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			id: "1DC238BA883E6C12"
+			rewards: [
+				{
+					id: "323A3079B0B7B8F8"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 32
+					id: "570DDD63E5A55881"
+					item: "mekanism:osmium_ore"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [{
+				id: "0E52F0CDAB616B47"
+				item: "mekanism:metallurgic_infuser"
+				type: "item"
+			}]
+			title: "Welcome to Mekanism"
+			x: -2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["1DC238BA883E6C12"]
+			id: "6D82338DD3FB42B7"
+			rewards: [
+				{
+					count: 32
+					id: "0C79780397596B62"
+					item: "immersiveengineering:ingot_steel"
+					type: "item"
+				}
+				{
+					id: "583380C97A4F8F9B"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [{
+				id: "26F2A5738FE8D3DF"
+				item: "immersiveengineering:ingot_steel"
+				type: "item"
+			}]
+			title: "Age of Steel"
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6D82338DD3FB42B7"]
+			id: "4008770C2E953094"
+			rewards: [{
+				count: 8
+				id: "42D8E4143EA68B6D"
+				item: "mekanism:basic_universal_cable"
+				type: "item"
+			}]
+			tasks: [{
+				id: "67A9920555EEA4D1"
+				item: "mekanism:basic_universal_cable"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4008770C2E953094"]
+			id: "62C8CC7D4BFE260D"
+			rewards: [{
+				count: 8
+				id: "285B9BDF4F212CC1"
+				item: "mekanism:advanced_universal_cable"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7FB78699E1567448"
+				item: "mekanism:advanced_universal_cable"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["62C8CC7D4BFE260D"]
+			id: "25FA1109D2B6131C"
+			rewards: [{
+				count: 8
+				id: "00BBE8C2E723FAA8"
+				item: "mekanism:elite_universal_cable"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1CF3E85B5017522B"
+				item: "mekanism:elite_universal_cable"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["25FA1109D2B6131C"]
+			id: "3FCE2425CE409300"
+			rewards: [{
+				count: 8
+				id: "40FB27F7C9822BAC"
+				item: "mekanism:ultimate_universal_cable"
+				type: "item"
+			}]
+			tasks: [{
+				id: "38778295870BD5AE"
+				item: "mekanism:ultimate_universal_cable"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["6D82338DD3FB42B7"]
+			id: "13761E1007137CFA"
+			rewards: [{
+				id: "49108928841FD6F4"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "74372C285DE72C8A"
+				title: "Power Generation!"
+				type: "checkmark"
+			}]
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["13761E1007137CFA"]
+			id: "70DE674A3F8EADB6"
+			tasks: [{
+				id: "68A1051E5B0AB1D0"
+				item: "mekanismgenerators:heat_generator"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["70DE674A3F8EADB6"]
+			id: "427A8E7A71876B42"
+			tasks: [{
+				id: "1BFC535C565BB762"
+				item: "mekanismgenerators:solar_generator"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["70DE674A3F8EADB6"]
+			id: "2F686914278580C5"
+			tasks: [{
+				id: "30FB481850750A2F"
+				item: "mekanismgenerators:wind_generator"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["427A8E7A71876B42"]
+			id: "74D06646A238366F"
+			tasks: [{
+				id: "341C5D591BAEF673"
+				item: "mekanismgenerators:advanced_solar_generator"
+				type: "item"
+			}]
+			x: 7.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["13761E1007137CFA"]
+			id: "1C301ADB49D7F822"
+			tasks: [{
+				id: "42E48BC71B4DB7BC"
+				item: "mekanism:basic_energy_cube"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["6D82338DD3FB42B7"]
+			id: "37A216CD52EF7CE1"
+			rewards: [{
+				id: "360E87916E0F8B01"
+				type: "xp"
+				xp: 100
+			}]
+			size: 2.0d
+			tasks: [{
+				id: "5267A364C162F6F5"
+				item: "mekanism:steel_casing"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["37A216CD52EF7CE1"]
+			id: "2FB9AB7B2ECA307F"
+			tasks: [{
+				id: "27268F80959C6044"
+				item: "mekanism:enrichment_chamber"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["37A216CD52EF7CE1"]
+			id: "44A7469FF6CDA741"
+			tasks: [{
+				id: "1666ABE65EC26444"
+				item: "mekanism:energized_smelter"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["37A216CD52EF7CE1"]
+			id: "184080424FECF216"
+			tasks: [{
+				id: "71E7FAE6FA5465ED"
+				item: "mekanism:crusher"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["1C301ADB49D7F822"]
+			id: "5C2FBDCA9F7521A6"
+			tasks: [{
+				id: "19A066A5E447B5AC"
+				item: "mekanism:advanced_energy_cube"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5C2FBDCA9F7521A6"]
+			id: "416BEC24FCC62CBD"
+			tasks: [{
+				id: "0B69FE55FC59B71B"
+				item: "mekanism:elite_energy_cube"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["2FB9AB7B2ECA307F"]
+			id: "12262D42D8240AAC"
+			tasks: [{
+				id: "16050CC2B225BBD6"
+				item: "immersiveengineering:dust_iron"
+				type: "item"
+			}]
+			title: "Basic Ore Doubling"
+			x: -4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["2FB9AB7B2ECA307F"]
+			id: "5E2999F05B1B9F0F"
+			tasks: [{
+				id: "31F430CD0B460CBB"
+				item: "mekanism:basic_enriching_factory"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["44A7469FF6CDA741"]
+			id: "34C702E9502378E1"
+			tasks: [{
+				id: "41D9C8A4A274F737"
+				item: "mekanism:basic_smelting_factory"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["184080424FECF216"]
+			id: "097CD3C6E207CE4F"
+			tasks: [{
+				id: "4A3F50FFBECCB5AC"
+				item: "mekanism:basic_crushing_factory"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["37A216CD52EF7CE1"]
+			id: "353D5107BC1C7B61"
+			tasks: [{
+				id: "7CA9D322C8053AA3"
+				item: "mekanism:osmium_compressor"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["353D5107BC1C7B61"]
+			id: "4A45ECA3C61487CA"
+			tasks: [{
+				id: "5921248FDB3E381B"
+				item: "mekanism:ingot_refined_obsidian"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["353D5107BC1C7B61"]
+			id: "2F23EE3734E29FE3"
+			tasks: [{
+				id: "7DCDF88802A01C9A"
+				item: "mekanism:ingot_refined_glowstone"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["37A216CD52EF7CE1"]
+			id: "6BBC9B6479107F39"
+			size: 1.5d
+			tasks: [
+				{
+					id: "3D19004468D65655"
+					item: "mekanism:purification_chamber"
+					type: "item"
+				}
+				{
+					id: "7AE73A36D89B1033"
+					item: "mekanism:electrolytic_separator"
+					type: "item"
+				}
+			]
+			title: "Tier 2 Processing"
+			x: -2.0d
+			y: 6.0d
+		}
+	]
+	title: "Mekanism"
+}

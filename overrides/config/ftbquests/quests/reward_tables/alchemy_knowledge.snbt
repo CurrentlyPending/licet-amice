@@ -1,0 +1,192 @@
+{
+	icon: "irons_spellbooks:upgrade_orb"
+	id: "6CA063397CE9F22C"
+	loot_size: 1
+	order_index: 1
+	rewards: [
+		{
+			exclude_from_claim_all: true
+			icon: {
+				Count: 1
+				id: "mowziesmobs:ice_crystal"
+				tag: {
+					Damage: 0
+				}
+			}
+			item: {
+				Count: 1
+				id: "irons_spellbooks:scroll"
+				tag: {
+					ISB_Spells: {
+						data: [{
+							id: "irons_spellbooks:cone_of_cold"
+							index: 0
+							level: 4
+							locked: 1b
+						}]
+						maxSpells: 1
+						mustEquip: 0b
+						spellWheel: 0b
+					}
+				}
+			}
+			title: "Knowledge of the Frigid"
+		}
+		{
+			exclude_from_claim_all: true
+			icon: "hexerei:blood_sigil"
+			item: {
+				Count: 1
+				id: "irons_spellbooks:scroll"
+				tag: {
+					ISB_Spells: {
+						data: [{
+							id: "irons_spellbooks:acupuncture"
+							index: 0
+							level: 3
+							locked: 1b
+						}]
+						maxSpells: 1
+						mustEquip: 0b
+						spellWheel: 0b
+					}
+				}
+			}
+			title: "Knowledge of the Heretic"
+		}
+		{
+			exclude_from_claim_all: true
+			icon: "irons_spellbooks:dragonskin"
+			item: {
+				Count: 1
+				id: "irons_spellbooks:scroll"
+				tag: {
+					ISB_Spells: {
+						data: [{
+							id: "irons_spellbooks:dragon_breath"
+							index: 0
+							level: 4
+							locked: 1b
+						}]
+						maxSpells: 1
+						mustEquip: 0b
+						spellWheel: 0b
+					}
+				}
+			}
+			title: "Knowledge of the Long Gone"
+		}
+		{
+			exclude_from_claim_all: true
+			icon: "irons_spellbooks:magic_cloth"
+			item: {
+				Count: 1
+				id: "irons_spellbooks:scroll"
+				tag: {
+					ISB_Spells: {
+						data: [{
+							id: "irons_spellbooks:fang_strike"
+							index: 0
+							level: 1
+							locked: 1b
+						}]
+						maxSpells: 1
+						mustEquip: 0b
+						spellWheel: 0b
+					}
+				}
+			}
+			title: "Knowledge of the Spectre"
+		}
+		{
+			exclude_from_claim_all: true
+			icon: "irons_spellbooks:fire_upgrade_orb"
+			item: {
+				Count: 1
+				id: "irons_spellbooks:scroll"
+				tag: {
+					ISB_Spells: {
+						data: [{
+							id: "irons_spellbooks:firebolt"
+							index: 0
+							level: 1
+							locked: 1b
+						}]
+						maxSpells: 1
+						mustEquip: 0b
+						spellWheel: 0b
+					}
+				}
+			}
+			title: "Knowledge of the Desert"
+		}
+		{
+			exclude_from_claim_all: true
+			icon: "minecraft:enchanted_golden_apple"
+			item: {
+				Count: 1
+				id: "irons_spellbooks:scroll"
+				tag: {
+					ISB_Spells: {
+						data: [{
+							id: "irons_spellbooks:fortify"
+							index: 0
+							level: 3
+							locked: 1b
+						}]
+						maxSpells: 1
+						mustEquip: 0b
+						spellWheel: 0b
+					}
+				}
+			}
+			title: "Knowledge of the Surgeon"
+		}
+		{
+			exclude_from_claim_all: true
+			icon: "irons_spellbooks:lightning_bottle"
+			item: {
+				Count: 1
+				id: "irons_spellbooks:scroll"
+				tag: {
+					ISB_Spells: {
+						data: [{
+							id: "irons_spellbooks:chain_lightning"
+							index: 0
+							level: 1
+							locked: 1b
+						}]
+						maxSpells: 1
+						mustEquip: 0b
+						spellWheel: 0b
+					}
+				}
+			}
+			title: "Knowledge of the Static"
+		}
+		{
+			exclude_from_claim_all: true
+			icon: "minecraft:oak_sapling"
+			item: {
+				Count: 1
+				id: "irons_spellbooks:scroll"
+				tag: {
+					ISB_Spells: {
+						data: [{
+							id: "irons_spellbooks:acid_orb"
+							index: 0
+							level: 3
+							locked: 1b
+						}]
+						maxSpells: 1
+						mustEquip: 0b
+						spellWheel: 0b
+					}
+				}
+			}
+			title: "Knowledge of the Forest"
+		}
+	]
+	title: "Magical Knowledge"
+	use_title: true
+}
