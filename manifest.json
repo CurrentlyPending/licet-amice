@@ -11,8 +11,8 @@
   "manifestType": "minecraftModpack",
   "manifestVersion": 1,
   "name": "Licet Amice Pluvia Mundus",
-  "version": "1.5",
-  "author": "",
+  "version": "1.6",
+  "author": "Geoo21",
   "files": [
     {
       "projectID": 274259,
@@ -667,6 +667,71 @@
     {
       "projectID": 627557,
       "fileID": 7090226,
+      "required": true
+    },
+    {
+      "projectID": 661261,
+      "fileID": 6369719,
+      "required": true
+    },
+    {
+      "projectID": 239286,
+      "fileID": 6373460,
+      "required": true
+    },
+    {
+      "projectID": 243076,
+      "fileID": 4844585,
+      "required": true
+    },
+    {
+      "projectID": 223852,
+      "fileID": 6994481,
+      "required": true
+    },
+    {
+      "projectID": 619320,
+      "fileID": 7265442,
+      "required": true
+    },
+    {
+      "projectID": 272302,
+      "fileID": 4626171,
+      "required": true
+    },
+    {
+      "projectID": 307788,
+      "fileID": 4862132,
+      "required": true
+    },
+    {
+      "projectID": 379849,
+      "fileID": 5182632,
+      "required": true
+    },
+    {
+      "projectID": 960662,
+      "fileID": 6214766,
+      "required": true
+    },
+    {
+      "projectID": 306770,
+      "fileID": 6164575,
+      "required": true
+    },
+    {
+      "projectID": 224791,
+      "fileID": 7253333,
+      "required": true
+    },
+    {
+      "projectID": 295780,
+      "fileID": 6022461,
+      "required": true
+    },
+    {
+      "projectID": 1283654,
+      "fileID": 6844209,
       "required": true
     }
   ],
