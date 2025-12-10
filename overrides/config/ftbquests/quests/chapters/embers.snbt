@@ -7,6 +7,2261 @@
 	id: "2C3C6F6CFB0ED853"
 	order_index: 0
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			description: [
+				"In the deepest reaches of the world, below even the impassable bedrock, a great and magnificent power stirs: it's the coagulation of the Earth's beating core, a crystalline remnant of the most primal of energies, a wonderful material known as &l&cEmbers&r."
+				"{@pagebreak}"
+				"In a time long past, the devout followers of Prvoun harnessed this power and reached a grandeur never before seen. Yet of this might, very little has survived to the present day."
+				"But what little remains may be just enough to resurrect this long gone technology..."
+			]
+			icon: "alexscaves:primal_magma"
+			id: "580C64CF992F7263"
+			size: 3.0d
+			subtitle: "We can never dig too deep"
+			tasks: [{
+				id: "76C4A7A56976914F"
+				title: "Become a disciple of Prvoun"
+				type: "checkmark"
+			}]
+			title: "Harnessing the core"
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["580C64CF992F7263"]
+			description: [
+				"Occasionally, in the dead of night, one may come across &l&8strange animated constructs&r of unknown purpose."
+				"The only apparent things about them are their extreme aggression and their peculiar attack methods: rather than using their physical strength, the constructs prefer long range attacks that use a beam of concentrated energy."
+				"Such power! It can't be anything else but embers! Surely, these constructs hold the key to rediscover its origins, yet it might come at the cost of their wonderful manufacture..."
+			]
+			hide_until_deps_complete: true
+			icon: "embers:ancient_motive_core"
+			id: "129C65359658F3B7"
+			rewards: [{
+				count: 10
+				id: "2277790A68B9537E"
+				item: "embers:archaic_brick"
+				type: "item"
+			}]
+			subtitle: "The heart beats unrelenting"
+			tasks: [
+				{
+					entity: "embers:ancient_golem"
+					icon: "embers:ember_receiver"
+					id: "45CE8DC1D652F54C"
+					title: "Locate and destroy an Ancient golem"
+					type: "kill"
+					value: 1L
+				}
+				{
+					id: "16623C50FFF9B5AD"
+					item: "embers:ancient_motive_core"
+					type: "item"
+				}
+			]
+			title: "A living remnant"
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["129C65359658F3B7"]
+			description: [
+				"Indeed, the core of the constructs revealed its powers true: ancient knowledge, ready for discovery, laid dormant in the crystal's memories."
+				"With this, what was once a lost form of power may finally rise again."
+			]
+			hide_until_deps_complete: true
+			id: "30AA4C66A7EC3B34"
+			rewards: [{
+				id: "2C4B021E1C81DB08"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "Primal knowledge"
+			tasks: [{
+				id: "75BE4250C2A59325"
+				item: "embers:ancient_codex"
+				type: "item"
+			}]
+			title: "The Ancient Codex"
+			x: 0.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["30AA4C66A7EC3B34"]
+			description: ["The Codex describes a peculiar blend of sand and clay called &l&ecaminite&r, which is said to be particularly resistant and therefore ideal for use in advanced machinery."]
+			icon: "embers:caminite_brick"
+			id: "7615C8F8FC00EA28"
+			rewards: [{
+				count: 16
+				id: "34559F09BA92A790"
+				item: "embers:caminite_brick"
+				type: "item"
+			}]
+			subtitle: "This surely won't be blown away"
+			tasks: [
+				{
+					count: 16L
+					id: "45C677E33265DC2E"
+					item: "embers:caminite_blend"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "604958E59A74AB0C"
+					item: { Count: 16, id: "embers:caminite_brick" }
+					type: "item"
+				}
+			]
+			title: "Advanced ceramics"
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["30AA4C66A7EC3B34"]
+			description: [
+				"With lead and iron it's possible to craft a simple yet effective tool, useful in getting machines to operate and in doing simple smithing operations."
+				"{@pagebreak}"
+				"With help from the hammer, it's possible to manufacture special lenses capable of displaying the use of each port on a given machine."
+			]
+			icon: "embers:tinker_hammer"
+			id: "1FA69AE2AC93A9A4"
+			subtitle: "A very spicy DIY project"
+			tasks: [
+				{
+					id: "521AC6BC9B0A4FCA"
+					item: "embers:tinker_hammer"
+					type: "item"
+				}
+				{
+					id: "0CB63B55A2CD12AF"
+					item: "embers:tinker_lens"
+					type: "item"
+				}
+			]
+			title: "Tools of the trade"
+			x: 1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["30AA4C66A7EC3B34"]
+			description: [
+				"A power as strong as embers surely cannot be inert, rather it's susceptible to fluctuations as the Earth's core beats with primal vigor."
+				"By using copper and iron, it's possible to create a simple device that's capable of measuring the intensity of embers in a given area."
+			]
+			id: "10C208945BB299BB"
+			rewards: [{
+				id: "662E988381D7E216"
+				type: "xp"
+				xp: 300
+			}]
+			subtitle: "Resonate with the Earth"
+			tasks: [{
+				id: "1D8894D3474863F1"
+				item: "embers:atmospheric_gauge"
+				type: "item"
+			}]
+			title: "A useful display"
+			x: -1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"10C208945BB299BB"
+				"1FA69AE2AC93A9A4"
+				"7615C8F8FC00EA28"
+			]
+			description: [
+				"With these new tools now available, it's possible to construct the first proper machine, a powerful bore capable of breaching the bedrock that protects the malleable heart of the planet in order to extract its precious ichor."
+				"{@pagebreak}"
+				"But feeble human hands aren't meant to interface with such a beast of technology, which is why a mechanical core is essential to allow logistical systems to do it instead."
+				"{@pagebreak}"
+				"Of course, a machine this strong can't run on nothing, and will require some kind of fuel. Any type of fuel that can be burnt in a furnace will be valid."
+			]
+			icon: "embers:ember_bore"
+			id: "2A86FA8D3E681780"
+			rewards: [
+				{
+					count: 5
+					id: "568B8A849DA68A7E"
+					item: "embers:ember_shard"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "54D456FFCFB1663F"
+					item: "embers:ember_crystal"
+					type: "item"
+				}
+			]
+			subtitle: "The Mantle is ours"
+			tasks: [
+				{
+					id: "10988C3A5D102686"
+					item: "embers:ember_bore"
+					type: "item"
+				}
+				{
+					id: "593D0BD229F96FC7"
+					item: "embers:mechanical_core"
+					type: "item"
+				}
+			]
+			title: "The breakthrough"
+			x: 0.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["1FA69AE2AC93A9A4"]
+			description: ["Going forwards, it will surely be necessary to build a proper logistical infrastructure."]
+			icon: "embers:fluid_pipe"
+			id: "3CB567DF20DF4ABF"
+			rewards: [
+				{
+					count: 8
+					id: "462253EF1F6751F1"
+					item: "embers:fluid_pipe"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "638FD3FB0150DAD2"
+					item: "embers:item_pipe"
+					type: "item"
+				}
+			]
+			subtitle: "A pipe dream"
+			tasks: [
+				{
+					count: 8L
+					id: "08C5A0EB86B203BC"
+					item: "embers:fluid_pipe"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "51C11AEA1660B817"
+					item: "embers:item_pipe"
+					type: "item"
+				}
+				{
+					id: "2EB42D0DB538203A"
+					item: "embers:fluid_extractor"
+					type: "item"
+				}
+				{
+					id: "22B16A73866C2775"
+					item: "embers:item_extractor"
+					type: "item"
+				}
+			]
+			title: "Useful logistics"
+			x: 3.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"3CB567DF20DF4ABF"
+				"7615C8F8FC00EA28"
+			]
+			description: ["It might be useful to build some type of bulk fluid storage. A &l&9reservoir&r is the best way to achieve that. They're unable to hold anything on their own, but they can be upgraded with caminite rings, allowing them to hold greater and greater quantities of fluid."]
+			icon: "embers:reservoir"
+			id: "0951EBB30118D994"
+			rewards: [{
+				count: 2
+				id: "5FD4ED12933621C9"
+				item: "embers:caminite_ring"
+				type: "item"
+			}]
+			subtitle: "Big sippy"
+			tasks: [
+				{
+					id: "2A82626F7F51EF41"
+					item: "embers:reservoir"
+					type: "item"
+				}
+				{
+					id: "5654D825880B835F"
+					item: "embers:caminite_ring"
+					type: "item"
+				}
+			]
+			title: "Advanced fluid storage"
+			x: 4.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["2A86FA8D3E681780"]
+			description: ["With the ember crystals at hand, the Earth's power is finally within reach. Only, it needs to be extracted from its crystalline seal before it can be used. This new machine described in the codex holds the key to do just that: the &l&cember activator&r will be able to unleash raw ember power into the world in order to use it for all sorts of applications. The true power of the Earth is now available."]
+			hide_until_deps_complete: true
+			id: "21B4519AAD96ADCA"
+			rewards: [
+				{
+					count: 15
+					id: "5E7694F7EF4BCDAC"
+					item: "embers:ember_shard"
+					type: "item"
+				}
+				{
+					count: 10
+					id: "71D9D4F8111B560D"
+					item: "embers:ember_crystal"
+					type: "item"
+				}
+			]
+			subtitle: "Unleashing the fire"
+			tasks: [{
+				id: "7FCEAAA7E3324507"
+				item: "embers:ember_activator"
+				type: "item"
+			}]
+			title: "A new energy"
+			x: 0.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["21B4519AAD96ADCA"]
+			description: [
+				"By attaching this handy device to an ember activator it's possible to harness ember energy using ember grit. It will certainly prove useful since this powder doesn't seem to have any other use in ember generation at this moment."
+				"{@pagebreak}"
+				"There's other kinds of similar attachments described in The Codex. It could be worth making use of them as well..."
+			]
+			id: "3E3CA70A367E98AA"
+			rewards: [
+				{
+					count: 16
+					id: "008FD24DFFD64069"
+					item: "embers:ember_grit"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "012F10AB2CC3235A"
+					item: "embers:ember_shard"
+					type: "item"
+				}
+			]
+			subtitle: "Complex thermodynamics"
+			tasks: [{
+				id: "377DEB7B0F9113CF"
+				item: "embers:heat_exchanger"
+				type: "item"
+			}]
+			title: "Alternate functions"
+			x: -1.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["21B4519AAD96ADCA"]
+			description: [
+				"Releasing the embers is good and all, but it will be no use inside of its own generator. Luckily, it's possible to create a system of devices capable of doing just that. By simply placing them on the desired machines, linking them with the hammer, and giving the emitters a redstone signal, these devices will allow the embers to travel through the air and to their destination."
+				"{@pagebreak}"
+				"Care needs to be taken however, as embers will dissipate if they travel too long without support. To remedy that, one can make use of relays, as they rejuvenate the embers spark and allow it to travel further."
+			]
+			icon: "embers:ember_emitter"
+			id: "5CDC89083FC78C87"
+			rewards: [
+				{
+					count: 8
+					id: "3EA44604266958AC"
+					item: "embers:ember_emitter"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "150435BA438F65A6"
+					item: "embers:ember_receiver"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "5A99F2AA498FD08C"
+					item: "embers:ember_relay"
+					type: "item"
+				}
+			]
+			subtitle: "Controlling the fire"
+			tasks: [
+				{
+					count: 4L
+					id: "4B5D950C07F25BBB"
+					item: { Count: 2, id: "embers:ember_emitter" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "3525FAD9FE13AE97"
+					item: { Count: 4, id: "embers:ember_receiver" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "2233D54BF3864EA1"
+					item: { Count: 4, id: "embers:ember_relay" }
+					type: "item"
+				}
+			]
+			title: "Ember logistics"
+			x: 1.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["5CDC89083FC78C87"]
+			description: ["There will surely be a time where embers production will outweigh its consumption, which means part of this wonderful energy could potentially be lost in the ether. To prevent that, it's possible to construct a very handy device that's capable of storing raw embers inside of itself. This way, the energy can be used when necessary without needing to sacrifice a single spark."]
+			id: "1660DA1202ABB9ED"
+			rewards: [{
+				count: 2
+				id: "17D354D4AC0F3DEA"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							"embers:ember": 0.0d
+							"embers:ember_capacity": 24000.0d
+						}
+					}
+					id: "embers:copper_cell"
+					tag: {
+						ForgeCaps: {
+							"embers:ember_capacity": 24000.0d
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Containing the fire"
+			tasks: [{
+				id: "11B7B00D1031F3F5"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							"embers:ember": 0.0d
+							"embers:ember_capacity": 24000.0d
+						}
+					}
+					id: "embers:copper_cell"
+					tag: {
+						ForgeCaps: {
+							"embers:ember_capacity": 24000.0d
+						}
+					}
+				}
+				type: "item"
+			}]
+			title: "Ember storage"
+			x: 1.5d
+			y: 11.0d
+		}
+		{
+			dependencies: ["5CDC89083FC78C87"]
+			description: [
+				"Now, with a source of embers at hand, it's about time that energy found itself a use. The first and simplest machination is surely the &l&cmelter&r, a construct designed to use the heat of the embers to melt materials inside its basin."
+				"{@pagebreak}"
+				"With the metal now in liquid form, it's necessary to mold it into a useful shape. To that end, a &l&8stamper&r is needed. The stamper is made of two parts, the &l&7stamper base&r, in which the molten material is inserted, and the &l&8stamper&r itself, which, when provided with a mold and embers, will stamp out a solid product."
+				"{@pagebreak}"
+				"This machine is however very clumsy and carefree and seems to enjoy throwing all of its products on the ground. A &l&8bin&r placed below the stamper base will be able to catch the machine's output and prevent any losses."
+			]
+			icon: "embers:melter"
+			id: "21F5B0DA434AF8D1"
+			rewards: [{
+				count: 8
+				id: "1BF1BA299146793F"
+				item: "embers:ember_crystal"
+				type: "item"
+			}]
+			subtitle: "Exploiting the fire"
+			tasks: [
+				{
+					id: "78BA6D01FF64AE77"
+					item: "embers:melter"
+					type: "item"
+				}
+				{
+					id: "47FC32337020B895"
+					item: "embers:stamp_base"
+					type: "item"
+				}
+				{
+					id: "51A8E783594BA5F9"
+					item: "embers:stamper"
+					type: "item"
+				}
+				{
+					id: "54C6A584E7E5845E"
+					item: "embers:ingot_stamp"
+					type: "item"
+				}
+				{
+					id: "287086AD56A108E5"
+					item: "embers:bin"
+					type: "item"
+				}
+			]
+			title: "The first machine"
+			x: 0.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["5CDC89083FC78C87"]
+			description: ["Looks like the power of embers can be harnessed to aid in culinary endeavors. Who could've thought to use such raw and incredible power for something so mundane?"]
+			id: "0A4D67E033CBA9F3"
+			rewards: [{
+				id: "738821A8EB085DA1"
+				item: "embersdelight:ember_grits"
+				type: "item"
+			}]
+			subtitle: "Hell's Kitchen"
+			tasks: [{
+				id: "358C8F3867058C4D"
+				item: "embersdelight:cutter"
+				type: "item"
+			}]
+			title: "Cooking with embers?"
+			x: 6.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["21F5B0DA434AF8D1"]
+			description: ["This handy attachment is able to conduct precise extractions on raw ores that are put inside the melter, which allows it to separate traces of other ores into usable molten metal. Which type of traces will end up in the separator depends entirely on the ore that was put in the melter."]
+			id: "44D4FF10F5E54CDB"
+			rewards: [{
+				count: 10
+				id: "4716EDD9ADAB6E60"
+				item: "embers:ember_shard"
+				type: "item"
+			}]
+			subtitle: "More bang for your buck"
+			tasks: [{
+				id: "07413BC15CC815C9"
+				item: "embers:geologic_separator"
+				type: "item"
+			}]
+			title: "Precise extraction"
+			x: -1.5d
+			y: 11.0d
+		}
+		{
+			dependencies: ["21F5B0DA434AF8D1"]
+			description: [
+				"This new machine, the &l&chearth coil&r, allows one to quickly process items in a way not dissimilar to a furnace. However, unlike a regular furnace, this wonderful machinarium is much quicker and more efficient, since it uses the superior potential of the embers."
+				"{@pagebreak}"
+				"This power, however, does not come cheap, so it might be worth investing in some insulation to prevent it from requiring too much energy."
+			]
+			icon: "embers:hearth_coil"
+			id: "182C1BA2816D151F"
+			rewards: [
+				{
+					count: 2
+					id: "24F8F6BB68515B65"
+					item: "embers:heat_insulation"
+					type: "item"
+				}
+				{
+					count: 10
+					id: "71830587353F3CEB"
+					item: "embers:ember_crystal"
+					type: "item"
+				}
+			]
+			subtitle: "Furnaces are so last gen"
+			tasks: [
+				{
+					id: "5C130E117EA8F341"
+					item: "embers:hearth_coil"
+					type: "item"
+				}
+				{
+					id: "6CD2670A7607F1FE"
+					item: "embers:heat_insulation"
+					type: "item"
+				}
+			]
+			title: "Smelting made easy"
+			x: 2.5d
+			y: 12.0d
+		}
+		{
+			dependencies: ["182C1BA2816D151F"]
+			description: ["The hearth coil can be further specialized into a smoker with the use of the &l&6char instiller&r, which will limit it to smoking recipes but make it operate twice as fast."]
+			id: "0077A6F1A7449593"
+			rewards: [{
+				count: 5
+				id: "78FC13E74F5E0861"
+				item: "embers:ember_shard"
+				type: "item"
+			}]
+			subtitle: "Careful not to burn it!"
+			tasks: [{
+				id: "6D2E6AC051B8E4FD"
+				item: "embers:char_instiller"
+				type: "item"
+			}]
+			title: "One hot oven"
+			x: 3.5d
+			y: 11.5d
+		}
+		{
+			dependencies: ["182C1BA2816D151F"]
+			description: ["The hearth coil can be further specialized into a blast furnace with the use of the &l&6atmospheric bellows&r, which will limit it to blasting recipes but make it operate twice as fast."]
+			id: "451D4E3BE220E56E"
+			rewards: [{
+				count: 5
+				id: "288310CB3FCABBAF"
+				item: "embers:ember_shard"
+				type: "item"
+			}]
+			subtitle: "A blast from a very ancient past"
+			tasks: [{
+				id: "1F5134E8D24D5E1A"
+				item: "embers:atmospheric_bellows"
+				type: "item"
+			}]
+			title: "It smelts without casting"
+			x: 3.5d
+			y: 12.5d
+		}
+		{
+			dependencies: ["21F5B0DA434AF8D1"]
+			description: [
+				"In the wondrous archives of The Codex, there lie talks of a legendary alloy of unmatched quality. Its name is &l&cdawnstone&r, and it seems to be the key to unlock the full potential of the embers."
+				"{@pagebreak}"
+				"First though, one must create yet another machine, the &l&cmixer centrifuge&r, which is able to combine up to four liquid materials into one."
+				"{@pagebreak}"
+				"Once the mixer is in place, it must simply be fed with equal parts copper and gold, then stamped into the desired shape."
+				"After eons, the mythic alloy can rise from its ashes once again."
+			]
+			icon: "embers:dawnstone_ingot"
+			id: "39C8642D09D79243"
+			rewards: [{
+				count: 8
+				id: "0D5F8B9602EC661D"
+				item: "embers:dawnstone_ingot"
+				type: "item"
+			}]
+			subtitle: "A myth made true"
+			tasks: [
+				{
+					id: "6420E32607EEA074"
+					item: "embers:mixer_centrifuge"
+					type: "item"
+				}
+				{
+					id: "4A44E2DC18DA4C62"
+					item: "embers:dawnstone_ingot"
+					type: "item"
+				}
+			]
+			title: "The alloy of legend"
+			x: 0.0d
+			y: 13.0d
+		}
+		{
+			dependencies: ["39C8642D09D79243"]
+			description: [
+				"Now that greater potential has been unlocked, it will be necessary to generate a lot more power to meet its demand, and the simple activator can't keep up with such task. Luckily, the ancestral devouts already figured out a way."
+				"Through the use of a machine known as a &l&cpressure refinery&r, it's possible to generate more embers for a reduced cost. However, it will require water to be inserted into it, which is where the &l&9mechanical pump&r comes into play."
+				"{@pagebreak}"
+				"This system by itself is already much better than anything that was possible before, but it can be made even better with basically no additional cost. By placing the refinery atop a metal block surrounded on all sides by either fire or lava, it will generate up to double the amount of embers."
+			]
+			hide_until_deps_complete: true
+			icon: "embers:pressure_refinery"
+			id: "13F8432AF0192FB9"
+			rewards: [
+				{
+					id: "781649B9748E059D"
+					item: "minecraft:iron_block"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "00F3C95E56AD1E96"
+					item: "embers:ember_crystal"
+					type: "item"
+				}
+			]
+			subtitle: "Boiling water is always involved"
+			tasks: [
+				{
+					id: "6BE03D8748DC218E"
+					item: "embers:pressure_refinery"
+					type: "item"
+				}
+				{
+					id: "60C935A38F6D8E18"
+					item: "embers:mechanical_pump"
+					type: "item"
+				}
+			]
+			title: "Higher power"
+			x: 1.5d
+			y: 14.5d
+		}
+		{
+			dependencies: ["13F8432AF0192FB9"]
+			description: ["As universal law, all energy is eventually dispersed as heat through the force of friction. All this machinery has been producing mind-boggling quantities of heat that has not been used in any way. But this can change: by attaching a mini boiler to any machine, the heat can be applied for use in steam production. Yet, it's hard to grasp why one would want to do that, since there isn't an apparent use for this alternate form of water, and highly pressurized steam can lead to undesired consequences."]
+			id: "53B7B2000C57B387"
+			rewards: [{
+				count: 5
+				id: "4CAFBDF8174A1277"
+				item: "embers:ember_crystal"
+				type: "item"
+			}]
+			subtitle: "More than just a kettle"
+			tasks: [{
+				id: "4A99C1E6059E260E"
+				item: "embers:mini_boiler"
+				type: "item"
+			}]
+			title: "Boiling more water"
+			x: 4.5d
+			y: 14.5d
+		}
+		{
+			dependencies: ["39C8642D09D79243"]
+			description: [
+				"There's a way to store small quantities of embers inside easy to carry vessels for use on the field. They come in two sizes, each with a slightly different functionality:"
+				"-The jar holds less embers, but can be accessed from everywhere in the inventory;"
+				"-The cartridge holds more embers, but must be held in the off-hand to be accessed."
+			]
+			hide_until_deps_complete: true
+			id: "5AAB6633CD6D1C00"
+			rewards: [{
+				id: "4A8F32409C22D9CA"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							"embers:ember": 0.0d
+							"embers:ember_capacity": 6000.0d
+						}
+					}
+					id: "embers:ember_cartridge"
+					tag: {
+						ForgeCaps: {
+							"embers:ember_capacity": 6000.0d
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Hell in a jar"
+			tasks: [{
+				id: "306334559A37415D"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							"embers:ember": 0.0d
+							"embers:ember_capacity": 2000.0d
+						}
+					}
+					id: "embers:ember_jar"
+					tag: {
+						ForgeCaps: {
+							"embers:ember_capacity": 2000.0d
+						}
+					}
+				}
+				type: "item"
+			}]
+			title: "Portable ember storage"
+			x: -3.0d
+			y: 13.0d
+		}
+		{
+			dependencies: ["5AAB6633CD6D1C00"]
+			description: [
+				"&l&eClockwork tools&r are magnificent masterpieces of ancestral design, the manufacture of which is unrivaled. All three tool types also double as weapons, and as such can accept enchantments for both tools and weapons."
+				"Unlike most other tools out there, these works of art do not take durability damage, instead tapping into the embers reserves of their user to function."
+				"{@pagebreak}"
+				"First of the clockwork trio is the pickaxe, a tool capable of digging out all kinds of soil, whether they be hard or soft."
+				"Second of the clockwork trio is the axe, a tool made to fell trees with terrifying ease."
+				"Third of the clockwork trio is the grandhammer, a powerful weapon capable of rending the world apart."
+			]
+			hide_until_deps_complete: true
+			icon: "embers:grandhammer"
+			id: "4D92AB804EFC2562"
+			rewards: [{
+				id: "19EA44454259A17C"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							"embers:ember": 2000.0d
+							"embers:ember_capacity": 2000.0d
+						}
+					}
+					id: "embers:ember_jar"
+					tag: {
+						ForgeCaps: {
+							"embers:ember": 2000.0d
+							"embers:ember_capacity": 2000.0d
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Precise and powerful"
+			tasks: [
+				{
+					id: "147FCC11FAD6FBB4"
+					item: "embers:clockwork_pickaxe"
+					type: "item"
+				}
+				{
+					id: "1DFBF7453DC985B0"
+					item: "embers:clockwork_axe"
+					type: "item"
+				}
+				{
+					id: "5E9FB5C169895D9E"
+					item: "embers:grandhammer"
+					type: "item"
+				}
+			]
+			title: "Clockwork tools"
+			x: -4.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["5AAB6633CD6D1C00"]
+			description: [
+				"The &l&4Blazing ray&r is a weapon most impressive, capable of sending forth rays of concentrated embers, not too dissimilar to the constructs that still roam the lands."
+				"Unlike most other tools out there, this little warmachine does not take durability damage, instead tapping into the embers reserves of its user to function."
+			]
+			hide_until_deps_complete: true
+			id: "7B8F4D7C8F2C34BC"
+			rewards: [{
+				id: "0196BD15FF89D371"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							"embers:ember": 2000.0d
+							"embers:ember_capacity": 2000.0d
+						}
+					}
+					id: "embers:ember_jar"
+					tag: {
+						ForgeCaps: {
+							"embers:ember": 2000.0d
+							"embers:ember_capacity": 2000.0d
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "To cook chicken on the fly"
+			tasks: [{
+				id: "00C05ABEB2ECB0C3"
+				item: "embers:blazing_ray"
+				type: "item"
+			}]
+			title: "A ray of embers"
+			x: -3.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["5AAB6633CD6D1C00"]
+			description: [
+				"The &l&6Cinder staff&r is a curious device capable of harnessing arcane energies in order to send forth a powerful orb of concentrated embers. The longer it is held, the larger the size of the cast orb."
+				"Unlike most other tools out there, this prodigious weapon does not take durability damage, instead tapping into the embers reserves of its user to function."
+			]
+			hide_until_deps_complete: true
+			id: "6038BDEAF11288CC"
+			rewards: [{
+				id: "2E0D00C32CB7F571"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							"embers:ember": 2000.0d
+							"embers:ember_capacity": 2000.0d
+						}
+					}
+					id: "embers:ember_jar"
+					tag: {
+						ForgeCaps: {
+							"embers:ember": 2000.0d
+							"embers:ember_capacity": 2000.0d
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "I cast fireball."
+			tasks: [{
+				id: "29234B39A92013B1"
+				item: "embers:cinder_staff"
+				type: "item"
+			}]
+			title: "A magic staff?"
+			x: -2.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["5AAB6633CD6D1C00"]
+			description: [
+				"The &l&ccopper charger&r allows mantle jars and cartridges to be refilled."
+				"There exists another device called &l&cember siphon&r, which, when placed underneath a charger, will invert its functionality."
+			]
+			id: "35600AF42D2334F8"
+			rewards: [{
+				id: "7BC1E48CD0F4E06A"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							"embers:ember": 0.0d
+							"embers:ember_capacity": 6000.0d
+						}
+					}
+					id: "embers:ember_cartridge"
+					tag: {
+						ForgeCaps: {
+							"embers:ember_capacity": 6000.0d
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "The outlet of hell"
+			tasks: [{
+				id: "16A7D0F74399F0C8"
+				item: "embers:copper_charger"
+				type: "item"
+			}]
+			title: "Fiery surge"
+			x: -4.0d
+			y: 13.0d
+		}
+		{
+			dependencies: ["13F8432AF0192FB9"]
+			description: ["With higher power comes higher logistical demands. With these stronger transmitters it shouldn't be an issue."]
+			icon: "embers:ember_ejector"
+			id: "4DA6BF1F0805942B"
+			rewards: [
+				{
+					count: 4
+					id: "06912E669230CB6D"
+					item: "embers:ember_ejector"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "55716C0C68B0B20C"
+					item: "embers:ember_funnel"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0F653C4C976B90FA"
+					item: "embers:beam_splitter"
+					type: "item"
+				}
+			]
+			subtitle: "Controlling an inferno"
+			tasks: [
+				{
+					id: "3EA926F6E3246C19"
+					item: "embers:ember_ejector"
+					type: "item"
+				}
+				{
+					id: "0F92FEB274533D8D"
+					item: "embers:ember_funnel"
+					type: "item"
+				}
+			]
+			title: "Stronger logisitcs"
+			x: 1.5d
+			y: 16.0d
+		}
+		{
+			dependencies: ["4DA6BF1F0805942B"]
+			description: [
+				"Copper cells are all well and good, but they don't hold much embers inside of themselves. While not an issue before, with such abundance of energy they will surely lag behind. Instead, the embers could be stored inside a crystalline lattice more akin to their original source. This way, embers storage would become much more efficient than before."
+				"{@pagebreak}"
+				"While the &l&ccrystal cell&r is already leagues above its copper counterpart, it still has a lot of hidden potential. By feeding it ember crystals, the cell will grow in size and capacity, becoming a much better storage device."
+			]
+			id: "5D05885D8388D2B1"
+			rewards: [{
+				count: 16
+				id: "4624B18FC4165CE4"
+				item: "embers:ember_crystal"
+				type: "item"
+			}]
+			subtitle: "Resonant storage"
+			tasks: [{
+				id: "4DD7E3740FCF5605"
+				item: "embers:crystal_cell"
+				type: "item"
+			}]
+			title: "Trapping the core"
+			x: 3.0d
+			y: 16.0d
+		}
+		{
+			dependencies: ["4DA6BF1F0805942B"]
+			description: [
+				"The &l&4beam cannon&r is a terrifying contraption able to incinerate most lifeforms with one singular ray. It can be used as a weapon as well as a very dangerous way of transfering large amounts of embers."
+				"And yet it feels like there is more to this mechanism than meets the eye..."
+			]
+			id: "1FEAC903A88CEAE0"
+			rewards: [{
+				count: 8
+				id: "46AB1120A06B101B"
+				item: "embers:ember_crystal"
+				type: "item"
+			}]
+			subtitle: "Probably a warcrime"
+			tasks: [{
+				id: "30226CD327D4A345"
+				item: "embers:beam_cannon"
+				type: "item"
+			}]
+			title: "Weaponizing hell"
+			x: 0.0d
+			y: 16.0d
+		}
+		{
+			dependencies: ["1FEAC903A88CEAE0"]
+			description: [
+				"There it is! Ancestral alchemy, now returned to the world!"
+				"It all begins with the &l&6exchanging tablet&r, upon which will rest the item to transfuse. Next, around the tablet must be placed &l&6alchemy pedestals&r, as many as required by the desired recipe. Lastly, the &l&4beam cannon&r must be pointed downwards towards the exchange tablet, ready to fire at will. These are the basic mechanical components of alchemy, but the proces itself will require a bit more brainpower than first thought..."
+			]
+			hide_until_deps_complete: true
+			icon: "embers:alchemy_tablet"
+			id: "0061374677D5C58B"
+			subtitle: "A science lost to time"
+			tasks: [
+				{
+					count: 4L
+					id: "0192D3E9DE4F6B18"
+					item: "embers:alchemy_pedestal"
+					type: "item"
+				}
+				{
+					id: "46D47DE665E9CED0"
+					item: "embers:alchemy_tablet"
+					type: "item"
+				}
+			]
+			title: "Alchemical revolution"
+			x: -1.5d
+			y: 18.0d
+		}
+		{
+			dependencies: ["0061374677D5C58B"]
+			description: [
+				"&l&5Aspecti&r are a crucial component of alchemy. All alchemical processes require these peculiar items to be succesful. While the knowledge of which aspecti are required for each recipe is still preserved, the order and quantity of each aspecti has been lost to time and will require experimentation."
+				"To use the aspecti properly, they must be put at the foot of the pedestals in a specific order, which, again, must be rediscovered."
+			]
+			icon: "embers:dawnstone_aspectus"
+			id: "29A7A152EF9230C5"
+			subtitle: "Many will meld in one"
+			tasks: [
+				{
+					id: "7858ECB08A873DC9"
+					item: "embers:iron_aspectus"
+					type: "item"
+				}
+				{
+					id: "5BE30A48E3E8A50E"
+					item: "embers:copper_aspectus"
+					type: "item"
+				}
+				{
+					id: "3CFC54E340D63BC3"
+					item: "embers:lead_aspectus"
+					type: "item"
+				}
+				{
+					id: "4B4344D4166DC80A"
+					item: "embers:silver_aspectus"
+					type: "item"
+				}
+				{
+					id: "760C5FDB907CC42E"
+					item: "embers:dawnstone_aspectus"
+					type: "item"
+				}
+			]
+			title: "Aspects of the Earth"
+			x: 1.5d
+			y: 18.0d
+		}
+		{
+			dependencies: ["29A7A152EF9230C5"]
+			description: ["Going forward it will probably be useful to have some way to easily figure out alchemical recipes. As such, it could be useful to create a &l&8codebreaking slate&r as one's first alchemical venture."]
+			id: "3DCA50E65A896430"
+			rewards: [
+				{
+					count: 5
+					id: "75CD70C6E3651817"
+					item: "embers:ember_crystal"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "7C14095BB1202E18"
+					item: "embers:dawnstone_ingot"
+					type: "item"
+				}
+			]
+			subtitle: "Hacking's just typing fast"
+			tasks: [{
+				id: "46B12C13E38586E9"
+				item: "embers:codebreaking_slate"
+				type: "item"
+			}]
+			title: "An alchemist's best friend"
+			x: 0.0d
+			y: 20.0d
+		}
+		{
+			dependencies: ["3DCA50E65A896430"]
+			description: [
+				"Now that the basis of alchemy is set, there is no stopping progress."
+				"True power is finally within reach."
+			]
+			hide_until_deps_complete: true
+			icon: "embers:alchemy_pedestal"
+			id: "501B35F8BE1E43B5"
+			size: 2.0d
+			subtitle: "One thing becomes another"
+			tasks: [{
+				id: "42FD6B2BA91C724F"
+				title: "Reveal alchemical processes"
+				type: "checkmark"
+			}]
+			title: "Near limitless power"
+			x: 0.0d
+			y: 22.0d
+		}
+		{
+			dependencies: [
+				"53B7B2000C57B387"
+				"501B35F8BE1E43B5"
+				"253A0DE987596D90"
+			]
+			description: [
+				"Thanks to the breakthrough of alchemy, a use for boiling water into steam has been found. These new augments, the &l&bcatalytic plug&r and the &l&6wildfire stirling&r, are wonderful devices that will increase the performance of machines by using steam as a power source:"
+				"-The &l&bcatalytic plug&r uses steam to increase the speed of the machine it's attached to;"
+				"-The &l&6wildfire stirling&r uses steam to reduce the embers cost of the machine it's attached to."
+				"Both augments can be attached to a machine up to two times each before losing efficiency."
+			]
+			hide_until_deps_complete: true
+			id: "08305EC12DBC6520"
+			rewards: [
+				{
+					id: "4F66488DC5F8E177"
+					item: "embers:catalytic_plug"
+					type: "item"
+				}
+				{
+					id: "15348C810DBCC9B0"
+					item: "embers:wildfire_stirling"
+					type: "item"
+				}
+			]
+			subtitle: "Less for more"
+			tasks: [
+				{
+					id: "2C7BDC41A4492026"
+					item: "embers:catalytic_plug"
+					type: "item"
+				}
+				{
+					id: "45A9CF1AAD567297"
+					item: "embers:wildfire_stirling"
+					type: "item"
+				}
+			]
+			title: "A use for all that steam"
+			x: 4.5d
+			y: 20.0d
+		}
+		{
+			dependencies: ["08305EC12DBC6520"]
+			description: ["Steam is fantastic, yet it's not the best there is. By melting soul sand and then mixing the resulting fluid with steam, one can obtain a mixture known as &l&2dwarven oil&r, a fluid that doesn't expand nearly as much as steam when boiled. Other than being safer to use, it's also a lot more powerful than steam could ever hope to be, and powers up machines much more efficiently."]
+			icon: "embers:dwarven_oil_bucket"
+			id: "117AB4CB292C56EF"
+			subtitle: "Thermal expansion is a doozy"
+			tasks: [{
+				id: "12957DB3ADAD2693"
+				title: "A breakthrough!"
+				type: "checkmark"
+			}]
+			title: "A better gas?"
+			x: 1.5d
+			y: 20.0d
+		}
+		{
+			dependencies: [
+				"0A4D67E033CBA9F3"
+				"501B35F8BE1E43B5"
+			]
+			description: ["What a weird discovery this is. By infusing alchemical energies into mundane plants, it was possible to create mutated crops that thrive in darkness. But for what purpose?"]
+			hide_until_deps_complete: true
+			icon: "embersdelight:plump_helmet"
+			id: "1434A18EC58B022A"
+			rewards: [
+				{
+					count: 5
+					id: "055B8DBC6DC5E8CF"
+					item: "embersdelight:plump_helmet_seed"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "092C5D3673068569"
+					item: "embersdelight:pig_tail_seed"
+					type: "item"
+				}
+			]
+			subtitle: "New, yet familiar"
+			tasks: [
+				{
+					id: "3634498E2BE76B63"
+					item: "embersdelight:plump_helmet"
+					type: "item"
+				}
+				{
+					id: "4CE10E401549C75D"
+					item: "embersdelight:pig_tail"
+					type: "item"
+				}
+			]
+			title: "Alchemical plants"
+			x: 6.0d
+			y: 22.0d
+		}
+		{
+			dependencies: ["1434A18EC58B022A"]
+			description: ["Well this is interesting. By beaming alchemical energies at this slab of meat, it seems to have gained the uncanny ability to take the form of whichever cut from whatever animal is most appropriate for any given dish. How it does that is unknown, and the implications of it are not the nicest."]
+			id: "32EB599A3C031E8B"
+			rewards: [{
+				count: 5
+				id: "27094D107BCB27BB"
+				item: "embersdelight:transmog_meat"
+				type: "item"
+			}]
+			subtitle: "Desecrating corpses in the name of science"
+			tasks: [{
+				id: "5A2C9A4FFB4C4140"
+				item: "embersdelight:transmog_meat"
+				type: "item"
+			}]
+			title: "A strange flesh"
+			x: 8.0d
+			y: 22.0d
+		}
+		{
+			dependencies: ["501B35F8BE1E43B5"]
+			description: ["The &l&eglimmer crystal&r is a peculiar gem capable of absorbing sunlight into itself, only to release it at will in the form of an orb of pure light. It makes for a very fancy and thematically appropriate light source!"]
+			hide_until_deps_complete: true
+			id: "3412ACF8CC5219E2"
+			rewards: [{
+				count: 5
+				id: "4C44B4A34A4B36D4"
+				item: "embers:ember_crystal"
+				type: "item"
+			}]
+			subtitle: "Storing the sun for later"
+			tasks: [{
+				id: "3577BF21C7C1D172"
+				item: {
+					Count: 1
+					id: "embers:glimmer_crystal"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "A new light"
+			x: 4.5d
+			y: 24.0d
+		}
+		{
+			dependencies: [
+				"3DCA50E65A896430"
+				"55EB85D7E1077521"
+			]
+			description: ["The &l&5mnemonic inscriber&r is a fantastic tool that allows one to save an alchemical recipe for later reference. All that's needed is to place a piece of paper in the slot, then the machine will write down the recipe once it's been brought to completion."]
+			hide_until_deps_complete: true
+			id: "0FA5DBE701A9BA4C"
+			rewards: [{
+				count: 5
+				id: "02F6D89F29EF76F7"
+				item: "embers:ember_crystal"
+				type: "item"
+			}]
+			subtitle: "Because memory fades"
+			tasks: [{
+				id: "0F2B0E950A5A640C"
+				item: "embers:mnemonic_inscriber"
+				type: "item"
+			}]
+			title: "Two friends are better than one"
+			x: -1.5d
+			y: 20.0d
+		}
+		{
+			dependencies: ["501B35F8BE1E43B5"]
+			description: ["By infusing a simple lead sword with alchemical energy it's possible to create a unique blade. While initially it may seem weaker than the base used to smith it, this weapon actually harbors a peculiar secret: its damage potential scales based on the amount of defense the opponent possesses, making it perfect to breach through even the toughest of armors."]
+			hide_until_deps_complete: true
+			id: "4B3C107BBE887679"
+			rewards: [{
+				id: "0C779D1369B55D97"
+				item: {
+					Count: 1
+					id: "minecraft:enchanted_book"
+					tag: {
+						StoredEnchantments: [{
+							id: "minecraft:sharpness"
+							lvl: 3s
+						}]
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "No defense is unbreachable"
+			tasks: [{
+				id: "3048E1E3C42C8988"
+				item: {
+					Count: 1
+					id: "embers:tyrfing"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "A curious weapon"
+			x: 2.0d
+			y: 25.0d
+		}
+		{
+			dependencies: ["501B35F8BE1E43B5"]
+			description: ["With the discovery of alchemy it is now possible to replicate the archaic building materials that make up the ancient constructs."]
+			hide_until_deps_complete: true
+			icon: "embers:archaic_brick"
+			id: "55EB85D7E1077521"
+			rewards: [
+				{
+					count: 16
+					id: "5DDCACB315130CBA"
+					item: "embers:archaic_brick"
+					type: "item"
+				}
+				{
+					id: "5F75A0F61769AEA9"
+					item: "embers:ancient_motive_core"
+					type: "item"
+				}
+			]
+			subtitle: "Building like the ancients did"
+			tasks: [
+				{
+					count: 5L
+					id: "2F979D1D9CD10522"
+					item: "embers:archaic_brick"
+					type: "item"
+				}
+				{
+					id: "1CAC888CE4B3B1DC"
+					item: "embers:ancient_motive_core"
+					type: "item"
+				}
+			]
+			title: "Alchemical construction"
+			x: -4.5d
+			y: 20.0d
+		}
+		{
+			dependencies: [
+				"4B1748F3FA190F8A"
+				"501B35F8BE1E43B5"
+			]
+			description: ["By infusing wool with ashes through alchemy, it's possible to obtain a peculiar textile called &l&0ashen fabric&r, which is both flexible and resistant. It will surely have grand applications."]
+			hide_until_deps_complete: true
+			id: "581698A9E02BF5F5"
+			rewards: [{
+				count: 4
+				id: "1F171622937EE34A"
+				item: "embers:ashen_fabric"
+				type: "item"
+			}]
+			subtitle: "Not just a phase"
+			tasks: [{
+				id: "5DCDFBDC6689C386"
+				item: "embers:ashen_fabric"
+				type: "item"
+			}]
+			title: "Alchemical textiles"
+			x: -6.0d
+			y: 22.0d
+		}
+		{
+			dependencies: ["13F8432AF0192FB9"]
+			description: ["This machine has a very simple purpose: to burn everything that's thrown inside of itself, and turn it into ash. It doesn't seem all that useful as things currently stand, but things are never as they seem..."]
+			id: "4B1748F3FA190F8A"
+			rewards: [{
+				count: 5
+				id: "59F65066F0C3324B"
+				item: "embers:ember_crystal"
+				type: "item"
+			}]
+			subtitle: "Someone was the lord of this"
+			tasks: [{
+				id: "4B696D328B07A7B9"
+				item: "embers:cinder_plinth"
+				type: "item"
+			}]
+			title: "Burning the excess"
+			x: -6.0d
+			y: 16.0d
+		}
+		{
+			dependencies: [
+				"501B35F8BE1E43B5"
+				"1EE91C8B51720311"
+			]
+			description: ["Through alchemy it's possible to create this &l&5isolated materia&r, a strange compound that blends several alchemical properties into one. As such, when stimulated, it can begin replicating whichever material it is currently attached to. This makes it the perfect material for repairing at the dawnstone anvil."]
+			hide_until_deps_complete: true
+			id: "60188C6EC352445D"
+			rewards: [
+				{
+					count: 5
+					id: "1AF6243DD0C82B14"
+					item: "embers:ember_crystal"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "74A05F42B88B3EC1"
+					item: "embers:isolated_materia"
+					type: "item"
+				}
+			]
+			subtitle: "Free repairing"
+			tasks: [{
+				id: "34D79C0C0CC5D3B1"
+				item: "embers:isolated_materia"
+				type: "item"
+			}]
+			title: "Alchemical replication"
+			x: -4.5d
+			y: 24.0d
+		}
+		{
+			dependencies: ["501B35F8BE1E43B5"]
+			description: ["Simple embers crystals are good, but it could be worth looking into ways of expanding their energetic potential in case better sources of embers should be discovered. Luckily, with alchemy it's possible to mend together various ember crystals into one cluster. As a bonus, these seem to also have other applications outside of energy generation."]
+			hide_until_deps_complete: true
+			id: "023BA964C6327149"
+			rewards: [{
+				count: 2
+				id: "01F7B505493E27CB"
+				item: "embers:ember_crystal_cluster"
+				type: "item"
+			}]
+			subtitle: "An explosion of power"
+			tasks: [{
+				id: "5F8EB43642A03830"
+				item: "embers:ember_crystal_cluster"
+				type: "item"
+			}]
+			title: "Alchemical energy"
+			x: -2.0d
+			y: 25.0d
+		}
+		{
+			dependencies: [
+				"023BA964C6327149"
+				"55EB85D7E1077521"
+			]
+			description: ["With one last alchemical process, the power of the Earth is now at hand: the &l&cWildfire Core&r! This is ancestral energy most pure, a true display of might, localized entirely in a pristine crystal. What magnificent applications this will have must be discovered posthaste!"]
+			hide_until_deps_complete: true
+			id: "253A0DE987596D90"
+			rewards: [{
+				count: 4
+				id: "103A0FDAE18AB977"
+				item: "embers:ember_crystal_cluster"
+				type: "item"
+			}]
+			subtitle: "The apex was down below all this time"
+			tasks: [{
+				id: "4E0CAD38AA606723"
+				item: "embers:wildfire_core"
+				type: "item"
+			}]
+			title: "The inferno has been tamed"
+			x: 0.0d
+			y: 25.0d
+		}
+		{
+			dependencies: ["39C8642D09D79243"]
+			description: [
+				"With dawnstone it's possible to create an anvil of spectacular quality, which allows for easy repair of tools, as well as the ability to scrap old ones for their materials."
+				"It could also be worth making a device that handles the hammering process."
+			]
+			hide_dependent_lines: true
+			hide_until_deps_complete: true
+			icon: "embers:dawnstone_anvil"
+			id: "1EE91C8B51720311"
+			rewards: [{
+				count: 8
+				id: "5C80360999E36DB1"
+				item: "embers:ember_crystal"
+				type: "item"
+			}]
+			subtitle: "No more awkward repair costs"
+			tasks: [
+				{
+					id: "06DAB277B8525A55"
+					item: "embers:dawnstone_anvil"
+					type: "item"
+				}
+				{
+					id: "02D9B200CDFA12C8"
+					item: "embers:automatic_hammer"
+					type: "item"
+				}
+			]
+			title: "Superior smithing"
+			x: 1.5d
+			y: 13.0d
+		}
+		{
+			dependencies: ["581698A9E02BF5F5"]
+			description: ["With the newly created textile, it's possible to create a new set of armor. It's stylish and protects well, but it seems to have more to it than what meets the eye."]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"cold_sweat:item_insulation": {
+						Insulation: [ ]
+					}
+				}
+				id: "embers:ashen_goggles"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "108E08809A792A30"
+			rewards: [{
+				count: 8
+				id: "54593532D54F729B"
+				item: "embers:ember_crystal"
+				type: "item"
+			}]
+			subtitle: "Gothic is still in style"
+			tasks: [
+				{
+					id: "49900C093A3EABC3"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "embers:ashen_goggles"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "57535F7DF7892E7A"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "embers:ashen_cloak"
+						tag: {
+							Damage: 0
+							Insulation: [ ]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4BA84A7D4C2FFA52"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "embers:ashen_leggings"
+						tag: {
+							Damage: 0
+							Insulation: [ ]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3F5C638D9CB4C227"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "embers:ashen_boots"
+						tag: {
+							Damage: 0
+							Insulation: [ ]
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Stylishly devout"
+			x: -8.0d
+			y: 22.0d
+		}
+		{
+			dependencies: ["108E08809A792A30"]
+			description: ["That must be it! The ashen armor's secret lies within these baubles: these &l&0inflictor gems&r are able to absorb a single type of damage into themselves, and, when sewn into the ashen armor, it will absorb a third of that damage into itself, protecting the wearer."]
+			hide_until_deps_complete: true
+			id: "3BF7EA7B94FE3D17"
+			rewards: [{
+				id: "4F9BBD6424BFCEA5"
+				item: {
+					Count: 1
+					id: "embers:inflictor_gem"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "Heroes are forged in agony"
+			tasks: [{
+				id: "6623B0785EBB4B08"
+				item: {
+					Count: 1
+					id: "embers:inflictor_gem"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "Not even a scratch"
+			x: -10.0d
+			y: 22.0d
+		}
+		{
+			dependencies: [
+				"4B1748F3FA190F8A"
+				"55EB85D7E1077521"
+			]
+			description: ["This strange accessory makes it so the wearer will turn whatever they destroy into ashes. It's certainly a fun tool to have a power trip with, but by itself it doesn't seem all that useful."]
+			hide_until_deps_complete: true
+			id: "7936685C6EA1C64A"
+			rewards: [
+				{
+					count: 5
+					id: "29C94559CA9072EC"
+					item: "embers:ember_crystal"
+					type: "item"
+				}
+				{
+					count: 10
+					id: "2D77488B74005FE0"
+					item: "embers:ash"
+					type: "item"
+				}
+			]
+			subtitle: "And the world will turn to ash"
+			tasks: [{
+				id: "1FFD1BAD14D17569"
+				item: "embers:ashen_amulet"
+				type: "item"
+			}]
+			title: "Burn it all"
+			x: -6.0d
+			y: 24.0d
+		}
+		{
+			dependencies: ["7936685C6EA1C64A"]
+			description: ["By modifying the previous amulet it's possible to create another, more useful accessory that protects the wearer from most magic damage."]
+			hide_until_deps_complete: true
+			id: "04E264D707D6B4E0"
+			rewards: [{
+				count: 10
+				id: "37420FD04984D713"
+				item: "embers:ember_crystal"
+				type: "item"
+			}]
+			subtitle: "A witch that loves fire"
+			tasks: [{
+				id: "1837A57511AD57C7"
+				item: "embers:nonbeliever_amulet"
+				type: "item"
+			}]
+			title: "Ethereal defense"
+			x: -8.0d
+			y: 24.0d
+		}
+		{
+			dependencies: ["39C8642D09D79243"]
+			description: ["With dawnstone it's possible to create an extra layer of armor that shields the wearer from knockback."]
+			hide_until_deps_complete: true
+			id: "6B6F7AACDEC3267C"
+			rewards: [{
+				count: 5
+				id: "264B24651DF8F137"
+				item: "embers:ember_crystal"
+				type: "item"
+			}]
+			subtitle: "Become unmovable"
+			tasks: [{
+				id: "599F30DA3AB89E6D"
+				item: "embers:dawnstone_mail"
+				type: "item"
+			}]
+			title: "An extra layer"
+			x: -1.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["023BA964C6327149"]
+			description: ["The atmospheric gauge is handy, but it's not completely reliable. With this new device however, it is posible to scan a larger area for ember density."]
+			hide_until_deps_complete: true
+			id: "1065C6C9077FCE40"
+			rewards: [{
+				count: 10
+				id: "062C66E0F502F733"
+				item: "embers:ember_crystal"
+				type: "item"
+			}]
+			subtitle: "A measure for the wave"
+			tasks: [{
+				id: "42AEBB47CCDA5FA2"
+				item: "embers:field_chart"
+				type: "item"
+			}]
+			title: "Scanning the Earth"
+			x: -5.0d
+			y: 25.0d
+		}
+		{
+			dependencies: ["023BA964C6327149"]
+			description: ["The &l&4explosion charm&r is a handy accessory capable of absorbing the destructive powers of explosions into themselves, sparing the innocent environment from their wrath. "]
+			hide_until_deps_complete: true
+			id: "72D06F3155B3225C"
+			rewards: [{
+				count: 10
+				id: "5DFEEBAAEE80BECF"
+				item: "embers:ember_crystal"
+				type: "item"
+			}]
+			subtitle: "No more griefing on my watch"
+			tasks: [{
+				id: "3B67F867104EDEE6"
+				item: "embers:explosion_charm"
+				type: "item"
+			}]
+			title: "Blast protection"
+			x: -5.0d
+			y: 26.0d
+		}
+		{
+			dependencies: ["023BA964C6327149"]
+			description: ["These accessories, thanks to the ember crystal in their composition, allow the wearer to consume less embers when using any embers-consuming tool."]
+			hide_until_deps_complete: true
+			icon: "embers:ember_belt"
+			id: "1D6E3E98314C6365"
+			rewards: [
+				{
+					count: 5
+					id: "14FD148A3397F9A9"
+					item: "embers:dawnstone_ingot"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "72DC8B1B588643F3"
+					item: "embers:ember_crystal"
+					type: "item"
+				}
+			]
+			subtitle: "Everyone loves a discount"
+			tasks: [
+				{
+					id: "7B2A31721DCBDD9F"
+					item: "embers:ember_ring"
+					type: "item"
+				}
+				{
+					id: "6C01A39DB9311289"
+					item: "embers:ember_belt"
+					type: "item"
+				}
+				{
+					id: "26A8A4B5F5488E26"
+					item: "embers:ember_amulet"
+					type: "item"
+				}
+			]
+			title: "Accessories of ember"
+			x: -3.0d
+			y: 26.0d
+		}
+		{
+			dependencies: ["023BA964C6327149"]
+			description: ["The &l&cmantle bulb&r works the same way as the jar and cartridge, as it can store embers into itself for use by tools. The difference is that it can be equipped as a curio instead of holding space in the inventory."]
+			hide_until_deps_complete: true
+			id: "43766EC8F19A9C49"
+			rewards: [{
+				count: 8
+				id: "06DC108E1EDF6245"
+				item: "embers:ember_crystal"
+				type: "item"
+			}]
+			subtitle: "Look ma, no hands!"
+			tasks: [{
+				id: "7DDD1D237386F257"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							"embers:ember": 0.0d
+							"embers:ember_capacity": 1000.0d
+						}
+					}
+					id: "embers:ember_bulb"
+					tag: {
+						ForgeCaps: {
+							"embers:ember_capacity": 1000.0d
+						}
+					}
+				}
+				type: "item"
+			}]
+			title: "Convenient access"
+			x: -2.0d
+			y: 26.0d
+		}
+		{
+			dependencies: ["72D06F3155B3225C"]
+			description: ["Through alchemy it's possible to fuse the blast charm to an alchemy pedestal, turning it into a permanent defense against explosions."]
+			hide_until_deps_complete: true
+			id: "2A19ABDD322C795F"
+			rewards: [
+				{
+					count: 16
+					id: "64DC3764C57E5E24"
+					item: "embers:ember_crystal"
+					type: "item"
+				}
+				{
+					count: 12
+					id: "49525A74FF7CD581"
+					item: "embers:dawnstone_ingot"
+					type: "item"
+				}
+			]
+			subtitle: "Griefing has been disabled"
+			tasks: [{
+				id: "20B39896D8D1A5BF"
+				item: "embers:explosion_pedestal"
+				type: "item"
+			}]
+			title: "Blast defense"
+			x: -4.0d
+			y: 26.0d
+		}
+		{
+			dependencies: ["253A0DE987596D90"]
+			description: [
+				"Occasionally, in the bowels of the Earth, one may come across ruins left by the ancestral followers. Inside of them it's possible to find peculiar crystal seeds of various precious metals. It's hard to say if these generate naturally or if they were created in the ancient past through methods now forgotten, but one thing is certain: these crystals are extremely valuable."
+				"{@pagebreak}"
+				"Up until now, these wonderful gems had no apparent use, but with the discovery of the Wildfire Core it's now possible to construct a device capable of making use of these formidable formations, the &l&cember injector&r. This machine will shoot forth a beam of continuous embers when pointed at the crystal seed, causing it to grow and eventually shed precious nuggets. Up to six can feed the same seed. If the seed is fed long enough, it will grow in size and purity, increasing its output. However, should the seed ever be relocated, it will lose its properties and must be fed again."
+				"{@pagebreak}"
+				"It's also possible to transmute crystal seeds into other variants through alchemy."
+			]
+			hide_until_deps_complete: true
+			id: "62206B21C60190EC"
+			rewards: [{
+				id: "351C59351837EFDC"
+				item: "embers:ember_injector"
+				type: "item"
+			}]
+			size: 2.0d
+			subtitle: "Ex Nihilo in shambles"
+			tasks: [{
+				id: "34E1BC39A0FC8898"
+				item: "embers:ember_injector"
+				type: "item"
+			}]
+			title: "Ores from nothing"
+			x: -2.0d
+			y: 28.5d
+		}
+		{
+			dependencies: ["253A0DE987596D90"]
+			description: [
+				"At last, a source of energy that burns brightest. The &l&4ignem reactor&r is now available for manufacture. This beast will certainly meet any and all future embers demands."
+				"{@pagebreak}"
+				"To make it work however, it will need two more attachments: The &l&ccatalysis chamber&r and the &l&ccombustion chamber&r. Both require different materials to be inserted into them, and they must be attached on opposite sides of the reactor itself. Two pairs can be mounted on the same reactor."
+				"The better the materials in the chambers, the more embers will be produced by the reactor when fed with crystals."
+			]
+			hide_until_deps_complete: true
+			id: "4E8E9D2040DBBA6C"
+			rewards: [
+				{
+					id: "0E2120FF3E036764"
+					item: "embers:catalysis_chamber"
+					type: "item"
+				}
+				{
+					id: "10D6D16F6EA4AD74"
+					item: "embers:combustion_chamber"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Unleashing hell itself"
+			tasks: [
+				{
+					id: "668E2F4A082FDECC"
+					item: "embers:ignem_reactor"
+					type: "item"
+				}
+				{
+					id: "72FB98E0F5A81A15"
+					item: "embers:catalysis_chamber"
+					type: "item"
+				}
+				{
+					id: "450E599D636EF39B"
+					item: "embers:combustion_chamber"
+					type: "item"
+				}
+			]
+			title: "Energy most true"
+			x: 2.0d
+			y: 28.5d
+		}
+		{
+			dependencies: [
+				"1EE91C8B51720311"
+				"253A0DE987596D90"
+			]
+			description: [
+				"This is it. A power truly unmatched. What the ancestral devouts of Prvoun were truly capable of. The Earth has given all it could: now its legacy must continue through smithing."
+				"{@pagebreak}"
+				"With the &l&4Inferno Forge&r available, it's now possible to attach augments onto tools to make them ever more powerful."
+				"First, one must smith a motive core into the desired tool: doing so will allow it to absorb heat through normal usage."
+				"Once the tool has absorbed all that it can, it's time to temper it inside the forge: by throwing the tool inside it along with some ember crystals, the tool will gain a new &l&eaugment slot&r. This process may fail depending on the amount of crystals thrown together with the tool."
+				"Now that the tool is tempered and it's gotten a new augment slot, it may be smithed together with one of several augments to make it more powerful."
+				"{@pagebreak}"
+				"If there's ever the need for more augments on a tool, it can always be given more augment slots by repeating this process."
+			]
+			hide_until_deps_complete: true
+			id: "4000A88FAF1B0E43"
+			rewards: [
+				{
+					count: 5
+					id: "61AF9F9354A932E8"
+					item: "embers:ember_crystal_cluster"
+					type: "item"
+				}
+				{
+					id: "28663B24BE94DB38"
+					item: "embers:dawnstone_block"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "4A2860D364C28A26"
+					item: "embers:ancient_motive_core"
+					type: "item"
+				}
+			]
+			size: 3.0d
+			subtitle: "All shall bow"
+			tasks: [{
+				id: "740B81FF5F509EED"
+				item: "embers:inferno_forge"
+				type: "item"
+			}]
+			title: "A grandeur unmatched"
+			x: 0.0d
+			y: 31.5d
+		}
+		{
+			dependencies: ["4000A88FAF1B0E43"]
+			description: ["This augment allows any ember-based projectile weapon to shoot forth a spread of projectiles, similar to a shotgun."]
+			id: "76C9A58E91FC89CB"
+			rewards: [{
+				count: 5
+				id: "664F453247C53C8C"
+				item: "embers:ember_crystal_cluster"
+				type: "item"
+			}]
+			subtitle: "The fire will leave no prisoners"
+			tasks: [{
+				id: "5AC6F78D8DDF1521"
+				item: "embers:diffraction_barrel"
+				type: "item"
+			}]
+			title: "Crowd control"
+			x: 4.0d
+			y: 31.0d
+		}
+		{
+			dependencies: ["4000A88FAF1B0E43"]
+			description: ["This augment allows all ember-based projectile weapons to fire a more focused shot. The blazing ray will shoot a piercing ray, while the cinder staff will shoot a homing projectile."]
+			id: "09DF1CA70F13DC81"
+			rewards: [{
+				count: 5
+				id: "3D8FA22628ACA796"
+				item: "embers:ember_crystal_cluster"
+				type: "item"
+			}]
+			subtitle: "One target, a million pieces"
+			tasks: [{
+				id: "189C5010FA9FA835"
+				item: "embers:focal_lens"
+				type: "item"
+			}]
+			title: "Focusing the energy"
+			x: 4.0d
+			y: 32.0d
+		}
+		{
+			dependencies: ["4000A88FAF1B0E43"]
+			description: ["Certain armor pieces can display the same informations as the tinker's lens, which can sometimes prove undesirable. This augment is able to remedy that by disabling this functionality. While it requires a motive core to be smithed first, it does not take up any augment slots to be installed."]
+			id: "08F287206316C64F"
+			rewards: [{
+				count: 5
+				id: "6E94D979BD057A16"
+				item: "embers:ember_crystal_cluster"
+				type: "item"
+			}]
+			subtitle: "Ignorance is bliss"
+			tasks: [{
+				id: "32A84071F6668C5F"
+				item: "embers:smoky_tinker_lens"
+				type: "item"
+			}]
+			title: "Clearing vision"
+			x: 0.0d
+			y: 35.5d
+		}
+		{
+			dependencies: ["4000A88FAF1B0E43"]
+			description: ["This augment adds new functionality to the tool it's attached to. The tool will be able to be wound up, which will allow auto-attack and faster mining speed. If instead of on a tool the augment is attached to a pair of boots, it will allow their wearer to jump higher and negate fall damage as long as the mechanism is wound up. This ability can only be used if the wearer is also holding a gear-augmented tool in hand."]
+			id: "2A0D68CA85C3199D"
+			rewards: [{
+				count: 5
+				id: "0E58D83052C73319"
+				item: "embers:ember_crystal_cluster"
+				type: "item"
+			}]
+			subtitle: "A sudden outburst"
+			tasks: [{
+				id: "23FC26A20AB6D340"
+				item: "embers:winding_gears"
+				type: "item"
+			}]
+			title: "Potential energy"
+			x: 1.0d
+			y: 35.0d
+		}
+		{
+			dependencies: ["4000A88FAF1B0E43"]
+			description: ["This augment turns the tool it's attached to into a divination rod of sorts. By right-clicking a block, the bell will reveal any nearby blocks of that type, unless they're already plentiful in the environment."]
+			id: "0F018F355C9BCC57"
+			rewards: [{
+				count: 5
+				id: "3E493D08803FB5F5"
+				item: "embers:ember_crystal_cluster"
+				type: "item"
+			}]
+			subtitle: "Nothing shall hide"
+			tasks: [{
+				id: "2534D3C931BEEB35"
+				item: "embers:resonating_bell"
+				type: "item"
+			}]
+			title: "Divination"
+			x: 2.0d
+			y: 34.5d
+		}
+		{
+			dependencies: ["4000A88FAF1B0E43"]
+			description: ["This augment turns the tool it's attached to into a blazing work of art capable of smelting all blocks broken and all drops from slain creatures, provided embers are available. It also gives a damage bonus to creatures that are on fire that scales with the augment level."]
+			id: "7B50B5BDCA93345C"
+			rewards: [{
+				count: 5
+				id: "75845ACAB3EADE2D"
+				item: "embers:ember_crystal_cluster"
+				type: "item"
+			}]
+			subtitle: "The heat is unbearable"
+			tasks: [{
+				id: "5DBB1DCCDDB6C752"
+				item: "embers:superheater"
+				type: "item"
+			}]
+			title: "Blazing forth"
+			x: 3.0d
+			y: 34.0d
+		}
+		{
+			dependencies: ["4000A88FAF1B0E43"]
+			description: ["This augment turns the tool it's attached to into a weapon capable of casting orbs of embers, regardless of its type. This augment also allows the tool to accept augments that are usually exclusive to the blazing ray and cinder staff."]
+			id: "453B72AC03E7EDAC"
+			rewards: [{
+				count: 5
+				id: "6DE5EAC2E9258468"
+				item: "embers:ember_crystal_cluster"
+				type: "item"
+			}]
+			subtitle: "Looks can be deceiving"
+			tasks: [{
+				id: "60D013505162ECFF"
+				item: "embers:caster_orb"
+				type: "item"
+			}]
+			title: "Casting with all weapons"
+			x: 3.5d
+			y: 33.0d
+		}
+		{
+			dependencies: ["4000A88FAF1B0E43"]
+			description: ["This augment makes the tool it's attached to prone to explosions. When used to break blocks, the explosion will destroy all nearby blocks. When used to attack creatures, the weapon will form an explosion that will damage them and knock them back. When used on armor, it will create an explosion when it receives damage."]
+			id: "4E7C1B7BA1B20905"
+			rewards: [{
+				count: 5
+				id: "330721D8E2F470F1"
+				item: "embers:ember_crystal_cluster"
+				type: "item"
+			}]
+			subtitle: "Destruction is inevitable"
+			tasks: [{
+				id: "3A3BC515D5933808"
+				item: "embers:blasting_core"
+				type: "item"
+			}]
+			title: "Short fuse"
+			x: -1.0d
+			y: 35.0d
+		}
+		{
+			dependencies: ["4000A88FAF1B0E43"]
+			description: ["This augment give the armor it's attached to the ability to grant its wearer a powerful dash, provided embers are available. Once the wearer begins sprinting, they will be granted increasing velocity, which caps out at increasingly higher speeds based on the augment's level."]
+			id: "073B6F797E6D4E19"
+			rewards: [{
+				count: 5
+				id: "752131BCD99F75FB"
+				item: "embers:ember_crystal_cluster"
+				type: "item"
+			}]
+			subtitle: "No one will escape"
+			tasks: [{
+				id: "52338505D4B86FB2"
+				item: "embers:cinder_jet"
+				type: "item"
+			}]
+			title: "Faster than sound"
+			x: -2.0d
+			y: 34.5d
+		}
+		{
+			dependencies: ["4000A88FAF1B0E43"]
+			description: ["This augment makes it so that the armor it's attached to will slowly grow protective scales while the wearer is standing still. These scales will absorb most damage received, but will break off in doing so."]
+			id: "21904876B82FF596"
+			rewards: [{
+				count: 5
+				id: "13F4BA99DE5579FC"
+				item: "embers:ember_crystal_cluster"
+				type: "item"
+			}]
+			subtitle: "Become unmovable"
+			tasks: [{
+				id: "1FE568BA69EB7FD5"
+				item: "embers:shifting_scales"
+				type: "item"
+			}]
+			title: "Hard like a wall"
+			x: -3.0d
+			y: 34.0d
+		}
+		{
+			dependencies: ["4000A88FAF1B0E43"]
+			description: ["This augment, when attached to a piece of armor, allows its wearer to obtain higher quantities of experience from slain foes. The amount of extra experience gained scales with the augment's level."]
+			id: "3E34D3D94CC31A68"
+			rewards: [{
+				count: 5
+				id: "6C01FFF5F5764C0E"
+				item: "embers:ember_crystal_cluster"
+				type: "item"
+			}]
+			subtitle: "Peer into their essence"
+			tasks: [{
+				id: "6B1CE48CD1518015"
+				item: "embers:intelligent_apparatus"
+				type: "item"
+			}]
+			title: "A higher understanding"
+			x: -3.5d
+			y: 33.0d
+		}
+		{
+			dependencies: ["4000A88FAF1B0E43"]
+			description: ["This augment, when attached to a piece of armor, will allow the wearer to scare away certain creatures into submission. The amount of creature types scared by the insignia scales with the augment's level."]
+			id: "4046C0DAF7D5D195"
+			rewards: [{
+				count: 5
+				id: "29CFBCFB5ED52C9F"
+				item: "embers:ember_crystal_cluster"
+				type: "item"
+			}]
+			subtitle: "They shall all fear the flames"
+			tasks: [{
+				id: "1BBFE9181B9F3116"
+				item: "embers:eldritch_insignia"
+				type: "item"
+			}]
+			title: "A terrifying presence"
+			x: -4.0d
+			y: 32.0d
+		}
+		{
+			dependencies: ["4000A88FAF1B0E43"]
+			description: ["This augment, when attached to armor, will make it so whatever attacks its wearer will be engulfed in fire, provided embers are available. The damage of the initial blast of fire scales with the augment's level."]
+			id: "2822BADC875A9360"
+			rewards: [{
+				count: 5
+				id: "6DA706EA1622DD15"
+				item: "embers:ember_crystal_cluster"
+				type: "item"
+			}]
+			subtitle: "The unworthy shall be pushed away"
+			tasks: [{
+				id: "03264C5565D41FBC"
+				item: "embers:flame_barrier"
+				type: "item"
+			}]
+			title: "A wall of fire"
+			x: -4.0d
+			y: 31.0d
+		}
+	]
+	subtitle: ["The power of Prvoun"]
 	title: "Embers"
 }
