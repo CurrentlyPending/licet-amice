@@ -11,7 +11,7 @@
   "manifestType": "minecraftModpack",
   "manifestVersion": 1,
   "name": "Licet Amice Pluvia Mundus",
-  "version": "1.8",
+  "version": "1.8.1",
   "author": "",
   "files": [
     {
@@ -51,7 +51,7 @@
     },
     {
       "projectID": 618298,
-      "fileID": 7169400,
+      "fileID": 7317828,
       "required": true
     },
     {
@@ -151,7 +151,7 @@
     },
     {
       "projectID": 790626,
-      "fileID": 7200213,
+      "fileID": 7306749,
       "required": true
     },
     {
@@ -301,7 +301,7 @@
     },
     {
       "projectID": 619320,
-      "fileID": 7265442,
+      "fileID": 7316301,
       "required": true
     },
     {
@@ -516,7 +516,7 @@
     },
     {
       "projectID": 422301,
-      "fileID": 7169843,
+      "fileID": 7316707,
       "required": true
     },
     {
@@ -645,6 +645,11 @@
       "required": true
     },
     {
+      "projectID": 252848,
+      "fileID": 4712189,
+      "required": true
+    },
+    {
       "projectID": 738663,
       "fileID": 5760231,
       "required": true
@@ -701,7 +706,7 @@
     },
     {
       "projectID": 1154099,
-      "fileID": 7296886,
+      "fileID": 7313497,
       "required": true
     },
     {
