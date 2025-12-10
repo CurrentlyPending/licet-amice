@@ -2,15 +2,13 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "mekanism"
-	group: "398C45F8DFD15D9E"
+	group: ""
 	icon: "immersiveengineering:bottling_machine"
 	id: "32C976C47706243C"
-	order_index: 0
+	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["55E7CB32F93F6125"]
-			icon: "mekanism:metallurgic_infuser"
 			id: "1DC238BA883E6C12"
 			rewards: [
 				{
@@ -26,23 +24,11 @@
 				}
 			]
 			size: 2.0d
-			tasks: [
-				{
-					id: "0E52F0CDAB616B47"
-					item: "mekanism:metallurgic_infuser"
-					type: "item"
-				}
-				{
-					id: "7C754871EC311448"
-					item: "mekanism:enriched_iron"
-					type: "item"
-				}
-				{
-					id: "78E5D005F63051A0"
-					item: "mekanism:alloy_infused"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "0E52F0CDAB616B47"
+				item: "mekanism:metallurgic_infuser"
+				type: "item"
+			}]
 			title: "Welcome to Mekanism"
 			x: -2.0d
 			y: -2.0d
@@ -286,7 +272,6 @@
 		{
 			dependencies: ["2FB9AB7B2ECA307F"]
 			id: "12262D42D8240AAC"
-			shape: "square"
 			tasks: [{
 				id: "16050CC2B225BBD6"
 				item: "immersiveengineering:dust_iron"
@@ -343,7 +328,6 @@
 		{
 			dependencies: ["353D5107BC1C7B61"]
 			id: "4A45ECA3C61487CA"
-			shape: "circle"
 			tasks: [{
 				id: "5921248FDB3E381B"
 				item: "mekanism:ingot_refined_obsidian"
@@ -355,7 +339,6 @@
 		{
 			dependencies: ["353D5107BC1C7B61"]
 			id: "2F23EE3734E29FE3"
-			shape: "circle"
 			tasks: [{
 				id: "7DCDF88802A01C9A"
 				item: "mekanism:ingot_refined_glowstone"
@@ -365,37 +348,8 @@
 			y: 3.0d
 		}
 		{
-			dependencies: [
-				"37A216CD52EF7CE1"
-				"2FB9AB7B2ECA307F"
-			]
-			icon: "mekanism:alloy_atomic"
+			dependencies: ["37A216CD52EF7CE1"]
 			id: "6BBC9B6479107F39"
-			rewards: [
-				{
-					count: 32
-					id: "7E01721F35F184A8"
-					item: "mekanism:alloy_infused"
-					type: "item"
-				}
-				{
-					count: 32
-					id: "54C3D3A642E58617"
-					item: "mekanism:alloy_reinforced"
-					type: "item"
-				}
-				{
-					count: 2
-					id: "55FB1C4BE0BD7F1E"
-					item: "mekanism:energy_tablet"
-					type: "item"
-				}
-				{
-					id: "6C30EE6B4C962F54"
-					type: "xp"
-					xp: 100
-				}
-			]
 			size: 1.5d
 			tasks: [
 				{
@@ -408,152 +362,10 @@
 					item: "mekanism:electrolytic_separator"
 					type: "item"
 				}
-				{
-					id: "4C3A21542756DAB2"
-					item: "mekanism:alloy_atomic"
-					type: "item"
-				}
 			]
 			title: "Tier 2 Processing"
 			x: -2.0d
 			y: 6.0d
-		}
-		{
-			dependencies: ["6BBC9B6479107F39"]
-			id: "65EC5B242E14FCB1"
-			rewards: [
-				{
-					count: 32
-					id: "63BDE2778D9D156C"
-					item: "mekanism:osmium_ore"
-					type: "item"
-				}
-				{
-					count: 32
-					id: "2BDD3DB2A19ADB9B"
-					item: "minecraft:iron_ore"
-					type: "item"
-				}
-			]
-			shape: "square"
-			tasks: [
-				{
-					id: "4D4E59A92C823452"
-					item: "mekanism:clump_iron"
-					type: "item"
-				}
-				{
-					id: "5A59FF14FDCB7C5A"
-					item: "mekanism:dirty_dust_iron"
-					type: "item"
-				}
-				{
-					id: "3216EBB45CA9F374"
-					item: "immersiveengineering:dust_iron"
-					type: "item"
-				}
-			]
-			title: "Ore Tripling"
-			x: -3.5d
-			y: 6.0d
-		}
-		{
-			dependencies: ["6BBC9B6479107F39"]
-			description: [
-				"Likely one of the best mining tools you will ever find! Instantly destroys a 3x3 square of blocks in front of it. All you need is an energy cube to charge it."
-				""
-				"Quest provides an additional disassembler, to give to one of your friends!"
-			]
-			id: "5AC21DCD850FCEF9"
-			rewards: [{
-				id: "3762EB8F221E86A1"
-				item: "mekanism:atomic_disassembler"
-				type: "item"
-			}]
-			tasks: [{
-				id: "553612343788C1FD"
-				item: "mekanism:atomic_disassembler"
-				type: "item"
-			}]
-			x: 1.5d
-			y: 6.0d
-		}
-		{
-			dependencies: ["6BBC9B6479107F39"]
-			id: "655300DD76168CF4"
-			subtitle: "A little guy."
-			tasks: [{
-				id: "3592F840C6557ECA"
-				item: "mekanism:robit"
-				type: "item"
-			}]
-			x: 1.5d
-			y: 7.0d
-		}
-		{
-			dependencies: ["655300DD76168CF4"]
-			id: "1E88FEF6D8302460"
-			subtitle: "A real hunk of machinery."
-			tasks: [{
-				id: "344652C9A0F0A411"
-				item: "mekanism:digital_miner"
-				type: "item"
-			}]
-			x: 2.5d
-			y: 7.0d
-		}
-		{
-			dependencies: ["6BBC9B6479107F39"]
-			id: "49F6E770BCA2287D"
-			tasks: [{
-				id: "4793DB9CC7A7468C"
-				item: "mekanism:chemical_infuser"
-				type: "item"
-			}]
-			x: -3.0d
-			y: 7.5d
-		}
-		{
-			dependencies: ["6BBC9B6479107F39"]
-			id: "1EF67AFF7B90A3C9"
-			tasks: [{
-				count: 16L
-				id: "61E11B9994D4C167"
-				item: "mekanism:salt"
-				type: "item"
-			}]
-			title: "Salt"
-			x: -1.0d
-			y: 7.5d
-		}
-		{
-			dependencies: [
-				"49F6E770BCA2287D"
-				"1EF67AFF7B90A3C9"
-			]
-			id: "2E9AE30616E40F11"
-			size: 1.5d
-			tasks: [{
-				id: "2A038053617AD1BC"
-				item: "mekanism:chemical_injection_chamber"
-				type: "item"
-			}]
-			title: "Tier 3 Processing"
-			x: -2.0d
-			y: 9.0d
-		}
-		{
-			dependencies: ["2E9AE30616E40F11"]
-			id: "51786EB03A51BC6A"
-			shape: "square"
-			tasks: [{
-				id: "29115E0F5A91821E"
-				item: "mekanism:shard_iron"
-				type: "item"
-			}]
-			title: "Ore Quadrupling"
-			x: -3.5d
-			y: 9.0d
 		}
 	]
 	title: "Mekanism"

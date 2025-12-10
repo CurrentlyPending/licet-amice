@@ -2,7 +2,7 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "irons_spells"
-	group: "1A5A8D13C78F8D75"
+	group: ""
 	icon: {
 		Count: 1
 		id: "irons_spellbooks:dragonskin_spell_book"
@@ -16,7 +16,7 @@
 		}
 	}
 	id: "60A0699B260A312E"
-	order_index: 0
+	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{
@@ -75,7 +75,7 @@
 			}]
 			shape: "octagon"
 			size: 2.0d
-			subtitle: "\"Mother Nature is the true caretaker of the world.\""
+			subtitle: "\"Mother Nature is the true caretaker of Humanity.\""
 			tasks: [{
 				id: "353E09777C653B03"
 				title: "Nature"
@@ -148,7 +148,7 @@
 			}]
 			shape: "octagon"
 			size: 2.0d
-			subtitle: "thunderbolts and lightning, very very frightening me!"
+			subtitle: "\"A lighting bolt contains over 300.000.000 Volts. The human body perishes at 11.000 Volts.\""
 			tasks: [{
 				id: "44D146C312E0F3A1"
 				title: "Lightning"
@@ -408,6 +408,14 @@
 				}
 				type: "item"
 			}]
+			subtitle: "Succesfully use a Lightning Rod"
+			tasks: [{
+				advancement: "minecraft:adventure/lightning_rod_with_villager_no_fire"
+				criterion: ""
+				id: "1B971162A3571A5D"
+				title: "Battery Charger"
+				type: "advancement"
+			}]
 			x: 1.0d
 			y: 5.0d
 		}
@@ -471,11 +479,6 @@
 				}
 				type: "item"
 			}]
-			tasks: [{
-				id: "4E3FEDE98F2B983A"
-				item: "minecraft:redstone"
-				type: "item"
-			}]
 			x: 5.0d
 			y: 3.5d
 		}
@@ -512,9 +515,10 @@
 				type: "item"
 			}]
 			tasks: [{
-				id: "0ECE05FCC75184B9"
-				item: "minecraft:book"
-				type: "item"
+				advancement: "minecraft:adventure/summon_iron_golem"
+				criterion: ""
+				id: "3284DC0FAD8B9701"
+				type: "advancement"
 			}]
 			x: 5.0d
 			y: -5.5d
@@ -547,17 +551,6 @@
 						display: {
 							Name: "{\"text\":\"Blessed Iron Chestplate\"}"
 						}
-					}
-				}
-				type: "item"
-			}]
-			tasks: [{
-				id: "5E3FA0AB27BEFB93"
-				item: {
-					Count: 1
-					id: "minecraft:potion"
-					tag: {
-						Potion: "minecraft:regeneration"
 					}
 				}
 				type: "item"
@@ -597,9 +590,13 @@
 				}
 				type: "item"
 			}]
+			subtitle: "Obtain an Ender Pearl"
 			tasks: [{
+				consume_items: false
 				id: "46F243DE892ABBA3"
-				item: "minecraft:ender_eye"
+				item: "minecraft:ender_pearl"
+				only_from_crafting: false
+				title: "In the Blink of an Eye"
 				type: "item"
 			}]
 			x: -3.0d
