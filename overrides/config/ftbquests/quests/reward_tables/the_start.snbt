@@ -4,19 +4,7 @@
 	loot_size: 1
 	order_index: 0
 	rewards: [
-		{
-			exclude_from_claim_all: true
-			icon: "architects_palette:abyssaline_pillar"
-			item: {
-				Count: 1
-				id: "mekanismtools:iron_paxel"
-				tag: {
-					Damage: 0
-				}
-			}
-			only_one: true
-			title: "Honour the Great Ones"
-		}
+		{ exclude_from_claim_all: true, icon: "architects_palette:abyssaline_pillar", item: "brewinandchewin:beer", only_one: true, title: "Honour the Great Ones" }
 		{
 			advancement: "minecraft:adventure/kill_a_mob"
 			criterion: ""
@@ -35,7 +23,7 @@
 			title: "Bookworm Gang"
 			type: "advancement"
 		}
-		{ icon: { Count: 1, ForgeCaps: { "cold_sweat:item_insulation": { Insulation: [ ] } }, id: "minecraft:elytra", tag: { Damage: 0 } }, item: "minecraft:book", only_one: true, title: "Down from the Heavens" }
+		{ icon: { Count: 1, id: "minecraft:elytra", tag: { Damage: 0 } }, item: "minecraft:book", only_one: true, title: "Down from the Heavens" }
 	]
 	title: "The Start"
 	use_title: true

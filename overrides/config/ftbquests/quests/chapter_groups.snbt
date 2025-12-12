@@ -1,3 +1,7 @@
 {
-	chapter_groups: [ ]
+	chapter_groups: [
+		{ id: "1A5A8D13C78F8D75", title: "Wizards" }
+		{ id: "398C45F8DFD15D9E", title: "Avians" }
+		{ id: "6B44979E48943FD9", title: "Titanborn" }
+	]
 }

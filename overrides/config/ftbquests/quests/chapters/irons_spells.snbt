@@ -2,7 +2,7 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "irons_spells"
-	group: ""
+	group: "1A5A8D13C78F8D75"
 	icon: {
 		Count: 1
 		id: "irons_spellbooks:dragonskin_spell_book"
@@ -16,11 +16,20 @@
 		}
 	}
 	id: "60A0699B260A312E"
-	order_index: 1
+	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{
 			dependencies: ["6B0D0E79B97A7F79"]
+			description: [
+				"&d\"Hey, look! The stars are &oblinking&r&d!\""
+				"&5\"You know, the elders say they are trying to send us a message. Isn't that cool?\""
+				"&d\"Woah!! What are they saying?\""
+				"&5\"Honestly, I don't know yet. Sometimes, I stare at the dark, empty spaces in the sky and I &oswear&r&5 it's like the stars are pointing towards it.\""
+				"&d\"I think you're losing your mind.. Haha!\""
+				"&5\"Maybe... Maybe... But I have to go there someday! there must be something important!\""
+				"&l&f--&nEnd&r&l&f of message.--"
+			]
 			hide_until_deps_complete: true
 			icon: "irons_spellbooks:ender_rune"
 			id: "0361ECAB302D394C"
@@ -49,11 +58,12 @@
 				type: "checkmark"
 			}]
 			title: "The Path of the Visitor"
-			x: -1.0d
-			y: 1.0d
+			x: 1.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["6B0D0E79B97A7F79"]
+			description: ["&2\"Nature existed long before us and will keep existing after; but this shall not stop &lHumankind&r&2 from controlling it. The world is ours to conquer!\""]
 			hide_until_deps_complete: true
 			icon: "irons_spellbooks:nature_rune"
 			id: "5885E13BA510D824"
@@ -75,7 +85,7 @@
 			}]
 			shape: "octagon"
 			size: 2.0d
-			subtitle: "\"Mother Nature is the true caretaker of Humanity.\""
+			subtitle: "\"Mother Nature is the true caretaker of the world.\""
 			tasks: [{
 				id: "353E09777C653B03"
 				title: "Nature"
@@ -127,6 +137,14 @@
 		}
 		{
 			dependencies: ["6B0D0E79B97A7F79"]
+			description: [
+				"&o&b&l\"Protons&r&o.&r &o&b&lElectrons&r&o. And all in between."
+				"&oat the palm of my hand, for everyone to see."
+				"&oThunder! Lightning! Electrifying madness!"
+				"&oShould I really try and end such era of darkness?\""
+				""
+				"&9\"This was written inside the coat of a long dead man. The flesh and bones had been obviously burnt; I suppose he wasn't the best with his &o'zappity zappers'&r&9.\""
+			]
 			hide_until_deps_complete: true
 			icon: "irons_spellbooks:lightning_rune"
 			id: "17B03B393A44FB09"
@@ -148,18 +166,23 @@
 			}]
 			shape: "octagon"
 			size: 2.0d
-			subtitle: "\"A lighting bolt contains over 300.000.000 Volts. The human body perishes at 11.000 Volts.\""
+			subtitle: "\"Thunderbolts and lightning, very very frightening me!\""
 			tasks: [{
 				id: "44D146C312E0F3A1"
 				title: "Lightning"
 				type: "checkmark"
 			}]
 			title: "The Path of Thunder"
-			x: 1.0d
-			y: 2.0d
+			x: -1.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["6B0D0E79B97A7F79"]
+			description: [
+				"&4&l\"They called me crazy. My theories were right and still, they decided to lock me away. The art of remodelling life, using vital parts of a living being as weapons, reviving the dead... Do they not see the applications of such power?\""
+				"&4&l\"Once I show them, they will all understand. I am my own weapon and you all are nothing but targets for me.\" "
+				"&c&o&l\"Bring it on! &nThe Heretic&r&c&l&o calls you for a challenge!\""
+			]
 			hide_until_deps_complete: true
 			icon: "irons_spellbooks:blood_rune"
 			id: "6E0163C23A925C32"
@@ -227,6 +250,16 @@
 		}
 		{
 			dependencies: ["6B0D0E79B97A7F79"]
+			description: [
+				"&7\"Let me tell you a story...\"&r"
+				"&a\"A story about a simple human!\"&r"
+				"&4\"Who managed to bring inanimate objects to&r &f&l&olife&r&4.\"&r"
+				"&d\"Once so, so lonely... now with so, so many new friends!\"&r"
+				"&e&o\"They say the human is still around us...\"&r"
+				"&1\"They say the human has become one with their creations.\"&r"
+				"&7\"In the end, it's nothing but a legend.\"&r"
+				"&4\"A legend that can come&r &f&l&otrue&r, &4if you believe enough.\""
+			]
 			hide_until_deps_complete: true
 			icon: "irons_spellbooks:evocation_rune"
 			id: "43687AC2C34B500C"
@@ -256,11 +289,12 @@
 				type: "checkmark"
 			}]
 			title: "The Path of Companions"
-			x: 3.0d
+			x: -1.0d
 			y: -3.0d
 		}
 		{
 			dependencies: ["6B0D0E79B97A7F79"]
+			description: ["&o\"I pray for them all... For a better &nlife&r&o, for a better &nplace&r&o, for &l&ehealth&r&o and for &l&ewealth&r&o... But is praying really enough..?\"&r"]
 			hide_until_deps_complete: true
 			icon: "irons_spellbooks:holy_rune"
 			id: "155B7A7E83585FCD"
@@ -289,18 +323,64 @@
 				type: "checkmark"
 			}]
 			title: "The Path of the Healer"
-			x: -1.0d
+			x: 3.0d
 			y: -3.0d
 		}
 		{
 			dependencies: ["73B7FF99D7680294"]
+			description: [
+				""
+				""
+			]
 			hide_until_deps_complete: true
 			id: "22FA0CC18983894A"
-			rewards: [{
-				id: "1D8AAF7BCCE30A73"
-				item: "irons_spellbooks:fireward_ring"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "1D8AAF7BCCE30A73"
+					item: "irons_spellbooks:fireward_ring"
+					type: "item"
+				}
+				{
+					id: "3AA4F447A6C170EA"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "minecraft:shield"
+						tag: {
+							BlockEntityTag: {
+								Base: 1
+								Patterns: [
+									{
+										Color: 14
+										Pattern: "gra"
+									}
+									{
+										Color: 4
+										Pattern: "gru"
+									}
+									{
+										Color: 4
+										Pattern: "bts"
+									}
+									{
+										Color: 4
+										Pattern: "flo"
+									}
+								]
+								id: "minecraft:banner"
+							}
+							Damage: 0
+							Insulation: [ ]
+						}
+					}
+					type: "item"
+				}
+			]
+			subtitle: "Visit the flaming realm: The Nether"
 			tasks: [{
 				advancement: "minecraft:story/enter_the_nether"
 				criterion: ""
@@ -314,13 +394,48 @@
 		}
 		{
 			dependencies: ["4D5A0ACC606BED9D"]
+			description: [""]
 			hide_until_deps_complete: true
 			id: "3A1EF514F1064260"
-			rewards: [{
-				id: "553DF0B1DCDDE790"
-				item: "irons_spellbooks:frostward_ring"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "553DF0B1DCDDE790"
+					item: "irons_spellbooks:frostward_ring"
+					type: "item"
+				}
+				{
+					id: "355A9BE4B9582196"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "minecraft:shield"
+						tag: {
+							BlockEntityTag: {
+								Base: 3
+								Patterns: [
+									{
+										Color: 11
+										Pattern: "gru"
+									}
+									{
+										Color: 3
+										Pattern: "mr"
+									}
+								]
+								id: "minecraft:banner"
+							}
+							Damage: 0
+							Insulation: [ ]
+						}
+					}
+					type: "item"
+				}
+			]
+			subtitle: "Walk on powdered snow"
 			tasks: [{
 				advancement: "minecraft:adventure/walk_on_powder_snow_with_leather_boots"
 				criterion: ""
@@ -336,34 +451,72 @@
 			dependencies: ["5885E13BA510D824"]
 			hide_until_deps_complete: true
 			id: "2A3D5B32DDD8D75D"
-			rewards: [{
-				id: "007BD9A8390101DD"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"cold_sweat:item_insulation": {
+			rewards: [
+				{
+					id: "007BD9A8390101DD"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "minecraft:iron_chestplate"
+						tag: {
+							Damage: 0
+							ISBUpgrades: [{
+								id: "irons_spellbooks:nature_power"
+								slot: "chest"
+								upgrades: 1
+							}]
+							Trim: {
+								material: "minecraft:emerald"
+								pattern: "minecraft:host"
+							}
+							display: {
+								Name: "{\"text\":\"Mossy Iron Chestplate\"}"
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4DB796511567A74B"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "minecraft:shield"
+						tag: {
+							BlockEntityTag: {
+								Base: 5
+								Patterns: [
+									{
+										Color: 13
+										Pattern: "ss"
+									}
+									{
+										Color: 5
+										Pattern: "bri"
+									}
+									{
+										Color: 14
+										Pattern: "moj"
+									}
+								]
+								id: "minecraft:banner"
+							}
+							Damage: 0
 							Insulation: [ ]
 						}
 					}
-					id: "minecraft:iron_chestplate"
-					tag: {
-						Damage: 0
-						ISBUpgrades: [{
-							id: "irons_spellbooks:nature_power"
-							slot: "chest"
-							upgrades: 1
-						}]
-						Trim: {
-							material: "minecraft:emerald"
-							pattern: "minecraft:host"
-						}
-						display: {
-							Name: "{\"text\":\"Mossy Iron Chestplate\"}"
-						}
-					}
+					type: "item"
 				}
-				type: "item"
-			}]
+			]
+			subtitle: "Let it grow, let it grow..."
 			tasks: [{
 				advancement: "minecraft:husbandry/plant_seed"
 				criterion: ""
@@ -380,44 +533,81 @@
 			hide_until_deps_complete: true
 			icon: "irons_spellbooks:energized_core"
 			id: "7BCC4D107AFADF8E"
-			rewards: [{
-				id: "28156AF14BB6BD6C"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"cold_sweat:item_insulation": {
+			rewards: [
+				{
+					id: "28156AF14BB6BD6C"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "minecraft:iron_chestplate"
+						tag: {
+							Damage: 0
+							ISBUpgrades: [{
+								id: "irons_spellbooks:lightning_power"
+								slot: "chest"
+								upgrades: 1
+							}]
+							Trim: {
+								material: "minecraft:diamond"
+								pattern: "minecraft:coast"
+							}
+							display: {
+								Name: "{\"text\":\"Conductive Iron Chestplate\"}"
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5FCB7DDD88F78C8D"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "minecraft:shield"
+						tag: {
+							BlockEntityTag: {
+								Base: 11
+								Patterns: [
+									{
+										Color: 1
+										Pattern: "ie_bvl"
+									}
+									{
+										Color: 11
+										Pattern: "ms"
+									}
+									{
+										Color: 3
+										Pattern: "glb"
+									}
+								]
+								id: "minecraft:banner"
+							}
+							Damage: 0
 							Insulation: [ ]
 						}
 					}
-					id: "minecraft:iron_chestplate"
-					tag: {
-						Damage: 0
-						ISBUpgrades: [{
-							id: "irons_spellbooks:lightning_power"
-							slot: "chest"
-							upgrades: 1
-						}]
-						Trim: {
-							material: "minecraft:diamond"
-							pattern: "minecraft:coast"
-						}
-						display: {
-							Name: "{\"text\":\"Conductive Iron Chestplate\"}"
-						}
-					}
+					type: "item"
 				}
+			]
+			subtitle: "Craft a Lightning Rod"
+			tasks: [{
+				id: "5AE9E29537DEDE77"
+				item: "minecraft:lightning_rod"
+				only_from_crafting: true
+				title: "Tesla Coil"
 				type: "item"
 			}]
-			subtitle: "Succesfully use a Lightning Rod"
-			tasks: [{
-				advancement: "minecraft:adventure/lightning_rod_with_villager_no_fire"
-				criterion: ""
-				id: "1B971162A3571A5D"
-				title: "Battery Charger"
-				type: "advancement"
-			}]
-			x: 1.0d
-			y: 5.0d
+			x: -3.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["78B2EA1380861578"]
@@ -444,6 +634,7 @@
 				id: "4EDCC17BF5A95B2E"
 				type: "dimension"
 			}]
+			title: "I cast, I cast, I cast..."
 			x: 1.0d
 			y: -1.0d
 		}
@@ -451,33 +642,75 @@
 			dependencies: ["6E0163C23A925C32"]
 			hide_until_deps_complete: true
 			id: "3AC7C93A8DDE3EA4"
-			rewards: [{
-				id: "270669B74858405F"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"cold_sweat:item_insulation": {
+			rewards: [
+				{
+					id: "270669B74858405F"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "minecraft:iron_chestplate"
+						tag: {
+							Damage: 0
+							ISBUpgrades: [{
+								id: "irons_spellbooks:blood_power"
+								slot: "chest"
+								upgrades: 1
+							}]
+							Trim: {
+								material: "minecraft:redstone"
+								pattern: "minecraft:rib"
+							}
+							display: {
+								Name: "{\"text\":\"Exiled Iron Chestplate\"}"
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "265B56774D6CBCA9"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "minecraft:shield"
+						tag: {
+							BlockEntityTag: {
+								Base: 14
+								Patterns: [
+									{
+										Color: 8
+										Pattern: "mr"
+									}
+									{
+										Color: 15
+										Pattern: "sku"
+									}
+								]
+								id: "minecraft:banner"
+							}
+							Damage: 0
 							Insulation: [ ]
 						}
 					}
-					id: "minecraft:iron_chestplate"
-					tag: {
-						Damage: 0
-						ISBUpgrades: [{
-							id: "irons_spellbooks:blood_power"
-							slot: "chest"
-							upgrades: 1
-						}]
-						Trim: {
-							material: "minecraft:redstone"
-							pattern: "minecraft:rib"
-						}
-						display: {
-							Name: "{\"text\":\"Exiled Iron Chestplate\"}"
-						}
-					}
+					type: "item"
 				}
-				type: "item"
+			]
+			subtitle: "Slay 50 monsters"
+			tasks: [{
+				icon: "bloodmagic:weakbloodshard"
+				id: "7E1508E9C01C3C04"
+				stat: "minecraft:mob_kills"
+				title: "Bloodbath"
+				type: "stat"
+				value: 50
 			}]
 			x: 5.0d
 			y: 3.5d
@@ -486,84 +719,726 @@
 			dependencies: ["43687AC2C34B500C"]
 			hide_until_deps_complete: true
 			id: "5CA8BC15A3BA1259"
-			rewards: [{
-				id: "060CACEE1532B5F5"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"cold_sweat:item_insulation": {
+			rewards: [
+				{
+					id: "060CACEE1532B5F5"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "minecraft:iron_chestplate"
+						tag: {
+							Damage: 0
+							ISBUpgrades: [{
+								id: "irons_spellbooks:evocation_power"
+								slot: "chest"
+								upgrades: 1
+							}]
+							Trim: {
+								material: "minecraft:netherite"
+								pattern: "minecraft:vex"
+							}
+							display: {
+								Name: "{\"text\":\"Forgotten Iron Chestplate\"}"
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "338F9C1FDB7E5C69"
+					item: {
+						Count: 1
+						id: "irons_spellbooks:scroll"
+						tag: {
+							ISB_Spells: {
+								data: [{
+									id: "irons_spellbooks:fang_strike"
+									index: 0
+									level: 6
+									locked: 1b
+								}]
+								maxSpells: 1
+								mustEquip: 0b
+								spellWheel: 0b
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "19B82CAF50B2ED47"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "minecraft:shield"
+						tag: {
+							BlockEntityTag: {
+								Base: 13
+								Patterns: [{
+									Color: 5
+									Pattern: "ie_wlf"
+								}]
+								id: "minecraft:banner"
+							}
+							Damage: 0
 							Insulation: [ ]
 						}
 					}
-					id: "minecraft:iron_chestplate"
-					tag: {
-						Damage: 0
-						ISBUpgrades: [{
-							id: "irons_spellbooks:evocation_power"
-							slot: "chest"
-							upgrades: 1
-						}]
-						Trim: {
-							material: "minecraft:netherite"
-							pattern: "minecraft:vex"
-						}
-						display: {
-							Name: "{\"text\":\"Forgotten Iron Chestplate\"}"
-						}
-					}
+					type: "item"
 				}
-				type: "item"
-			}]
+			]
+			subtitle: "Give an end to your own creation. Kill a snow golem."
 			tasks: [{
-				advancement: "minecraft:adventure/summon_iron_golem"
-				criterion: ""
-				id: "3284DC0FAD8B9701"
-				type: "advancement"
+				entity: "minecraft:snow_golem"
+				icon: "chipped:anguished_carved_pumpkin"
+				id: "5E81DB347FC02774"
+				title: "I'm sorry, little one..."
+				type: "kill"
+				value: 1L
 			}]
-			x: 5.0d
+			x: -3.0d
 			y: -5.5d
 		}
 		{
 			dependencies: ["155B7A7E83585FCD"]
 			hide_until_deps_complete: true
 			id: "7546276ACAC9628A"
-			rewards: [{
-				id: "530F6DCB353DEB36"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"cold_sweat:item_insulation": {
+			rewards: [
+				{
+					id: "530F6DCB353DEB36"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "minecraft:iron_chestplate"
+						tag: {
+							Damage: 0
+							ISBUpgrades: [{
+								id: "irons_spellbooks:holy_power"
+								slot: "chest"
+								upgrades: 1
+							}]
+							Trim: {
+								material: "minecraft:gold"
+								pattern: "minecraft:snout"
+							}
+							display: {
+								Name: "{\"text\":\"Blessed Iron Chestplate\"}"
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5C6E86EEAC62B862"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "minecraft:shield"
+						tag: {
+							BlockEntityTag: {
+								Base: 4
+								Patterns: [
+									{
+										Color: 1
+										Pattern: "gru"
+									}
+									{
+										Color: 3
+										Pattern: "hlp"
+									}
+									{
+										Color: 0
+										Pattern: "ie_orn"
+									}
+									{
+										Color: 0
+										Pattern: "hlp"
+									}
+								]
+								id: "minecraft:banner"
+							}
+							Damage: 0
 							Insulation: [ ]
 						}
 					}
-					id: "minecraft:iron_chestplate"
-					tag: {
-						Damage: 0
-						ISBUpgrades: [{
-							id: "irons_spellbooks:holy_power"
-							slot: "chest"
-							upgrades: 1
-						}]
-						Trim: {
-							material: "minecraft:gold"
-							pattern: "minecraft:snout"
-						}
-						display: {
-							Name: "{\"text\":\"Blessed Iron Chestplate\"}"
-						}
-					}
+					type: "item"
 				}
-				type: "item"
+			]
+			subtitle: "Break down an item using a cutting board"
+			tasks: [{
+				advancement: "farmersdelight:main/use_cutting_board"
+				criterion: ""
+				id: "4B7C1D96D43DA4AD"
+				title: "Focus!"
+				type: "advancement"
 			}]
-			x: -3.0d
+			title: "Master Chef"
+			x: 5.0d
 			y: -5.5d
 		}
 		{
 			dependencies: ["0361ECAB302D394C"]
 			hide_until_deps_complete: true
 			id: "17A088E77AF152C6"
+			rewards: [
+				{
+					id: "7EFCFA71678A4DCD"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "minecraft:iron_chestplate"
+						tag: {
+							Damage: 0
+							ISBUpgrades: [{
+								id: "irons_spellbooks:ender_power"
+								slot: "chest"
+								upgrades: 1
+							}]
+							Trim: {
+								material: "minecraft:amethyst"
+								pattern: "minecraft:raiser"
+							}
+							display: {
+								Name: "{\"text\":\"Ancient Iron Chestplate\"}"
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5B67139803234CD1"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "minecraft:shield"
+						tag: {
+							BlockEntityTag: {
+								Base: 10
+								Patterns: [
+									{
+										Color: 5
+										Pattern: "mr"
+									}
+									{
+										Color: 13
+										Pattern: "mc"
+									}
+									{
+										Color: 2
+										Pattern: "cbo"
+									}
+								]
+								id: "minecraft:banner"
+							}
+							Damage: 0
+							Insulation: [ ]
+						}
+					}
+					type: "item"
+				}
+			]
+			subtitle: "Kill a familiar and retrieve their pearl"
+			tasks: [{
+				entity: "minecraft:enderman"
+				icon: "minecraft:ender_pearl"
+				id: "66231F780F54D305"
+				title: "Harvester"
+				type: "kill"
+				value: 1L
+			}]
+			x: 1.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["22FA0CC18983894A"]
+			id: "02D21F68BB68C83E"
 			rewards: [{
-				id: "7EFCFA71678A4DCD"
+				id: "0E6D305EEFB2A8AF"
+				item: {
+					Count: 1
+					id: "irons_spellbooks:scroll"
+					tag: {
+						ISB_Spells: {
+							data: [{
+								id: "irons_spellbooks:wall_of_fire"
+								index: 0
+								level: 4
+								locked: 1b
+							}]
+							maxSpells: 1
+							mustEquip: 0b
+							spellWheel: 0b
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Find Ancient Debris"
+			tasks: [{
+				advancement: "minecraft:nether/obtain_ancient_debris"
+				criterion: ""
+				id: "67EA456B5562DB3B"
+				type: "advancement"
+			}]
+			title: "Fireproof"
+			x: 9.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["2A3D5B32DDD8D75D"]
+			id: "7D22E80F14AC9F37"
+			rewards: [{
+				id: "0108339C5CC5B773"
+				item: {
+					Count: 1
+					id: "irons_spellbooks:scroll"
+					tag: {
+						ISB_Spells: {
+							data: [{
+								id: "irons_spellbooks:oakskin"
+								index: 0
+								level: 5
+								locked: 1b
+							}]
+							maxSpells: 1
+							mustEquip: 0b
+							spellWheel: 0b
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Get at least one of every log of Regions Unexplored"
+			tasks: [{
+				advancement: "regions_unexplored:got_wood"
+				criterion: ""
+				id: "7909DF3A5E15234B"
+				type: "advancement"
+			}]
+			title: "Taking wood"
+			x: 1.0d
+			y: -9.5d
+		}
+		{
+			dependencies: ["7546276ACAC9628A"]
+			id: "1373AA17F6FD786D"
+			rewards: [{
+				id: "1AE72799D24EEDD5"
+				item: {
+					Count: 1
+					id: "irons_spellbooks:scroll"
+					tag: {
+						ISB_Spells: {
+							data: [{
+								id: "irons_spellbooks:angel_wing"
+								index: 0
+								level: 1
+								locked: 1b
+							}]
+							maxSpells: 1
+							mustEquip: 0b
+							spellWheel: 0b
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Save a village from a Pillager invasion"
+			tasks: [{
+				advancement: "minecraft:adventure/hero_of_the_village"
+				criterion: ""
+				id: "5D2BC8AB85F76DB0"
+				title: "Savior"
+				type: "advancement"
+			}]
+			x: 6.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["3A1EF514F1064260"]
+			id: "07C63A89F726A89F"
+			rewards: [{
+				id: "7199EBAB1382B389"
+				item: {
+					Count: 1
+					id: "irons_spellbooks:scroll"
+					tag: {
+						ISB_Spells: {
+							data: [{
+								id: "irons_spellbooks:ice_block"
+								index: 0
+								level: 1
+								locked: 1b
+							}]
+							maxSpells: 1
+							mustEquip: 0b
+							spellWheel: 0b
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Craft yourself a full set of armor that can protect you from extreme temperatures"
+			tasks: [{
+				advancement: "cold_sweat:full_insulation"
+				criterion: ""
+				id: "5A0606B74F568ED9"
+				type: "advancement"
+			}]
+			title: "Insulated"
+			x: -7.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["17A088E77AF152C6"]
+			id: "0FFDB989620B3A39"
+			rewards: [{
+				id: "51CE563BF6137FA2"
+				item: {
+					Count: 1
+					id: "irons_spellbooks:scroll"
+					tag: {
+						ISB_Spells: {
+							data: [{
+								id: "traveloptics:orbital_void"
+								index: 0
+								level: 2
+								locked: 1b
+							}]
+							maxSpells: 1
+							mustEquip: 0b
+							spellWheel: 0b
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Follow an Eye of Ender"
+			tasks: [{
+				advancement: "minecraft:story/follow_ender_eye"
+				criterion: ""
+				id: "1729F6D85F2EDF54"
+				type: "advancement"
+			}]
+			title: "Hey, wait for me!"
+			x: 1.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["5CA8BC15A3BA1259"]
+			id: "132E82C35B9F24F3"
+			rewards: [{
+				id: "6F2756841DDBFD36"
+				item: {
+					Count: 1
+					id: "irons_spellbooks:scroll"
+					tag: {
+						ISB_Spells: {
+							data: [{
+								id: "irons_spellbooks:summon_vex"
+								index: 0
+								level: 2
+								locked: 1b
+							}]
+							maxSpells: 1
+							mustEquip: 0b
+							spellWheel: 0b
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Get an Ally to drop a cake at a note block"
+			tasks: [{
+				advancement: "minecraft:husbandry/allay_deliver_cake_to_note_block"
+				criterion: ""
+				id: "49561C894C382064"
+				type: "advancement"
+			}]
+			title: "Where are the candles?!"
+			x: -4.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["3AC7C93A8DDE3EA4"]
+			id: "1A9601A2F5605CF6"
+			rewards: [{
+				id: "4DC12278E57DA46E"
+				item: {
+					Count: 1
+					id: "irons_spellbooks:scroll"
+					tag: {
+						ISB_Spells: {
+							data: [{
+								id: "irons_spellbooks:raise_dead"
+								index: 0
+								level: 3
+								locked: 1b
+							}]
+							maxSpells: 1
+							mustEquip: 0b
+							spellWheel: 0b
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Trick death and rise from the soil once more"
+			tasks: [{
+				advancement: "minecraft:adventure/totem_of_undying"
+				criterion: ""
+				id: "7DB5CF266A56B466"
+				title: "Postmorten"
+				type: "advancement"
+			}]
+			x: 6.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["7BCC4D107AFADF8E"]
+			id: "4DCDFF1312CE2561"
+			rewards: [{
+				id: "12486A9ADF6F3F05"
+				item: {
+					Count: 1
+					id: "irons_spellbooks:scroll"
+					tag: {
+						ISB_Spells: {
+							data: [{
+								id: "irons_spellbooks:lightning_lance"
+								index: 0
+								level: 4
+								locked: 1b
+							}]
+							maxSpells: 1
+							mustEquip: 0b
+							spellWheel: 0b
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Use an energized core on a Lightning Rod"
+			tasks: [{
+				id: "7B74BF1E812CFA98"
+				item: "irons_spellbooks:lightning_rod"
+				type: "item"
+			}]
+			title: "Don't point it to the sky"
+			x: -4.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["2A3D5B32DDD8D75D"]
+			id: "48BC0DC43DFA703F"
+			rewards: [{
+				id: "54A97A776D813C16"
+				item: {
+					Count: 1
+					id: "irons_spellbooks:scroll"
+					tag: {
+						ISB_Spells: {
+							data: [{
+								id: "irons_spellbooks:acid_orb"
+								index: 0
+								level: 6
+								locked: 1b
+							}]
+							maxSpells: 1
+							mustEquip: 0b
+							spellWheel: 0b
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Find a jungle temple"
+			tasks: [{
+				icon: "meadow:mossy_cobbled_limestone"
+				id: "3752A7252D4B94C6"
+				structure: "minecraft:jungle_pyramid"
+				title: "Jungle Temple"
+				type: "structure"
+			}]
+			title: "Connect to the forests"
+			x: -0.5d
+			y: -9.0d
+		}
+		{
+			dependencies: ["2A3D5B32DDD8D75D"]
+			id: "10291FC2B5109129"
+			rewards: [{
+				id: "4E5B28B2F8494B6B"
+				item: {
+					Count: 1
+					id: "irons_spellbooks:scroll"
+					tag: {
+						ISB_Spells: {
+							data: [{
+								id: "irons_spellbooks:root"
+								index: 0
+								level: 3
+								locked: 1b
+							}]
+							maxSpells: 1
+							mustEquip: 0b
+							spellWheel: 0b
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Craft yourself a Druidic Tome"
+			tasks: [{
+				id: "39CDCD7A7ED1D19D"
+				item: {
+					Count: 1
+					id: "irons_spellbooks:druidic_spell_book"
+					tag: {
+						ISB_Spells: {
+							data: [ ]
+							maxSpells: 10
+							mustEquip: 1b
+							spellWheel: 1b
+						}
+					}
+				}
+				type: "item"
+			}]
+			title: "Nature Preservation Guidebook"
+			x: 2.5d
+			y: -9.0d
+		}
+		{
+			dependencies: ["22FA0CC18983894A"]
+			id: "307B56CFBB9FFC26"
+			rewards: [{
+				id: "4906FAC34183E91A"
+				item: {
+					Count: 1
+					id: "irons_spellbooks:scroll"
+					tag: {
+						ISB_Spells: {
+							data: [{
+								id: "irons_spellbooks:firebolt"
+								index: 0
+								level: 6
+								locked: 1b
+							}]
+							maxSpells: 1
+							mustEquip: 0b
+							spellWheel: 0b
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Obtain a Wither Skeleton skull"
+			tasks: [{
+				advancement: "minecraft:nether/get_wither_skull"
+				criterion: ""
+				id: "2E8D712FA0092540"
+				type: "advancement"
+			}]
+			title: "Giving head"
+			x: 9.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["22FA0CC18983894A"]
+			id: "47434AAAE7DD0BCF"
+			rewards: [{
+				id: "192C46429E217A08"
+				item: {
+					Count: 1
+					id: "irons_spellbooks:scroll"
+					tag: {
+						ISB_Spells: {
+							data: [{
+								id: "irons_spellbooks:burning_dash"
+								index: 0
+								level: 5
+								locked: 1b
+							}]
+							maxSpells: 1
+							mustEquip: 0b
+							spellWheel: 0b
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Find a Bastion and bring some loot"
+			tasks: [
+				{
+					advancement: "minecraft:nether/loot_bastion"
+					criterion: ""
+					id: "68E623F2B7EE00E8"
+					title: "Thief!"
+					type: "advancement"
+				}
+				{
+					id: "0CF026CFDD330EDA"
+					structure: "minecraft:bastion_remnant"
+					title: "Enter a Bastion Remnant"
+					type: "structure"
+				}
+			]
+			title: "Bad Piggies"
+			x: 9.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["17A088E77AF152C6"]
+			id: "1FBA348F8C129282"
+			rewards: [{
+				id: "04A5018B2762E40C"
+				item: {
+					Count: 1
+					id: "irons_spellbooks:scroll"
+					tag: {
+						ISB_Spells: {
+							data: [{
+								id: "traveloptics:vortex_punch"
+								index: 0
+								level: 1
+								locked: 1b
+							}]
+							maxSpells: 1
+							mustEquip: 0b
+							spellWheel: 0b
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Craft yourself an Elytra"
+			tasks: [{
+				id: "262ACE09B3CBD95C"
 				item: {
 					Count: 1
 					ForgeCaps: {
@@ -571,36 +1446,759 @@
 							Insulation: [ ]
 						}
 					}
-					id: "minecraft:iron_chestplate"
+					id: "minecraft:elytra"
 					tag: {
 						Damage: 0
-						ISBUpgrades: [{
-							id: "irons_spellbooks:ender_power"
-							slot: "chest"
-							upgrades: 1
-						}]
-						Trim: {
-							material: "minecraft:amethyst"
-							pattern: "minecraft:raiser"
-						}
-						display: {
-							Name: "{\"text\":\"Ancient Iron Chestplate\"}"
+					}
+				}
+				only_from_crafting: true
+				title: "Feeling like Santos"
+				type: "item"
+			}]
+			title: "The Dragon from my dreams"
+			x: 2.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["17A088E77AF152C6"]
+			id: "3DC5C9BA7630CCA7"
+			rewards: [{
+				id: "265832FE0ADE683D"
+				item: {
+					Count: 1
+					id: "irons_spellbooks:scroll"
+					tag: {
+						ISB_Spells: {
+							data: [{
+								id: "traveloptics:blink"
+								index: 0
+								level: 2
+								locked: 1b
+							}]
+							maxSpells: 1
+							mustEquip: 0b
+							spellWheel: 0b
 						}
 					}
 				}
 				type: "item"
 			}]
-			subtitle: "Obtain an Ender Pearl"
-			tasks: [{
-				consume_items: false
-				id: "46F243DE892ABBA3"
-				item: "minecraft:ender_pearl"
-				only_from_crafting: false
-				title: "In the Blink of an Eye"
+			subtitle: "Craft End Stone and a Chorus Flower"
+			tasks: [
+				{
+					id: "3F9F96FF39730F20"
+					item: "minecraft:end_stone"
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					id: "235C5076F11F742F"
+					item: "minecraft:chorus_flower"
+					only_from_crafting: true
+					type: "item"
+				}
+			]
+			title: "Food from outer space"
+			x: -0.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["3A1EF514F1064260"]
+			id: "39F5F42F4AF6F6FC"
+			rewards: [{
+				id: "5EC44CFBA7CC843E"
+				item: {
+					Count: 1
+					id: "irons_spellbooks:scroll"
+					tag: {
+						ISB_Spells: {
+							data: [{
+								id: "irons_spellbooks:frost_step"
+								index: 0
+								level: 1
+								locked: 1b
+							}]
+							maxSpells: 1
+							mustEquip: 0b
+							spellWheel: 0b
+						}
+					}
+				}
 				type: "item"
 			}]
+			subtitle: "their moves are... Bold (bold!)"
+			tasks: [{
+				consume_items: false
+				count: 9L
+				id: "7538F637604C847A"
+				item: "minecraft:blue_ice"
+				only_from_crafting: true
+				title: "Craft 9 Blue Ice blocks"
+				type: "item"
+			}]
+			title: "My heart is... Cold. (cold!)"
+			x: -7.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["3A1EF514F1064260"]
+			id: "30A4B4F45CDCC184"
+			rewards: [{
+				id: "6433755E4314745C"
+				item: {
+					Count: 1
+					id: "irons_spellbooks:scroll"
+					tag: {
+						ISB_Spells: {
+							data: [{
+								id: "irons_spellbooks:cone_of_cold"
+								index: 0
+								level: 7
+								locked: 1b
+							}]
+							maxSpells: 1
+							mustEquip: 0b
+							spellWheel: 0b
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Slay 30 Strays"
+			tasks: [{
+				entity: "minecraft:stray"
+				icon: "cataclysm:pointed_icicle"
+				id: "7ABC2B7D527E11F8"
+				title: "Shiver me Timbers"
+				type: "kill"
+				value: 30L
+			}]
+			title: "Frostbite"
+			x: -7.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["7BCC4D107AFADF8E"]
+			id: "4DD19BFFD97277B3"
+			rewards: [{
+				id: "15F8EF526868B564"
+				item: {
+					Count: 1
+					id: "irons_spellbooks:scroll"
+					tag: {
+						ISB_Spells: {
+							data: [{
+								id: "irons_spellbooks:ascension"
+								index: 0
+								level: 4
+								locked: 1b
+							}]
+							maxSpells: 1
+							mustEquip: 0b
+							spellWheel: 0b
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Get a lightning bolt to de-oxidize a copper block"
+			tasks: [
+				{
+					icon: "minecraft:oxidized_copper"
+					id: "6C94367FC0166241"
+					observe_type: 0
+					timer: 0L
+					title: "Oh, great."
+					to_observe: "minecraft:oxidized_copper"
+					type: "observation"
+				}
+				{
+					icon: "minecraft:copper_block"
+					id: "3BF53C58CDA58C43"
+					observe_type: 0
+					timer: 0L
+					title: "It changes color?!"
+					to_observe: "minecraft:copper_block"
+					type: "observation"
+				}
+			]
+			title: "Trial and Error"
 			x: -3.0d
-			y: 3.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["7BCC4D107AFADF8E"]
+			id: "37387DB7712FAD9D"
+			rewards: [{
+				id: "60257CC00CE00166"
+				item: {
+					Count: 1
+					id: "irons_spellbooks:scroll"
+					tag: {
+						ISB_Spells: {
+							data: [{
+								id: "irons_spellbooks:electrocute"
+								index: 0
+								level: 4
+								locked: 1b
+							}]
+							maxSpells: 1
+							mustEquip: 0b
+							spellWheel: 0b
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Get 8 Bottles o' Lightning from a charged creeper"
+			tasks: [{
+				count: 8L
+				id: "45F1850F625E7CCC"
+				item: { Count: 8, id: "irons_spellbooks:lightning_bottle" }
+				type: "item"
+			}]
+			title: "Milking them...??"
+			x: -5.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["3AC7C93A8DDE3EA4"]
+			id: "2188802D726C762A"
+			rewards: [{
+				id: "7232F68AD675F687"
+				item: {
+					Count: 1
+					id: "irons_spellbooks:scroll"
+					tag: {
+						ISB_Spells: {
+							data: [{
+								id: "irons_spellbooks:blood_step"
+								index: 0
+								level: 3
+								locked: 1b
+							}]
+							maxSpells: 1
+							mustEquip: 0b
+							spellWheel: 0b
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Keep the Undergarden's Rotspawn away"
+			tasks: [{
+				advancement: "undergarden:undergarden/shard_torch"
+				criterion: ""
+				id: "747B414BB60B4A4F"
+				type: "advancement"
+			}]
+			title: "Stay the hell away from me!"
+			x: 5.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["3AC7C93A8DDE3EA4"]
+			id: "75E3ACF28E977E1C"
+			rewards: [{
+				id: "525630E55CF5FDC1"
+				item: {
+					Count: 1
+					id: "irons_spellbooks:scroll"
+					tag: {
+						ISB_Spells: {
+							data: [{
+								id: "irons_spellbooks:acupuncture"
+								index: 0
+								level: 5
+								locked: 1b
+							}]
+							maxSpells: 1
+							mustEquip: 0b
+							spellWheel: 0b
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Kill a Ghast after bringing it to the Overworld"
+			tasks: [{
+				advancement: "minecraft:nether/uneasy_alliance"
+				criterion: ""
+				id: "0C54557374FB08C5"
+				type: "advancement"
+			}]
+			title: "Backstabber"
+			x: 7.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["7546276ACAC9628A"]
+			id: "18B406F71EA691A7"
+			rewards: [{
+				id: "1903A9C934B27EA4"
+				item: {
+					Count: 1
+					id: "irons_spellbooks:scroll"
+					tag: {
+						ISB_Spells: {
+							data: [{
+								id: "irons_spellbooks:guiding_bolt"
+								index: 0
+								level: 7
+								locked: 1b
+							}]
+							maxSpells: 1
+							mustEquip: 0b
+							spellWheel: 0b
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Return a fireball to a Ghast"
+			tasks: [{
+				advancement: "minecraft:nether/return_to_sender"
+				criterion: ""
+				id: "518C810072AAB630"
+				type: "advancement"
+			}]
+			title: "Technically, that wasn't me..."
+			x: 7.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["7546276ACAC9628A"]
+			id: "4070DF8D9CA723B0"
+			rewards: [
+				{
+					id: "51AFA8727DB12C36"
+					item: {
+						Count: 1
+						id: "irons_spellbooks:scroll"
+						tag: {
+							ISB_Spells: {
+								data: [{
+									id: "irons_spellbooks:healing_circle"
+									index: 0
+									level: 7
+									locked: 1b
+								}]
+								maxSpells: 1
+								mustEquip: 0b
+								spellWheel: 0b
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "286E8F164A9086CF"
+					item: {
+						Count: 1
+						id: "irons_spellbooks:scroll"
+						tag: {
+							ISB_Spells: {
+								data: [{
+									id: "irons_spellbooks:fortify"
+									index: 0
+									level: 8
+									locked: 1b
+								}]
+								maxSpells: 1
+								mustEquip: 0b
+								spellWheel: 0b
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			subtitle: "Brew a health potion"
+			tasks: [
+				{
+					advancement: "minecraft:nether/brew_potion"
+					criterion: ""
+					id: "30EF80B054BF0100"
+					type: "advancement"
+				}
+				{
+					id: "430D682FB9DDDFAD"
+					item: {
+						Count: 1
+						id: "minecraft:potion"
+						tag: {
+							Potion: "minecraft:healing"
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Cooking"
+			x: 5.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["5CA8BC15A3BA1259"]
+			id: "6ADFDC4FF404C89F"
+			rewards: [{
+				id: "7F04AA4DC8AC7FE7"
+				item: {
+					Count: 1
+					id: "irons_spellbooks:scroll"
+					tag: {
+						ISB_Spells: {
+							data: [{
+								id: "irons_spellbooks:shield"
+								index: 0
+								level: 5
+								locked: 1b
+							}]
+							maxSpells: 1
+							mustEquip: 0b
+							spellWheel: 0b
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Give life to an Iron Golem"
+			tasks: [{
+				advancement: "minecraft:adventure/summon_iron_golem"
+				criterion: ""
+				id: "253829172B897458"
+				type: "advancement"
+			}]
+			title: "Main objective: protect father"
+			x: -3.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["5CA8BC15A3BA1259"]
+			id: "36CB6B120EADCBA1"
+			rewards: [{
+				id: "292B6FC2E18144C4"
+				item: {
+					Count: 1
+					id: "irons_spellbooks:scroll"
+					tag: {
+						ISB_Spells: {
+							data: [{
+								id: "irons_spellbooks:summon_horse"
+								index: 0
+								level: 2
+								locked: 1b
+							}]
+							maxSpells: 1
+							mustEquip: 0b
+							spellWheel: 0b
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Craft yourself a Conjurer's Talisman"
+			tasks: [{
+				id: "3C5330487434011A"
+				item: "irons_spellbooks:conjurers_talisman"
+				type: "item"
+			}]
+			title: "It's... Talking to me...?"
+			x: -5.0d
+			y: -6.0d
+		}
+		{
+			can_repeat: false
+			description: ["\"My dad didn't really explain much so I'm still figuring this out, but apparently, gold can channel mana more efficiently than iron or copper. I decided to add some new pages aswell, now that the book can actually handle more power!\""]
+			icon: {
+				Count: 1
+				id: "irons_spellbooks:gold_spell_book"
+				tag: {
+					ISB_Spells: {
+						data: [ ]
+						maxSpells: 8
+						mustEquip: 1b
+						spellWheel: 1b
+					}
+				}
+			}
+			id: "2558433A004EC4E0"
+			ignore_reward_blocking: true
+			optional: true
+			rewards: [
+				{
+					id: "27DEBA947BE321C8"
+					item: {
+						Count: 1
+						id: "irons_spellbooks:gold_spell_book"
+						tag: {
+							ISB_Spells: {
+								data: [ ]
+								maxSpells: 8
+								mustEquip: 1b
+								spellWheel: 1b
+							}
+						}
+					}
+					only_one: true
+					type: "item"
+				}
+				{
+					id: "7089E4920684C738"
+					item: "irons_spellbooks:scroll_forge"
+					only_one: true
+					type: "item"
+				}
+			]
+			subtitle: "Get some uncommon ink"
+			tasks: [
+				{
+					id: "74F0E67CB964F5CE"
+					item: "irons_spellbooks:uncommon_ink"
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "435BEA7B684BC0B7"
+					item: {
+						Count: 1
+						id: "irons_spellbooks:iron_spell_book"
+						tag: {
+							ISB_Spells: {
+								data: [ ]
+								maxSpells: 6
+								mustEquip: 1b
+								spellWheel: 1b
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "On the right path"
+			x: 7.4d
+			y: -3.9d
+		}
+		{
+			can_repeat: false
+			description: ["\"Alright, today's note is: the shinier, the better. Diamond is better than gold at channeling mana and can actually handle more power too. I wonder if it really has something to do with the gem itself or the Hoglin skin...\""]
+			icon: {
+				Count: 1
+				id: "irons_spellbooks:diamond_spell_book"
+				tag: {
+					ISB_Spells: {
+						data: [ ]
+						maxSpells: 10
+						mustEquip: 1b
+						spellWheel: 1b
+					}
+				}
+			}
+			id: "3F8931A9BF8E8D87"
+			ignore_reward_blocking: true
+			optional: true
+			rewards: [
+				{
+					id: "707AA07A5BD37446"
+					item: {
+						Count: 1
+						id: "irons_spellbooks:diamond_spell_book"
+						tag: {
+							ISB_Spells: {
+								data: [ ]
+								maxSpells: 10
+								mustEquip: 1b
+								spellWheel: 1b
+							}
+						}
+					}
+					only_one: true
+					type: "item"
+				}
+				{
+					id: "23E71565F4E274E7"
+					item: "irons_spellbooks:arcane_anvil"
+					only_one: true
+					type: "item"
+				}
+			]
+			subtitle: "Get some epic ink"
+			tasks: [
+				{
+					id: "43D72FA8B0445573"
+					item: "irons_spellbooks:epic_ink"
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "52B075BF73AF3102"
+					item: {
+						Count: 1
+						id: "irons_spellbooks:gold_spell_book"
+						tag: {
+							ISB_Spells: {
+								data: [ ]
+								maxSpells: 8
+								mustEquip: 1b
+								spellWheel: 1b
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Now that's an upgrade!"
+			x: 7.4d
+			y: 1.9d
+		}
+		{
+			can_repeat: false
+			description: [
+				"\"This is my last note, for I am too old to keep going with my research. I have finally managed to create the best 'jack of all trades' spellbook."
+				"The Nether really is a confusing place; it is like every bit of it is flowing with mana. The Ancient Debris I found are possibly the best mana channelling material... Unfortunately, they can only work properly with gold, can you imagine how good it would be with diamonds?! Or even quartz!\""
+			]
+			icon: {
+				Count: 1
+				id: "irons_spellbooks:netherite_spell_book"
+				tag: {
+					ISB_Spells: {
+						data: [ ]
+						maxSpells: 12
+						mustEquip: 1b
+						spellWheel: 1b
+					}
+				}
+			}
+			id: "66215F22D925C180"
+			ignore_reward_blocking: true
+			optional: true
+			rewards: [
+				{
+					id: "6FECF2FDBBD51010"
+					item: {
+						Count: 1
+						id: "irons_spellbooks:netherite_spell_book"
+						tag: {
+							ISB_Spells: {
+								data: [ ]
+								maxSpells: 12
+								mustEquip: 1b
+								spellWheel: 1b
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 2
+					id: "52799F7F5777D999"
+					item: "irons_spellbooks:legendary_ink"
+					type: "item"
+				}
+			]
+			subtitle: "Assemble the Battlemage armor set"
+			tasks: [
+				{
+					id: "5806F53D37F32D41"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "irons_spellbooks:netherite_mage_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					id: "22B6A253303A7FA4"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "irons_spellbooks:netherite_mage_chestplate"
+						tag: {
+							Damage: 0
+							ISB_Spells: {
+								data: [ ]
+								maxSpells: 1
+								mustEquip: 1b
+								spellWheel: 1b
+							}
+						}
+					}
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					id: "3630F0842EBCEE7B"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "irons_spellbooks:netherite_mage_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					id: "4BF88CC1602C0C42"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "irons_spellbooks:netherite_mage_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					only_from_crafting: true
+					type: "item"
+				}
+			]
+			title: "Book of Books"
+			x: -5.4d
+			y: 1.9d
+		}
+		{
+			can_repeat: false
+			description: [""]
+			id: "0476E868008301C8"
+			ignore_reward_blocking: true
+			optional: true
+			rewards: [{
+				id: "21B4C9A9F372240E"
+				item: "irons_spellbooks:alchemist_cauldron"
+				only_one: true
+				type: "item"
+			}]
+			subtitle: "Get some common ink"
+			tasks: [{
+				id: "596D2CC88150804A"
+				item: "irons_spellbooks:common_ink"
+				type: "item"
+			}]
+			title: "Where are the squids?!"
+			x: -5.4d
+			y: -3.9d
 		}
 	]
 	title: "Iron's Spells"
