@@ -336,8 +336,10 @@
 			id: "22FA0CC18983894A"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "1D8AAF7BCCE30A73"
 					item: "irons_spellbooks:fireward_ring"
+					only_one: true
 					type: "item"
 				}
 				{
@@ -1908,7 +1910,9 @@
 		}
 		{
 			can_repeat: false
+			dependencies: ["0476E868008301C8"]
 			description: ["\"My dad didn't really explain much so I'm still figuring this out, but apparently, gold can channel mana more efficiently than iron or copper. I decided to add some new pages aswell, now that the book can actually handle more power!\""]
+			hide_dependency_lines: true
 			icon: {
 				Count: 1
 				id: "irons_spellbooks:gold_spell_book"
@@ -1948,6 +1952,74 @@
 					only_one: true
 					type: "item"
 				}
+				{
+					id: "0D50E5F8C1006DC4"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "irons_spellbooks:pumpkin_helmet"
+						tag: {
+							Damage: 0
+							Insulation: [ ]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "673A7D5BC6F859A2"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "irons_spellbooks:pumpkin_chestplate"
+						tag: {
+							Damage: 0
+							Insulation: [ ]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "37321218B029C18A"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "irons_spellbooks:pumpkin_leggings"
+						tag: {
+							Damage: 0
+							Insulation: [ ]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5E63EBCA04DC7F52"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "irons_spellbooks:pumpkin_boots"
+						tag: {
+							Damage: 0
+							Insulation: [ ]
+						}
+					}
+					type: "item"
+				}
 			]
 			subtitle: "Get some uncommon ink"
 			tasks: [
@@ -1981,7 +2053,9 @@
 		}
 		{
 			can_repeat: false
+			dependencies: ["2558433A004EC4E0"]
 			description: ["\"Alright, today's note is: the shinier, the better. Diamond is better than gold at channeling mana and can actually handle more power too. I wonder if it really has something to do with the gem itself or the Hoglin skin...\""]
+			hide_dependency_lines: true
 			icon: {
 				Count: 1
 				id: "irons_spellbooks:diamond_spell_book"
@@ -2054,10 +2128,12 @@
 		}
 		{
 			can_repeat: false
+			dependencies: ["3F8931A9BF8E8D87"]
 			description: [
 				"\"This is my last note, for I am too old to keep going with my research. I have finally managed to create the best 'jack of all trades' spellbook."
 				"The Nether really is a confusing place; it is like every bit of it is flowing with mana. The Ancient Debris I found are possibly the best mana channelling material... Unfortunately, they can only work properly with gold, can you imagine how good it would be with diamonds?! Or even quartz!\""
 			]
+			hide_dependency_lines: true
 			icon: {
 				Count: 1
 				id: "irons_spellbooks:netherite_spell_book"
@@ -2184,19 +2260,89 @@
 			id: "0476E868008301C8"
 			ignore_reward_blocking: true
 			optional: true
-			rewards: [{
-				id: "21B4C9A9F372240E"
-				item: "irons_spellbooks:alchemist_cauldron"
-				only_one: true
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "21B4C9A9F372240E"
+					item: "irons_spellbooks:alchemist_cauldron"
+					only_one: true
+					type: "item"
+				}
+				{
+					id: "5F860ADD3295800E"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "irons_spellbooks:wandering_magician_boots"
+						tag: {
+							Damage: 0
+							Insulation: [ ]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4A13EEDD66EB4BC0"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "irons_spellbooks:wandering_magician_leggings"
+						tag: {
+							Damage: 0
+							Insulation: [ ]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "24696157BB28D6AB"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "irons_spellbooks:wandering_magician_chestplate"
+						tag: {
+							Damage: 0
+							Insulation: [ ]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "28398605ECF24595"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "irons_spellbooks:wandering_magician_helmet"
+						tag: {
+							Damage: 0
+							Insulation: [ ]
+						}
+					}
+					type: "item"
+				}
+			]
 			subtitle: "Get some common ink"
 			tasks: [{
 				id: "596D2CC88150804A"
 				item: "irons_spellbooks:common_ink"
 				type: "item"
 			}]
-			title: "Where are the squids?!"
+			title: "Who needs squids anyways!"
 			x: -5.4d
 			y: -3.9d
 		}
