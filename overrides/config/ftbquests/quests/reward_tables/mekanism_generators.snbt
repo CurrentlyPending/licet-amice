@@ -1,0 +1,10 @@
+{
+	id: "41544F4C8B21BB99"
+	loot_size: 1
+	order_index: 2
+	rewards: [
+		{ item: "mekanismgenerators:bio_generator" }
+		{ item: "mekanismgenerators:gas_burning_generator" }
+	]
+	title: "Mekanism Generators"
+}

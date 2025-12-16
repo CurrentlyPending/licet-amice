@@ -1,0 +1,11 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "roots"
+	group: ""
+	id: "005D4DBEBC52A6B9"
+	order_index: 2
+	quest_links: [ ]
+	quests: [ ]
+	title: "Roots"
+}

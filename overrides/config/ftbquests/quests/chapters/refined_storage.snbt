@@ -1,0 +1,776 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "refined_storage"
+	group: ""
+	id: "49AEEC9BBC0C0E57"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["The only mod that is shared across all factions! Everybody needs storage, so it's only fair that everyone has fair access to it. Refined storage involves centralizing storage and creating automated patterns for your existing machines."]
+			icon: "refinedstorage:cyan_creative_controller"
+			id: "7BFA878B5048D3E0"
+			rewards: [{
+				count: 16
+				id: "4CB3C3D732FC886A"
+				item: "refinedstorage:processor_binding"
+				type: "item"
+			}]
+			size: 3.0d
+			tasks: [{
+				id: "1152DBF78CEC5479"
+				type: "checkmark"
+			}]
+			title: "Welcome to Refined Storage"
+			x: 0.0d
+			y: 0.2d
+		}
+		{
+			dependencies: ["7BFA878B5048D3E0"]
+			description: ["Take your processor bindings, turn them into raw basic processors, and turn those into full on basic processors."]
+			id: "19217630F35848B2"
+			rewards: [
+				{
+					count: 8
+					id: "3E810C5F9BDCC9C5"
+					item: "refinedstorage:basic_processor"
+					type: "item"
+				}
+				{
+					id: "540C0CADEE379020"
+					type: "xp"
+					xp: 100
+				}
+			]
+			size: 2.0d
+			tasks: [
+				{
+					id: "75C43F946979E3F7"
+					item: "refinedstorage:raw_basic_processor"
+					type: "item"
+				}
+				{
+					id: "6373CAE067620267"
+					item: "refinedstorage:basic_processor"
+					type: "item"
+				}
+			]
+			title: "Basic Processing"
+			x: 2.8d
+			y: 2.3d
+		}
+		{
+			dependencies: ["7BFA878B5048D3E0"]
+			description: [
+				"You can get Quartz Enriched Iron by.... combining iron and quartz. Probably didn't need to explain that one."
+				""
+				"Silicon is obtained by smelting quartz."
+			]
+			id: "5287C2954F0E50CC"
+			rewards: [
+				{
+					count: 3
+					id: "01A10151EEE28943"
+					item: "refinedstorage:quartz_enriched_iron_block"
+					type: "item"
+				}
+				{
+					id: "6AC674BB6C67E9D1"
+					type: "xp"
+					xp: 100
+				}
+			]
+			size: 2.0d
+			tasks: [
+				{
+					id: "1A54DA22FAA99315"
+					item: "refinedstorage:quartz_enriched_iron"
+					type: "item"
+				}
+				{
+					id: "44234E6BD3255CF8"
+					item: "refinedstorage:silicon"
+					type: "item"
+				}
+			]
+			title: "Quartz Materials"
+			x: 2.8d
+			y: 0.2d
+		}
+		{
+			dependencies: ["5287C2954F0E50CC"]
+			id: "224E9A29FE1D297B"
+			rewards: [{
+				id: "273B3BEFEE856AEC"
+				type: "xp"
+				xp: 100
+			}]
+			size: 1.5d
+			tasks: [{
+				id: "3573C67F18925B02"
+				item: "refinedstorage:machine_casing"
+				type: "item"
+			}]
+			x: 5.1000000000000005d
+			y: -0.45000000000000007d
+		}
+		{
+			dependencies: ["5287C2954F0E50CC"]
+			id: "283D1D2368284650"
+			rewards: [{
+				count: 8
+				id: "7E6085232FED883A"
+				item: "refinedstorage:silicon"
+				type: "item"
+			}]
+			shape: "square"
+			tasks: [{
+				id: "17E21578B7C1F3E5"
+				item: "refinedstorage:1k_storage_part"
+				type: "item"
+			}]
+			x: 1.8d
+			y: -1.7d
+		}
+		{
+			dependencies: ["283D1D2368284650"]
+			icon: "refinedstorage:1k_storage_disk"
+			id: "5D675F8B86293537"
+			shape: "square"
+			tasks: [{
+				id: "16962844677A9F6C"
+				item: "refinedstorage:1k_storage_disk"
+				type: "item"
+			}]
+			x: 3.7d
+			y: -1.7d
+		}
+		{
+			dependencies: ["283D1D2368284650"]
+			id: "759D9488242EAF06"
+			rewards: [{
+				count: 3
+				id: "6FE666C0FADEFAB9"
+				item: "refinedstorage:1k_storage_part"
+				type: "item"
+			}]
+			shape: "square"
+			tasks: [{
+				id: "1EE01EC3ADCE7D49"
+				item: "refinedstorage:4k_storage_part"
+				type: "item"
+			}]
+			x: 1.8d
+			y: -2.7d
+		}
+		{
+			dependencies: ["759D9488242EAF06"]
+			id: "5F450B35BE8E2790"
+			shape: "square"
+			tasks: [{
+				id: "6F1638855E08C7F4"
+				item: "refinedstorage:4k_storage_disk"
+				type: "item"
+			}]
+			x: 3.7d
+			y: -2.7d
+		}
+		{
+			dependencies: ["759D9488242EAF06"]
+			id: "588047383189E081"
+			rewards: [{
+				count: 3
+				id: "44CD2A42A93D331C"
+				item: "refinedstorage:4k_storage_part"
+				type: "item"
+			}]
+			shape: "square"
+			tasks: [{
+				id: "6A4530D938081E37"
+				item: "refinedstorage:16k_storage_part"
+				type: "item"
+			}]
+			x: 1.8d
+			y: -3.7d
+		}
+		{
+			dependencies: ["588047383189E081"]
+			id: "1C78201117A7189C"
+			rewards: [
+				{
+					count: 3
+					id: "0800C46A6186B9CF"
+					item: "refinedstorage:16k_storage_part"
+					type: "item"
+				}
+				{
+					id: "17D5D95A327761E3"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 32
+					id: "7B6C7C34E137B049"
+					item: "refinedstorage:quartz_enriched_iron"
+					type: "item"
+				}
+			]
+			shape: "square"
+			tasks: [{
+				id: "3C188E551C7DAF6D"
+				item: "refinedstorage:64k_storage_part"
+				type: "item"
+			}]
+			x: 1.8d
+			y: -4.7d
+		}
+		{
+			dependencies: ["588047383189E081"]
+			id: "4ED188F75B6A6E68"
+			shape: "square"
+			tasks: [{
+				id: "009E3242602BB945"
+				item: "refinedstorage:16k_storage_disk"
+				type: "item"
+			}]
+			x: 3.7d
+			y: -3.7d
+		}
+		{
+			dependencies: ["1C78201117A7189C"]
+			id: "7F9587C49227964B"
+			shape: "square"
+			tasks: [{
+				id: "59FD475495A562C6"
+				item: "refinedstorage:64k_storage_disk"
+				type: "item"
+			}]
+			x: 3.7d
+			y: -4.7d
+		}
+		{
+			dependencies: ["19217630F35848B2"]
+			id: "5ABE97DA74530E14"
+			shape: "circle"
+			tasks: [{
+				id: "23C1DB2EA0AD6CD1"
+				item: "refinedstorage:construction_core"
+				type: "item"
+			}]
+			x: 4.4d
+			y: 1.3d
+		}
+		{
+			dependencies: ["19217630F35848B2"]
+			id: "4E333755BCCAC02A"
+			shape: "circle"
+			tasks: [{
+				id: "5E0652E8580389E1"
+				item: "refinedstorage:destruction_core"
+				type: "item"
+			}]
+			x: 4.4d
+			y: 3.3d
+		}
+		{
+			dependencies: ["19217630F35848B2"]
+			id: "6752FB54B0526B72"
+			rewards: [
+				{
+					count: 8
+					id: "1AF407B6D56B2D68"
+					item: "refinedstorage:raw_basic_processor"
+					type: "item"
+				}
+				{
+					id: "467CD1F9E42045A1"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					id: "4B45B4BEAB09FA7F"
+					item: "refinedstorage:advanced_processor"
+					type: "item"
+				}
+				{
+					id: "0A81B9F898A8C952"
+					item: "refinedstorage:improved_processor"
+					type: "item"
+				}
+			]
+			title: "Advanced Processing"
+			x: 4.4d
+			y: 2.3d
+		}
+		{
+			dependencies: [
+				"4E333755BCCAC02A"
+				"6752FB54B0526B72"
+				"5ABE97DA74530E14"
+				"224E9A29FE1D297B"
+			]
+			description: [
+				"You're ready to place your first system into action!"
+				""
+				"The first step is to place your Controller down, which powers your system (you will need an external power source). "
+				"[ \"Connected to the controller, you will need a Disk Drive and a Grid. Your Disk Drive will need... well.. a disk. To start, a \", { \"text\": \"1k Storage Disk\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"5D675F8B86293537\" } }, \" will suffice, but you can place whatever you'd like.\" ] "
+				"{@pagebreak}"
+				"Your Grid will be used to access the contents of your storage, although you may want to quickly upgrade to a Crafting Grid in order to craft items directly from your storage."
+			]
+			id: "514D5A3F09C5B621"
+			rewards: [
+				{
+					count: 32
+					id: "663101C01851091B"
+					item: "refinedstorage:silicon"
+					type: "item"
+				}
+				{
+					count: 32
+					id: "12956597133A4432"
+					item: "refinedstorage:quartz_enriched_iron"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "371F619721215669"
+					item: "refinedstorage:basic_processor"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "(of your storage system)"
+			tasks: [
+				{
+					id: "5A35FE5BDB20862F"
+					item: "refinedstorage:disk_drive"
+					type: "item"
+				}
+				{
+					id: "65D40196220FE372"
+					item: "refinedstorage:grid"
+					type: "item"
+				}
+				{
+					id: "2CB03B71F82B0E0A"
+					item: "refinedstorage:controller"
+					type: "item"
+				}
+			]
+			title: "The Beginnings"
+			x: 6.3d
+			y: 2.3d
+		}
+		{
+			dependencies: ["224E9A29FE1D297B"]
+			description: ["If you don't find the disks hip, you can always go for physical storage blocks! They function essentially the same in most cases, but probably look cooler, to be honest."]
+			id: "0A69FA0B1A1866BC"
+			rewards: [{
+				id: "167800167FA4449A"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "4D027AF6CF08B3D2"
+				item: "refinedstorage:1k_storage_block"
+				type: "item"
+			}]
+			x: 5.1d
+			y: -2.1d
+		}
+		{
+			dependencies: ["514D5A3F09C5B621"]
+			description: ["Refined storage gives a couple of additional tools for accessing your shit. The crafting grid is probably the most useful, as it allows you to craft recipes using stuff taken directly from your network."]
+			id: "6AF3F7375967D18E"
+			rewards: [{
+				id: "56D17F9013A62A96"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "0CF86E57F79D687C"
+				item: "refinedstorage:crafting_grid"
+				type: "item"
+			}]
+			title: "Accessing and Viewing your shit"
+			x: 9.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["6AF3F7375967D18E"]
+			description: ["Storage Monitors are used to display the amount of a specific resource (item/fluid) in your network. They work well as a quick visual indicator to know the Factory is growing :)"]
+			id: "261CAD34528244A0"
+			shape: "circle"
+			tasks: [{
+				id: "7C0CF1CBEFC686BE"
+				item: "refinedstorage:storage_monitor"
+				type: "item"
+			}]
+			x: 8.2d
+			y: -0.9d
+		}
+		{
+			dependencies: ["6AF3F7375967D18E"]
+			description: ["If you'd like to access and craft using your storage network on the go, you'll first need a wireless transmitter!"]
+			id: "13368E3ECCB65E7F"
+			rewards: [
+				{
+					count: 3
+					id: "2002196C654402E7"
+					item: "minecraft:ender_pearl"
+					type: "item"
+				}
+				{
+					id: "50B88D7FD4627B1F"
+					type: "xp"
+					xp: 100
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "2C409F8D962D012A"
+				item: "refinedstorage:wireless_transmitter"
+				type: "item"
+			}]
+			title: "Wireless Viewing"
+			x: 9.8d
+			y: -0.9d
+		}
+		{
+			dependencies: ["514D5A3F09C5B621"]
+			description: [
+				"So you wanna automate, huh? Well, it can't be so hard. "
+				""
+				"[ \"Your first step will be to craft and connect a Pattern Grid and some Patterns. Lets say you wanna automate the production of Spruce Trapdoors. Note that any autocrafting chain longer than 1 requires \", { \"text\": \"Crafting Upgrades\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"44CC9DFD02DBCCAE\" } }, \".\" ]"
+				""
+				"1. Go to your Pattern Grid and open the JEI recipe for turning spruce logs into spruce planks. Press the '+' to insert it."
+				""
+				"2. Now that you see the recipe in your grid, place your Pattern in the empty slot on the right and press the down arrow to encode the pattern."
+				""
+				"Repeat steps 1 and 2 for turning spruce planks into spruce trapdoors."
+				""
+				"You should have 2 encoded patterns. You will now need to insert them either into a Crafter (if it's a crafting recipe) or an interface (machine recipe). Make sure to have them connected to the network. Now, when you open your crafting grid, you should be able to click \"Craft\" on your Spruce Trapdoors and it'll automatically go through the steps necessary!"
+			]
+			id: "0DCD1B8FE3A7E566"
+			size: 1.5d
+			tasks: [
+				{
+					id: "25FFCF766F23B5A1"
+					item: "refinedstorage:pattern_grid"
+					type: "item"
+				}
+				{
+					id: "6147E9BE7553C924"
+					item: "refinedstorage:pattern"
+					type: "item"
+				}
+			]
+			title: "Age of Autocrafting"
+			x: 9.0d
+			y: 2.3d
+		}
+		{
+			dependencies: ["13368E3ECCB65E7F"]
+			id: "55C3818599E30F5A"
+			shape: "square"
+			tasks: [{
+				id: "7742ADB93982A65C"
+				item: "refinedstorage:wireless_grid"
+				type: "item"
+			}]
+			x: 11.6d
+			y: -2.0d
+		}
+		{
+			dependencies: ["13368E3ECCB65E7F"]
+			id: "69EC0F6AFEF2956D"
+			shape: "square"
+			tasks: [{
+				id: "4543599B5431D8E6"
+				item: "refinedstorage:wireless_fluid_grid"
+				type: "item"
+			}]
+			x: 11.6d
+			y: -0.9d
+		}
+		{
+			dependencies: ["13368E3ECCB65E7F"]
+			id: "7F3F59339ED9FE9B"
+			shape: "square"
+			tasks: [{
+				id: "2F7D0555028AAC83"
+				item: "refinedstorage:wireless_crafting_monitor"
+				type: "item"
+			}]
+			x: 11.6d
+			y: -3.1d
+		}
+		{
+			dependencies: ["13368E3ECCB65E7F"]
+			description: ["I don't really know how this thing works, but it seems to be an alternative to the wireless grid? Let me know if you figure it out."]
+			id: "192FADEEAB9B46A3"
+			shape: "square"
+			tasks: [{
+				id: "0630EADA31E40308"
+				item: {
+					Count: 1
+					id: "refinedstorage:portable_grid"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 10.5d
+			y: -3.1d
+		}
+		{
+			dependencies: ["0DCD1B8FE3A7E566"]
+			id: "30B2D5658851D14C"
+			rewards: [{
+				id: "0A5C1B7249F9957C"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "0FF24F96B79584AE"
+				item: "refinedstorage:crafter"
+				type: "item"
+			}]
+			title: "Autocrafting"
+			x: 10.6d
+			y: 1.1d
+		}
+		{
+			dependencies: ["0DCD1B8FE3A7E566"]
+			description: [
+				"The interface combines the functionality of an Importer and an Exporter. Every tick, if possible, it inserts items from storage in its filter into its adjacent inventory, and extracts items back to storage marked in its export filter. It contains an intermediate inventory to hold items in transit."
+				""
+				"By itself, its "
+			]
+			id: "0539EE19876082F6"
+			tasks: [
+				{
+					id: "711A12A955C54997"
+					item: "refinedstorage:interface"
+					type: "item"
+				}
+				{
+					id: "46BB31A2897A1DC8"
+					item: "refinedstorage:fluid_interface"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 10.6d
+			y: 2.3d
+		}
+		{
+			dependencies: ["30B2D5658851D14C"]
+			id: "578C62ED8F786485"
+			rewards: [{
+				count: 3
+				id: "1F6CFB1FF4E33A5C"
+				item: "refinedstorage:raw_advanced_processor"
+				type: "item"
+			}]
+			shape: "square"
+			tasks: [
+				{
+					id: "4298BDD49F09838C"
+					item: "refinedstorage:crafter_manager"
+					type: "item"
+				}
+				{
+					id: "55AFBAD5C663B979"
+					item: "refinedstorage:crafting_monitor"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 12.1d
+			y: 1.1d
+		}
+		{
+			description: [
+				"Can be used to rotate or dismantle RS machines! If you right click a machine while crouching, it'll drop the machine as-is, with the configuration intact."
+				""
+				"If you right click without crouching, it'll rotate the block."
+			]
+			id: "3B0FBA00DBC940AC"
+			shape: "diamond"
+			tasks: [{
+				id: "1623DFAA6EF31B66"
+				item: "refinedstorage:wrench"
+				type: "item"
+			}]
+			x: -0.8d
+			y: -1.9d
+		}
+		{
+			description: ["Refined storage allows you to dye nearly every machine, in order to match your base aesthetic. Try it out!"]
+			icon: "minecraft:yellow_dye"
+			id: "0302845051E734A3"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3133EB722937131D"
+				table_id: 5729946998515116304L
+				type: "choice"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "4EC2C6E8D7666C5C"
+				type: "checkmark"
+			}]
+			title: "Machine Dyeing!"
+			x: -1.3d
+			y: -2.4d
+		}
+		{
+			dependencies: ["514D5A3F09C5B621"]
+			description: [
+				"Keep your shit safe with a security manager! When connected to your storage system, automatically makes it inaccessible to all players (except server operators)."
+				"The player who placed the security manager is able to access its screen, and can insert Security Cards. Security Cards are matched to certain people, and you can choose per player which storage related permissions youd like to enable."
+			]
+			id: "6680B2AF899D82B1"
+			rewards: [{
+				count: 4
+				id: "071EDA94332C7AB0"
+				item: "refinedstorage:security_card"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "25D46EC224388591"
+					item: "refinedstorage:security_manager"
+					type: "item"
+				}
+				{
+					id: "7A56E1133FB0B502"
+					item: "refinedstorage:security_card"
+					type: "item"
+				}
+			]
+			title: "Secure Storage!"
+			x: 9.0d
+			y: 4.3d
+		}
+		{
+			dependencies: ["514D5A3F09C5B621"]
+			description: ["Your storage system can be inserted into your storage system to augment it!"]
+			id: "4B60698571AA0882"
+			tasks: [{
+				id: "3F2457B58CCE904C"
+				item: "refinedstorage:upgrade"
+				type: "item"
+			}]
+			x: 6.3d
+			y: 5.4d
+		}
+		{
+			dependencies: ["4B60698571AA0882"]
+			description: ["Increases transfer speed of the machine this is inserted into."]
+			id: "429583B3E0FD06B9"
+			shape: "circle"
+			tasks: [{
+				id: "4D4DE27F0CEAEF18"
+				item: "refinedstorage:speed_upgrade"
+				type: "item"
+			}]
+			x: 8.3d
+			y: 6.7d
+		}
+		{
+			dependencies: ["4B60698571AA0882"]
+			description: ["[ \"Increases the range of the \", { \"text\": \"Wireless Transmitter\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"13368E3ECCB65E7F\" } } ]"]
+			id: "7AC71C32D7492467"
+			shape: "circle"
+			tasks: [{
+				id: "75974CC5E809EBDF"
+				item: "refinedstorage:range_upgrade"
+				type: "item"
+			}]
+			x: 7.6d
+			y: 7.8d
+		}
+		{
+			dependencies: ["4B60698571AA0882"]
+			description: ["Will schedule an autocrafter task when a resource is required but not available. Necessary for autocrafting chains!"]
+			id: "44CC9DFD02DBCCAE"
+			shape: "circle"
+			tasks: [{
+				id: "487968EF0B48A1BC"
+				item: "refinedstorage:crafting_upgrade"
+				type: "item"
+			}]
+			x: 6.4d
+			y: 8.3d
+		}
+		{
+			dependencies: ["4B60698571AA0882"]
+			id: "65733E343BC86F93"
+			shape: "circle"
+			tasks: [{
+				id: "5B14BF63B47E21C8"
+				item: "refinedstorage:stack_upgrade"
+				type: "item"
+			}]
+			x: 5.2d
+			y: 7.8d
+		}
+		{
+			dependencies: ["4B60698571AA0882"]
+			id: "3C1BE7D4C934AC59"
+			shape: "circle"
+			tasks: [{
+				id: "5A11612E8A906CE3"
+				item: "refinedstorage:silk_touch_upgrade"
+				type: "item"
+			}]
+			x: 4.3d
+			y: 6.7d
+		}
+		{
+			dependencies: ["4B60698571AA0882"]
+			id: "210613A799431301"
+			shape: "circle"
+			tasks: [
+				{
+					id: "79046D1E34E2EE69"
+					item: "refinedstorage:fortune_1_upgrade"
+					type: "item"
+				}
+				{
+					id: "0F4B86FFDA280160"
+					item: "refinedstorage:fortune_2_upgrade"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "4787294966A52A96"
+					item: "refinedstorage:fortune_3_upgrade"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 4.3d
+			y: 5.4d
+		}
+		{
+			dependencies: ["4B60698571AA0882"]
+			id: "609A7E2288D82619"
+			shape: "circle"
+			tasks: [{
+				id: "793F0B06E0A3E08D"
+				item: "refinedstorage:regulator_upgrade"
+				type: "item"
+			}]
+			x: 8.3d
+			y: 5.4d
+		}
+	]
+	title: "Refined Storage"
+}

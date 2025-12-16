@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "mekanism_2_electric_boogaloo"
+	group: "398C45F8DFD15D9E"
+	icon: "alexscaves:nuclear_bomb"
+	id: "768D4DE067D9264B"
+	order_index: 1
+	quest_links: [ ]
+	quests: [ ]
+	title: "Mekanism 2: Electric Boogaloo"
+}

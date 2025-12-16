@@ -1,0 +1,232 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "railcraft_reborn"
+	group: ""
+	id: "5561C645D460B294"
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["To begin Railcraft, you will need some starting resources. Have a bit of glass for your efforts, on the house."]
+			icon: "minecraft:rail"
+			id: "3BC702C955390581"
+			rewards: [
+				{
+					id: "290551FC596B59E4"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 384
+					id: "2F8A1A63A40E3BF5"
+					item: "railcraft:lime_strengthened_glass"
+					type: "item"
+				}
+				{
+					id: "4E1A69609930E28A"
+					item: {
+						Count: 1
+						id: "patchouli:guide_book"
+						tag: {
+							"patchouli:book": "railcraft:guide_book"
+						}
+					}
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [
+				{
+					count: 32L
+					id: "7AA0D4D1100F6D99"
+					item: { Count: 32, id: "minecraft:clay_ball" }
+					type: "item"
+				}
+				{
+					dimension: "minecraft:the_nether"
+					id: "0D0B47D65470D38F"
+					type: "dimension"
+				}
+				{
+					count: 64L
+					id: "34976D379D31FC36"
+					item: { Count: 64, id: "minecraft:iron_ingot" }
+					type: "item"
+				}
+			]
+			title: "Trains! Trains! Trains!"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1B7E73928EA89911"]
+			description: ["To create anything, you will need a blast furnace. Arrange your bricks in a vertical multiblock: 3 wide, 3 long, 4 high, with the middle 2 blocks hollowed out."]
+			icon: "immersiveengineering:advanced_blast_furnace"
+			id: "0F4EC72F17EB36DE"
+			rewards: [
+				{
+					count: 34
+					id: "648D4029C1AC2560"
+					item: "railcraft:blast_furnace_bricks"
+					type: "item"
+				}
+				{
+					id: "4CDAA1047F4C7368"
+					type: "xp"
+					xp: 100
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					count: 34L
+					id: "4DC53C3DA3703818"
+					item: { Count: 34, id: "railcraft:blast_furnace_bricks" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "4C91ADF9D659A32E"
+					item: { Count: 8, id: "railcraft:coal_coke" }
+					type: "item"
+				}
+			]
+			title: "Blast Furnace"
+			x: -4.6d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3BC702C955390581"]
+			description: ["Arrange in a 3x3x3 block, with the middle block hollow."]
+			id: "1B7E73928EA89911"
+			rewards: [
+				{
+					count: 26
+					id: "43DC80EBACB89C15"
+					item: "railcraft:coke_oven_bricks"
+					type: "item"
+				}
+				{
+					id: "47CE691DD4FCA12C"
+					type: "xp"
+					xp: 100
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					count: 26L
+					id: "33D0CAA26B7F9F2C"
+					item: { Count: 26, id: "railcraft:coke_oven_bricks" }
+					type: "item"
+				}
+				{
+					id: "30573BB8736A6A38"
+					item: "railcraft:coal_coke"
+					type: "item"
+				}
+			]
+			title: "Coke Oven"
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3BC702C955390581"]
+			description: ["Are used to craft the titular rails! Check out your guidebook for different rail options."]
+			id: "73B7506ED9B70542"
+			rewards: [
+				{
+					count: 12
+					id: "49EB9B515539A2C8"
+					item: "railcraft:standard_rail"
+					type: "item"
+				}
+				{
+					id: "4C6CE30B004056FF"
+					type: "xp"
+					xp: 100
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				id: "6EAB376CCFB2CDC0"
+				item: "railcraft:manual_rolling_machine"
+				type: "item"
+			}]
+			x: -1.9d
+			y: 2.4d
+		}
+		{
+			dependencies: ["73B7506ED9B70542"]
+			description: ["Automates the processes of the manual rolling machine, at the expense of power."]
+			id: "76EE8F94FFF238B1"
+			rewards: [{
+				count: 6
+				id: "0ED4B9D10DAF1292"
+				item: "railcraft:high_speed_rail"
+				type: "item"
+			}]
+			shape: "circle"
+			tasks: [{
+				id: "5B9F784A7463F0BE"
+				item: "railcraft:powered_rolling_machine"
+				type: "item"
+			}]
+			x: -3.1d
+			y: 2.4d
+		}
+		{
+			dependencies: ["3BC702C955390581"]
+			description: [
+				"Iron tanks are multiblocks capable of holding hundreds of buckets worth of liquid in them!"
+				""
+				"Now, here’s how we build it. First, you’re going to want to lay down a solid bottom of Iron Tank Walls. Then you build the four corners out of Iron Tank Walls. Then the ceiling should be capped with them as well. Then fill in the sides with Iron Tank Gauge blocks. That’ll make an Iron Tank. But wait, we need some method of getting stuff into and out of this huge tank. You’ll also need some Iron Tank Valves."
+				" "
+				"Valves will only function if placed in the bottom two rows. And you do not want it to be in the center bottom block, because if that block is messed with, it could reset your tank’s meta-data and you lose everything in it. "
+			]
+			id: "59B9DBC8D7A166D4"
+			rewards: [
+				{
+					count: 32
+					id: "00521F00DE7C50D9"
+					item: "railcraft:white_iron_tank_wall"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "17146878FA88D0B8"
+					item: "railcraft:white_iron_tank_gauge"
+					type: "item"
+				}
+				{
+					id: "1DCB7772F004601E"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					count: 21L
+					id: "430B0AF928F48EBA"
+					item: { Count: 21, id: "railcraft:white_iron_tank_wall" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "11B0173FC3EAB3AF"
+					item: { Count: 4, id: "railcraft:white_iron_tank_gauge" }
+					type: "item"
+				}
+				{
+					id: "651B8D8A72834385"
+					item: "railcraft:white_iron_tank_valve"
+					type: "item"
+				}
+			]
+			x: 1.8d
+			y: 2.5d
+		}
+	]
+	title: "Railcraft: Reborn"
+}

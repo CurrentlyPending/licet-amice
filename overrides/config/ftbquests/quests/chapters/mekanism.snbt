@@ -141,7 +141,7 @@
 			y: 4.5d
 		}
 		{
-			dependencies: ["6D82338DD3FB42B7"]
+			dependencies: ["1DC238BA883E6C12"]
 			id: "13761E1007137CFA"
 			rewards: [{
 				id: "49108928841FD6F4"
@@ -153,22 +153,23 @@
 				title: "Power Generation!"
 				type: "checkmark"
 			}]
-			x: 2.5d
-			y: 0.0d
+			x: 0.0d
+			y: -3.3d
 		}
 		{
 			dependencies: ["13761E1007137CFA"]
+			description: ["Likely your first method of power generation, the Heat generator works similar to a furnace: place burnable items and watch your... great Fe/t rate?"]
 			id: "70DE674A3F8EADB6"
 			tasks: [{
 				id: "68A1051E5B0AB1D0"
 				item: "mekanismgenerators:heat_generator"
 				type: "item"
 			}]
-			x: 4.0d
-			y: -1.0d
+			x: 2.0d
+			y: -3.3d
 		}
 		{
-			dependencies: ["70DE674A3F8EADB6"]
+			dependencies: ["12B9FB11508DD224"]
 			id: "427A8E7A71876B42"
 			tasks: [{
 				id: "1BFC535C565BB762"
@@ -179,7 +180,7 @@
 			y: -1.5d
 		}
 		{
-			dependencies: ["70DE674A3F8EADB6"]
+			dependencies: ["12B9FB11508DD224"]
 			id: "2F686914278580C5"
 			tasks: [{
 				id: "30FB481850750A2F"
@@ -201,24 +202,32 @@
 			y: -1.5d
 		}
 		{
-			dependencies: ["13761E1007137CFA"]
+			dependencies: ["12B9FB11508DD224"]
 			id: "1C301ADB49D7F822"
 			tasks: [{
 				id: "42E48BC71B4DB7BC"
 				item: "mekanism:basic_energy_cube"
 				type: "item"
 			}]
-			x: 3.0d
+			x: 3.5d
 			y: 1.5d
 		}
 		{
 			dependencies: ["6D82338DD3FB42B7"]
 			id: "37A216CD52EF7CE1"
-			rewards: [{
-				id: "360E87916E0F8B01"
-				type: "xp"
-				xp: 100
-			}]
+			rewards: [
+				{
+					id: "360E87916E0F8B01"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 8
+					id: "4839AE4C72199AD6"
+					item: "mekanism:basic_control_circuit"
+					type: "item"
+				}
+			]
 			size: 2.0d
 			tasks: [{
 				id: "5267A364C162F6F5"
@@ -280,8 +289,8 @@
 				item: "mekanism:elite_energy_cube"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 4.5d
+			x: 3.5d
+			y: 4.6d
 		}
 		{
 			dependencies: ["2FB9AB7B2ECA307F"]
@@ -545,6 +554,38 @@
 		{
 			dependencies: ["2E9AE30616E40F11"]
 			id: "51786EB03A51BC6A"
+			rewards: [
+				{
+					count: 32
+					id: "7C9263410BB40048"
+					item: "minecraft:iron_ore"
+					type: "item"
+				}
+				{
+					count: 32
+					id: "0CB048C75E9617D4"
+					item: "mekanism:osmium_ore"
+					type: "item"
+				}
+				{
+					count: 32
+					id: "6AA79FB63FE2E8B5"
+					item: "minecraft:gold_ore"
+					type: "item"
+				}
+				{
+					count: 32
+					id: "44279E4AFD95A658"
+					item: "minecraft:copper_ore"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1964E5531BF92D66"
+					item: "minecraft:diamond_ore"
+					type: "item"
+				}
+			]
 			shape: "square"
 			tasks: [{
 				id: "29115E0F5A91821E"
@@ -554,6 +595,74 @@
 			title: "Ore Quadrupling"
 			x: -3.5d
 			y: 9.0d
+		}
+		{
+			dependencies: ["74D06646A238366F"]
+			description: [
+				"Power generation doesn't stop at solar, wind, and heat in Mekanism. You still have two more stages to go through: Fission, and Fusion. At the highest level, a fusion reactor is capable of producing well over 500 million FE/t."
+				""
+				"When you're ready, the next mekanism chapter goes through the ingredients necessary for this late game power."
+			]
+			icon: "mekanismgenerators:fusion_reactor_controller"
+			id: "30435D696445A686"
+			rewards: [{
+				id: "4F6A098E29F3116E"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "235B0A10B756090A"
+				title: "Advanced Power Generation ;)"
+				type: "checkmark"
+			}]
+			x: 8.2d
+			y: -0.5d
+		}
+		{
+			dependencies: ["12B9FB11508DD224"]
+			description: [
+				"Most of the power generating options are added by, no surprises here, Mekanism: Generators. In this quest are 2 additional options for power generation, giving a bit more interpolation between the major stages."
+				""
+				"Your reward can be whichever one you chose not to craft of the two."
+			]
+			id: "269CE5327D4CCB54"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "43F925E197448D21"
+				table_id: 4707474700679363481L
+				type: "choice"
+			}]
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "77EE8DD6B782BBFB"
+					item: "mekanismgenerators:bio_generator"
+					type: "item"
+				}
+				{
+					id: "3AD79B40132FBCDB"
+					item: "mekanismgenerators:gas_burning_generator"
+					type: "item"
+				}
+			]
+			title: "Mekanism: Generators"
+			x: 4.0d
+			y: -2.6d
+		}
+		{
+			dependencies: [
+				"37A216CD52EF7CE1"
+				"70DE674A3F8EADB6"
+			]
+			description: ["From now on, power generation options will require steel casings to build, at a minimum. "]
+			id: "12B9FB11508DD224"
+			tasks: [{
+				id: "78314100DDFB2FEF"
+				title: "Steel Based Generators"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: -1.2d
 		}
 	]
 	title: "Mekanism"

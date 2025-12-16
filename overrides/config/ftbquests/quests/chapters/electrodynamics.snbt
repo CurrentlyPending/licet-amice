@@ -1,0 +1,444 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "electrodynamics"
+	group: "1A5A8D13C78F8D75"
+	id: "5AA4708A4A20D9CF"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			id: "2B108034F5C77424"
+			shape: "diamond"
+			size: 3.0d
+			tasks: [{
+				dimension: "minecraft:overworld"
+				disable_toast: true
+				icon: "electrodynamics:wireinsulatedcopperblack"
+				id: "6876ADB1FD021977"
+				title: "Welcome To Electrodynamics!"
+				type: "dimension"
+			}]
+			title: "The Electrician"
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2B108034F5C77424"]
+			description: [
+				"Knowing how to make your own energy is the key to making your machines work. And with a measely generator, hundreds of Forge Energy units can be produced, thanks to Electrodynamic's voltage and Joules system.  "
+				"All machines, generators, and wiring in Electrodynamics follow this system."
+				"Energy OUTPUTS are marked with &0grey&r connection points."
+				"Energy INPUTS are marked with &6orange&r connection points."
+				"Always connect &0grey&r to &6orange&r to move energy correctly. Reversed connections will not transfer power."
+			]
+			icon: {
+				Count: 1
+				id: "electrodynamics:battery"
+				tag: {
+					maximumcapacity: 1666666.0d
+				}
+			}
+			id: "339FB0A80076CB46"
+			rewards: [{
+				id: "1A58D03AA1299126"
+				item: "electrodynamics:wirecopper"
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 3.0d
+			tasks: [{
+				id: "127A2067A03E84A2"
+				title: "Principles Of Electricity Generation"
+				type: "checkmark"
+			}]
+			x: -3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["10AAB2AD5FEBE5D5"]
+			id: "4D9129373C092027"
+			shape: "square"
+			tasks: [{
+				id: "6A94DA66959C11C5"
+				item: "electrodynamics:coalgenerator"
+				type: "item"
+			}]
+			title: "Like The Old Days"
+			x: -6.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["339FB0A80076CB46"]
+			icon: "minecraft:coal"
+			id: "10AAB2AD5FEBE5D5"
+			size: 1.5d
+			tasks: [{
+				id: "59F3CCE61601ABD7"
+				title: "Manual Energy"
+				type: "checkmark"
+			}]
+			x: -5.25d
+			y: -1.5d
+		}
+		{
+			dependencies: ["339FB0A80076CB46"]
+			icon: "minecraft:lava_bucket"
+			id: "42F26CA5C23A241F"
+			size: 1.5d
+			tasks: [{
+				id: "6768DB3198A6F83C"
+				title: "Automatic Energy"
+				type: "checkmark"
+			}]
+			x: -5.25d
+			y: -3.0d
+		}
+		{
+			dependencies: ["339FB0A80076CB46"]
+			icon: "minecraft:wheat_seeds"
+			id: "5B28C0F736242C2F"
+			size: 1.5d
+			tasks: [{
+				id: "45CDB726BE30D8E5"
+				title: "Complex Energy"
+				type: "checkmark"
+			}]
+			x: -5.25d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2B108034F5C77424"]
+			icon: "electrodynamics:insulation"
+			id: "78E39BF8A7EFE313"
+			rewards: [{
+				id: "50F8F6759C1ABA65"
+				item: "electrodynamics:insulation"
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 3.0d
+			tasks: [{
+				id: "7152FA33FF65E6D7"
+				title: "Principles Of Electrical Safety"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2B108034F5C77424"]
+			icon: "electrodynamics:multimeter"
+			id: "517F7E977F09E1E3"
+			rewards: [{
+				id: "6C44D794A2C577DF"
+				item: "electrodynamics:wirecopper"
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 3.0d
+			tasks: [{
+				id: "66C4C69ADBF63929"
+				title: "Principles Of Wiring"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["78E39BF8A7EFE313"]
+			id: "484E3BB620264C12"
+			size: 1.5d
+			subtitle: "Turn Leather To Rubber Insulation"
+			tasks: [{
+				id: "6BDF64CB19A903DC"
+				item: "electrodynamics:insulation"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -5.25d
+		}
+		{
+			dependencies: ["78E39BF8A7EFE313"]
+			id: "72ABBD55BC4D2AD4"
+			rewards: [{
+				count: 2
+				id: "28EBFB4D6B0BC3E7"
+				item: "electrodynamics:wireinsulatedcopperblack"
+				type: "item"
+			}]
+			size: 1.5d
+			tasks: [{
+				id: "6528BE3FF4B3AEFB"
+				item: "electrodynamics:upgradetransformer"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -5.25d
+		}
+		{
+			dependencies: ["5EBFDA59627E9D42"]
+			id: "755B9426C8D445CC"
+			rewards: [{
+				count: 5
+				id: "48A18C3C90D7B512"
+				item: "electrodynamics:insulationceramic"
+				type: "item"
+			}]
+			size: 1.5d
+			subtitle: "Turn Sand Into Ceramic Insulation"
+			tasks: [{
+				id: "57A83EB5CD483105"
+				item: "electrodynamics:insulationceramic"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -9.75d
+		}
+		{
+			dependencies: ["484E3BB620264C12"]
+			hide_until_deps_complete: false
+			id: "4AD8880F8C596A52"
+			shape: "square"
+			tasks: [{
+				id: "3929D2290BBB5E66"
+				item: "electrodynamics:ceramicwet"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["4AD8880F8C596A52"]
+			id: "264370E3C66C2E97"
+			shape: "square"
+			tasks: [{
+				id: "3280A450A757DD0F"
+				item: "electrodynamics:ceramiccooked"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["264370E3C66C2E97"]
+			id: "5EBFDA59627E9D42"
+			shape: "square"
+			tasks: [{
+				id: "401E4B073234A02B"
+				item: "electrodynamics:ceramicplate"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["484E3BB620264C12"]
+			id: "396BEBC0AECE5C77"
+			shape: "square"
+			tasks: [{
+				count: 3L
+				id: "6D5DD1A97E168167"
+				item: { Count: 3, id: "electrodynamics:insulation" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["396BEBC0AECE5C77"]
+			id: "6525EDD0CE5C2F59"
+			rewards: [{
+				count: 3
+				id: "4B506A154E0D09E5"
+				item: "electrodynamics:insulation"
+				type: "item"
+			}]
+			size: 1.5d
+			subtitle: "Putting Insulation In Your Insulation So You Can Get Some Insulation WHILE You Get Insulation"
+			tasks: [{
+				id: "2D112F7239DA6C46"
+				item: "electrodynamics:wirehighlyinsulatedcopperblack"
+				type: "item"
+			}]
+			x: -2.25d
+			y: -8.25d
+		}
+		{
+			dependencies: ["72ABBD55BC4D2AD4"]
+			id: "0CFB32D4D00B8421"
+			rewards: [{
+				count: 2
+				id: "696C13CBA0F4276E"
+				item: "electrodynamics:wireinsulatedcopperblack"
+				type: "item"
+			}]
+			size: 1.5d
+			tasks: [{
+				id: "2D51E4A10E0CC745"
+				item: "electrodynamics:downgradetransformer"
+				type: "item"
+			}]
+			title: "A Mature Choice"
+			x: 0.0d
+			y: -6.75d
+		}
+		{
+			dependencies: ["72ABBD55BC4D2AD4"]
+			id: "720E6126BA9265CA"
+			rewards: [{
+				count: 2
+				id: "69C3687D40D9BA18"
+				item: "electrodynamics:wireceramicinsulatedcopperblack"
+				type: "item"
+			}]
+			size: 1.5d
+			tasks: [{
+				id: "72C7DF0F0F0D8D69"
+				item: "electrodynamics:advancedupgradetransformer"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -5.25d
+		}
+		{
+			dependencies: ["0CFB32D4D00B8421"]
+			id: "281691751E0327C4"
+			rewards: [{
+				count: 2
+				id: "0A5494ED1976CC9F"
+				item: "electrodynamics:wireceramicinsulatedcopperblack"
+				type: "item"
+			}]
+			size: 1.5d
+			tasks: [{
+				id: "2D769425635EE656"
+				item: "electrodynamics:advanceddowngradetransformer"
+				type: "item"
+			}]
+			title: "An Unnecessary Choice"
+			x: 1.5d
+			y: -6.75d
+		}
+		{
+			dependencies: ["517F7E977F09E1E3"]
+			description: ["Feeble and naked, the humble unshielded copper wire is capable of many things."]
+			id: "70707536F875FD3A"
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Make Your First Copper Wire"
+			tasks: [{
+				id: "2F713D45E82CF804"
+				item: "electrodynamics:wirecopper"
+				type: "item"
+			}]
+			title: "First Of Many"
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["70707536F875FD3A"]
+			description: ["With added insulation, this wire can now safely be walked over without getting zapped."]
+			id: "516AA743E0F65D55"
+			rewards: [{
+				id: "25A43593A2CCDC6C"
+				item: "electrodynamics:wireinsulatedcopperblack"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Insulate A Copper Wire"
+			tasks: [{
+				id: "24F667B2E6D29EC7"
+				item: "electrodynamics:wireinsulatedcopperblack"
+				type: "item"
+			}]
+			title: "Wrapping Your Tools"
+			x: 3.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6428E582AE276D26"]
+			id: "5F59D1D64E4AF1C5"
+			shape: "square"
+			tasks: [{
+				id: "06B42B6BA3BD425D"
+				item: "electrodynamics:wiresuperconductive"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["6428E582AE276D26"]
+			id: "6B61FB597D411620"
+			shape: "square"
+			tasks: [{
+				id: "5EC37C0D7C14271D"
+				item: "electrodynamics:wiresilver"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["6428E582AE276D26"]
+			id: "1EF7FAE8E0AD493E"
+			shape: "square"
+			tasks: [{
+				id: "5DFCE2006B894509"
+				item: "electrodynamics:wiregold"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6428E582AE276D26"]
+			id: "7FC5DBF20625DCA2"
+			shape: "square"
+			tasks: [{
+				id: "41CA71AB7C7A257C"
+				item: "electrodynamics:wireiron"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["6428E582AE276D26"]
+			id: "06E81471681FACB0"
+			shape: "square"
+			tasks: [{
+				id: "5D157BF54D7D10A1"
+				item: "electrodynamics:wireiron"
+				type: "item"
+			}]
+			title: "Why Would You Do This"
+			x: 6.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["516AA743E0F65D55"]
+			description: ["With added insulation, this wire can now safely be walked over without getting zapped."]
+			id: "6428E582AE276D26"
+			rewards: [{
+				id: "1ADFEE2A3173D1F8"
+				item: "electrodynamics:wireinsulatedcopperblack"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Make A Wire Mill"
+			tasks: [{
+				id: "1B5C17D1E1569513"
+				item: "electrodynamics:wiremill"
+				type: "item"
+			}]
+			title: "A Wire For A Wire"
+			x: 5.0d
+			y: -1.5d
+		}
+	]
+	title: "Electrodynamics"
+}
