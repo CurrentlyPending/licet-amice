@@ -6,6 +6,730 @@
 	id: "16F4A6A28674F82F"
 	order_index: 3
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			description: ["Congratulations! You have started your journey with Blood Magic, a mod I have no experience with! So uhmm... use your little blood magic book to guide you forward."]
+			id: "073AC24B5244254F"
+			rewards: [
+				{
+					id: "30E2143160D5F56B"
+					item: "minecraft:iron_block"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "105735CEF4D42D27"
+					item: "minecraft:red_stained_glass"
+					type: "item"
+				}
+			]
+			size: 3.0d
+			subtitle: "Please do not touch the neighbour's cat."
+			tasks: [{
+				id: "34CD26EA4A25DB6C"
+				item: "bloodmagic:altar"
+				type: "item"
+			}]
+			title: "Create a Blood Altar"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["095F7F23030B900E"]
+			dependency_requirement: "one_completed"
+			description: ["It's red, round, and I presume squishy. Did you test the donor's blood for STDs? I would wear gloves if I were you."]
+			id: "79D70E58585670E8"
+			rewards: [{
+				count: 4
+				id: "62BBBDC33A8E6C9D"
+				item: "minecraft:brick"
+				type: "item"
+			}]
+			size: 1.5d
+			subtitle: "Does it also taste like blood?"
+			tasks: [{
+				id: "75E578368F6C8BB4"
+				item: "bloodmagic:weakbloodorb"
+				type: "item"
+			}]
+			title: "Create your first Blood Orb"
+			x: 0.0d
+			y: -4.65d
+		}
+		{
+			dependencies: ["073AC24B5244254F"]
+			description: ["Can't you just use a cow or something?"]
+			id: "095F7F23030B900E"
+			rewards: [
+				{
+					id: "04677273C0A7CD63"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					id: "446BD3A85714D8DE"
+					item: {
+						Count: 1
+						id: "minecraft:splash_potion"
+						tag: {
+							Potion: "minecraft:healing"
+						}
+					}
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Please don't hurt yourself."
+			tasks: [{
+				id: "2C60F4E37AC3D1EE"
+				item: {
+					Count: 1
+					id: "bloodmagic:sacrificialdagger"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "Why are you holding it like that?"
+			x: 0.0d
+			y: -2.8d
+		}
+		{
+			dependencies: ["79D70E58585670E8"]
+			description: [
+				"It probably would."
+				"Stupid questions aside, congratulations! You have just created your own evil fucking witch desk! It comes with bottles of questionable liquid, a cursed scroll, a comfy winter scarf and 3 cellar spiders that may or may not wiggle when you disturb them."
+			]
+			id: "7D068F80D7E68592"
+			rewards: [
+				{
+					count: 5
+					id: "79BE239B46E89C9F"
+					item: "minecraft:glass_pane"
+					type: "item"
+				}
+				{
+					id: "0A3073740AFEBDDF"
+					item: "minecraft:sand"
+					type: "item"
+				}
+				{
+					id: "6F42276A22F00B09"
+					item: "minecraft:water_bucket"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Do you think this would hold a 20 gallon aquarium?"
+			tasks: [{
+				id: "1278854008E36795"
+				item: "bloodmagic:alchemytable"
+				type: "item"
+			}]
+			title: "Become a REAL cultist!"
+			x: 0.0d
+			y: -6.6d
+		}
+		{
+			dependencies: ["7D068F80D7E68592"]
+			description: ["Okay I know it looks tempting but PLEASE for the love of everything holy do NOT put it in there."]
+			id: "0510E8C02F43384F"
+			rewards: [{
+				count: 3
+				id: "0483E5A9A74C2B18"
+				item: "minecraft:paper"
+				type: "item"
+			}]
+			size: 1.5d
+			subtitle: "Sugar water provided"
+			tasks: [{
+				id: "65954F0D9943561C"
+				item: "bloodmagic:slate_vial"
+				type: "item"
+			}]
+			title: "Create a test tube"
+			x: 1.9500000000000002d
+			y: -6.6000000000000005d
+		}
+		{
+			dependencies: ["79D70E58585670E8"]
+			description: ["Why is this one blue? Is it hemolymph? "]
+			id: "3E81B03A121FF0C0"
+			rewards: [{
+				count: 4
+				id: "233164216F4CFE36"
+				item: "minecraft:redstone_block"
+				type: "item"
+			}]
+			size: 1.5d
+			subtitle: "It absolutely does not."
+			tasks: [{
+				id: "027B7AB2068E1A4D"
+				item: "bloodmagic:apprenticebloodorb"
+				type: "item"
+			}]
+			title: "Make an Apprentice Blood Orb"
+			x: -1.6500000000000001d
+			y: -4.65d
+		}
+		{
+			dependencies: ["7D068F80D7E68592"]
+			description: ["At least you're not making the circle out of blood. "]
+			id: "00EC1712F15FF186"
+			rewards: [{
+				id: "320A5C86A76BDE38"
+				item: "minecraft:coal_block"
+				type: "item"
+			}]
+			size: 1.5d
+			subtitle: "It looks pretty..."
+			tasks: [{
+				id: "341129EE48540A54"
+				item: {
+					Count: 1
+					id: "bloodmagic:arcaneashes"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Mix up some Arcane Ash"
+			x: 0.0d
+			y: -8.55d
+		}
+		{
+			dependencies: ["00EC1712F15FF186"]
+			description: ["Even the slightest pressure could cause the spring locks to snap."]
+			id: "6B0202CEF01B5737"
+			rewards: [
+				{
+					id: "5BCA15E9B4B34255"
+					item: {
+						Count: 1
+						id: "minecraft:flint_and_steel"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 2
+					id: "797C57CE81C2FAD5"
+					item: "minecraft:iron_block"
+					type: "item"
+				}
+			]
+			size: 1.0d
+			subtitle: "We found one. A REAL one."
+			tasks: [
+				{
+					id: "63618D6289884FE6"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "bloodmagic:livinghelmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7E277E376E1D6F2D"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "bloodmagic:livingplate"
+						tag: {
+							Damage: 0
+							livingStats: {
+								evolved: 0b
+								maxPoints: 100
+								upgrades: [ ]
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "59145507E03C99A7"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "bloodmagic:livingleggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "714EA9944D472856"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "bloodmagic:livingboots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Iron Armor : Reborn"
+			x: 0.0d
+			y: -9.9d
+		}
+		{
+			dependencies: ["073AC24B5244254F"]
+			description: ["Congratulations! You can keep going!"]
+			id: "75386D2A1B865A8E"
+			rewards: [{
+				id: "0EEBE086D5AC1000"
+				item: "minecraft:golden_apple"
+				type: "item"
+			}]
+			size: 1.5d
+			subtitle: "Slate!!!"
+			tasks: [{
+				id: "7DFED59C6B1F94BD"
+				item: "bloodmagic:blankslate"
+				type: "item"
+			}]
+			title: "The slater"
+			x: 2.25d
+			y: 0.0d
+		}
+		{
+			dependencies: ["75386D2A1B865A8E"]
+			description: ["You are valid!"]
+			id: "4751975D71D6C9D4"
+			rewards: [{
+				id: "37F0E76DECF7B299"
+				item: "minecraft:golden_apple"
+				type: "item"
+			}]
+			size: 1.5d
+			subtitle: "Slate up."
+			tasks: [{
+				id: "5F46C34A37C1CF05"
+				item: "bloodmagic:reinforcedslate"
+				type: "item"
+			}]
+			title: "Who's up reinforcing their slates?"
+			x: 4.050000000000001d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4751975D71D6C9D4"]
+			description: ["We love you!"]
+			id: "3FBED69CFF9883DD"
+			rewards: [
+				{
+					id: "74B04F62154BD874"
+					item: "minecraft:beef"
+					type: "item"
+				}
+				{
+					id: "59C080843A96AC9B"
+					item: "minecraft:chicken"
+					type: "item"
+				}
+			]
+			size: 1.5d
+			subtitle: "Do you jump for the raw chicken or the raw beef?"
+			tasks: [{
+				id: "338391F7F6712F82"
+				item: "bloodmagic:infusedslate"
+				type: "item"
+			}]
+			title: "Imbue your slate."
+			x: 4.050000000000001d
+			y: 1.8000000000000003d
+		}
+		{
+			dependencies: ["3FBED69CFF9883DD"]
+			description: ["If not friend, why slate shaped?"]
+			id: "0817C78176D54739"
+			rewards: [{
+				count: 4
+				id: "5811979052948BF1"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
+			size: 1.5d
+			subtitle: "That's one evil slate!"
+			tasks: [{
+				id: "1BE1EAC8C786074A"
+				item: "bloodmagic:demonslate"
+				type: "item"
+			}]
+			title: "EVIL SLATER"
+			x: 6.15d
+			y: 1.8000000000000003d
+		}
+		{
+			dependencies: ["0817C78176D54739"]
+			description: [
+				"No slate too slate."
+				"No slate to slate."
+				"No slate to slate."
+				"No slate to slate slating."
+				"Born of Slate and Slate."
+				"You shall slate the slating slate that slates their slates."
+				"You are the Slate."
+				"You are the Slate Knight."
+			]
+			id: "49BDF66A95908659"
+			rewards: [{
+				id: "0432D895283D583B"
+				item: "minecraft:diamond_block"
+				type: "item"
+			}]
+			size: 1.5d
+			subtitle: "The slate to slate them all."
+			tasks: [{
+				id: "1DBE460B68A3A1FE"
+				item: "bloodmagic:etherealslate"
+				type: "item"
+			}]
+			title: "The final slate."
+			x: 6.15d
+			y: 3.7500000000000004d
+		}
+		{
+			dependencies: ["073AC24B5244254F"]
+			description: [
+				"Wonder if it works on other people."
+				"Ohhh Ammonite~"
+			]
+			id: "0B644B74C6030EC6"
+			rewards: [{
+				count: 2
+				id: "526FA282501E3596"
+				item: {
+					Count: 1
+					id: "minecraft:splash_potion"
+					tag: {
+						Potion: "minecraft:swiftness"
+					}
+				}
+				type: "item"
+			}]
+			size: 2.0d
+			subtitle: "Is this ethical?..."
+			tasks: [{
+				id: "4D5B403DB2D56FDE"
+				item: "bloodmagic:soulsnare"
+				type: "item"
+			}]
+			title: "Harvest their souls!"
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["3E81B03A121FF0C0"]
+			description: ["How many Magician's Blood Orbs can a Magician Orb before it Bloods the Orb Magician?"]
+			id: "00AE181E5013DC26"
+			rewards: [
+				{
+					id: "2E4C4D9F62D2B7DE"
+					item: "minecraft:enchanted_golden_apple"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "08503360CE1A913B"
+					item: "minecraft:gold_ingot"
+					type: "item"
+				}
+			]
+			size: 1.5d
+			subtitle: "So beautiful..."
+			tasks: [{
+				id: "0223A3994769BCAF"
+				item: "bloodmagic:magicianbloodorb"
+				type: "item"
+			}]
+			title: "Create a Magician's Blood Orb"
+			x: -3.3000000000000003d
+			y: -4.65d
+		}
+		{
+			dependencies: ["0B644B74C6030EC6"]
+			description: ["What do you want me to tell you? It's a rock."]
+			id: "7D972F402609457E"
+			rewards: [{
+				id: "07048EAADA7573DE"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
+			size: 1.5d
+			subtitle: "It can hold 64 will."
+			tasks: [{
+				id: "2598F72F5B73118C"
+				item: {
+					Count: 1
+					id: "bloodmagic:soulgempetty"
+					tag: {
+						souls: 64.0d
+					}
+				}
+				type: "item"
+			}]
+			title: "Create a Petty Tartaric Gem"
+			x: -2.4d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7D972F402609457E"]
+			description: ["Good job!"]
+			id: "0C04B196A6D9171B"
+			rewards: [{
+				id: "3D25368A0F2C5E70"
+				item: "minecraft:gold_block"
+				type: "item"
+			}]
+			size: 1.5d
+			subtitle: "It can store 256 Will."
+			tasks: [{
+				id: "2857517C54AB5ACD"
+				item: {
+					Count: 1
+					id: "bloodmagic:soulgemlesser"
+					tag: {
+						souls: 256.0d
+					}
+				}
+				type: "item"
+			}]
+			title: "Create a Lesser Tartaric Gem"
+			x: -4.3500000000000005d
+			y: 3.0000000000000004d
+		}
+		{
+			dependencies: ["0C04B196A6D9171B"]
+			description: ["One more to go!"]
+			id: "5059976FB1442342"
+			rewards: [{
+				count: 2
+				id: "70CA335E4E9F6698"
+				item: "herbalbrews:green_tea"
+				type: "item"
+			}]
+			size: 1.5d
+			subtitle: "It can hold 1024 Will."
+			tasks: [{
+				id: "28F10AAFAA2E2BFB"
+				item: {
+					Count: 1
+					id: "bloodmagic:soulgemcommon"
+					tag: {
+						souls: 1024.0d
+					}
+				}
+				type: "item"
+			}]
+			title: "Create a Common Tartaric Gem"
+			x: -6.300000000000001d
+			y: 3.0000000000000004d
+		}
+		{
+			dependencies: ["5059976FB1442342"]
+			description: ["This is soooo tiring man..."]
+			id: "62ABD72EA744A72A"
+			rewards: [{
+				id: "7073D236A6030602"
+				item: "herbalbrews:coffee"
+				type: "item"
+			}]
+			size: 1.5d
+			subtitle: "It holds 4096 Will."
+			tasks: [{
+				id: "17FCDD258E83DDA5"
+				item: {
+					Count: 1
+					id: "bloodmagic:soulgemgreater"
+					tag: {
+						souls: 4096.0d
+					}
+				}
+				type: "item"
+			}]
+			title: "Create a Greater Tartaric Gem"
+			x: -8.25d
+			y: 3.0000000000000004d
+		}
+		{
+			dependencies: ["207325783DD257A1"]
+			description: ["It knows."]
+			id: "26D012A5A2A44709"
+			rewards: [{
+				count: 2
+				id: "21FC4E4287C7958C"
+				item: {
+					Count: 1
+					id: "bloodmagic:soulgemlesser"
+					tag: {
+						souls: 256.0d
+					}
+				}
+				type: "item"
+			}]
+			size: 1.5d
+			subtitle: "It knows what you did."
+			tasks: [{
+				id: "4640C7780C5CFD93"
+				item: {
+					Count: 1
+					id: "bloodmagic:soulsword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Get a sword to the \"Aware\" stage"
+			x: 0.0d
+			y: 7.800000000000001d
+		}
+		{
+			dependencies: ["207325783DD257A1"]
+			id: "2F1372B0E16231E1"
+			rewards: [{
+				count: 6
+				id: "70DE7D8F04A09957"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
+			subtitle: "SHAW!"
+			tasks: [{
+				id: "1536E7B1C9542366"
+				item: "bloodmagic:throwing_dagger"
+				type: "item"
+			}]
+			title: "Silksong reference!?"
+			x: 1.6d
+			y: 5.7d
+		}
+		{
+			dependencies: ["0B644B74C6030EC6"]
+			description: ["It looks so evil."]
+			id: "207325783DD257A1"
+			size: 2.0d
+			subtitle: "Don't put your hand in that."
+			tasks: [{
+				id: "7296BF937DD32B82"
+				item: "bloodmagic:soulforge"
+				type: "item"
+			}]
+			title: "Create the Hellfire Forge"
+			x: 0.0d
+			y: 5.6d
+		}
+		{
+			dependencies: ["26D012A5A2A44709"]
+			description: ["The tools will rule us all. The end is near."]
+			id: "07291DFD2B7F2F54"
+			size: 1.5d
+			subtitle: "They all know now. What have you done!?"
+			tasks: [
+				{
+					id: "7E7CD42EB6B744DE"
+					item: {
+						Count: 1
+						id: "bloodmagic:soulaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "203985B11632BAF3"
+					item: {
+						Count: 1
+						id: "bloodmagic:soulpickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4CE3C29FBCE9FCC6"
+					item: {
+						Count: 1
+						id: "bloodmagic:soulshovel"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4F50406A617587D2"
+					item: {
+						Count: 1
+						id: "bloodmagic:soulscythe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Get more tools to the \"Aware\" stage"
+			x: 1.8000000000000003d
+			y: 7.800000000000001d
+		}
+		{
+			dependencies: ["00AE181E5013DC26"]
+			description: ["Pee!"]
+			id: "1695F56E02DA1CFF"
+			size: 1.5d
+			subtitle: "It's yellow."
+			tasks: [{
+				id: "30411D6E258FD0B0"
+				item: "bloodmagic:masterbloodorb"
+				type: "item"
+			}]
+			title: "Create a Master's Blood Orb"
+			x: -4.95d
+			y: -4.65d
+		}
+		{
+			dependencies: ["1695F56E02DA1CFF"]
+			description: ["PURPLE ORB??? PURPLE GUY?!?!"]
+			id: "514134A6A8DD73E5"
+			size: 1.5d
+			subtitle: "Now it's purple."
+			tasks: [{
+				id: "036548D6E5B31B7C"
+				item: "bloodmagic:archmagebloodorb"
+				type: "item"
+			}]
+			title: "Create an Archmage's Blood Orb"
+			x: -6.6000000000000005d
+			y: -4.65d
+		}
+	]
 	title: "Blood Magic"
 }
