@@ -1,0 +1,47 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "reguas_devotion"
+	group: "6B44979E48943FD9"
+	icon: {
+		Count: 1
+		id: "mowziesmobs:ice_crystal"
+		tag: {
+			Damage: 0
+		}
+	}
+	id: "135994A4A4877FEF"
+	images: [{
+		height: 10.0d
+		image: "kubejs:textures/quests/reguas.png"
+		rotation: 0.0d
+		width: 18.0d
+		x: 0.0d
+		y: 0.0d
+	}]
+	order_index: 1
+	quest_links: [ ]
+	quests: [{
+		dependencies: ["6B69050AB855E0A6"]
+		description: ["Reguas has forever been a symbol of endurance and preservation due to the concepts it embodies. As such, the devouts of Reguas dedicate themselves to the creation of art, in the belief that of all things man-made, it was the only one able to resist eternity. So while Reguas does not have any crazy powers associated with it, it still represents an important aspect of humanity that is often glossed over."]
+		icon: {
+			Count: 1
+			id: "mowziesmobs:ice_crystal"
+			tag: {
+				Damage: 0
+			}
+		}
+		id: "5519BDA10648C201"
+		subtitle: "Why doesn't this Titan get anything?"
+		tasks: [{
+			id: "63A9E4F992930F1B"
+			title: "Reguas is... fine, I guess"
+			type: "checkmark"
+		}]
+		title: "What's the deal with Reguas?"
+		x: 0.0d
+		y: 0.8d
+	}]
+	subtitle: ["The might of Reguas"]
+	title: "&bReguas devotion"
+}

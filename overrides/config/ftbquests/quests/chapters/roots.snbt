@@ -1,11 +1,2067 @@
 {
+	autofocus_id: "598E40F3CBFAF327"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "roots"
-	group: ""
-	id: "005D4DBEBC52A6B9"
-	order_index: 2
+	group: "6B44979E48943FD9"
+	icon: "rootsclassic:crystal_staff"
+	id: "4B4220990D58A6AE"
+	order_index: 3
 	quest_links: [ ]
-	quests: [ ]
-	title: "Roots"
+	quests: [
+		{
+			dependencies: ["6B69050AB855E0A6"]
+			description: [
+				"When life was brought to the world in ancient times, with it came a new source of power, one that's found deep within all living beings, a manifestation of the beauty and essence of nature itself. This power, known as &l&2Terra&r, when catalyzed can manipulate the world in ways nothing else can."
+				"{@pagebreak}"
+				"This power holds the basis of the devouts of Svouna. In a time long past, these ancestral followers would seclude themselves deep within forests to perform their rituals away from prying eyes. These powerful druids seem to have disappeared, though traces of their work can probably still be found..."
+			]
+			icon: "rootsclassic:radiant_daisy"
+			id: "598E40F3CBFAF327"
+			size: 3.0d
+			subtitle: "No man could ever beat her"
+			tasks: [{
+				id: "22EBDA75A7A0911C"
+				title: "Become a disciple of Svouna"
+				type: "checkmark"
+			}]
+			title: "Let nature be your catalyst"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["598E40F3CBFAF327"]
+			description: [
+				"Occasionally, when breaking grass, it's possible to come across old tangles of roots. While they may seem worthless at a glance, an expert will immediately be drawn to the mystical energies that surround this peculiar item. It's almost like a whisper..."
+				"Could this plant be trying to communicate something?"
+			]
+			hide_until_deps_complete: true
+			id: "0D6B2BE1AA1A9AF4"
+			rewards: [
+				{
+					count: 10
+					id: "00DF24FE6A482EBC"
+					item: "rootsclassic:old_root"
+					type: "item"
+				}
+				{
+					id: "664557ECBF31DACA"
+					item: "rootsclassic:rooty_stew"
+					type: "item"
+				}
+			]
+			subtitle: "Everything tells a tale"
+			tasks: [{
+				id: "01CD602D034069ED"
+				item: "rootsclassic:old_root"
+				type: "item"
+			}]
+			title: "Signs of old life"
+			x: 0.0d
+			y: -2.9d
+		}
+		{
+			dependencies: ["0D6B2BE1AA1A9AF4"]
+			description: ["By allowing the roots to fuse with a piece of inert stone, runes began manifesting onto its surface. They're foreign and unfamiliar, and yet perfectly understandable. Seems the roots were holding ancient druidic memory in them, and now they eagerly shared that knowledge through this slab."]
+			hide_until_deps_complete: true
+			id: "5AEF29400BEFED40"
+			subtitle: "Will you sit and listen?"
+			tasks: [{
+				id: "61201DA0D8A8D454"
+				item: "rootsclassic:runic_tablet"
+				type: "item"
+			}]
+			title: "Nature tells her tale"
+			x: 0.0d
+			y: -5.1d
+		}
+		{
+			dependencies: ["5AEF29400BEFED40"]
+			description: [
+				"While arcane energies generally flow and are channeled by every lifeform, certain creatures are more prone to the arcane than others. These rare plants will be essential in all druidic rites."
+				"{@pagebreak}"
+				"The &l&2verdant sprig&r can be found growing alongside crops. It has regenerative properties unlike any other plant."
+				"The &l&cinfernal bulb&r is a curious plant that sprouts together with nether wart. It embodies the fiery essence of its homeland, the Nether."
+				"The &l&5dragon's eye&r is an odd fruit that can be found on chorus plants. The weird energies of the End permeate it."
+			]
+			hide_until_deps_complete: true
+			icon: "rootsclassic:verdant_sprig"
+			id: "22BF000DEEAA2424"
+			rewards: [
+				{
+					count: 10
+					id: "6D28036F1C98E5CE"
+					item: "rootsclassic:verdant_sprig"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "0E84A2D57D24170D"
+					item: "rootsclassic:infernal_bulb"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "24A2155CD748F35A"
+					item: "rootsclassic:dragons_eye"
+					type: "item"
+				}
+			]
+			subtitle: "Nature flows through itself"
+			tasks: [
+				{
+					id: "237FCBA0EBF0DC97"
+					item: "rootsclassic:verdant_sprig"
+					type: "item"
+				}
+				{
+					id: "5894A57D88872B92"
+					item: "rootsclassic:infernal_bulb"
+					type: "item"
+				}
+				{
+					id: "1DC09C8A2E8588BE"
+					item: "rootsclassic:dragons_eye"
+					type: "item"
+				}
+			]
+			title: "Useful flora"
+			x: 0.4d
+			y: -5.8d
+		}
+		{
+			dependencies: ["5AEF29400BEFED40"]
+			description: ["While it may seem disrespectful to nature, certain rites will require the use of tree bark to be completed. With this simple knife, such task shouldn't be too difficult."]
+			hide_until_deps_complete: true
+			id: "0146742F9ED403C0"
+			rewards: [{
+				count: 5
+				id: "757E12C37EF0E6DF"
+				item: "rootsclassic:healing_poultice"
+				type: "item"
+			}]
+			subtitle: "Disrespecting the elders"
+			tasks: [{
+				id: "47ABE534B6519AF6"
+				item: {
+					Count: 1
+					id: "rootsclassic:bark_knife"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Collecting bark"
+			x: -0.4d
+			y: -5.8d
+		}
+		{
+			dependencies: ["5AEF29400BEFED40"]
+			description: [
+				"An inexpert brute may easily travel to the woods and come across startled deers and assume they're no more than hunting game that begets no compassion. But druids know how to conquer the hearts of these majestic creatures. By holding out their favorite food, the apple, they can be made to approach and tame, making them friendly."
+				"{@pagebreak}"
+				"In this state, the deer will make for a useful beast: by feeding it an apple and then a flower, the deer will be able to repopulate it, therefore acting as a convenient source of flowers for all druidic (and aesthetic) purposes."
+			]
+			hide_until_deps_complete: true
+			id: "5C7CF7A9CE04E429"
+			rewards: [
+				{
+					id: "317C8A48BED51131"
+					item: "minecraft:red_tulip"
+					type: "item"
+				}
+				{
+					id: "5E51C1F644912AD8"
+					item: "minecraft:orange_tulip"
+					type: "item"
+				}
+				{
+					id: "19B04B22183FBB83"
+					item: "minecraft:white_tulip"
+					type: "item"
+				}
+				{
+					id: "334EEC3AD6DD57D3"
+					item: "minecraft:pink_tulip"
+					type: "item"
+				}
+			]
+			subtitle: "The forest dwellers welcome you"
+			tasks: [{
+				advancement: "environmental:husbandry/feed_deer_flower"
+				criterion: ""
+				id: "2F4D6BEF76A3EE49"
+				title: "Feed a tamed deer an apple and a flower"
+				type: "advancement"
+			}]
+			title: "Druidic companion"
+			x: -0.8d
+			y: -5.1d
+		}
+		{
+			dependencies: ["5AEF29400BEFED40"]
+			description: ["Occasionally, while breaking leaves, it's possible to forage some peculiar berries. These will be useful in druidic rites, no doubt."]
+			hide_until_deps_complete: true
+			icon: "rootsclassic:elderberry"
+			id: "7D48A61751106B65"
+			rewards: [{
+				count: 5
+				id: "0AA5E4EC15D367A7"
+				item: "rootsclassic:healing_poultice"
+				type: "item"
+			}]
+			subtitle: "Nature's gifts"
+			tasks: [
+				{
+					id: "50C7700E74DF27D2"
+					item: "rootsclassic:redcurrant"
+					type: "item"
+				}
+				{
+					id: "5AC40C403545ED77"
+					item: "rootsclassic:blackcurrant"
+					type: "item"
+				}
+				{
+					id: "13A1CD1FB2654307"
+					item: "rootsclassic:whitecurrant"
+					type: "item"
+				}
+				{
+					id: "684F77348B395C28"
+					item: "rootsclassic:elderberry"
+					type: "item"
+				}
+				{
+					id: "452EAAB9CC191C44"
+					item: "rootsclassic:nightshade"
+					type: "item"
+				}
+			]
+			title: "Wild berries"
+			x: 0.8d
+			y: -5.1d
+		}
+		{
+			dependencies: ["5AEF29400BEFED40"]
+			description: [
+				"One of the main draws of the druidic arts is the ability to create magic spells. To do that, two things are necessary:"
+				"-A &l&8mortar and pestle&r, needed to create a spell powder with which to infuse;"
+				"-An &l&4imbuer&r, with which to infuse a powder into a stick."
+				"{@pagebreak}"
+				"The creation of the spell powder is slightly involved:"
+				"First, it requires a base, which can be either an &l&6old root&r, a &l&2verdant sprig&r, an &l&cinfernal bulb&r or a &l&5dragon's eye&r. Depending on the base used, the spell may have from zero to three modifiers."
+				"{@pagebreak}"
+				"Next are the modifiers themselves."
+				"&l&eGlowstone dust&r will increase the spell's potency, making it more powerful."
+				"&l&4Redstone dust&r will increase the spell's efficiency, reducing its cost and increasing its uses."
+				"&l&8Gunpowder&r will increase the spell's area of effect."
+				"{@pagebreak}"
+				"Finally is the spell effect. This one depends on which type of flora is ground up together with the base and modifiers and determines what the spell actually does."
+			]
+			hide_until_deps_complete: true
+			icon: "rootsclassic:imbuer"
+			id: "16006D29577397BE"
+			rewards: [
+				{
+					id: "5EE0B4EE8C7A4138"
+					item: {
+						Count: 1
+						id: "rootsclassic:spell_powder"
+						tag: {
+							"rootsclassic:effect": "rootsclassic:dandelion"
+							"rootsclassic:efficiency": 0
+							"rootsclassic:potency": 0
+							"rootsclassic:size": 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 5
+					id: "4CDA1DF29F896602"
+					item: "rootsclassic:healing_poultice"
+					type: "item"
+				}
+			]
+			subtitle: "Unleashing the wilderness"
+			tasks: [
+				{
+					id: "4B6754ED237B1C3D"
+					item: "rootsclassic:imbuer"
+					type: "item"
+				}
+				{
+					id: "630BFE2ED70BA8E9"
+					item: "rootsclassic:mortar"
+					type: "item"
+				}
+				{
+					id: "025265AA1599A13A"
+					item: "rootsclassic:pestle"
+					type: "item"
+				}
+			]
+			title: "Basics of spellcrafting"
+			x: -3.6755102040816343d
+			y: -12.885714285714293d
+		}
+		{
+			dependencies: ["16006D29577397BE"]
+			description: ["With the following mixture it's is possible to create a spell capable of causing monsters to fight one another."]
+			hide_until_deps_complete: true
+			icon: "minecraft:poppy"
+			id: "0C3DEA3D83A51A9F"
+			rewards: [{
+				count: 3
+				id: "3FBD7893CC6F8F48"
+				item: "minecraft:redstone"
+				type: "item"
+			}]
+			subtitle: "Civil war"
+			tasks: [
+				{
+					id: "53C5A752F1D9A06E"
+					item: "minecraft:poppy"
+					type: "item"
+				}
+				{
+					id: "5E1DB3BE963A7DC4"
+					item: "minecraft:red_mushroom"
+					type: "item"
+				}
+				{
+					id: "7C9F7B4A290FC9D4"
+					item: "minecraft:beef"
+					type: "item"
+				}
+				{
+					id: "41B52160707C1792"
+					item: "rootsclassic:redcurrant"
+					type: "item"
+				}
+			]
+			title: "Insanity"
+			x: -3.3081632653061224d
+			y: -12.19183673469388d
+		}
+		{
+			dependencies: ["16006D29577397BE"]
+			description: ["With the following mixture it's possible to create a spell capable of raising a spike from the earth which causes all creatures above it to be projected into the sky."]
+			hide_until_deps_complete: true
+			icon: "minecraft:blue_orchid"
+			id: "399DA3CD5FC44BD0"
+			rewards: [{
+				count: 3
+				id: "73F8C38889FEC0AF"
+				item: "minecraft:glowstone_dust"
+				type: "item"
+			}]
+			subtitle: "The power rises"
+			tasks: [
+				{
+					id: "177CD2EC5B2B0C1E"
+					item: "minecraft:blue_orchid"
+					type: "item"
+				}
+				{
+					id: "45A6D85E2C5F2888"
+					item: "minecraft:prismarine_shard"
+					type: "item"
+				}
+				{
+					id: "3847D5B5E335D088"
+					item: "minecraft:lapis_lazuli"
+					type: "item"
+				}
+				{
+					id: "4EF9E91CB592DF17"
+					item: "minecraft:vine"
+					type: "item"
+				}
+			]
+			title: "Earth spike"
+			x: -2.9000000000000075d
+			y: -12.885714285714286d
+		}
+		{
+			dependencies: ["16006D29577397BE"]
+			description: ["With the following mixture it's possible to achieve a spell that will deal simple damage to any creature hit. In addition, any equipment held by the affected entity will receive massive damage."]
+			hide_until_deps_complete: true
+			icon: "minecraft:allium"
+			id: "361E043DCDE7D926"
+			rewards: [{
+				count: 3
+				id: "0393A3A698E35B3D"
+				item: "minecraft:glowstone_dust"
+				type: "item"
+			}]
+			subtitle: "The best offense"
+			tasks: [
+				{
+					id: "04A139502F6C12B7"
+					item: "minecraft:allium"
+					type: "item"
+				}
+				{
+					id: "09A3AD092CB9E91A"
+					item: "minecraft:soul_sand"
+					type: "item"
+				}
+				{
+					id: "4E22ECD9B6163A35"
+					item: "minecraft:brown_mushroom"
+					type: "item"
+				}
+				{
+					id: "778E8A895EF10CF0"
+					item: "rootsclassic:elderberry"
+					type: "item"
+				}
+			]
+			title: "Rending strike"
+			x: -3.278571428571415d
+			y: -13.599999999999998d
+		}
+		{
+			dependencies: ["16006D29577397BE"]
+			description: ["With the following mixture it's possible to create a spell capable of mining a small area in front of the user. Potency modifiers determine the mining level, which starts at iron tier."]
+			hide_until_deps_complete: true
+			icon: "minecraft:azure_bluet"
+			id: "48F063717D49487E"
+			rewards: [{
+				count: 3
+				id: "01DFFDB4284B2CA2"
+				item: "minecraft:gunpowder"
+				type: "item"
+			}]
+			subtitle: "I am a dwa- I mean druid"
+			tasks: [
+				{
+					id: "06D3B88F3A6319AA"
+					item: "minecraft:azure_bluet"
+					type: "item"
+				}
+				{
+					id: "40B73E82BF05AC42"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+				{
+					id: "04AEA2C34C8B08DE"
+					item: "minecraft:spruce_sapling"
+					type: "item"
+				}
+				{
+					id: "4D0AD0E143746866"
+					item: "rootsclassic:whitecurrant"
+					type: "item"
+				}
+			]
+			title: "Shattering"
+			x: -4.078571428571415d
+			y: -13.599999999999998d
+		}
+		{
+			dependencies: ["16006D29577397BE"]
+			description: ["With the following mixture it's possible to create a spell which will alter the passage of time, allowing for machines to finish their operations way faster than normal."]
+			hide_until_deps_complete: true
+			icon: "minecraft:oxeye_daisy"
+			id: "7F129A221B215DB2"
+			rewards: [{
+				count: 3
+				id: "24411CDACA50B134"
+				item: "minecraft:redstone"
+				type: "item"
+			}]
+			subtitle: "Wait times no more"
+			tasks: [
+				{
+					id: "7122744A58D44469"
+					item: "minecraft:oxeye_daisy"
+					type: "item"
+				}
+				{
+					id: "504A8F667E9CA64E"
+					item: "minecraft:end_stone"
+					type: "item"
+				}
+				{
+					id: "6BED46C1A1AA6C0D"
+					item: "minecraft:gold_ingot"
+					type: "item"
+				}
+				{
+					id: "268AE49D42C70387"
+					item: "minecraft:sugar"
+					type: "item"
+				}
+			]
+			title: "Acceleration"
+			x: -4.43061224489796d
+			y: -12.906122448979595d
+		}
+		{
+			dependencies: ["16006D29577397BE"]
+			description: ["With the following mixture it's possible to create a spell capable of repulsing any creature from the user."]
+			hide_until_deps_complete: true
+			icon: "minecraft:dandelion"
+			id: "365EDC735E3156C6"
+			rewards: [{
+				count: 3
+				id: "1C7107731C541C2F"
+				item: "minecraft:redstone"
+				type: "item"
+			}]
+			subtitle: "Begone"
+			tasks: [
+				{
+					id: "4A29B47726BB9C99"
+					item: "minecraft:dandelion"
+					type: "item"
+				}
+				{
+					id: "2E720E8B3CD87049"
+					item: "minecraft:string"
+					type: "item"
+				}
+				{
+					id: "74785DB61EBB078B"
+					item: "minecraft:feather"
+					type: "item"
+				}
+				{
+					id: "26EC748C4393B383"
+					item: "rootsclassic:whitecurrant"
+					type: "item"
+				}
+			]
+			title: "Dandelion winds"
+			x: -4.078571428571415d
+			y: -12.2d
+		}
+		{
+			dependencies: ["16006D29577397BE"]
+			description: ["With the following mixture it's possible to create a spell that will summon a spectral skeleton to aid in battle."]
+			hide_until_deps_complete: true
+			icon: "minecraft:red_tulip"
+			id: "34B230F9864447A6"
+			rewards: [{
+				count: 3
+				id: "049D9220E17B7246"
+				item: "minecraft:glowstone_dust"
+				type: "item"
+			}]
+			subtitle: "Pocket necromancy"
+			tasks: [
+				{
+					id: "2C912E32F3D7A511"
+					item: "minecraft:red_tulip"
+					type: "item"
+				}
+				{
+					id: "1CE9939DCDB37CDE"
+					item: "minecraft:nether_brick"
+					type: "item"
+				}
+				{
+					id: "3D456B02D5E492C7"
+					item: "minecraft:quartz"
+					type: "item"
+				}
+				{
+					id: "54541F1DD4928D19"
+					item: "minecraft:red_sand"
+					type: "item"
+				}
+			]
+			title: "Devil's flower"
+			x: -2.9000000000000004d
+			y: -11.518367346938774d
+		}
+		{
+			dependencies: ["16006D29577397BE"]
+			description: ["With the following mixture it's possible to create a spell that will repel any incoming creature or projectile."]
+			hide_until_deps_complete: true
+			icon: "minecraft:orange_tulip"
+			id: "23837381424C6673"
+			rewards: [{
+				count: 3
+				id: "362D2C9A7787C891"
+				item: "minecraft:glowstone_dust"
+				type: "item"
+			}]
+			subtitle: "You shall not pass"
+			tasks: [
+				{
+					id: "2118782EA05AFF7C"
+					item: "minecraft:orange_tulip"
+					type: "item"
+				}
+				{
+					id: "0BA2EB0BAA839DDF"
+					item: "minecraft:sponge"
+					type: "item"
+				}
+				{
+					id: "1BB422D798BFE92D"
+					item: "minecraft:leather"
+					type: "item"
+				}
+				{
+					id: "5C4E0935CFACBFF8"
+					item: "rootsclassic:redcurrant"
+					type: "item"
+				}
+			]
+			title: "Shielding"
+			x: -4.451020408163268d
+			y: -11.518367346938774d
+		}
+		{
+			dependencies: ["16006D29577397BE"]
+			description: ["With the following mixture it's posssible to create a spell that will damage and slow down opponents."]
+			hide_until_deps_complete: true
+			icon: "minecraft:white_tulip"
+			id: "763CE0BFF745FE04"
+			rewards: [{
+				count: 3
+				id: "1031CDB09821CD5B"
+				item: "minecraft:gunpowder"
+				type: "item"
+			}]
+			subtitle: "I saw this in a toothpaste ad once"
+			tasks: [
+				{
+					id: "76065B3791DC1CB9"
+					item: "minecraft:white_tulip"
+					type: "item"
+				}
+				{
+					id: "3170F8FE96EDAA78"
+					item: "minecraft:snowball"
+					type: "item"
+				}
+				{
+					id: "7B91FF429254FA0A"
+					item: "minecraft:birch_sapling"
+					type: "item"
+				}
+				{
+					id: "2D5580D957BEB889"
+					item: "rootsclassic:whitecurrant"
+					type: "item"
+				}
+			]
+			title: "Blistering cold"
+			x: -5.165306122448984d
+			y: -12.906122448979595d
+		}
+		{
+			dependencies: ["16006D29577397BE"]
+			description: ["With the following mixture it's possible to create a spell capable of draining the life of creatures to restore one's own."]
+			hide_until_deps_complete: true
+			icon: "minecraft:pink_tulip"
+			id: "1EB83D236E7044C0"
+			rewards: [{
+				count: 3
+				id: "4BBA8E052F8265DD"
+				item: "minecraft:glowstone_dust"
+				type: "item"
+			}]
+			subtitle: "Vampires from tha woods"
+			tasks: [
+				{
+					id: "65D0A3AD659B16E0"
+					item: "minecraft:pink_tulip"
+					type: "item"
+				}
+				{
+					id: "0376448842EFA988"
+					item: "minecraft:melon_seeds"
+					type: "item"
+				}
+				{
+					id: "761E47F5C1AA3FB3"
+					item: "minecraft:porkchop"
+					type: "item"
+				}
+				{
+					id: "45C56BE7617D8E67"
+					item: "minecraft:granite"
+					type: "item"
+				}
+			]
+			title: "Life drain"
+			x: -2.1244897959183735d
+			y: -12.885714285714286d
+		}
+		{
+			dependencies: ["16006D29577397BE"]
+			description: ["With the following mixture it's possible to create a spell capable of conjuring a temporary flow of water."]
+			hide_until_deps_complete: true
+			icon: "minecraft:lily_pad"
+			id: "49405EE16EA7F89F"
+			rewards: [{
+				count: 3
+				id: "496FAF2017B7D1AE"
+				item: "minecraft:redstone"
+				type: "item"
+			}]
+			subtitle: "The fire force has arrived"
+			tasks: [
+				{
+					id: "7D479DEF61724F7F"
+					item: "minecraft:lily_pad"
+					type: "item"
+				}
+				{
+					id: "089AAE901DE59858"
+					item: "minecraft:wet_sponge"
+					type: "item"
+				}
+				{
+					id: "5F866F05BFE2E4CF"
+					item: "minecraft:beetroot"
+					type: "item"
+				}
+				{
+					id: "555A083853673492"
+					item: "rootsclassic:blackcurrant"
+					type: "item"
+				}
+			]
+			title: "Water blast"
+			x: -2.8785714285714152d
+			y: -14.299999999999999d
+		}
+		{
+			dependencies: ["16006D29577397BE"]
+			description: ["With the following mixture it's possible to create a spell which will damage and ignite its target."]
+			hide_until_deps_complete: true
+			icon: "minecraft:nether_wart"
+			id: "49629645F41412B1"
+			rewards: [{
+				count: 3
+				id: "12A8441003E6F9E9"
+				item: "minecraft:glowstone_dust"
+				type: "item"
+			}]
+			subtitle: "Turn it all to ash"
+			tasks: [
+				{
+					id: "1417F1EC04512EDF"
+					item: "minecraft:nether_wart"
+					type: "item"
+				}
+				{
+					id: "0DEB403B5A5F540E"
+					item: "minecraft:blaze_powder"
+					type: "item"
+				}
+				{
+					id: "78E4E05FF37DCD8F"
+					item: "minecraft:coal"
+					type: "item"
+				}
+				{
+					id: "64EB701D08DB01B7"
+					item: "minecraft:charcoal"
+					type: "item"
+				}
+			]
+			title: "Inferno"
+			x: -4.9d
+			y: -15.0d
+		}
+		{
+			dependencies: ["16006D29577397BE"]
+			description: ["With the following mixture it's possible to create a damaging spell that will deal extra damage to all undead creatures, as well as setting them ablaze."]
+			hide_until_deps_complete: true
+			icon: "minecraft:sunflower"
+			id: "11F9D9CC1598C35B"
+			rewards: [{
+				count: 3
+				id: "64213245A129BF55"
+				item: "minecraft:glowstone_dust"
+				type: "item"
+			}]
+			subtitle: "Long may the Sun shine"
+			tasks: [
+				{
+					id: "7F98872158F4F5BD"
+					item: "minecraft:sunflower"
+					type: "item"
+				}
+				{
+					id: "4B878B2D66248454"
+					item: "minecraft:jack_o_lantern"
+					type: "item"
+				}
+				{
+					id: "0CE4F679FF1AE76A"
+					item: "minecraft:bone_meal"
+					type: "item"
+				}
+				{
+					id: "0D1734A49331E11E"
+					item: "rootsclassic:elderberry"
+					type: "item"
+				}
+			]
+			title: "Solar smite"
+			x: -1.4d
+			y: -12.9d
+		}
+		{
+			dependencies: ["16006D29577397BE"]
+			description: ["With the following mixture it's possible to create a spell which will speed up the growth of nearby plants."]
+			hide_until_deps_complete: true
+			icon: "minecraft:lilac"
+			id: "0B59E18852596E68"
+			rewards: [{
+				count: 3
+				id: "6E7CE3B4C4F345B2"
+				item: "minecraft:gunpowder"
+				type: "item"
+			}]
+			subtitle: "Where the forest would grow"
+			tasks: [
+				{
+					id: "00DF106BFA7876E7"
+					item: "minecraft:lilac"
+					type: "item"
+				}
+				{
+					id: "7F94B558822FEF35"
+					item: "minecraft:wheat"
+					type: "item"
+				}
+				{
+					id: "5E0B71DA9EEF6CBA"
+					item: "minecraft:beetroot"
+					type: "item"
+				}
+				{
+					id: "006F4E32B23294D6"
+					item: "minecraft:vine"
+					type: "item"
+				}
+			]
+			title: "Growth"
+			x: -5.9d
+			y: -12.906122448979595d
+		}
+		{
+			dependencies: ["16006D29577397BE"]
+			description: ["With the following mixture it's possible to create a spell which will cause raw damage but no knockback."]
+			hide_until_deps_complete: true
+			icon: "minecraft:rose_bush"
+			id: "68D74C43D3696E9F"
+			rewards: [{
+				count: 3
+				id: "12769D28FBB4C480"
+				item: "minecraft:glowstone_dust"
+				type: "item"
+			}]
+			subtitle: "The cost of beauty"
+			tasks: [
+				{
+					id: "6A9E44B25945D4B8"
+					item: "minecraft:rose_bush"
+					type: "item"
+				}
+				{
+					id: "303A3F3BCF693E58"
+					item: "minecraft:fermented_spider_eye"
+					type: "item"
+				}
+				{
+					id: "0E4E5033E8A22D1D"
+					item: "minecraft:iron_nugget"
+					type: "item"
+				}
+				{
+					id: "77BB0AE4E80CA636"
+					item: "minecraft:bone"
+					type: "item"
+				}
+			]
+			title: "Rose's thorns"
+			x: -4.797959183673472d
+			y: -10.844897959183676d
+		}
+		{
+			dependencies: ["16006D29577397BE"]
+			description: ["With the following mixture it's possible to create a spell capable of healing the user."]
+			hide_until_deps_complete: true
+			icon: "minecraft:peony"
+			id: "3E9114A94279E193"
+			rewards: [{
+				count: 3
+				id: "30763F0F494E786A"
+				item: "minecraft:redstone"
+				type: "item"
+			}]
+			subtitle: "A moment's peace"
+			tasks: [
+				{
+					id: "28FFC6F6D7E3BF7E"
+					item: "minecraft:peony"
+					type: "item"
+				}
+				{
+					id: "58D5D16040832540"
+					item: "minecraft:melon"
+					type: "item"
+				}
+				{
+					id: "1DCA107F1745D14B"
+					item: "minecraft:red_dye"
+					type: "item"
+				}
+				{
+					id: "30F87BBDC6A993A1"
+					item: "rootsclassic:nightshade"
+					type: "item"
+				}
+			]
+			title: "Regeneration"
+			x: -2.51224489795918d
+			y: -10.824489795918367d
+		}
+		{
+			dependencies: ["16006D29577397BE"]
+			description: ["With the following mixture it's possible to create a spell that will summon a lightning strike."]
+			hide_until_deps_complete: true
+			icon: "minecraft:poisonous_potato"
+			id: "3498052BD3564761"
+			rewards: [{
+				count: 3
+				id: "407CE180CCC528E4"
+				item: "minecraft:redstone"
+				type: "item"
+			}]
+			subtitle: "Thunder roars"
+			tasks: [
+				{
+					id: "5DCC56DE2E2E0FDC"
+					item: "minecraft:poisonous_potato"
+					type: "item"
+				}
+				{
+					id: "1AA964183B6E0B65"
+					item: "minecraft:glass"
+					type: "item"
+				}
+				{
+					id: "33B855A525AC492B"
+					item: "minecraft:glowstone"
+					type: "item"
+				}
+				{
+					id: "7B22338EA19251DB"
+					item: "minecraft:sugar_cane"
+					type: "item"
+				}
+			]
+			title: "Electric spark"
+			x: -2.4785714285714153d
+			y: -14.999999999999998d
+		}
+		{
+			dependencies: ["16006D29577397BE"]
+			description: ["With the following mixture it's possible to create a spell that will turn any negative effect into their positive variant."]
+			hide_until_deps_complete: true
+			icon: "minecraft:apple"
+			id: "7E6F31F489328176"
+			rewards: [{
+				count: 3
+				id: "72152C65E6AFDC2C"
+				item: "minecraft:redstone"
+				type: "item"
+			}]
+			subtitle: "An antidote"
+			tasks: [
+				{
+					id: "790A20541BD59B60"
+					item: "minecraft:apple"
+					type: "item"
+				}
+				{
+					id: "0A2115CA30D2370C"
+					item: "minecraft:glistering_melon_slice"
+					type: "item"
+				}
+				{
+					id: "1B2BD4FD7F475DE1"
+					item: "minecraft:golden_apple"
+					type: "item"
+				}
+				{
+					id: "4A915BE02630F0BC"
+					item: "rootsclassic:blackcurrant"
+					type: "item"
+				}
+			]
+			title: "Nature's cure"
+			x: -4.5d
+			y: -14.3d
+		}
+		{
+			dependencies: [
+				"16006D29577397BE"
+				"0D358B84135D5D11"
+			]
+			description: [
+				"With the following mixture it's possible to create a spell that will send forth a powerful beam of light that will do massive damage to anything it strikes."
+				"{@pagebreak}"
+				"In order to create the flower necessary for the mixture, one must throw a glowstone block and a prismarine crystal next to an oxeye daisy. Then, at noon, while under the effect of night vision, mutating powder needs to be used on the flower."
+			]
+			hide_until_deps_complete: true
+			icon: "rootsclassic:radiant_daisy"
+			id: "6B88C4988AE8903B"
+			rewards: [{
+				count: 2
+				id: "490DBB9954DDE012"
+				item: "rootsclassic:radiant_daisy"
+				type: "item"
+			}]
+			subtitle: "Praise the Sun"
+			tasks: [
+				{
+					id: "39195CF3D8A59462"
+					item: "rootsclassic:radiant_daisy"
+					type: "item"
+				}
+				{
+					id: "1638A79B7CBCFA57"
+					item: "minecraft:glowstone"
+					type: "item"
+				}
+				{
+					id: "5DA73ACBCF30F508"
+					item: "rootsclassic:nightshade"
+					type: "item"
+				}
+				{
+					id: "05A9E8A047F1F830"
+					item: "minecraft:redstone_block"
+					type: "item"
+				}
+			]
+			title: "Radiance"
+			x: -2.0785714285714154d
+			y: -15.7d
+		}
+		{
+			dependencies: [
+				"16006D29577397BE"
+				"0D358B84135D5D11"
+			]
+			description: [
+				"With the following mixture it's possible to create a spell that will create a large explosion."
+				"{@pagebreak}"
+				"In order to create the flower necessary for the mixture, one must first venture into the Nether. A blue orchid must be planted, then it must be surrounded by a ring of netherrack. Afterwards, one must simply toss a blaze rod and a bucket, and then, while under the effect of fire resistance, use the mutating powder on the flower."
+			]
+			hide_until_deps_complete: true
+			icon: "rootsclassic:flare_orchid"
+			id: "37223F4EE0213433"
+			rewards: [{
+				count: 2
+				id: "30CDA0FFECBE4CC2"
+				item: "rootsclassic:flare_orchid"
+				type: "item"
+			}]
+			subtitle: "Destruction is attained"
+			tasks: [
+				{
+					id: "5DE14CFB0131ADAF"
+					item: "rootsclassic:flare_orchid"
+					type: "item"
+				}
+				{
+					id: "14CE9B59E05DB65C"
+					item: "minecraft:netherrack"
+					type: "item"
+				}
+				{
+					id: "4A469214DD1EC10D"
+					item: "minecraft:magma_cream"
+					type: "item"
+				}
+				{
+					id: "4A4847F721E6354C"
+					item: "minecraft:blaze_rod"
+					type: "item"
+				}
+			]
+			title: "Combustion"
+			x: -5.278571428571415d
+			y: -15.7d
+		}
+		{
+			dependencies: [
+				"16006D29577397BE"
+				"0D358B84135D5D11"
+			]
+			description: [
+				"With the following mixture it's possible to create a spell that will freeze all nearby entities in time."
+				"{@pagebreak}"
+				"In order to create the flower necessary for the mixture, one must first venture into the End. A poppy must be planted two blocks above obsidian, then a coal block must be thrown, and finally, under the effect of slowness, the mutating powder must be used."
+			]
+			hide_until_deps_complete: true
+			icon: "rootsclassic:midnight_bloom"
+			id: "2C4CB2B87993E9BC"
+			rewards: [{
+				count: 2
+				id: "20D4064DDE3F2498"
+				item: "rootsclassic:midnight_bloom"
+				type: "item"
+			}]
+			subtitle: "So this is the power of The World"
+			tasks: [
+				{
+					id: "0122DB583097E3CE"
+					item: "rootsclassic:midnight_bloom"
+					type: "item"
+				}
+				{
+					id: "611EF10E6DBF6DE9"
+					item: "minecraft:obsidian"
+					type: "item"
+				}
+				{
+					id: "2D19D421F2029AD6"
+					item: "minecraft:dragon_breath"
+					type: "item"
+				}
+				{
+					id: "0056DFA88F1D9C26"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+			]
+			title: "Time stop"
+			x: -5.206122448979594d
+			y: -10.171428571428578d
+		}
+		{
+			dependencies: ["16006D29577397BE"]
+			description: ["With the following mixture it's possible to create a spell that allows the user to teleport forwards, even through walls."]
+			hide_until_deps_complete: true
+			icon: "minecraft:chorus_fruit"
+			id: "61400FE1C4B53470"
+			rewards: [{
+				count: 3
+				id: "505549C4EF41A0B8"
+				item: "minecraft:redstone"
+				type: "item"
+			}]
+			subtitle: "New age transportation"
+			tasks: [
+				{
+					id: "5058613D527A8A42"
+					item: "minecraft:chorus_fruit"
+					type: "item"
+				}
+				{
+					id: "79252BA92B60B527"
+					item: "minecraft:ender_pearl"
+					type: "item"
+				}
+				{
+					id: "41F9FD5131A38EA6"
+					item: "minecraft:purple_dye"
+					type: "item"
+				}
+				{
+					id: "53D06D38D8127400"
+					item: "minecraft:popped_chorus_fruit"
+					type: "item"
+				}
+			]
+			title: "Teleportation"
+			x: -2.144897959183668d
+			y: -10.13061224489796d
+		}
+		{
+			dependencies: ["5AEF29400BEFED40"]
+			description: ["By using this peculiar powder, it's possible to create new kinds of unique plantlife that can't be found in the wild."]
+			hide_dependent_lines: true
+			hide_until_deps_complete: true
+			id: "0D358B84135D5D11"
+			rewards: [{
+				count: 2
+				id: "072D3AA64C31CD6F"
+				item: "rootsclassic:mutating_powder"
+				type: "item"
+			}]
+			subtitle: "Everything can be changed"
+			tasks: [{
+				id: "35C619CF77DA4440"
+				item: "rootsclassic:mutating_powder"
+				type: "item"
+			}]
+			title: "Meddling with life"
+			x: 0.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["5AEF29400BEFED40"]
+			description: [
+				"The druidic arts allow to cast rituals by making offerings to nature."
+				"All rituals require one or more items to be placed on the altar itself, and also one or more items to be burnt as incense around the altar."
+			]
+			hide_until_deps_complete: true
+			icon: "rootsclassic:altar"
+			id: "3C4F209849E28B98"
+			subtitle: "Bartering with nature"
+			tasks: [
+				{
+					id: "26C3544F17464AA3"
+					item: "rootsclassic:altar"
+					type: "item"
+				}
+				{
+					id: "40ABBE76FB1B9CC5"
+					item: "rootsclassic:brazier"
+					type: "item"
+				}
+			]
+			title: "Ritual casting"
+			x: 3.1d
+			y: -12.9d
+		}
+		{
+			dependencies: ["3C4F209849E28B98"]
+			description: ["The more advanced rituals will require standing stones to be placed around the altar. Eight stones must be placed with a two block gap away from the altar, in a square shape."]
+			hide_until_deps_complete: true
+			id: "1FB2DA816DD94FF3"
+			rewards: [{
+				count: 3
+				id: "7E9279294740AF46"
+				item: "rootsclassic:mundane_standing_stone"
+				type: "item"
+			}]
+			subtitle: "Stone age nostalgia"
+			tasks: [{
+				id: "642D50EA2E99C8E3"
+				item: "rootsclassic:mundane_standing_stone"
+				type: "item"
+			}]
+			title: "More advanced rituals"
+			x: 3.5d
+			y: -12.200000000000001d
+		}
+		{
+			dependencies: ["1FB2DA816DD94FF3"]
+			description: ["Some even more advanced rituals will require better standing stones to be completed. Four stones must be placed with a four block gap away from the altar, in all cardinal directions."]
+			hide_until_deps_complete: true
+			id: "0C666DC220FF8179"
+			rewards: [{
+				id: "58EC850B2B05CE19"
+				item: "rootsclassic:attuned_standing_stone"
+				type: "item"
+			}]
+			subtitle: "Rivaling Stonehenge"
+			tasks: [{
+				id: "664660F85EA3191A"
+				item: "rootsclassic:attuned_standing_stone"
+				type: "item"
+			}]
+			title: "Even more advanced rituals"
+			x: 2.7d
+			y: -12.200000000000001d
+		}
+		{
+			dependencies: ["3C4F209849E28B98"]
+			description: ["By channeling natural energies into wooden tools, it's possible to enhance them into a greater form. These living tools are similar in strength to iron, however they don't need to be repaired, as they'll regrow over time."]
+			hide_until_deps_complete: true
+			id: "58C54EA0E99E7453"
+			rewards: [{
+				id: "419B79C9B5727DBE"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"cold_sweat:item_insulation": {
+							Insulation: [ ]
+						}
+					}
+					id: "rootsclassicplus:living_shield"
+					tag: {
+						Damage: 0
+						Insulation: [ ]
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "No mending needed"
+			tasks: [{
+				id: "629D46E5F03E4573"
+				item: {
+					Count: 1
+					id: "rootsclassic:living_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Living tools"
+			x: 2.7d
+			y: -13.600000000000001d
+		}
+		{
+			dependencies: ["3C4F209849E28B98"]
+			description: ["By offering a pile of redstone dust, a pile of bonemeal, and a verdant sprig, as well as burning one of each of the four mundane crops, it's possible to instigate the growth of all plantlife around the altar."]
+			hide_until_deps_complete: true
+			icon: "minecraft:bone_meal"
+			id: "28BBA8B71DD3312E"
+			rewards: [
+				{
+					id: "0AD9BABCDEF936CC"
+					item: "farmersdelight:shepherds_pie"
+					type: "item"
+				}
+				{
+					id: "69A8CFFE0C661791"
+					item: "farmersdelight:ratatouille"
+					type: "item"
+				}
+			]
+			subtitle: "A bountiful harvest"
+			tasks: [
+				{
+					id: "6F23C60525E87866"
+					item: "minecraft:redstone"
+					type: "item"
+				}
+				{
+					id: "67B46A3FDB781A6A"
+					item: "minecraft:bone_meal"
+					type: "item"
+				}
+				{
+					id: "7BBEE2780DEA6F21"
+					item: "rootsclassic:verdant_sprig"
+					type: "item"
+				}
+				{
+					id: "61613939DF05304E"
+					item: "minecraft:wheat"
+					type: "item"
+				}
+				{
+					id: "1F058D464048DAA1"
+					item: "minecraft:beetroot"
+					type: "item"
+				}
+				{
+					id: "65F45F7570500CA7"
+					item: "minecraft:potato"
+					type: "item"
+				}
+				{
+					id: "621AF3B0BEE2D97B"
+					item: "minecraft:carrot"
+					type: "item"
+				}
+			]
+			title: "Growth"
+			x: 3.5d
+			y: -13.600000000000001d
+		}
+		{
+			dependencies: [
+				"3C4F209849E28B98"
+				"1FB2DA816DD94FF3"
+			]
+			description: ["By offering the carcass of a dead animal and burning wheat seeds and nether warts as incense, it's possible to bring that animal back to life."]
+			hide_until_deps_complete: true
+			icon: "minecraft:chicken"
+			id: "3BF58668FD2D8D63"
+			rewards: [{
+				id: "6ADBDB5FACF1FBCF"
+				item: "minecraft:chicken_spawn_egg"
+				type: "item"
+			}]
+			subtitle: "All that lived will rise again"
+			tasks: [
+				{
+					id: "38BB6BB28F6CA080"
+					item: "minecraft:chicken"
+					type: "item"
+				}
+				{
+					id: "02E9B567CA0397B3"
+					item: "minecraft:feather"
+					type: "item"
+				}
+				{
+					id: "4C9FAFD21CE035C1"
+					item: "minecraft:bone"
+					type: "item"
+				}
+				{
+					id: "5400322492D1453B"
+					item: "minecraft:wheat_seeds"
+					type: "item"
+				}
+				{
+					id: "7605AE75ABAF2A15"
+					item: "minecraft:nether_wart"
+					type: "item"
+				}
+			]
+			title: "Animal reanimation"
+			x: 3.1d
+			y: -14.3d
+		}
+		{
+			dependencies: [
+				"3C4F209849E28B98"
+				"1FB2DA816DD94FF3"
+				"16006D29577397BE"
+			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			id: "0B322ECF0A1749FE"
+			rewards: [{
+				id: "19CFECFF4E330383"
+				item: {
+					Count: 1
+					id: "rootsclassic:spell_powder"
+					tag: {
+						"rootsclassic:effect": "rootsclassic:oxeye_daisy"
+						"rootsclassic:efficiency": 0
+						"rootsclassic:potency": 1
+						"rootsclassic:size": 0
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "1521C56562CCF5C3"
+				item: "rootsclassic:crystal_staff"
+				type: "item"
+			}]
+			title: "Better spellcasting"
+			x: 3.1d
+			y: -11.5d
+		}
+		{
+			dependencies: [
+				"3C4F209849E28B98"
+				"1FB2DA816DD94FF3"
+			]
+			description: ["By offering either a lilypad or a bundle of wheat and burning vines and old roots as incense, it's possible to either cause or banish rainfall."]
+			hide_until_deps_complete: true
+			icon: "cataclysm:lacrima"
+			id: "6F5E48C6FB6CC227"
+			subtitle: "Tame the weather"
+			tasks: [
+				{
+					id: "2105FC6FF19EC4D0"
+					item: "minecraft:lily_pad"
+					type: "item"
+				}
+				{
+					id: "2CEC03574572EE7A"
+					item: "minecraft:wheat"
+					type: "item"
+				}
+				{
+					id: "7D045DE7DCD45F65"
+					item: "minecraft:vine"
+					type: "item"
+				}
+				{
+					id: "502414E2B056615E"
+					item: "rootsclassic:old_root"
+					type: "item"
+				}
+			]
+			title: "Downfall control"
+			x: 3.9d
+			y: -12.9d
+		}
+		{
+			dependencies: [
+				"3C4F209849E28B98"
+				"1FB2DA816DD94FF3"
+			]
+			description: ["By offering flint, coal and charcoal to the altar and burning a pile of gunpowder and an infernal bulb, the altar will unleash a fiery rage around it, burning everything not immediately close to it. This must be how the druids of old defended their homes from any would-be intruder."]
+			hide_until_deps_complete: true
+			icon: "minecraft:blaze_powder"
+			id: "6CEE3A62E6262274"
+			rewards: [{
+				count: 5
+				id: "79C92B6FBA1FBB57"
+				item: "minecraft:blaze_rod"
+				type: "item"
+			}]
+			subtitle: "Defending the holy grounds"
+			tasks: [
+				{
+					id: "623DD12F51E493C2"
+					item: "minecraft:flint"
+					type: "item"
+				}
+				{
+					id: "131CBC94762BB793"
+					item: "minecraft:coal"
+					type: "item"
+				}
+				{
+					id: "417D70C71D3B9EC5"
+					item: "minecraft:charcoal"
+					type: "item"
+				}
+				{
+					id: "30A19099001700C5"
+					item: "minecraft:gunpowder"
+					type: "item"
+				}
+				{
+					id: "09A7BC950A81B44D"
+					item: "rootsclassic:infernal_bulb"
+					type: "item"
+				}
+			]
+			title: "Fire blast"
+			x: 2.3d
+			y: -12.9d
+		}
+		{
+			dependencies: ["3C4F209849E28B98"]
+			description: ["By offering a pile of blaze powder and a bone to the altar and burning a wooden sword, a wooden axe, a piece of dark oak bark and a piece of birch bark, the altar will begin sapping the life energy of all undead around it, distributing it evenly across all those who are around it."]
+			hide_until_deps_complete: true
+			icon: "minecraft:nether_wart"
+			id: "27E60CB2931991BB"
+			rewards: [{
+				count: 3
+				id: "7C96E76B9BF9B0AA"
+				item: {
+					Count: 1
+					id: "minecraft:potion"
+					tag: {
+						Potion: "minecraft:strong_healing"
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Recycling"
+			tasks: [
+				{
+					id: "49B0C3E2F95EAF9D"
+					item: "minecraft:blaze_powder"
+					type: "item"
+				}
+				{
+					id: "48BCF00BCD719C46"
+					item: "minecraft:bone"
+					type: "item"
+				}
+				{
+					id: "12702C6767878CDD"
+					item: {
+						Count: 1
+						id: "minecraft:wooden_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "77D3E91987291DEB"
+					item: {
+						Count: 1
+						id: "minecraft:wooden_axe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7BD78EAAC91CB1A4"
+					item: "rootsclassic:dark_oak_bark"
+					type: "item"
+				}
+				{
+					id: "4D504C278338B463"
+					item: "rootsclassic:birch_bark"
+					type: "item"
+				}
+			]
+			title: "Life drain"
+			x: 4.7d
+			y: -12.9d
+		}
+		{
+			dependencies: [
+				"3C4F209849E28B98"
+				"1FB2DA816DD94FF3"
+			]
+			description: ["By offering a clock and an iron ingot to the altar and burning a variable amount o fclocks as incense, it's possible to advance time by an amount proportional to the amount of clocks burned."]
+			hide_until_deps_complete: true
+			icon: "minecraft:clock"
+			id: "562A5E0057563216"
+			rewards: [{
+				count: 3
+				id: "264305CF9C384BB5"
+				item: "minecraft:clock"
+				type: "item"
+			}]
+			subtitle: "Fast forwarding"
+			tasks: [
+				{
+					id: "11F0C95AA4C2F7F6"
+					item: "minecraft:clock"
+					type: "item"
+				}
+				{
+					id: "3DEA4C36C6C5F40E"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+			]
+			title: "Time shift"
+			x: 1.5d
+			y: -12.9d
+		}
+		{
+			dependencies: [
+				"3C4F209849E28B98"
+				"0C666DC220FF8179"
+			]
+			description: ["By offering the remains of slain monsters at the altar and burning coal and nether wart as incense it's possible to reanimate the desired beast for whichever wicked purpose is needed."]
+			hide_until_deps_complete: true
+			icon: "minecraft:rotten_flesh"
+			id: "39C8BBB0BB2F0136"
+			subtitle: "A dark art"
+			tasks: [
+				{
+					count: 2L
+					id: "7B8827EAA2E59891"
+					item: { Count: 2, id: "minecraft:rotten_flesh" }
+					type: "item"
+				}
+				{
+					id: "071993609246F35B"
+					item: "minecraft:bone"
+					type: "item"
+				}
+				{
+					id: "63F6F3A17EB9C3DE"
+					item: "minecraft:coal"
+					type: "item"
+				}
+				{
+					id: "5C5722476E1C6252"
+					item: "minecraft:nether_wart"
+					type: "item"
+				}
+			]
+			title: "Monster reanimation"
+			x: 1.9d
+			y: -13.6d
+		}
+		{
+			dependencies: [
+				"3C4F209849E28B98"
+				"0C666DC220FF8179"
+			]
+			description: ["By energizing standing with rituals it's possible to turn them into magical obelisks capable of spreading an effect around them."]
+			hide_until_deps_complete: true
+			id: "0A2ED5FE7F25699D"
+			rewards: [{
+				id: "240CBF6659976F89"
+				item: "rootsclassic:igniter_standing_stone"
+				type: "item"
+			}]
+			subtitle: "Rocks with a job"
+			tasks: [{
+				id: "55C58C2E19A2D48A"
+				item: "rootsclassic:grower_standing_stone"
+				type: "item"
+			}]
+			title: "Energized stones"
+			x: 1.9d
+			y: -12.2d
+		}
+		{
+			dependencies: [
+				"3C4F209849E28B98"
+				"0C666DC220FF8179"
+			]
+			description: ["By enhancing leather armor through rituals, it will transform into a particular robe that naturally channels natural energies, allowing its wearer to cast stronger spells."]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"cold_sweat:item_insulation": {
+						Insulation: [ ]
+					}
+				}
+				id: "rootsclassic:sylvan_robe"
+				tag: {
+					Damage: 0
+					Insulation: [ ]
+				}
+			}
+			id: "37CD50BD485EAB83"
+			rewards: [{
+				count: 15
+				id: "4166CD8219AA99FC"
+				item: "minecraft:gold_ingot"
+				type: "item"
+			}]
+			subtitle: "Children of the forest"
+			tasks: [
+				{
+					id: "3C34F1BD8EC04F42"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "rootsclassic:sylvan_hood"
+						tag: {
+							Damage: 0
+							Insulation: [ ]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "459A880075272278"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "rootsclassic:sylvan_robe"
+						tag: {
+							Damage: 0
+							Insulation: [ ]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "59AA016636F3A0FF"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "rootsclassic:sylvan_tunic"
+						tag: {
+							Damage: 0
+							Insulation: [ ]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "68F5E28C8430FF89"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "rootsclassic:sylvan_boots"
+						tag: {
+							Damage: 0
+							Insulation: [ ]
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Sylvan robes"
+			x: 4.3d
+			y: -13.6d
+		}
+		{
+			dependencies: ["37CD50BD485EAB83"]
+			description: ["By enhancing iron armor with rituals, it's possible to create a set of living armor that not only regenerates itself but also regenerates its wearer, while also offering good defense."]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"cold_sweat:item_insulation": {
+						Insulation: [ ]
+					}
+				}
+				id: "rootsclassic:wildwood_plate"
+				tag: {
+					Damage: 0
+					Insulation: [ ]
+				}
+			}
+			id: "012425FC11047D2A"
+			rewards: [{
+				count: 5
+				id: "746BC5D2FA7A0CD9"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
+			subtitle: "One with the forest"
+			tasks: [
+				{
+					id: "2339EE934B08C16C"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "rootsclassic:wildwood_mask"
+						tag: {
+							Damage: 0
+							Insulation: [ ]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "54119EBFE58E3EFF"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "rootsclassic:wildwood_plate"
+						tag: {
+							Damage: 0
+							Insulation: [ ]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "484E8151AEF40F11"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "rootsclassic:wildwood_leggings"
+						tag: {
+							Damage: 0
+							Insulation: [ ]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "420E39FFA7998B03"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "rootsclassic:wildwood_boots"
+						tag: {
+							Damage: 0
+							Insulation: [ ]
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Wildwood armor"
+			x: 4.3d
+			y: -12.2d
+		}
+		{
+			dependencies: [
+				"3C4F209849E28B98"
+				"0C666DC220FF8179"
+			]
+			description: ["By offering a pile of glowstone dust and a bone to the altar and burning a carrot, a bundle of wheat, some wheat seeds and a raw cod as incense, the altar will instigate all nearby animals to breed with one another."]
+			hide_until_deps_complete: true
+			icon: "cyclic:heart"
+			id: "49932314A92B6741"
+			rewards: [
+				{
+					id: "604496419AA96B0C"
+					item: "farmersdelight:chicken_sandwich"
+					type: "item"
+				}
+				{
+					id: "68920CFDC69F1AAD"
+					item: "farmersdelight:hamburger"
+					type: "item"
+				}
+				{
+					id: "21199A5FC8367D54"
+					item: "farmersdelight:bacon_sandwich"
+					type: "item"
+				}
+				{
+					id: "245C81DE3D819CF0"
+					item: "farmersdelight:mutton_wrap"
+					type: "item"
+				}
+			]
+			subtitle: "Are we allowed to show that?"
+			tasks: [
+				{
+					id: "0BA6BA1905A522D9"
+					item: "minecraft:glowstone_dust"
+					type: "item"
+				}
+				{
+					id: "3574683D11C36ED8"
+					item: "minecraft:bone"
+					type: "item"
+				}
+				{
+					id: "6A6080B605131BDE"
+					item: "minecraft:carrot"
+					type: "item"
+				}
+				{
+					id: "61E465CACEB4192A"
+					item: "minecraft:wheat"
+					type: "item"
+				}
+				{
+					id: "13EB5772A6017FD5"
+					item: "minecraft:wheat_seeds"
+					type: "item"
+				}
+				{
+					id: "21C7BAD79893C574"
+					item: "minecraft:cod"
+					type: "item"
+				}
+			]
+			title: "Mass breeding"
+			x: 4.7d
+			y: -14.3d
+		}
+		{
+			dependencies: [
+				"3C4F209849E28B98"
+				"0C666DC220FF8179"
+			]
+			description: [
+				"Sometimes it can be difficult to find specific types of plants that are required for certain rituals. Luckily, the druidic arts have a solution, although some may consider it... &oquestionable&r."
+				"{@pagebreak}"
+				"If the altar is offered a piece of flint, an iron sword and a bone, and blaze powder and a piece of dark oak bark is burned as incense, then the altar will claim the life of whichever creature is closest to it, while giving a random plant in exchange."
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "bloodmagic:sacrificialdagger"
+				tag: {
+					sacrifice: 0b
+				}
+			}
+			id: "2537EA7CEFB7140B"
+			rewards: [{
+				id: "2402070CDD220E34"
+				item: "brewinandchewin:bloody_mary"
+				type: "item"
+			}]
+			subtitle: "A garden born of blood"
+			tasks: [
+				{
+					id: "0624864502C7B3D7"
+					item: "minecraft:flint"
+					type: "item"
+				}
+				{
+					id: "563EC8EF8ABB261E"
+					item: {
+						Count: 1
+						id: "minecraft:iron_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7F8F5DEF5C91EBC9"
+					item: "minecraft:bone"
+					type: "item"
+				}
+				{
+					id: "3960064093F2C062"
+					item: "minecraft:blaze_powder"
+					type: "item"
+				}
+				{
+					id: "6304CB4049A497F9"
+					item: "rootsclassic:dark_oak_bark"
+					type: "item"
+				}
+			]
+			title: "Sacrifice"
+			x: 1.5d
+			y: -14.3d
+		}
+		{
+			dependencies: [
+				"3C4F209849E28B98"
+				"0C666DC220FF8179"
+			]
+			description: [
+				"By infusing a stone sword with a charged rune, the blade will become massively more powerful than ever before. In addition to the necessary incense, by burning up to three pieces of bark, the sword can be granted some additional effects."
+				"{@pagebreak}"
+				"Acacia bark will give additional generic damage."
+				"Spruce bark will give additional knockback."
+				"Birch bark will give additional damage to the undead."
+				"Jungle bark will give a small amount of drowning damage."
+				"Dark oak bark will give a chance to evade attacks while holding the sword."
+			]
+			hide_until_deps_complete: true
+			id: "0EFB0797D46FDC9D"
+			rewards: [{
+				id: "3817C40CFAE35FCD"
+				item: "minecraft:diamond_block"
+				type: "item"
+			}]
+			subtitle: "Druidic mastery"
+			tasks: [{
+				id: "6BCD6CC215BFF0B7"
+				item: {
+					Count: 1
+					id: "rootsclassic:engraved_blade"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Ancient weaponry"
+			x: 3.1d
+			y: -15.2d
+		}
+	]
+	subtitle: ["The essence of Svouna"]
+	title: "&2Roots"
 }

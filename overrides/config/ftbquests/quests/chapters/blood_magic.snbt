@@ -2,9 +2,10 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "blood_magic"
-	group: ""
+	group: "398C45F8DFD15D9E"
+	icon: "bloodmagic:altar"
 	id: "16F4A6A28674F82F"
-	order_index: 3
+	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{
@@ -154,12 +155,20 @@
 			dependencies: ["79D70E58585670E8"]
 			description: ["Why is this one blue? Is it hemolymph? "]
 			id: "3E81B03A121FF0C0"
-			rewards: [{
-				count: 4
-				id: "233164216F4CFE36"
-				item: "minecraft:redstone_block"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 4
+					id: "233164216F4CFE36"
+					item: "minecraft:redstone_block"
+					type: "item"
+				}
+				{
+					count: 17
+					id: "2D222E2E1F5DBF67"
+					item: "farmersdelight:brown_mushroom_colony"
+					type: "item"
+				}
+			]
 			size: 1.5d
 			subtitle: "It absolutely does not."
 			tasks: [{
@@ -704,6 +713,12 @@
 			dependencies: ["00AE181E5013DC26"]
 			description: ["Pee!"]
 			id: "1695F56E02DA1CFF"
+			rewards: [{
+				count: 16
+				id: "78CA572950B18C9B"
+				item: "bloodmagic:dungeon_ore"
+				type: "item"
+			}]
 			size: 1.5d
 			subtitle: "It's yellow."
 			tasks: [{
@@ -719,6 +734,12 @@
 			dependencies: ["1695F56E02DA1CFF"]
 			description: ["PURPLE ORB??? PURPLE GUY?!?!"]
 			id: "514134A6A8DD73E5"
+			rewards: [{
+				count: 1000
+				id: "22A56D6E7DE34ADA"
+				item: "minecraft:spruce_trapdoor"
+				type: "item"
+			}]
 			size: 1.5d
 			subtitle: "Now it's purple."
 			tasks: [{

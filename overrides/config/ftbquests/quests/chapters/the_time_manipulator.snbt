@@ -56,7 +56,7 @@
 			}]
 			title: "The Titanborn"
 			x: 0.5d
-			y: -1.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["6F1EB8E7DA8C213F"]
@@ -121,7 +121,7 @@
 			}]
 			title: "The Avians"
 			x: -4.5d
-			y: -1.0d
+			y: -0.5d
 		}
 	]
 	title: "The Start"

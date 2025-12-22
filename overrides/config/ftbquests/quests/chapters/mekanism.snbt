@@ -5,6 +5,14 @@
 	group: "398C45F8DFD15D9E"
 	icon: "immersiveengineering:bottling_machine"
 	id: "32C976C47706243C"
+	images: [{
+		height: 6.0d
+		image: "kubejs:textures/quests/mekanism.png"
+		rotation: 0.0d
+		width: 8.0d
+		x: -8.2d
+		y: 8.3d
+	}]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
@@ -540,6 +548,7 @@
 				"49F6E770BCA2287D"
 				"1EF67AFF7B90A3C9"
 			]
+			description: ["Stay pegged everyone!"]
 			id: "2E9AE30616E40F11"
 			size: 1.5d
 			tasks: [{

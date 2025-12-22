@@ -2,9 +2,10 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "railcraft_reborn"
-	group: ""
+	group: "6B44979E48943FD9"
+	icon: "minecraft:rail"
 	id: "5561C645D460B294"
-	order_index: 5
+	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{
@@ -60,9 +61,9 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["1B7E73928EA89911"]
+			dependencies: ["0B522F838AAD473A"]
 			description: ["To create anything, you will need a blast furnace. Arrange your bricks in a vertical multiblock: 3 wide, 3 long, 4 high, with the middle 2 blocks hollowed out."]
-			icon: "immersiveengineering:advanced_blast_furnace"
+			icon: "railcraft:blast_furnace_bricks"
 			id: "0F4EC72F17EB36DE"
 			rewards: [
 				{
@@ -93,12 +94,17 @@
 				}
 			]
 			title: "Blast Furnace"
-			x: -4.6d
-			y: 0.0d
+			x: 3.9000000000000004d
+			y: 1.2000000000000002d
 		}
 		{
-			dependencies: ["3BC702C955390581"]
-			description: ["Arrange in a 3x3x3 block, with the middle block hollow."]
+			dependencies: ["0B522F838AAD473A"]
+			description: [
+				"Arrange in a 3x3x3 block, with the middle block hollow."
+				""
+				"Coal coke can burn for double the amount of time coal can, and you can insert whole blocks of coal at a time to make it even more efficient. Generates Creosote Oil as a byproduct."
+			]
+			icon: "railcraft:coke_oven_bricks"
 			id: "1B7E73928EA89911"
 			rewards: [
 				{
@@ -128,12 +134,13 @@
 				}
 			]
 			title: "Coke Oven"
-			x: -2.5d
-			y: 0.0d
+			x: 3.9000000000000004d
+			y: -1.2000000000000002d
 		}
 		{
 			dependencies: ["3BC702C955390581"]
-			description: ["Are used to craft the titular rails! Check out your guidebook for different rail options."]
+			description: ["Is&l used to craft the titular rails! Check out your guidebook for different rail options."]
+			hide_dependent_lines: true
 			id: "73B7506ED9B70542"
 			rewards: [
 				{
@@ -160,6 +167,7 @@
 		{
 			dependencies: ["73B7506ED9B70542"]
 			description: ["Automates the processes of the manual rolling machine, at the expense of power."]
+			hide_dependency_lines: false
 			id: "76EE8F94FFF238B1"
 			rewards: [{
 				count: 6
@@ -177,7 +185,7 @@
 			y: 2.4d
 		}
 		{
-			dependencies: ["3BC702C955390581"]
+			dependencies: ["0B522F838AAD473A"]
 			description: [
 				"Iron tanks are multiblocks capable of holding hundreds of buckets worth of liquid in them!"
 				""
@@ -205,6 +213,7 @@
 					xp: 100
 				}
 			]
+			shape: "circle"
 			tasks: [
 				{
 					count: 21L
@@ -224,8 +233,410 @@
 					type: "item"
 				}
 			]
-			x: 1.8d
-			y: 2.5d
+			title: "Iron Tank"
+			x: 2.8d
+			y: -2.1d
+		}
+		{
+			dependencies: ["0B522F838AAD473A"]
+			description: [
+				"Passively generates water. Great for Steam Boilers, and if you're really thirsty."
+				""
+				"For construction, make a 3x3x3 multiblock and leave the center block hollow."
+			]
+			id: "3705055A0B98BB96"
+			rewards: [
+				{
+					count: 26
+					id: "6482D7B353A40278"
+					item: "railcraft:water_tank_siding"
+					type: "item"
+				}
+				{
+					id: "03DBAFB3DA7BABD0"
+					type: "xp"
+					xp: 100
+				}
+			]
+			shape: "circle"
+			tasks: [{
+				count: 26L
+				id: "4C8424A4A103D797"
+				item: "railcraft:water_tank_siding"
+				type: "item"
+			}]
+			title: "Water Tank"
+			x: 1.2d
+			y: -2.1d
+		}
+		{
+			dependencies: ["3BC702C955390581"]
+			description: ["Railcraft has a very high amount of multiblocks, likely some of the highest out of any mod in this pack. Many are necessary to create certain basic materials and many are simply nice to have. Most of these are accessible from the start."]
+			id: "0B522F838AAD473A"
+			tasks: [{
+				id: "1086EA01D51CB26B"
+				title: "Multiblockey!!!"
+				type: "checkmark"
+			}]
+			title: "MULTI BLOCKEY!!"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0F4EC72F17EB36DE"]
+			description: ["Arrange in a 3 wide, 2 tall, and 2 long structure. Must be powered from the back. Don't put your balls in here."]
+			id: "379B0440C99ED8C5"
+			rewards: [
+				{
+					count: 12
+					id: "019D72A73A191FA3"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					count: 64
+					id: "51941DBF6AD210C6"
+					item: "minecraft:copper_ingot"
+					type: "item"
+				}
+				{
+					id: "0639A8746EC0E428"
+					type: "xp"
+					xp: 100
+				}
+			]
+			size: 1.0d
+			tasks: [{
+				count: 12L
+				id: "1F8BCEDE301FD2A8"
+				item: { Count: 12, id: "railcraft:crusher" }
+				type: "item"
+			}]
+			x: 5.2d
+			y: 2.1d
+		}
+		{
+			dependencies: ["3BC702C955390581"]
+			description: [
+				"Time to play Half Life 2! Oh wait, not THAT steam..."
+				""
+				"Steam is used for a couple things in Railcraft:"
+				""
+				"1. Steam Turbines create energy (although I wouldn't recommend it considering other sources of energy generation in the pack)."
+				""
+				"2. Steam Ovens can process resources."
+				""
+				"Have both, on the house!"
+			]
+			id: "5C456052F8AC1EBA"
+			rewards: [
+				{
+					count: 12
+					id: "5973335690D43FFF"
+					item: "railcraft:steam_turbine"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "0B7FC1333CB16646"
+					item: "railcraft:steam_oven"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "4F68C97AEF999BD8"
+					item: "railcraft:solid_fueled_firebox"
+					type: "item"
+				}
+				{
+					id: "1982DFB8DD2463A9"
+					item: "railcraft:low_pressure_steam_boiler_tank"
+					type: "item"
+				}
+			]
+			title: "Age of STEAM"
+			x: 1.6d
+			y: 2.6d
+		}
+		{
+			dependencies: [
+				"5C456052F8AC1EBA"
+				"0F4EC72F17EB36DE"
+			]
+			description: ["Your first steam boiler will be functional, but you're probably gonna want something better. If you arrange your fireboxes in a 2x2x2 block and your replace your low pressure boiler with high pressure boilers in a 2x3x2 block (3 high, 2 long and wide), you can create a much more efficient steup."]
+			id: "6646A0BFFA0DB1F7"
+			rewards: [{
+				id: "352FEFE095E629F6"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "circle"
+			tasks: [
+				{
+					count: 8L
+					id: "5BE805B9C561F644"
+					item: { Count: 8, id: "railcraft:solid_fueled_firebox" }
+					type: "item"
+				}
+				{
+					count: 12L
+					id: "27F080962DDFBC34"
+					item: "railcraft:high_pressure_steam_boiler_tank"
+					type: "item"
+				}
+			]
+			title: "HIGH PRESSURE"
+			x: 2.8d
+			y: 2.6d
+		}
+		{
+			dependencies: ["3BC702C955390581"]
+			description: [
+				"The stuff you put on the train!"
+				""
+				"You don't need a Steam Boiler for this to work, all you need is a source of water and a source of heat (e.g Coal)."
+				""
+				"Idle mode means the locomotive is producing steam, but it isn't moving. Running means it's producing steam and it's moving according to the speed you set."
+			]
+			id: "719319013CCB0519"
+			rewards: [
+				{
+					id: "3A4635EA8BD76462"
+					item: "railcraft:tank_minecart"
+					type: "item"
+				}
+				{
+					id: "452223E5396CD189"
+					item: "railcraft:energy_minecart"
+					type: "item"
+				}
+				{
+					id: "2E7CFC180CDC24D1"
+					type: "xp"
+					xp: 100
+				}
+			]
+			size: 2.0d
+			tasks: [{
+				id: "2D5B81C8BBAD1D03"
+				item: {
+					Count: 1
+					id: "railcraft:steam_locomotive"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -0.1d
+			y: 3.3d
+		}
+		{
+			dependencies: [
+				"719319013CCB0519"
+				"73B7506ED9B70542"
+			]
+			description: ["It's a little slower than your typical track, and there is a chance of derailment whenever you go on it, but you can bridge over gaps using this, and its quite cheap! This probably the track that DB uses."]
+			hide_until_deps_complete: true
+			id: "7725BC51192A05F7"
+			shape: "square"
+			tasks: [{
+				id: "2E2657CB39EC4CF0"
+				item: "railcraft:abandoned_track"
+				type: "item"
+			}]
+			x: -2.1d
+			y: 5.4d
+		}
+		{
+			dependencies: [
+				"719319013CCB0519"
+				"73B7506ED9B70542"
+			]
+			description: ["Its rails. The vanilla rails."]
+			hide_until_deps_complete: true
+			id: "523B53C2722AEA8E"
+			shape: "square"
+			tasks: [{
+				id: "010AADED74636913"
+				item: "minecraft:rail"
+				type: "item"
+			}]
+			x: -0.1d
+			y: 5.4d
+		}
+		{
+			dependencies: [
+				"719319013CCB0519"
+				"73B7506ED9B70542"
+			]
+			description: ["A little slower than normal, but can be made with pure wood!"]
+			hide_until_deps_complete: true
+			id: "640BB7145CDD915A"
+			shape: "square"
+			tasks: [{
+				id: "3092057048460E79"
+				item: "railcraft:strap_iron_track"
+				type: "item"
+			}]
+			x: -1.1d
+			y: 5.4d
+		}
+		{
+			dependencies: [
+				"719319013CCB0519"
+				"73B7506ED9B70542"
+			]
+			description: [""]
+			hide_until_deps_complete: true
+			id: "059314951289467D"
+			shape: "square"
+			tasks: [{
+				id: "68CA7E79ACCDD199"
+				item: "railcraft:reinforced_track"
+				type: "item"
+			}]
+			x: 0.9d
+			y: 5.4d
+		}
+		{
+			dependencies: [
+				"719319013CCB0519"
+				"73B7506ED9B70542"
+			]
+			hide_until_deps_complete: true
+			id: "2163BF653B9E841E"
+			shape: "square"
+			tasks: [{
+				id: "33B945F074EE27BD"
+				item: "railcraft:high_speed_track"
+				type: "item"
+			}]
+			x: 1.9d
+			y: 5.4d
+		}
+		{
+			dependencies: ["719319013CCB0519"]
+			description: [
+				"If you want to be part of the FUTURE, you can modernize your tracks by replacing your locomotive with an electric one, and you tracks with electric tracks."
+				""
+				"In order to power your network, you will need to place your tracks on top of frames. The frames are the component that needs to be powered, and you can use whatever energy generation method you'd like for them. You only need to power 1 frame, and all the connected ones will automatically be powered too."
+			]
+			hide_until_deps_complete: true
+			id: "09E35A3773DB5329"
+			rewards: [
+				{
+					count: 64
+					id: "58CA5B157B4F8AB3"
+					item: "railcraft:electric_rail"
+					type: "item"
+				}
+				{
+					count: 128
+					id: "08A97720B09C0D29"
+					item: "railcraft:frame"
+					type: "item"
+				}
+			]
+			shape: "circle"
+			tasks: [
+				{
+					id: "14699E7A4C4DB659"
+					item: "railcraft:electric_track"
+					type: "item"
+				}
+				{
+					id: "3B132451D15C0759"
+					item: {
+						Count: 1
+						id: "railcraft:electric_locomotive"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "6920C1E2DBC374AE"
+					item: "railcraft:frame"
+					type: "item"
+				}
+			]
+			title: "Side Track: Electric Trains!"
+			x: 1.9d
+			y: 4.1d
+		}
+		{
+			dependencies: [
+				"523B53C2722AEA8E"
+				"7725BC51192A05F7"
+				"640BB7145CDD915A"
+				"059314951289467D"
+				"2163BF653B9E841E"
+			]
+			description: ["Railcraft, perhaps unsurprisingly, has a very very large number of tracks that accomplish different purposes. To get an idea, try typing \"@railcraft track\" into JEI. Many of these have pretty self explanatory purposes, but some are a little more complex. Have fun figuring them out, because I'm not making a quest item for all of them."]
+			icon: "railcraft:high_speed_electric_junction_track"
+			id: "06FE6308399C091B"
+			rewards: [
+				{
+					id: "124E71A4625FB45E"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 8
+					id: "1621FB72E038489C"
+					item: "railcraft:whistle_track_kit"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "2875AEE57776959A"
+					item: "railcraft:launcher_track_kit"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [{
+				id: "6918B281BC7B7C7F"
+				type: "checkmark"
+			}]
+			title: "Tracks! Tracks! Tracks!"
+			x: -0.1d
+			y: 7.5d
+		}
+		{
+			dependencies: ["06FE6308399C091B"]
+			description: ["Place a locking track or something similar to stop your locomotives over your loader. It can then take or receive items from your locomotive, including fuel and water to keep it running."]
+			id: "16DBEF9C4B0C54AA"
+			rewards: [
+				{
+					id: "1FDC42A996CC2DE0"
+					item: "railcraft:item_unloader"
+					type: "item"
+				}
+				{
+					id: "7D81425978DDCC6A"
+					item: "railcraft:fluid_loader"
+					type: "item"
+				}
+				{
+					id: "72CB26F39CA37F6D"
+					item: "railcraft:fluid_unloader"
+					type: "item"
+				}
+				{
+					id: "3D68D0F396905D65"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [{
+				id: "118CAF222F06FC29"
+				item: "railcraft:item_loader"
+				type: "item"
+			}]
+			title: "Huge Loads"
+			x: 1.9d
+			y: 7.5d
 		}
 	]
 	title: "Railcraft: Reborn"

@@ -3,6 +3,7 @@
 	default_quest_shape: ""
 	filename: "electrodynamics"
 	group: "1A5A8D13C78F8D75"
+	icon: "electrodynamics:wirecopper"
 	id: "5AA4708A4A20D9CF"
 	order_index: 1
 	quest_links: [ ]

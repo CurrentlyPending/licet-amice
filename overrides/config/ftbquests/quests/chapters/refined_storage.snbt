@@ -3,6 +3,7 @@
 	default_quest_shape: ""
 	filename: "refined_storage"
 	group: ""
+	icon: "refinedstorage:controller"
 	id: "49AEEC9BBC0C0E57"
 	order_index: 1
 	quest_links: [ ]
@@ -446,7 +447,7 @@
 			description: [
 				"So you wanna automate, huh? Well, it can't be so hard. "
 				""
-				"[ \"Your first step will be to craft and connect a Pattern Grid and some Patterns. Lets say you wanna automate the production of Spruce Trapdoors. Note that any autocrafting chain longer than 1 requires \", { \"text\": \"Crafting Upgrades\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"44CC9DFD02DBCCAE\" } }, \".\" ]"
+				"Your first step will be to craft and connect a Pattern Grid and some Patterns. Lets say you wanna automate the production of Spruce Trapdoors."
 				""
 				"1. Go to your Pattern Grid and open the JEI recipe for turning spruce logs into spruce planks. Press the '+' to insert it."
 				""
@@ -454,7 +455,8 @@
 				""
 				"Repeat steps 1 and 2 for turning spruce planks into spruce trapdoors."
 				""
-				"You should have 2 encoded patterns. You will now need to insert them either into a Crafter (if it's a crafting recipe) or an interface (machine recipe). Make sure to have them connected to the network. Now, when you open your crafting grid, you should be able to click \"Craft\" on your Spruce Trapdoors and it'll automatically go through the steps necessary!"
+				"You should have 2 encoded patterns. Insert them into a Crafter. Make sure to have them connected to the network!"
+				":) :) :) :)"
 			]
 			id: "0DCD1B8FE3A7E566"
 			size: 1.5d
@@ -529,12 +531,21 @@
 		}
 		{
 			dependencies: ["0DCD1B8FE3A7E566"]
+			description: ["If you face this thing into a machine, it'll treat the machine as the crafter and you can create machine recipes! E.g if you face this against an enrichment chamber, you can create the Charcoal -> Enriched Charcoal pattern and insert that into it."]
 			id: "30B2D5658851D14C"
-			rewards: [{
-				id: "0A5C1B7249F9957C"
-				type: "xp"
-				xp: 100
-			}]
+			rewards: [
+				{
+					id: "0A5C1B7249F9957C"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 2
+					id: "2640E630998A8D9F"
+					item: "refinedstorage:crafter"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "0FF24F96B79584AE"
 				item: "refinedstorage:crafter"
@@ -546,11 +557,7 @@
 		}
 		{
 			dependencies: ["0DCD1B8FE3A7E566"]
-			description: [
-				"The interface combines the functionality of an Importer and an Exporter. Every tick, if possible, it inserts items from storage in its filter into its adjacent inventory, and extracts items back to storage marked in its export filter. It contains an intermediate inventory to hold items in transit."
-				""
-				"By itself, its "
-			]
+			description: ["The interface combines the functionality of an Importer and an Exporter. Every tick, if possible, it inserts items from storage in its filter into its adjacent inventory, and extracts items back to storage marked in its export filter. It contains an intermediate inventory to hold items in transit."]
 			id: "0539EE19876082F6"
 			tasks: [
 				{
@@ -570,6 +577,11 @@
 		}
 		{
 			dependencies: ["30B2D5658851D14C"]
+			description: [
+				"The Crafting Manager lets you see a list of all your crafters and what machines (if any) they are connected to. "
+				""
+				"The Crafting Monitor lets you see the status of your crafting requests. If you requested to craft an insanely complicated item with 40 million chains, the monitor will let you know exactly how many of each resource your crafters are using."
+			]
 			id: "578C62ED8F786485"
 			rewards: [{
 				count: 3
@@ -601,6 +613,11 @@
 				"If you right click without crouching, it'll rotate the block."
 			]
 			id: "3B0FBA00DBC940AC"
+			rewards: [{
+				id: "6A89CADB95865F01"
+				type: "xp"
+				xp: 50
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "1623DFAA6EF31B66"
@@ -660,7 +677,7 @@
 		}
 		{
 			dependencies: ["514D5A3F09C5B621"]
-			description: ["Your storage system can be inserted into your storage system to augment it!"]
+			description: ["Your storage system can be inserted into your storage system to augment it! Nearly every machine in RS has 4 slots on its right that can be used for inserting upgrades into it."]
 			id: "4B60698571AA0882"
 			tasks: [{
 				id: "3F2457B58CCE904C"
@@ -698,7 +715,7 @@
 		}
 		{
 			dependencies: ["4B60698571AA0882"]
-			description: ["Will schedule an autocrafter task when a resource is required but not available. Necessary for autocrafting chains!"]
+			description: [""]
 			id: "44CC9DFD02DBCCAE"
 			shape: "circle"
 			tasks: [{

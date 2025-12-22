@@ -2,10 +2,925 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "immersive_engineering"
-	group: ""
+	group: "1A5A8D13C78F8D75"
 	id: "60BF3DCA3B14583D"
-	order_index: 4
+	order_index: 2
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			description: [
+				"Heh.. more like... immersive engiSHITTING"
+				""
+				"Make your coke and meth bricks into real multiblocks by arranging them in a 3x3x3 cube and giving them a thwack with your little hammer..."
+			]
+			id: "55FD9280F903F282"
+			rewards: [
+				{
+					id: "36B23FBBB69F17C3"
+					item: "immersiveengineering:manual"
+					type: "item"
+				}
+				{
+					count: 27
+					id: "5427F5D223E3A8F0"
+					item: "immersiveengineering:blastbrick"
+					type: "item"
+				}
+				{
+					count: 27
+					id: "5752473AC6AD7848"
+					item: "immersiveengineering:cokebrick"
+					type: "item"
+				}
+				{
+					id: "5617750685D7CA0C"
+					type: "xp"
+					xp: 100
+				}
+			]
+			size: 2.0d
+			tasks: [{
+				id: "1AC1D5AD82D55268"
+				item: {
+					Count: 1
+					id: "immersiveengineering:hammer"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Immerse Your Soul In (Engineering)"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1B27DA71125FDEFD"]
+			description: [
+				"Place a block of lava and a block of water on opposite sides of this machine and watch it generate bare power!"
+				""
+				"To begin, place your generator and place a connector on top. Attach a connector to any other machines that need power. If theyre too far, use relays. Then just connect all your connectors and relays with your lv wires."
+				""
+				"{@pagebreak}"
+				"IE has 3 voltages: LV, MV, and HV. LV is 2048 IF/t, MV is 8192, and HV is 32768."
+				"DO &lNOT MIX THEM UP"
+				"(you will explode)"
+			]
+			icon: "immersiveengineering:thermoelectric_generator"
+			id: "42C22F0DEEB3FED1"
+			rewards: [
+				{
+					id: "5AAB783030934B80"
+					item: "minecraft:lava_bucket"
+					type: "item"
+				}
+				{
+					id: "058E9F0E76F94862"
+					item: "minecraft:water_bucket"
+					type: "item"
+				}
+				{
+					count: 32
+					id: "4084901DD8878428"
+					item: "immersiveengineering:connector_lv"
+					type: "item"
+				}
+				{
+					count: 32
+					id: "1FFBE4B8E1B713EE"
+					item: "immersiveengineering:connector_lv_relay"
+					type: "item"
+				}
+				{
+					count: 64
+					id: "00C711E1C69B5CA3"
+					item: "immersiveengineering:wirecoil_copper"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "476F358E54568D38"
+					item: "immersiveengineering:thermoelectric_generator"
+					type: "item"
+				}
+				{
+					id: "517D2EC2DF7D590F"
+					item: "immersiveengineering:connector_lv"
+					type: "item"
+				}
+				{
+					id: "63BC7421CE699020"
+					item: "immersiveengineering:connector_lv_relay"
+					type: "item"
+				}
+				{
+					id: "5E13CA0B9CB6CD8A"
+					item: "immersiveengineering:wirecoil_copper"
+					type: "item"
+				}
+			]
+			title: "First Energy Generation"
+			x: 1.6d
+			y: 1.9d
+		}
+		{
+			dependencies: ["55FD9280F903F282"]
+			id: "1B27DA71125FDEFD"
+			rewards: [{
+				count: 16
+				id: "30DFFB39963DCAF3"
+				item: "immersiveengineering:ingot_steel"
+				type: "item"
+			}]
+			tasks: [{
+				id: "14A5E8F1E144429B"
+				item: "immersiveengineering:ingot_steel"
+				type: "item"
+			}]
+			title: "Steel"
+			x: 0.0d
+			y: 1.9d
+		}
+		{
+			dependencies: ["42C22F0DEEB3FED1"]
+			description: ["Haha no silly, its just another quite cheap power source after the thermoelectric generator. Attach the wheel to the generator and add some flowing water! (Just like in Create)"]
+			id: "0A70660958199438"
+			shape: "circle"
+			tasks: [
+				{
+					id: "5D0FDCBC70536EC3"
+					item: "immersiveengineering:dynamo"
+					type: "item"
+				}
+				{
+					id: "74D1AC63915692E1"
+					item: "immersiveengineering:watermill"
+					type: "item"
+				}
+			]
+			title: "What is this, Create??"
+			x: 1.6d
+			y: 0.5d
+		}
+		{
+			dependencies: ["1B27DA71125FDEFD"]
+			description: ["If you want a more quick and efficient recipe for getting plates, here ya go!"]
+			icon: "immersiveengineering:metal_press"
+			id: "2B018C4B02EE3F6F"
+			rewards: [
+				{
+					count: 32
+					id: "2AAE5448788ED579"
+					item: "immersiveengineering:conveyor_basic"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "0177653E5F4E88FC"
+					item: "immersiveengineering:ingot_steel"
+					type: "item"
+				}
+				{
+					id: "2F435CB075BFEAB6"
+					type: "xp"
+					xp: 100
+				}
+			]
+			shape: "circle"
+			tasks: [
+				{
+					id: "2A21386D50404469"
+					item: "immersiveengineering:rs_engineering"
+					type: "item"
+				}
+				{
+					id: "6D55684193571120"
+					item: "minecraft:piston"
+					type: "item"
+				}
+				{
+					id: "5697A2C0CF99CB6E"
+					item: "immersiveengineering:heavy_engineering"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "7DD464F0DA39FA7C"
+					item: { Count: 2, id: "immersiveengineering:steel_scaffolding_standard" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "0A5766C0E28726AB"
+					item: { Count: 2, id: "immersiveengineering:conveyor_basic" }
+					type: "item"
+				}
+			]
+			title: "Metal Press"
+			x: -1.6d
+			y: 1.9d
+		}
+		{
+			dependencies: ["1B27DA71125FDEFD"]
+			icon: "immersiveengineering:crusher"
+			id: "1A7DA10CB9B7B20E"
+			rewards: [
+				{
+					count: 32
+					id: "463B8A0E30FE4AD8"
+					item: "immersivegeology:normal_ore_copper"
+					type: "item"
+				}
+				{
+					count: 32
+					id: "19A96BF4361EA42D"
+					item: "immersivegeology:normal_ore_lead"
+					type: "item"
+				}
+				{
+					count: 32
+					id: "7C0403CC0230918F"
+					item: "immersivegeology:normal_ore_cassiterite"
+					type: "item"
+				}
+				{
+					id: "3E58D78A62637903"
+					type: "xp"
+					xp: 100
+				}
+			]
+			size: 1.8d
+			tasks: [
+				{
+					count: 10L
+					id: "553A06373361E8AF"
+					item: { Count: 10, id: "immersiveengineering:light_engineering" }
+					type: "item"
+				}
+				{
+					id: "3FCA1E4E45D4EC79"
+					item: "immersiveengineering:rs_engineering"
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "24FDA515B3C1B8A3"
+					item: { Count: 10, id: "immersiveengineering:steel_scaffolding_standard" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "1B27923880F5D56F"
+					item: { Count: 8, id: "immersiveengineering:steel_fence" }
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "5915FE668255A9D2"
+					item: { Count: 9, id: "minecraft:hopper" }
+					type: "item"
+				}
+			]
+			title: "The Crusha"
+			x: 0.0d
+			y: 3.6d
+		}
+		{
+			description: ["IE and IG have a TON of overlap, considering one is basically an addon for the other. Although there isnt an Immersive Geology chapter in this questbook, most of what you should know can be found in your engineers manual or on jei. Extracting, processing, and refining IG ores and materials is the specialization of Immersive Engineering."]
+			id: "1D1A2AB0C168E9F9"
+			rewards: [{
+				count: 16
+				id: "504B915BE139D602"
+				item: "immersivegeology:minecraft_poor_ore_block_copper_stone"
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "2CDF2A748618A660"
+				item: {
+					Count: 1
+					id: "immersivegeology:hammer_stone"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Immersive Geology"
+			x: -0.9d
+			y: -1.8d
+		}
+		{
+			dependencies: ["1A7DA10CB9B7B20E"]
+			description: ["It's the blast furnace... but faster."]
+			icon: "immersiveengineering:advanced_blast_furnace"
+			id: "2AD6B165B51612C1"
+			rewards: [
+				{
+					count: 27
+					id: "7902A475AE53109E"
+					item: "immersiveengineering:blastbrick_reinforced"
+					type: "item"
+				}
+				{
+					id: "66649C91C4CD4B4E"
+					item: "minecraft:hopper"
+					type: "item"
+				}
+				{
+					id: "2E9D1470C69CD6C4"
+					type: "xp"
+					xp: 100
+				}
+			]
+			shape: "circle"
+			tasks: [
+				{
+					count: 27L
+					id: "42936AB1414C1EF2"
+					item: { Count: 27, id: "immersiveengineering:blastbrick_reinforced" }
+					type: "item"
+				}
+				{
+					id: "4FEC6A825D265550"
+					item: "minecraft:hopper"
+					type: "item"
+				}
+			]
+			title: "Improved Blast Furnace"
+			x: -1.6d
+			y: 3.6d
+		}
+		{
+			dependencies: ["42C22F0DEEB3FED1"]
+			description: ["Tired of spending coal for your furnaces? With this handy thingamabob, all you need to do is power it and youll see your furnaces work fine without it!"]
+			id: "2F569EA19BD413A8"
+			rewards: [{
+				count: 2
+				id: "5A7FE7DF02C93B32"
+				item: "immersiveengineering:furnace_heater"
+				type: "item"
+			}]
+			shape: "square"
+			tasks: [{
+				id: "001F6AEBFF279B33"
+				item: "immersiveengineering:furnace_heater"
+				type: "item"
+			}]
+			x: 1.6d
+			y: 3.0d
+		}
+		{
+			dependencies: ["42C22F0DEEB3FED1"]
+			description: ["A little home for your plants! Automatically grows the seeds you place inside, all you need is provided fluid and power that matches what youre growing."]
+			id: "28ADF29F4E45121E"
+			rewards: [
+				{
+					count: 16
+					id: "418B3DFF0D725AA1"
+					item: "farm_and_charm:strawberry_seeds"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "60568BAB075DBB48"
+					item: "vinery:red_grape_seeds"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "6FA39CF114B8D629"
+					item: "psychadelic:morning_glory_seeds"
+					type: "item"
+				}
+				{
+					count: 32
+					id: "677EA3E8983242CB"
+					item: "minecraft:bone_meal"
+					type: "item"
+				}
+				{
+					id: "223BA5DDE0130258"
+					type: "xp"
+					xp: 100
+				}
+			]
+			shape: "square"
+			tasks: [{
+				id: "7BE191BCD4E32E22"
+				item: "immersiveengineering:cloche"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 3.0d
+		}
+		{
+			description: ["You're an engineer. That means you solve problems. Not problems like \"What is beauty?\", because that would fall within the purview of other's conundrums of philosophy. You solve practical problems."]
+			id: "17334782495990E0"
+			rewards: [
+				{
+					id: "1467BE42548252AE"
+					item: {
+						Count: 1
+						id: "immersiveengineering:maintenance_kit"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6126BFBF3DDEE773"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "immersiveengineering:glider"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7462CB4259C47EAB"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							Parent: {
+								Items: [ ]
+								Size: 5
+							}
+						}
+						id: "immersiveengineering:drill"
+					}
+					type: "item"
+				}
+				{
+					id: "323FA72772F52938"
+					type: "xp"
+					xp: 100
+				}
+			]
+			shape: "diamond"
+			tasks: [
+				{
+					id: "7B8319F4EBBE0928"
+					item: "immersiveengineering:screwdriver"
+					type: "item"
+				}
+				{
+					id: "576831B730FE40FC"
+					item: {
+						Count: 1
+						id: "immersiveengineering:wirecutter"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "763E733DFC202741"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							Parent: {
+								Items: [ ]
+								Size: 23
+							}
+						}
+						id: "immersiveengineering:toolbox"
+					}
+					type: "item"
+				}
+				{
+					id: "0332A222509A68B8"
+					item: "immersiveengineering:earmuffs"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "1486309FC4FC7510"
+					item: "immersiveengineering:jerrycan"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Engineer's Tools"
+			x: -1.4d
+			y: -2.3d
+		}
+		{
+			dependencies: ["1A7DA10CB9B7B20E"]
+			description: ["The only way to obtain plant oil (used for biodiesel), or HOP Graphite (an important material in lategame IE)"]
+			icon: "immersiveengineering:squeezer"
+			id: "51B557E47DA3EC90"
+			rewards: [
+				{
+					count: 16
+					id: "11BA87E7DF505EA1"
+					item: "immersiveengineering:ingot_hop_graphite"
+					type: "item"
+				}
+				{
+					count: 32
+					id: "36C13F5C3F7019AE"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+				{
+					count: 32
+					id: "4ACE9AB9FF010A40"
+					item: "minecraft:copper_ingot"
+					type: "item"
+				}
+				{
+					id: "6F1F8EDE0A2DE635"
+					type: "xp"
+					xp: 100
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					count: 2L
+					id: "04D7566EC922056A"
+					item: { Count: 2, id: "immersiveengineering:light_engineering" }
+					type: "item"
+				}
+				{
+					id: "7E40DA8618F61E39"
+					item: "immersiveengineering:rs_engineering"
+					type: "item"
+				}
+				{
+					id: "4430A4BEB01167F8"
+					item: "minecraft:piston"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "02AB12AD0F588157"
+					item: { Count: 6, id: "immersiveengineering:steel_scaffolding_standard" }
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "5E2BE9A8939426DF"
+					item: { Count: 3, id: "immersiveengineering:steel_fence" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "0860CB09834AE979"
+					item: { Count: 2, id: "immersiveengineering:fluid_pipe" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "1C48C56F8474C753"
+					item: { Count: 4, id: "immersiveengineering:wooden_barrel" }
+					type: "item"
+				}
+				{
+					id: "4898EC90C29D0D98"
+					item: "immersiveengineering:dust_hop_graphite"
+					type: "item"
+				}
+			]
+			title: "Squeezer"
+			x: 0.8d
+			y: 5.5d
+		}
+		{
+			dependencies: ["1A7DA10CB9B7B20E"]
+			description: ["Used to synthesize &lEthanol."]
+			icon: "immersiveengineering:fermenter"
+			id: "10233904CD1A644B"
+			rewards: [
+				{
+					count: 512
+					id: "2D9E1ED88BCEB3D4"
+					item: "minecraft:potato"
+					type: "item"
+				}
+				{
+					count: 32
+					id: "4881CD4A1FF40902"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+				{
+					count: 64
+					id: "6D8EA0CD5B5E8E27"
+					item: "minecraft:copper_ingot"
+					type: "item"
+				}
+				{
+					id: "39ED87B46E7C64CF"
+					type: "xp"
+					xp: 100
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					count: 2L
+					id: "0D4B9E5DC4E5E21D"
+					item: { Count: 2, id: "immersiveengineering:light_engineering" }
+					type: "item"
+				}
+				{
+					id: "20115E9361173E20"
+					item: "immersiveengineering:rs_engineering"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "29773A58C40EFCF1"
+					item: { Count: 4, id: "immersiveengineering:sheetmetal_iron" }
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "35BE0C076F59B616"
+					item: { Count: 6, id: "immersiveengineering:steel_scaffolding_standard" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "18B698B42C0E39AE"
+					item: { Count: 4, id: "minecraft:cauldron" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "41531C0D596F4CE5"
+					item: { Count: 2, id: "immersiveengineering:fluid_pipe" }
+					type: "item"
+				}
+				{
+					amount: 1000L
+					fluid: "immersiveengineering:ethanol"
+					id: "09BF0798DA0A77AD"
+					type: "fluid"
+				}
+			]
+			title: "Industrial Fermenter"
+			x: -0.7d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"51B557E47DA3EC90"
+				"10233904CD1A644B"
+			]
+			description: ["Used to make &lBiodiesel&r, among other materials."]
+			icon: "immersiveengineering:refinery"
+			id: "1E974D9AF4C8A026"
+			rewards: [
+				{
+					count: 8
+					id: "4D0CD653D053197F"
+					item: "immersiveengineering:biodiesel_bucket"
+					type: "item"
+				}
+				{
+					count: 64
+					id: "7B702ABE1E18F508"
+					item: "immersiveengineering:ingot_steel"
+					type: "item"
+				}
+				{
+					count: 64
+					id: "7BC96ABEEA4934CF"
+					item: "minecraft:copper_ingot"
+					type: "item"
+				}
+			]
+			size: 1.8d
+			tasks: [
+				{
+					count: 2L
+					id: "692869F17620C89A"
+					item: { Count: 2, id: "immersiveengineering:light_engineering" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "74688AA4AEC4F89F"
+					item: { Count: 2, id: "immersiveengineering:heavy_engineering" }
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "4E4F17D472DCDD46"
+					item: { Count: 16, id: "immersiveengineering:sheetmetal_iron" }
+					type: "item"
+				}
+				{
+					id: "6A3D895460605774"
+					item: "immersiveengineering:rs_engineering"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "6E598B2A2D496D16"
+					item: { Count: 8, id: "immersiveengineering:steel_scaffolding_standard" }
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "6391FE43A99A99D3"
+					item: { Count: 5, id: "immersiveengineering:fluid_pipe" }
+					type: "item"
+				}
+				{
+					amount: 1000L
+					fluid: "immersiveengineering:biodiesel"
+					id: "29C1B1D6BC04ACEB"
+					type: "fluid"
+				}
+			]
+			title: "Refinery"
+			x: 0.0d
+			y: 7.3d
+		}
+		{
+			dependencies: ["1E974D9AF4C8A026"]
+			description: ["Your primary source of High Voltage Power! Much better than your starter thermoelectric or kinetic dynamos, and uses Biodiesel for power."]
+			icon: "immersiveengineering:diesel_generator"
+			id: "5E151E83AB1C0BBE"
+			shape: "circle"
+			tasks: [
+				{
+					count: 9L
+					id: "2535A781490A3FFF"
+					item: "immersiveengineering:radiator"
+					type: "item"
+				}
+				{
+					count: 13L
+					id: "4D15E6479D65EFAE"
+					item: { Count: 2, id: "immersiveengineering:heavy_engineering" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "0230B6572FC25AC4"
+					item: { Count: 4, id: "immersiveengineering:generator" }
+					type: "item"
+				}
+				{
+					id: "45D74AD77F80F6A6"
+					item: "immersiveengineering:rs_engineering"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "74B1473AEA98AC3C"
+					item: { Count: 6, id: "immersiveengineering:steel_scaffolding_standard" }
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "4EA0A35188C5D63F"
+					item: "immersiveengineering:fluid_pipe"
+					type: "item"
+				}
+			]
+			title: "Diesel Generator"
+			x: 1.8d
+			y: 7.3d
+		}
+		{
+			dependencies: ["1E974D9AF4C8A026"]
+			description: ["The blocks and assembly for the Arc furnace can be found in your engineer book. Stainless Steel is a material that must be crafted in your arc furnace using steel and chromium."]
+			icon: "immersiveengineering:arc_furnace"
+			id: "47175B045D0C90F8"
+			rewards: [
+				{
+					count: 128
+					id: "6080EAAECDCC0C99"
+					item: "immersiveengineering:ingot_steel"
+					type: "item"
+				}
+				{
+					count: 32
+					id: "5FC3B4624E1AE038"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					id: "7D91B5A976D68BC9"
+					type: "xp"
+					xp: 100
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				id: "43675ACF04CF13D4"
+				item: "immersivegeology:ingot_stainless_steel"
+				type: "item"
+			}]
+			title: "Arc Furnace"
+			x: -1.05d
+			y: 9.15d
+		}
+		{
+			dependencies: ["1E974D9AF4C8A026"]
+			icon: "immersiveengineering:excavator"
+			id: "771B2113753AA3F2"
+			size: 1.5d
+			tasks: [
+				{
+					count: 16L
+					id: "13797D66A9C5C49B"
+					item: "immersiveengineering:sheetmetal_steel"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "20E1C7378326DE0A"
+					item: { Count: 3, id: "immersiveengineering:radiator" }
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "6EB54A7E73B10890"
+					item: { Count: 9, id: "immersiveengineering:light_engineering" }
+					type: "item"
+				}
+				{
+					id: "19A93A4B79738A3F"
+					item: "immersiveengineering:rs_engineering"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "6B1E4042D15E8FB3"
+					item: { Count: 4, id: "immersiveengineering:heavy_engineering" }
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "2EF6BC79FEA8B2BF"
+					item: { Count: 6, id: "immersiveengineering:steel_scaffolding_standard" }
+					type: "item"
+				}
+			]
+			title: "Excavator: Part 1"
+			x: 1.05d
+			y: 9.15d
+		}
+		{
+			dependencies: ["771B2113753AA3F2"]
+			description: ["The construction for the fly wheel that goes in front of your first part of the excavator."]
+			id: "029221E1B252E90C"
+			rewards: [
+				{
+					count: 128
+					id: "3AFD4C1BB0571FD6"
+					item: "immersiveengineering:ingot_steel"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "2DB75F44D7AEB4F0"
+					item: "immersiveengineering:turret_gun"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "56A60F4135CDDCFA"
+					item: "immersiveengineering:turret_chem"
+					type: "item"
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					count: 20L
+					id: "43516919A1515853"
+					item: { Count: 9, id: "immersiveengineering:steel_scaffolding_standard" }
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "5A4FF3C9243B45C5"
+					item: { Count: 9, id: "immersiveengineering:storage_steel" }
+					type: "item"
+				}
+			]
+			title: "Excavator: Part 2"
+			x: 2.4000000000000004d
+			y: 9.15d
+		}
+	]
 	title: "Immersive Engineering"
 }

@@ -7,6 +7,17 @@
 	id: "768D4DE067D9264B"
 	order_index: 1
 	quest_links: [ ]
-	quests: [ ]
+	quests: [{
+		description: ["This chapter is empty for the playtest server."]
+		id: "77C3F017A734774A"
+		size: 8.0d
+		tasks: [{
+			id: "03D79FCBD778E8A4"
+			title: "Emptiness"
+			type: "checkmark"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
 	title: "Mekanism 2: Electric Boogaloo"
 }
