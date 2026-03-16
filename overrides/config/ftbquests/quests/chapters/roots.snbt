@@ -6,7 +6,7 @@
 	group: "6B44979E48943FD9"
 	icon: "rootsclassic:crystal_staff"
 	id: "4B4220990D58A6AE"
-	order_index: 3
+	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{
@@ -16,6 +16,7 @@
 				"{@pagebreak}"
 				"This power holds the basis of the devouts of Svouna. In a time long past, these ancestral followers would seclude themselves deep within forests to perform their rituals away from prying eyes. These powerful druids seem to have disappeared, though traces of their work can probably still be found..."
 			]
+			hide_until_deps_complete: true
 			icon: "rootsclassic:radiant_daisy"
 			id: "598E40F3CBFAF327"
 			size: 3.0d

@@ -1,4 +1,5 @@
 {
+	autofocus_id: "580C64CF992F7263"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "embers"
@@ -9,12 +10,14 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["6B69050AB855E0A6"]
 			description: [
 				"In the deepest reaches of the world, below even the impassable bedrock, a great and magnificent power stirs: it's the coagulation of the Earth's beating core, a crystalline remnant of the most primal of energies, a wonderful material known as &l&cEmbers&r."
 				"{@pagebreak}"
 				"In a time long past, the devout followers of Prvoun harnessed this power and reached a grandeur never before seen. Yet of this might, very little has survived to the present day."
 				"But what little remains may be just enough to resurrect this long gone technology..."
 			]
+			hide_until_deps_complete: true
 			icon: "alexscaves:primal_magma"
 			id: "580C64CF992F7263"
 			size: 3.0d
@@ -1221,7 +1224,7 @@
 					type: "item"
 				}
 			]
-			subtitle: "New, yet familiar"
+			subtitle: "Crops from tha fort"
 			tasks: [
 				{
 					id: "3634498E2BE76B63"
@@ -1541,11 +1544,6 @@
 			hide_until_deps_complete: true
 			icon: {
 				Count: 1
-				ForgeCaps: {
-					"cold_sweat:item_insulation": {
-						Insulation: [ ]
-					}
-				}
 				id: "embers:ashen_goggles"
 				tag: {
 					Damage: 0
@@ -1558,7 +1556,7 @@
 				item: "embers:ember_crystal"
 				type: "item"
 			}]
-			subtitle: "Gothic is still in style"
+			subtitle: "Goth is still in style"
 			tasks: [
 				{
 					id: "49900C093A3EABC3"
@@ -2263,5 +2261,5 @@
 		}
 	]
 	subtitle: ["The power of Prvoun"]
-	title: "Embers"
+	title: "&cEmbers"
 }

@@ -1,14 +1,16 @@
 {
+	autofocus_id: "3BC702C955390581"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "railcraft_reborn"
-	group: "6B44979E48943FD9"
+	group: "39068329430FF10F"
 	icon: "minecraft:rail"
 	id: "5561C645D460B294"
 	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["6F1EB8E7DA8C213F"]
 			description: ["To begin Railcraft, you will need some starting resources. Have a bit of glass for your efforts, on the house."]
 			icon: "minecraft:rail"
 			id: "3BC702C955390581"
@@ -639,5 +641,6 @@
 			y: 7.5d
 		}
 	]
+	subtitle: ["Beloved logistics"]
 	title: "Railcraft: Reborn"
 }

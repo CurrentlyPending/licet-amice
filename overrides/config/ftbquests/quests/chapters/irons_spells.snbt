@@ -1,4 +1,5 @@
 {
+	autofocus_id: "6B0D0E79B97A7F79"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "irons_spells"
@@ -2256,7 +2257,9 @@
 		}
 		{
 			can_repeat: false
+			dependencies: ["78B2EA1380861578"]
 			description: [""]
+			hide_until_deps_complete: true
 			id: "0476E868008301C8"
 			ignore_reward_blocking: true
 			optional: true
@@ -2347,5 +2350,6 @@
 			y: -3.9d
 		}
 	]
+	subtitle: ["Living up to our namesake"]
 	title: "Iron's Spells"
 }

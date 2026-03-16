@@ -1,0 +1,359 @@
+{
+	autofocus_id: "024BBC15CA0EA6E1"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "cold_sweat"
+	group: "39068329430FF10F"
+	icon: "cold_sweat:thermometer"
+	id: "781216FD0BE37447"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["This world is much tougher than most! The weather is unforgiving here, and will do everything in its power to kill you. But fear not! Through human ingenuity, even nature can be quelled."]
+			icon: "alexscaves:ambersol"
+			id: "024BBC15CA0EA6E1"
+			rewards: [{
+				id: "756A731FBD17EE76"
+				item: "cold_sweat:thermometer"
+				type: "item"
+			}]
+			size: 2.0d
+			subtitle: "It's a tough world out there..."
+			tasks: [{
+				id: "0BBEE112CD8F2883"
+				title: "Aggressive weather"
+				type: "checkmark"
+			}]
+			title: "Why is the sun trying to kill me?"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["024BBC15CA0EA6E1"]
+			description: ["Early on in your travels, it could be useful to have a waterskin or two in your spacious pockets. This item will help regulate your temperature while in your inventory. It can also be splashed onto you bu right clicking for an instant effect or drank with shift-right click for a more gradual effect."]
+			id: "7D9A067417069604"
+			rewards: [{
+				count: 5
+				id: "4605730E7A6DC54B"
+				item: "minecraft:cooked_rabbit"
+				type: "item"
+			}]
+			subtitle: "But I thought there was no thirst bar?"
+			tasks: [{
+				id: "38C8FBFAA217CA44"
+				item: "cold_sweat:waterskin"
+				type: "item"
+			}]
+			title: "Water on the go"
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7D9A067417069604"]
+			description: [
+				"The waterskin by itself isn't all too useful as it only retains the ambient temperature at which its contents were extracted. Luckily, the &4Boiler&r and &bIcebox&r can fix that! By fueling these machines, they can change the temperature of the waterskins to be either hot or cold."
+				"Fueling of these machines is unique: by placing valid fuel items, the machine will gain some percentage in its fuel bar. Valid fuel items for each machine will be present in the next pages."
+				"{@pagebreak}"
+				"The &4Boiler&r's fuel items and the percentage they fill up are:"
+				"-Coal (3.7%)"
+				"-Charcoal (3.7%)"
+				"-Planks (3.7%)"
+				"-Logs (33%)"
+				"-Coal Blocks (33%)"
+				"-Magma Blocks (33%)"
+				"-Lava (100%)"
+				"{@pagebreak}"
+				"The &bIcebox&r's fuel items and the percentage they fill up are:"
+				"-Snowballs (1%)"
+				"-Clay Balls (3.7%)"
+				"-Snow Blocks (10%)"
+				"-Powder Snow (10%)"
+				"-Ice (25%)"
+				"-Clay Blocks (33%)"
+				"-Packed Ice (100%)"
+			]
+			icon: {
+				Count: 1
+				id: "cold_sweat:filled_waterskin"
+				tag: { }
+			}
+			id: "7B5BF7283276D44B"
+			rewards: [
+				{
+					count: 10
+					id: "23B131B5EBB37626"
+					item: "minecraft:charcoal"
+					type: "item"
+				}
+				{
+					count: 10
+					id: "6DC2407675EFA0EC"
+					item: "minecraft:clay_ball"
+					type: "item"
+				}
+			]
+			subtitle: "Hot and Cold"
+			tasks: [
+				{
+					id: "51FC2BA3954067A1"
+					item: "cold_sweat:boiler"
+					type: "item"
+				}
+				{
+					id: "014DB8931F1760E4"
+					item: "cold_sweat:icebox"
+					type: "item"
+				}
+			]
+			title: "Controlled regulation"
+			x: -0.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["7B5BF7283276D44B"]
+			description: ["The &4Boiler&r and &bIcebox&r can be further enhanced by installing a &8Smokestack&r on their top. This will allow them to regulate the temperature around them when provided with a redstone signal."]
+			id: "47BB72B57CAB7A17"
+			rewards: [{
+				id: "764B45C7A844641B"
+				item: "cold_sweat:smokestack"
+				type: "item"
+			}]
+			subtitle: "Spread it"
+			tasks: [{
+				id: "326D1AC60AE534BA"
+				item: "cold_sweat:smokestack"
+				type: "item"
+			}]
+			title: "Controlling the environment"
+			x: 0.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["024BBC15CA0EA6E1"]
+			description: ["This magnificent piece of machinery known as the &cHearth&r is the best appliance anyone could ever ask for. It is able to grant a chilling or heating effect to nearby blocks when it's fueled and granted a redstone signal. A signal to the sides will grant chill, while a signal to the back or bottom will grant warmth. Both effects can be active at the same time."]
+			icon: "cold_sweat:hearth"
+			id: "295B03FF2D1EF23A"
+			invisible_until_tasks: 1
+			subtitle: "Don't mess with the thermostat!"
+			tasks: [
+				{
+					dimension: "minecraft:the_nether"
+					id: "36DA0F64BAC4742E"
+					title: "Visit the Nether"
+					type: "dimension"
+				}
+				{
+					id: "28D98D3353196370"
+					item: "cold_sweat:hearth"
+					type: "item"
+				}
+			]
+			title: "To make a house a home"
+			x: -0.7d
+			y: -1.4d
+		}
+		{
+			dependencies: ["024BBC15CA0EA6E1"]
+			description: ["In the fiery pits of hell grows a peculiar plant charged by the writhing souls of the damned. The sprouts that grow on these stalks are thus surrounded by an extremely cold aura that they are quite keen on sharing. When consumed, the sprouts will lower your internal temperature quite significantly, making trips to the blazing Nether much more manageable. They can also be planted on Soul Sand, allowing them to be farmed outside of the hellish depths, though they'll require a source of heat to grow properly."]
+			icon: "cold_sweat:soul_sprout"
+			id: "1DDBA32A6E6DDC98"
+			invisible_until_tasks: 1
+			subtitle: "Ghastly farming"
+			tasks: [
+				{
+					dimension: "minecraft:the_nether"
+					id: "423793E30D49A694"
+					title: "Visit the Nether"
+					type: "dimension"
+				}
+				{
+					id: "1930AB99684A798C"
+					item: "cold_sweat:soul_sprout"
+					type: "item"
+				}
+			]
+			title: "Seeds of the damned"
+			x: 0.7d
+			y: -1.4d
+		}
+		{
+			dependencies: ["1DDBA32A6E6DDC98"]
+			description: ["While the sprouts are useful, they're not the most convenient, requiring constant consumption to stay cool. There is a tool to fix that problem though: the &9Soulspring Lamp&r, when charged with sprouts, will emit an aura of coldness around it, shielding its wielder from the oppressive heat."]
+			hide_until_deps_visible: true
+			icon: {
+				Count: 1
+				id: "cold_sweat:soulspring_lamp"
+				tag: {
+					Fuel: 64.0d
+					Lit: 0b
+					stateChangeTimer: 0
+				}
+			}
+			id: "1A5F970B87A7A387"
+			subtitle: "Like a ghost in the night"
+			tasks: [{
+				id: "07467D130FB90D73"
+				item: {
+					Count: 1
+					id: "cold_sweat:soulspring_lamp"
+					tag: {
+						Fuel: 64.0d
+						Lit: 0b
+						stateChangeTimer: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Spooky lights"
+			x: 0.0d
+			y: -2.4d
+		}
+		{
+			dependencies: ["024BBC15CA0EA6E1"]
+			description: [
+				"Changing the temperature to reach ideal levels is one option, but it's not always possible. Instead, it's possible to insulate oneself from the harsh environment altogether. While certain armors have inherent insulation, this world holds more dangers than just the climate, and a fur coat, while fashionable, won't defend you from an angry mob of skeletons."
+				"{@pagebreak}"
+				"Luckily, the &6Sewing Table&r can solve that issue. By combining any armor piece with a piece of insulating material, that armor will receive some insulation points. Each piece of armor can be fitted with different amount of insulators, which will increase their respective insulation type."
+				"-Helmets can have up to 4 insulators"
+				"-Chestplates can have up to 6 insulators"
+				"-Leggings can have up to 5 insulators"
+				"-Boots can have up to 4 insulators"
+			]
+			id: "7B628288068C173C"
+			subtitle: "Never give up the drip"
+			tasks: [{
+				id: "22A3F96DEA90DDB6"
+				item: "cold_sweat:sewing_table"
+				type: "item"
+			}]
+			title: "Outfit repeater"
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["024BBC15CA0EA6E1"]
+			description: [
+				"Chameleons are funny little critters that live in tropical and arid regions of the world. They can be tamed by throwing spider eyes or raw fish at them, and can be used to locate hot, cold or humid biomes by feeding them certain items, listed in the next page. They also occasionally shed their skin and can be perched on your head."
+				"{@pagebreak}"
+				"-To locate hot biomes, the chameleon must be fed dead bush, nether wart or cactus"
+				"-To locate cold biomes, the chameleon must be fed snowball, beetroot or sweet berries"
+				"-To locate humid biomes, the chameleon must be fed slimeball, ink sac or cocoa beans."
+			]
+			hide_dependent_lines: true
+			id: "07060D1344DA19A4"
+			rewards: [{
+				id: "6E597BFC8F0851B2"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+			subtitle: "He killed the Jenkins brothers, all seven of them, with just one bullet!"
+			tasks: [{
+				advancement: "cold_sweat:tame_chameleon"
+				criterion: ""
+				id: "11818059D2335EAB"
+				title: "Tame a chameleon"
+				type: "advancement"
+			}]
+			title: "Colorful buddies"
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7B628288068C173C"]
+			description: ["Leather provides neutral insulation, which is fine for both heat and cold, however it's much weaker than specialized insulators."]
+			id: "15FBAAE2445AD930"
+			rewards: [{
+				count: 5
+				id: "7CC68CF3775377F4"
+				item: "minecraft:leather"
+				type: "item"
+			}]
+			subtitle: "It's a nice day today."
+			tasks: [{
+				id: "1AF88A14327F3A1E"
+				item: "minecraft:leather"
+				type: "item"
+			}]
+			title: "Defense for every day"
+			x: 2.8d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7B628288068C173C"]
+			description: ["Goat fur provides the strongest cold insulation per piece of any insulator. Wool and yak hair can be used as weaker alternatives."]
+			id: "6FA1DCE4255B3B74"
+			rewards: [{
+				count: 5
+				id: "2A2975C6127A3C17"
+				item: "cold_sweat:goat_fur"
+				type: "item"
+			}]
+			subtitle: "This is all pure cashmere!"
+			tasks: [{
+				id: "42CCF050707FEA7E"
+				item: "cold_sweat:goat_fur"
+				type: "item"
+			}]
+			title: "Protection from the cold"
+			x: 2.8d
+			y: 1.1d
+		}
+		{
+			dependencies: ["7B628288068C173C"]
+			description: ["Hoglin hide provides the highest heat insulation per piece of any insulator. Rabbit hide can be used as a weaker alternative."]
+			icon: "cold_sweat:hoglin_hide"
+			id: "1617C2431AB94E03"
+			invisible_until_tasks: 1
+			rewards: [{
+				count: 5
+				id: "178C4026FB8D63D6"
+				item: "cold_sweat:hoglin_hide"
+				type: "item"
+			}]
+			subtitle: "Fireproof!"
+			tasks: [
+				{
+					dimension: "minecraft:the_nether"
+					id: "2A3D1077EF8B336C"
+					title: "Visit the Nether"
+					type: "dimension"
+				}
+				{
+					id: "60832FB978D3ACD8"
+					item: "cold_sweat:hoglin_hide"
+					type: "item"
+				}
+			]
+			title: "Shield against the heat"
+			x: 2.8d
+			y: -1.1d
+		}
+		{
+			dependencies: [
+				"7B628288068C173C"
+				"07060D1344DA19A4"
+			]
+			description: ["Chameleon molt is a unique insulator capable of adapting to whichever environment it finds itself in and insulating against it. It is ever so slightly weaker than specialized insulators, but it still provides ample protection against the elements."]
+			hide_until_deps_complete: true
+			id: "5AFEB5D5EC136F1B"
+			rewards: [{
+				count: 3
+				id: "4B120F6F62A5CF30"
+				item: "cold_sweat:chameleon_molt"
+				type: "item"
+			}]
+			subtitle: "Become ungovernable."
+			tasks: [{
+				id: "5A0497C59140D7C8"
+				item: "cold_sweat:chameleon_molt"
+				type: "item"
+			}]
+			title: "Universal insulation?"
+			x: 4.2d
+			y: 0.0d
+		}
+	]
+	subtitle: ["Survival of the fittest"]
+	title: "Cold Sweat"
+}

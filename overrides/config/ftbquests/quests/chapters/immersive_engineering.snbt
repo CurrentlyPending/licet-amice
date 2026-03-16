@@ -1,4 +1,5 @@
 {
+	autofocus_id: "55FD9280F903F282"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "immersive_engineering"
@@ -8,11 +9,13 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["78B2EA1380861578"]
 			description: [
 				"Heh.. more like... immersive engiSHITTING"
 				""
 				"Make your coke and meth bricks into real multiblocks by arranging them in a 3x3x3 cube and giving them a thwack with your little hammer..."
 			]
+			hide_until_deps_complete: true
 			id: "55FD9280F903F282"
 			rewards: [
 				{
@@ -287,7 +290,9 @@
 			y: 3.6d
 		}
 		{
+			dependencies: ["78B2EA1380861578"]
 			description: ["IE and IG have a TON of overlap, considering one is basically an addon for the other. Although there isnt an Immersive Geology chapter in this questbook, most of what you should know can be found in your engineers manual or on jei. Extracting, processing, and refining IG ores and materials is the specialization of Immersive Engineering."]
+			hide_until_deps_complete: true
 			id: "1D1A2AB0C168E9F9"
 			rewards: [{
 				count: 16
@@ -416,7 +421,9 @@
 			y: 3.0d
 		}
 		{
+			dependencies: ["78B2EA1380861578"]
 			description: ["You're an engineer. That means you solve problems. Not problems like \"What is beauty?\", because that would fall within the purview of other's conundrums of philosophy. You solve practical problems."]
+			hide_until_deps_complete: true
 			id: "17334782495990E0"
 			rewards: [
 				{
@@ -922,5 +929,6 @@
 			y: 9.15d
 		}
 	]
+	subtitle: ["Heavy machinery"]
 	title: "Immersive Engineering"
 }
