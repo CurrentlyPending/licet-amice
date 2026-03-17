@@ -18,7 +18,7 @@
   "blacklisted_items": [
     "examplemod:example_item", "farm_and_charm:tomato", "farm_and_charm:rotten_tomato", "farm_and_charm:onion", "farm_and_charm:wild_beetroots", "farm_and_charm:wild_potatoes", "farm_and_charm:wild_carrots", 
 	"farm_and_charm:wild_onions", "farm_and_charm:wild_tomatoes", "farm_and_charm:tomato_seeds", "farm_and_charm:tomato_bag", "farm_and_charm:onion_bag", "farm_and_charm:carrot_bag", "farm_and_charm:potato_bag", 
-	"farm_and_charm:beetroot_bag", "farm_and_charm:horse_fodder", "farm_and_charm:dog_food"
+	"farm_and_charm:beetroot_bag", "farm_and_charm:horse_fodder", "farm_and_charm:dog_food", "electrodynamics:raworeblocktin", "electrodynamics:raworeblocklead", "electrodynamics:raworeblockuranium"
   ],
   // -----------------------------------------------------------
   // Removes an item if it contains certain nbt tag. If the whole entry (or expression) is present, the item gets removed.

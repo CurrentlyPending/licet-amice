@@ -134,6 +134,7 @@
 			description: ["This magnificent piece of machinery known as the &cHearth&r is the best appliance anyone could ever ask for. It is able to grant a chilling or heating effect to nearby blocks when it's fueled and granted a redstone signal. A signal to the sides will grant chill, while a signal to the back or bottom will grant warmth. Both effects can be active at the same time."]
 			icon: "cold_sweat:hearth"
 			id: "295B03FF2D1EF23A"
+			invisible: true
 			invisible_until_tasks: 1
 			subtitle: "Don't mess with the thermostat!"
 			tasks: [
@@ -158,6 +159,7 @@
 			description: ["In the fiery pits of hell grows a peculiar plant charged by the writhing souls of the damned. The sprouts that grow on these stalks are thus surrounded by an extremely cold aura that they are quite keen on sharing. When consumed, the sprouts will lower your internal temperature quite significantly, making trips to the blazing Nether much more manageable. They can also be planted on Soul Sand, allowing them to be farmed outside of the hellish depths, though they'll require a source of heat to grow properly."]
 			icon: "cold_sweat:soul_sprout"
 			id: "1DDBA32A6E6DDC98"
+			invisible: true
 			invisible_until_tasks: 1
 			subtitle: "Ghastly farming"
 			tasks: [
@@ -304,6 +306,7 @@
 			description: ["Hoglin hide provides the highest heat insulation per piece of any insulator. Rabbit hide can be used as a weaker alternative."]
 			icon: "cold_sweat:hoglin_hide"
 			id: "1617C2431AB94E03"
+			invisible: true
 			invisible_until_tasks: 1
 			rewards: [{
 				count: 5

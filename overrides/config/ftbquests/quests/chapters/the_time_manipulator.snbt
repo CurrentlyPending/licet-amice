@@ -133,6 +133,53 @@
 			x: -4.5d
 			y: -0.5d
 		}
+		{
+			dependencies: [
+				"55E7CB32F93F6125"
+				"6B69050AB855E0A6"
+			]
+			dependency_requirement: "one_completed"
+			description: ["This modpack uses Immersive Geology, which means that ore generation is altered! Most ores will generate in bigger, localized deposits rather than small veins spread throughout the entire world. The engineer's manual provided by the quest details all the different deposits and what minerals they can yield, as well as other useful information."]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			icon: "alexscaves:hazmat_warning_block"
+			id: "456DBFCC73DDD434"
+			optional: true
+			rewards: [{
+				id: "7E3326CFF106B4FE"
+				item: "immersiveengineering:manual"
+				type: "item"
+			}]
+			shape: "circle"
+			subtitle: "Read here!"
+			tasks: [
+				{
+					id: "54A5F6F42333C124"
+					item: {
+						Count: 1
+						id: "immersivegeology:prospector_kit"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "13402D4DDAA7A928"
+					item: {
+						Count: 1
+						id: "immersivegeology:hammer_stone"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "But wait!"
+			x: -2.0d
+			y: 0.2d
+		}
 	]
 	subtitle: ["Every journey needs one"]
 	title: "The Start"

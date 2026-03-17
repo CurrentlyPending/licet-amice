@@ -10,7 +10,7 @@
   },
   "manifestType": "minecraftModpack",
   "manifestVersion": 1,
-  "name": "Licet Amice Pluvius Mundus",
+  "name": "licet export",
   "version": "1.11",
   "author": "",
   "files": [
@@ -70,7 +70,7 @@
     },
     {
       "projectID": 980834,
-      "fileID": 7749964,
+      "fileID": 7763475,
       "required": true,
       "isLocked": false
     },
@@ -214,7 +214,7 @@
     },
     {
       "projectID": 1154099,
-      "fileID": 7717580,
+      "fileID": 7769876,
       "required": true,
       "isLocked": false
     },
@@ -706,7 +706,7 @@
     },
     {
       "projectID": 422301,
-      "fileID": 7758029,
+      "fileID": 7765852,
       "required": true,
       "isLocked": false
     },
@@ -863,6 +863,12 @@
     {
       "projectID": 1038106,
       "fileID": 6847826,
+      "required": true,
+      "isLocked": false
+    },
+    {
+      "projectID": 1450759,
+      "fileID": 7694459,
       "required": true,
       "isLocked": false
     },

@@ -410,7 +410,7 @@
 		}
 		{
 			dependencies: ["5CDC89083FC78C87"]
-			description: ["There will surely be a time where embers production will outweigh its consumption, which means part of this wonderful energy could potentially be lost in the ether. To prevent that, it's possible to construct a very handy device that's capable of storing raw embers inside of itself. This way, the energy can be used when necessary without needing to sacrifice a single spark."]
+			description: ["There will surely be a time where embers production will outweigh its consumption, which means part of this wonderful energy could potentially be lost in the aether. To prevent that, it's possible to construct a very handy device that's capable of storing raw embers inside of itself. This way, the energy can be used when necessary without needing to sacrifice a single spark."]
 			id: "1660DA1202ABB9ED"
 			rewards: [{
 				count: 2
@@ -1486,7 +1486,7 @@
 				"023BA964C6327149"
 				"55EB85D7E1077521"
 			]
-			description: ["With one last alchemical process, the power of the Earth is now at hand: the &l&cWildfire Core&r! This is ancestral energy most pure, a true display of might, localized entirely in a pristine crystal. What magnificent applications this will have must be discovered posthaste!"]
+			description: ["With one last alchemical process, the power of the Earth is now at hand: the &l&cWildfire Core&r! This is ancestral energy most pure, a true display of might, localized entirely within a pristine crystal. What magnificent applications this will have must be discovered posthaste!"]
 			hide_until_deps_complete: true
 			id: "253A0DE987596D90"
 			rewards: [{
@@ -1734,7 +1734,7 @@
 		}
 		{
 			dependencies: ["023BA964C6327149"]
-			description: ["The atmospheric gauge is handy, but it's not completely reliable. With this new device however, it is posible to scan a larger area for ember density."]
+			description: ["The atmospheric gauge is handy, but it's not completely reliable. With this new device however, it is possible to scan a larger area for ember density."]
 			hide_until_deps_complete: true
 			id: "1065C6C9077FCE40"
 			rewards: [{
@@ -1755,7 +1755,7 @@
 		}
 		{
 			dependencies: ["023BA964C6327149"]
-			description: ["The &l&4explosion charm&r is a handy accessory capable of absorbing the destructive powers of explosions into themselves, sparing the innocent environment from their wrath. "]
+			description: ["The &l&4explosion charm&r is a handy accessory capable of absorbing the destructive powers of explosions into itself, sparing the innocent environment from their wrath. "]
 			hide_until_deps_complete: true
 			id: "72D06F3155B3225C"
 			rewards: [{
@@ -1885,7 +1885,7 @@
 			description: [
 				"Occasionally, in the bowels of the Earth, one may come across ruins left by the ancestral followers. Inside of them it's possible to find peculiar crystal seeds of various precious metals. It's hard to say if these generate naturally or if they were created in the ancient past through methods now forgotten, but one thing is certain: these crystals are extremely valuable."
 				"{@pagebreak}"
-				"Up until now, these wonderful gems had no apparent use, but with the discovery of the Wildfire Core it's now possible to construct a device capable of making use of these formidable formations, the &l&cember injector&r. This machine will shoot forth a beam of continuous embers when pointed at the crystal seed, causing it to grow and eventually shed precious nuggets. Up to six can feed the same seed. If the seed is fed long enough, it will grow in size and purity, increasing its output. However, should the seed ever be relocated, it will lose its properties and must be fed again."
+				"Up until now, these wonderful gems had no apparent use, but with the discovery of the Wildfire Core it's now possible to construct a device capable of making use of these formidable formations, the &l&cember injector&r. This machine will shoot forth a beam of continuous embers when pointed at the crystal seed, causing it to grow and eventually shed precious nuggets. Up to six can feed the same seed. If the seed is fed long enough, it will increase in purity, increasing its output. However, should the seed ever be relocated, it will become impure again. Purity level can be seen with a tinker's lens."
 				"{@pagebreak}"
 				"It's also possible to transmute crystal seeds into other variants through alchemy."
 			]
@@ -2161,7 +2161,7 @@
 		}
 		{
 			dependencies: ["4000A88FAF1B0E43"]
-			description: ["This augment give the armor it's attached to the ability to grant its wearer a powerful dash, provided embers are available. Once the wearer begins sprinting, they will be granted increasing velocity, which caps out at increasingly higher speeds based on the augment's level."]
+			description: ["This augment gives the armor it's attached to the ability to grant its wearer a powerful dash, provided embers are available. Once the wearer begins sprinting, they will be granted increasing velocity, which caps out at increasingly higher speeds based on the augment's level."]
 			id: "073B6F797E6D4E19"
 			rewards: [{
 				count: 5
