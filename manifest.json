@@ -11,7 +11,7 @@
   "manifestType": "minecraftModpack",
   "manifestVersion": 1,
   "name": "Licet Amice Pluvius Mundus",
-  "version": "1.0 TEST",
+  "version": "1.11",
   "author": "",
   "files": [
     {
@@ -597,14 +597,14 @@
       "isLocked": false
     },
     {
-      "projectID": 659887,
-      "fileID": 5639538,
+      "projectID": 581942,
+      "fileID": 6819994,
       "required": true,
       "isLocked": false
     },
     {
-      "projectID": 581942,
-      "fileID": 6819994,
+      "projectID": 659887,
+      "fileID": 5639538,
       "required": true,
       "isLocked": false
     },
@@ -615,14 +615,14 @@
       "isLocked": false
     },
     {
-      "projectID": 658587,
-      "fileID": 4587214,
+      "projectID": 272302,
+      "fileID": 4626171,
       "required": true,
       "isLocked": false
     },
     {
-      "projectID": 272302,
-      "fileID": 4626171,
+      "projectID": 658587,
+      "fileID": 4587214,
       "required": true,
       "isLocked": false
     },
@@ -645,14 +645,14 @@
       "isLocked": false
     },
     {
-      "projectID": 331936,
-      "fileID": 7476570,
+      "projectID": 960662,
+      "fileID": 6214766,
       "required": true,
       "isLocked": false
     },
     {
-      "projectID": 960662,
-      "fileID": 6214766,
+      "projectID": 331936,
+      "fileID": 7476570,
       "required": true,
       "isLocked": false
     },
@@ -663,14 +663,14 @@
       "isLocked": false
     },
     {
-      "projectID": 594387,
-      "fileID": 6302185,
+      "projectID": 963206,
+      "fileID": 5399967,
       "required": true,
       "isLocked": false
     },
     {
-      "projectID": 963206,
-      "fileID": 5399967,
+      "projectID": 594387,
+      "fileID": 6302185,
       "required": true,
       "isLocked": false
     },
@@ -759,26 +759,26 @@
       "isLocked": false
     },
     {
-      "projectID": 551520,
-      "fileID": 5723247,
-      "required": true,
-      "isLocked": false
-    },
-    {
       "projectID": 240630,
       "fileID": 5057220,
       "required": true,
       "isLocked": false
     },
     {
-      "projectID": 404465,
-      "fileID": 7296748,
+      "projectID": 551520,
+      "fileID": 5723247,
       "required": true,
       "isLocked": false
     },
     {
       "projectID": 268560,
       "fileID": 6552911,
+      "required": true,
+      "isLocked": false
+    },
+    {
+      "projectID": 404465,
+      "fileID": 7296748,
       "required": true,
       "isLocked": false
     },
@@ -819,8 +819,8 @@
       "isLocked": false
     },
     {
-      "projectID": 300777,
-      "fileID": 7446478,
+      "projectID": 263420,
+      "fileID": 7598586,
       "required": true,
       "isLocked": false
     },
@@ -831,20 +831,20 @@
       "isLocked": false
     },
     {
-      "projectID": 263420,
-      "fileID": 7598586,
-      "required": true,
-      "isLocked": false
-    },
-    {
-      "projectID": 1062867,
-      "fileID": 5532573,
+      "projectID": 300777,
+      "fileID": 7446478,
       "required": true,
       "isLocked": false
     },
     {
       "projectID": 268566,
       "fileID": 6552914,
+      "required": true,
+      "isLocked": false
+    },
+    {
+      "projectID": 1062867,
+      "fileID": 5532573,
       "required": true,
       "isLocked": false
     },
@@ -873,14 +873,14 @@
       "isLocked": false
     },
     {
-      "projectID": 511965,
-      "fileID": 7609582,
+      "projectID": 1450759,
+      "fileID": 7694459,
       "required": true,
       "isLocked": false
     },
     {
-      "projectID": 1450759,
-      "fileID": 7694459,
+      "projectID": 511965,
+      "fileID": 7609582,
       "required": true,
       "isLocked": false
     },
