@@ -621,7 +621,6 @@
 				tag: { }
 			}
 			id: "6B0D0E79B97A7F79"
-			max_completable_dependents: 1
 			rewards: [{
 				auto: "enabled"
 				exclude_from_claim_all: true
@@ -1175,7 +1174,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "Get an Ally to drop a cake at a note block"
+			subtitle: "Get an Allay to drop a cake at a note block"
 			tasks: [{
 				advancement: "minecraft:husbandry/allay_deliver_cake_to_note_block"
 				criterion: ""

@@ -17,9 +17,10 @@
 				"-The &8&lTitanborn&r are a group of people who worship psychoactive substances of all kinds, believing them to be gifts from their gods, the titular titans. Their arts are strictly connected to aspects of nature that the titans represent, such as druidry and smithing."
 				"{@pagebreak}"
 				"Whichever path you choose won't lock you out of further exploring the specializations of other factions, but you won't be able to reap the rewards of the quest book."
+				"{@pagebreak}"
+				"Hey y'all, Scott here! So the quest book got scrapped and shi so the exclusivity has been removed as well. If for some reason you found yourself re-enabling FTBQuests after the server's demise, you can now peruse all that has been made! Yippie!"
 			]
 			id: "6F1EB8E7DA8C213F"
-			max_completable_dependents: 1
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "1AB123892807E448"
@@ -75,7 +76,6 @@
 			icon: "irons_spellbooks:blank_rune"
 			id: "78B2EA1380861578"
 			invisible_until_tasks: 2
-			max_completable_dependents: 2
 			rewards: [{
 				exclude_from_claim_all: true
 				icon: "irons_spellbooks:upgrade_orb"

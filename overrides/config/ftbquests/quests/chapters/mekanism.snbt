@@ -443,14 +443,14 @@
 			rewards: [
 				{
 					count: 32
-					id: "63BDE2778D9D156C"
-					item: "mekanism:osmium_ore"
+					id: "021AD4F073FEE85D"
+					item: "immersivegeology:normal_ore_molybdenite"
 					type: "item"
 				}
 				{
 					count: 32
-					id: "2BDD3DB2A19ADB9B"
-					item: "minecraft:iron_ore"
+					id: "2BA8977633F0E1D6"
+					item: "immersivegeology:normal_ore_hematite"
 					type: "item"
 				}
 			]
@@ -568,26 +568,26 @@
 			rewards: [
 				{
 					count: 32
-					id: "7C9263410BB40048"
-					item: "minecraft:iron_ore"
+					id: "59231FCB28E63FDF"
+					item: "immersivegeology:normal_ore_gold"
 					type: "item"
 				}
 				{
 					count: 32
-					id: "0CB048C75E9617D4"
-					item: "mekanism:osmium_ore"
+					id: "3E865A3154DAC688"
+					item: "immersivegeology:normal_ore_molybdenite"
 					type: "item"
 				}
 				{
 					count: 32
-					id: "6AA79FB63FE2E8B5"
-					item: "minecraft:gold_ore"
+					id: "6EA57FE9AB06D51B"
+					item: "immersivegeology:normal_ore_hematite"
 					type: "item"
 				}
 				{
 					count: 32
-					id: "44279E4AFD95A658"
-					item: "minecraft:copper_ore"
+					id: "19683C2CCA8CE13A"
+					item: "immersivegeology:normal_ore_copper"
 					type: "item"
 				}
 				{
@@ -677,5 +677,5 @@
 		}
 	]
 	subtitle: ["Advanced chemistry"]
-	title: "Mekanism"
+	title: "&9Mekanism"
 }

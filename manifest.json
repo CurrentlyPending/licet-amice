@@ -10,13 +10,13 @@
   },
   "manifestType": "minecraftModpack",
   "manifestVersion": 1,
-  "name": "licet export",
-  "version": "1.11",
+  "name": "Licet Amice Pluvius Mundus",
+  "version": "1.0 TEST",
   "author": "",
   "files": [
     {
       "projectID": 618298,
-      "fileID": 7757765,
+      "fileID": 7799433,
       "required": true,
       "isLocked": false
     },
@@ -130,7 +130,7 @@
     },
     {
       "projectID": 398521,
-      "fileID": 7596353,
+      "fileID": 7801523,
       "required": true,
       "isLocked": false
     },
@@ -155,7 +155,7 @@
     {
       "projectID": 289412,
       "fileID": 7608804,
-      "required": true,
+      "required": false,
       "isLocked": false
     },
     {
@@ -178,7 +178,7 @@
     },
     {
       "projectID": 430636,
-      "fileID": 7550381,
+      "fileID": 7796106,
       "required": true,
       "isLocked": false
     },
@@ -706,7 +706,7 @@
     },
     {
       "projectID": 422301,
-      "fileID": 7765852,
+      "fileID": 7801228,
       "required": true,
       "isLocked": false
     },
@@ -837,6 +837,12 @@
       "isLocked": false
     },
     {
+      "projectID": 1062867,
+      "fileID": 5532573,
+      "required": true,
+      "isLocked": false
+    },
+    {
       "projectID": 268566,
       "fileID": 6552914,
       "required": true,
@@ -844,7 +850,7 @@
     },
     {
       "projectID": 619320,
-      "fileID": 7757599,
+      "fileID": 7801384,
       "required": true,
       "isLocked": false
     },
@@ -863,6 +869,12 @@
     {
       "projectID": 1038106,
       "fileID": 6847826,
+      "required": true,
+      "isLocked": false
+    },
+    {
+      "projectID": 511965,
+      "fileID": 7609582,
       "required": true,
       "isLocked": false
     },

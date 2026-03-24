@@ -5,6 +5,15 @@
 	filename: "immersive_engineering"
 	group: "1A5A8D13C78F8D75"
 	id: "60BF3DCA3B14583D"
+	images: [{
+		height: 1.0d
+		hover: ["The engineer is engihere."]
+		image: "kubejs:textures/quests/engineer_gaming.png"
+		rotation: 0.0d
+		width: 4.0d
+		x: 2.1d
+		y: -1.4d
+	}]
 	order_index: 2
 	quest_links: [ ]
 	quests: [
@@ -147,7 +156,10 @@
 		}
 		{
 			dependencies: ["42C22F0DEEB3FED1"]
-			description: ["Haha no silly, its just another quite cheap power source after the thermoelectric generator. Attach the wheel to the generator and add some flowing water! (Just like in Create)"]
+			description: [
+				"Haha no silly, its just another quite cheap power source after the thermoelectric generator. Attach the wheel to the generator and add some flowing water! (Just like in Create)"
+				"{image:kubejs:textures/quests/creataganda.png width:150 height:100 align:center}"
+			]
 			id: "0A70660958199438"
 			shape: "circle"
 			tasks: [
@@ -391,12 +403,6 @@
 					count: 16
 					id: "60568BAB075DBB48"
 					item: "vinery:red_grape_seeds"
-					type: "item"
-				}
-				{
-					count: 16
-					id: "6FA39CF114B8D629"
-					item: "psychadelic:morning_glory_seeds"
 					type: "item"
 				}
 				{
@@ -930,5 +936,5 @@
 		}
 	]
 	subtitle: ["Heavy machinery"]
-	title: "Immersive Engineering"
+	title: "&7Immersive Engineering"
 }

@@ -34,11 +34,18 @@
 			}
 		}
 		id: "5519BDA10648C201"
-		rewards: [{
-			id: "4ABA4E1D8FD447E0"
-			item: "brewinandchewin:beer"
-			type: "item"
-		}]
+		rewards: [
+			{
+				id: "4ABA4E1D8FD447E0"
+				item: "brewinandchewin:beer"
+				type: "item"
+			}
+			{
+				id: "1134C6582AECF739"
+				item: "chipped:mason_table"
+				type: "item"
+			}
+		]
 		size: 2.0d
 		subtitle: "Why doesn't this Titan get anything?"
 		tasks: [{

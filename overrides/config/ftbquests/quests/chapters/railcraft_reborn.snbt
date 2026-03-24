@@ -10,7 +10,6 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["6F1EB8E7DA8C213F"]
 			description: ["To begin Railcraft, you will need some starting resources. Have a bit of glass for your efforts, on the house."]
 			icon: "minecraft:rail"
 			id: "3BC702C955390581"
@@ -519,7 +518,7 @@
 		{
 			dependencies: ["719319013CCB0519"]
 			description: [
-				"If you want to be part of the FUTURE, you can modernize your tracks by replacing your locomotive with an electric one, and you tracks with electric tracks."
+				"If you want to be part of the FUTURE, you can modernize your tracks by replacing your locomotive with an electric one, and your tracks with electric tracks."
 				""
 				"In order to power your network, you will need to place your tracks on top of frames. The frames are the component that needs to be powered, and you can use whatever energy generation method you'd like for them. You only need to power 1 frame, and all the connected ones will automatically be powered too."
 			]
@@ -641,6 +640,6 @@
 			y: 7.5d
 		}
 	]
-	subtitle: ["Beloved logistics"]
+	subtitle: ["Lovely logistics"]
 	title: "Railcraft: Reborn"
 }

@@ -32,9 +32,9 @@
 			description: [
 				"Knowing how to make your own energy is the key to making your machines work. And with a measely generator, hundreds of Forge Energy units can be produced, thanks to Electrodynamic's voltage and Joules system.  "
 				"All machines, generators, and wiring in Electrodynamics follow this system."
-				"Energy OUTPUTS are marked with &0grey&r connection points."
+				"Energy OUTPUTS are marked with &8grey&r connection points."
 				"Energy INPUTS are marked with &6orange&r connection points."
-				"Always connect &0grey&r to &6orange&r to move energy correctly. Reversed connections will not transfer power."
+				"Always connect &8grey&r to &6orange&r to move energy correctly. Reversed connections will not transfer power."
 			]
 			icon: {
 				Count: 1
@@ -445,5 +445,5 @@
 		}
 	]
 	subtitle: ["Energizing the world"]
-	title: "Electrodynamics"
+	title: "&eElectrodynamics"
 }

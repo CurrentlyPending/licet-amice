@@ -5,8 +5,8 @@
 	"farm_and_charm:wild_carrots": "minecraft:grass",
 	"farm_and_charm:wild_onions": "minecraft:grass",
 	"farm_and_charm:wild_tomatoes": "minecraft:grass",
-	"electrodynamics:orefluorite": "mekanism:fluorite_ore",
-	"electrodynamics:deepslateorefluorite": "mekanism:deepslate_fluorite_ore",
+	"electrodynamics:orefluorite": "minecraft:stone",
+	"electrodynamics:deepslateorefluorite": "minecraft:deepslate",
 	"electrodynamics:orethorium": "minecraft:stone",
 	"electrodynamics:oremonazite": "minecraft:stone",
 	"electrodynamics:orechromium": "minecraft:stone",
@@ -46,6 +46,15 @@
 	"electrodynamics:deepslateoresilver": "minecraft:deepslate",
 	"railcraft:deepslate_silver_ore": "minecraft:deepslate",
 	"eidolon:deep_silver_ore": "minecraft:deepslate",
-	"embers:deepslate_silver_ore": "minecraft:deepslate"
+	"embers:deepslate_silver_ore": "minecraft:deepslate",
+	"mekanism:osmium_ore": "minecraft:stone",
+	"mekanism:deepslate_osmium_ore": "minecraft:deepslate",
+	"mekanism:fluorite_ore": "minecraft:stone",
+	"mekanism:deepslate_fluorite_ore": "minecraft:deepslate",
+	"meadow:alpine_iron_ore": "meadow:limestone",
+	"meadow:alpine_copper_ore": "meadow:limestone",
+	"meadow:alpine_gold_ore": "meadow:limestone",
+	"theurgy:sal_ammoniac_ore": "minecraft:stone",
+	"theurgy:deepslate_sal_ammoniac_ore": "minecraft:deepslate"
   }
 }

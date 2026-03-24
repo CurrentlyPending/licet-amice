@@ -1,0 +1,440 @@
+{
+	autofocus_id: "485D79874FC63DF0"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "theurgy"
+	group: "39068329430FF10F"
+	icon: "theurgy:mercury_crystal"
+	id: "4C2AC8EA10F5C38B"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Welcome dear reader. If you find yourself perusing these pages, I assume you must seek the secrets of the most pure of sciences, &e&lAlchemy&r, am I incorrect? Well you are in luck, for I will guide you through the process of learning the ins and outs of this magnificent practice."
+				"And, prithee, pay no mind to those foolish chemists and physicists trying to dissuade you from your noble pursuit: Alchemy isn't a made-up fable, but rather a magnificent art that will elevate you onto greater heights! So follow my words, and become a true folk of science with me."
+			]
+			icon: {
+				Count: 1
+				id: "modonomicon:modonomicon"
+				tag: {
+					"modonomicon:book_id": "theurgy:the_hermetica"
+					"modonomicon:book_open_state": "closed"
+				}
+			}
+			id: "485D79874FC63DF0"
+			rewards: [{
+				id: "3876EF0E59C3A4D5"
+				item: {
+					Count: 1
+					id: "modonomicon:modonomicon"
+					tag: {
+						"modonomicon:book_id": "theurgy:the_hermetica"
+						"modonomicon:book_open_state": "closed"
+					}
+				}
+				type: "item"
+			}]
+			size: 2.0d
+			subtitle: "Their foolish ignorance..."
+			tasks: [{
+				id: "4B5A1624DCA56984"
+				title: "Take the mantle of alchemist"
+				type: "checkmark"
+			}]
+			title: "The rejected science"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["485D79874FC63DF0"]
+			description: [
+				"The book I gave you, while in itself worthy of proper study, seems to carry some information that does not correlate with reality. The scholars who produced that book were certainly well read and wise, but they clearly ail from far, far away, where things are much different than here. Fear not my pupil, for I have all the answers you need to become the best you can be."
+				"{@pagebreak}"
+				"Now, onto our first alchemical venture. The most important component of all is &dSal Ammoniac&r, a solvent present in many alchemical reactions. It seems to be unusually scarce in these lands, mining for it won't yield any result, but fear not! The waters contain traces of this substance within themselves, and it's possible to extract them through evaporation."
+				"{@pagebreak}"
+				"This is where our first apparati come in. First of all is the &5Sal Ammoniac Accumulator&r, which will be our vessel from which to extract the precious solvent. Now you'll need a &dSal Ammoniac Tank&r placed below the accumulator. When water is poured into the accumulator, liquid sal ammoniac will deposit into the tank below for later use."
+				"{image:kubejs:textures/quests/sal_ammoniac.png width:160 height:75 align:center}"
+			]
+			hide_until_deps_complete: true
+			icon: "theurgy:sal_ammoniac_accumulator"
+			id: "771EB24CF9C3BFC7"
+			rewards: [{
+				count: 5
+				id: "77FFE8309A77F298"
+				item: "theurgy:sal_ammoniac_crystal"
+				type: "item"
+			}]
+			subtitle: "And some elucidation..."
+			tasks: [
+				{
+					id: "4E4A7CF9A7E094B7"
+					item: "theurgy:sal_ammoniac_accumulator"
+					type: "item"
+				}
+				{
+					id: "61BCB884C8579936"
+					item: "theurgy:sal_ammoniac_tank"
+					type: "item"
+				}
+			]
+			title: "The first venture"
+			x: 2.3d
+			y: 0.0d
+		}
+		{
+			dependencies: ["771EB24CF9C3BFC7"]
+			description: ["As I have previously stated, these lands have unusually scarce amounts of the precious solvent, but occasionally one may find large deposits of a mineral called &9Zircon&r. While useless to most, this mineral actually holds the key to source greater amounts of sal ammoniac than through evaporation. While better methods of extracting it will come through alchemy, for the time being simply blasting crushed zircon will coerce some of the solvent to crystallize."]
+			icon: "theurgy:sal_ammoniac_crystal"
+			id: "03FE8AE33604E86B"
+			rewards: [{
+				count: 5
+				id: "4BDACEE09BE3FF34"
+				item: "immersivegeology:crushed_ore_zircon"
+				type: "item"
+			}]
+			subtitle: "These lands are deceiving"
+			tasks: [{
+				id: "4356F86ED3371C6F"
+				title: "Where to find more Sal Ammoniac?"
+				type: "checkmark"
+			}]
+			x: 2.3d
+			y: 1.4d
+		}
+		{
+			dependencies: ["771EB24CF9C3BFC7"]
+			description: [
+				"The stage is set my dear pupil, it's now time to begin your first real application of alchemy. I will explain to you the art of liquefaction, from which to extract an element's sulfur."
+				"{@pagebreak}"
+				"First you'll need a &cPyromantic Brazier&r, an apparatus that, when fueled, will provide heat for the reaction. Above the brazier you will need a &6Liquefaction Cauldron&r, with which you will be conducting the extraction."
+				"By placing an element and some liquid sal ammoniac in the cauldron as well as lighting up the brazier below it, the element will be reduced to its sulfur."
+				"{image:kubejs:textures/quests/liquefaction.png width:160 height:75 align:center}"
+				"{@pagebreak}"
+				"&6Alchemical Sulfur&r can be interpreted as the soul or identity of an element, and it determines what element will be synthesized by the process of incubation, which we will go over later on."
+				"{@pagebreak}"
+				"The Hermetica speaks of metal triplication within its pages. Now, the scholarly authors of this book clearly had different raw materials at hand that allowed this practice to be true all the time, but where you and I are from, this is not completely true. Different ores can be liquefied into relevant sulfurs, but only rich ore clumps will yield the triplified sulfur spoken of in the text."
+				"Alchemy does however remain a valid way to easily extract useful minerals from the unrefined ore, even without an increase in gain."
+			]
+			hide_until_deps_complete: true
+			icon: "theurgy:liquefaction_cauldron"
+			id: "1B1FCB43DA063F22"
+			rewards: [{
+				count: 5
+				id: "6CFA0D5004B75550"
+				item: "theurgy:sal_ammoniac_crystal"
+				type: "item"
+			}]
+			subtitle: "Extracting the soul"
+			tasks: [
+				{
+					id: "003C8DD2D912FE14"
+					item: "theurgy:liquefaction_cauldron"
+					type: "item"
+				}
+				{
+					id: "4BD6C512AC99EE2B"
+					item: "theurgy:pyromantic_brazier"
+					type: "item"
+				}
+			]
+			title: "Alchemical Liquefaction"
+			x: 4.3d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"1B1FCB43DA063F22"
+				"6F60F3E872AC8886"
+				"08C47EC5D4D10B8E"
+			]
+			description: [
+				"Now that all three base components have been aquired, it's time to put them back together. To this end, you will require an &eIncubator&r, an apparatus capable of reforming matter from base components. The machine will require three different vessels, one for each base component, to be placed at its sides, as well as a heat source."
+				"{@pagebreak}"
+				"Once the structure is built, you may proceed by inserting the relevant ingredients in the appropriate vessels, then by providing heat to the machine. If the operation is running, the incubator will release smoke from its top, and once it stops the desired element will be present inside the apparatus."
+				"{image:kubejs:textures/quests/incubator.png width:160 height:75 align:center}"
+			]
+			hide_until_deps_complete: true
+			icon: "theurgy:incubator"
+			id: "56DD5940D614ED82"
+			shape: "octagon"
+			subtitle: "Rebuilding the element"
+			tasks: [{
+				id: "37BCA407CF7950C4"
+				item: "theurgy:incubator"
+				type: "item"
+			}]
+			title: "Alchemical Incubation"
+			x: 5.6d
+			y: 0.0d
+		}
+		{
+			dependencies: ["771EB24CF9C3BFC7"]
+			description: [
+				"The stage is set my dear pupil, it's now time to begin your first real application of alchemy. I will explain to you the art of calcination, from which to extract an element's salt."
+				"{@pagebreak}"
+				"First you'll need a &cPyromantic Brazier&r, an apparatus that, when fueled, will provide heat for the reaction. Above the brazier you will need a &7Calcination Oven&r, with which you will be conducting the extraction."
+				"When an element is placed in the oven, it will be reduced down to its most essential physical component, its salt."
+				"{image:kubejs:textures/quests/calcination.png width:160 height:75 align:center}"
+				"{@pagebreak}"
+				"&7Alchemical Salt&r can be interpreted as the body of an element, and it gives elements a physical component to be synthesized into by the process of incubation, which we will go over later on."
+			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			icon: "theurgy:calcination_oven"
+			id: "08C47EC5D4D10B8E"
+			rewards: [{
+				count: 3
+				id: "2486ACF36D219E67"
+				item: "theurgy:alchemical_salt_mineral"
+				type: "item"
+			}]
+			subtitle: "Arranging the body"
+			tasks: [
+				{
+					id: "1EFA5DB0D90D7EFE"
+					item: "theurgy:calcination_oven"
+					type: "item"
+				}
+				{
+					id: "4B398DC3A180CBFC"
+					item: "theurgy:pyromantic_brazier"
+					type: "item"
+				}
+			]
+			title: "Alchemical Calcination"
+			x: 6.9d
+			y: 0.0d
+		}
+		{
+			dependencies: ["771EB24CF9C3BFC7"]
+			description: [
+				"The stage is set my dear pupil, it's now time to begin your first real application of alchemy. I will explain to you the art of distillation, from which to extract mercury."
+				"{@pagebreak}"
+				"First you'll need a &cPyromantic Brazier&r, an apparatus that, when fueled, will provide heat for the reaction. Above the brazier you will need a &9Mercury Distiller&r, with which you will be conducting the extraction."
+				"By placing an element in the distiller, it will be burned up into varying amounts of mercury, depending on its value."
+				"{image:kubejs:textures/quests/distiller.png width:160 height:75 align:center}"
+				"{@pagebreak}"
+				"&9Alchemical Mercury&r can be interpreted as the spirit or energy present in all matter. It is an essential component in the process of incubation, which we will go over later on."
+			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			icon: "theurgy:distiller"
+			id: "6F60F3E872AC8886"
+			rewards: [{
+				count: 8
+				id: "74325F586E9CF2B7"
+				item: "theurgy:mercury_shard"
+				type: "item"
+			}]
+			subtitle: "Coalescing the spirit"
+			tasks: [
+				{
+					id: "031865648BBBD8BE"
+					item: "theurgy:distiller"
+					type: "item"
+				}
+				{
+					id: "28B6E19E58F6950D"
+					item: "theurgy:pyromantic_brazier"
+					type: "item"
+				}
+			]
+			title: "Alchemical Distillation"
+			x: 5.6d
+			y: -1.4d
+		}
+		{
+			dependencies: ["56DD5940D614ED82"]
+			description: [
+				"As I have previously stated, mercury is the energy contained within matter. This force is not only used in incubation processes, but it can be exploited for other uses as well. It all begins with a &9Mercury Catalyst&r, an apparatus capableof breaking down mercury into its flux form. Mercury flux is a freeform version of mercury, essentially the closest thing we have to pure energy that can still be manipulated."
+				"{@pagebreak}"
+				"Once the catalyst breaks down solid mercury into flux, it can be used by specific apparati. One such device is the &cCaloric Flux Emitter&r, which will provide heat to any apparatus that needs it, removing the need for pyromantic braziers. Simply linking the flux emitter to an apparatus and placing it to a nearby catalyst will allow it to work. By default, the emitters will constantly drain flux to do their work, but by providing them with a redstone signal they can be stopped."
+				"{image:kubejs:textures/quests/caloric_flux.png width:160 height:75 align:center}"
+			]
+			hide_until_deps_complete: true
+			icon: "theurgy:mercury_catalyst"
+			id: "38A91E6356A41DDB"
+			rewards: [{
+				count: 2
+				id: "30C5C04E97FC8AA3"
+				item: "theurgy:caloric_flux_emitter"
+				type: "item"
+			}]
+			subtitle: "The gateway to true material mastery"
+			tasks: [
+				{
+					id: "6E21F8F2C7A5C9B1"
+					item: "theurgy:mercury_catalyst"
+					type: "item"
+				}
+				{
+					id: "55E7F58F3E6AB080"
+					item: "theurgy:caloric_flux_emitter"
+					type: "item"
+				}
+			]
+			title: "A refined source of power"
+			x: 5.6d
+			y: 1.4d
+		}
+		{
+			dependencies: ["38A91E6356A41DDB"]
+			description: [
+				"It's time for you to understand the last alchemical component you will be working with: &3Niters&r. Niters are similar in nature to sulfurs, but unlike those they don't embody a specific element, but rather a wide concept. So a sulfur could embody something like &ocopper&r or &oemerald&r, while a niter would embody something like &ometal&r or &ogem&r. They also come in different tiers depending on the value of the element they were extracted from. So a niter extracted from iron and one extracted from gold would both be the same category of &ometal&r, but the former would be &ocommon&r, while the latter would be &orare&r."
+				"{@pagebreak}"
+				"Niters are essential because unlike sulfurs, they can be altered into different forms, allowing you to turn one element into another. This process is called &5Replication&r, and can be done in one of three different ways, which we will go over in the following pages."
+			]
+			icon: "theurgy:alchemical_sulfur_earthen_matters_abundant"
+			id: "5E2755FCA8618792"
+			subtitle: "Exploring wider concepts"
+			tasks: [{
+				id: "1B2DC0DA5C69CBFA"
+				title: "Understanding Niters"
+				type: "checkmark"
+			}]
+			title: "Understanding Niters"
+			x: 9.4d
+			y: 1.4d
+		}
+		{
+			dependencies: ["5E2755FCA8618792"]
+			description: [
+				"The first kind of replication is &aReformation&r, a process that allows one type of sulfur to be transformed into another, provided they are of the same type and tier."
+				"{@pagebreak}"
+				"First you will need a more complex set of apparati. One &cTarget Pedestal&r, up to eight &8Source Pedestals&r, and finally a &eResult Pedestal&r, all linked by a &dSulfuric Flux Emitter&r, which itself necessitates a source of flux. Once these apparati are set, reformation can begin."
+				"{image:kubejs:textures/quests/reformation.png width:160 height:75 align:center}"
+				"{@pagebreak}"
+				"To actually reform sulfur, you will need just two ingredients: the sulfur you wish to replicate, the &oTarget&r, and a sulfur you wish to turn into the target, the &oSource&r. Simply place the sulfurs in their relevant pedestals and you may begin reformation."
+			]
+			hide_until_deps_complete: true
+			icon: "theurgy:reformation_result_pedestal"
+			id: "232D6B544D7A8AAC"
+			rewards: [{
+				count: 16
+				id: "55BFA7209EEBF347"
+				item: "theurgy:sal_ammoniac_crystal"
+				type: "item"
+			}]
+			subtitle: "Elements of the same type and tier"
+			tasks: [
+				{
+					id: "2A4CA690F15C97C8"
+					item: "theurgy:reformation_result_pedestal"
+					type: "item"
+				}
+				{
+					id: "1B72253D5446A57C"
+					item: "theurgy:reformation_target_pedestal"
+					type: "item"
+				}
+				{
+					id: "00852348032F4AE9"
+					item: { Count: 2, id: "theurgy:reformation_source_pedestal" }
+					type: "item"
+				}
+				{
+					id: "1C9B04E36A0B4462"
+					item: "theurgy:sulfuric_flux_emitter"
+					type: "item"
+				}
+			]
+			title: "Replication through Reformation"
+			x: 11.6d
+			y: 1.4d
+		}
+		{
+			dependencies: [
+				"5E2755FCA8618792"
+				"232D6B544D7A8AAC"
+			]
+			description: [
+				"Now we get into the art of &1Transmutation&r, which allows one to turn a sulfur into another of a different type, provided they're of the same tier. This process will involve your first use of niters."
+				"{@pagebreak}"
+				"As for how one gets their hands on niter, it's not too difficult. First you will need a &eFermentation Vat&r, then you will require some water, a sulfur and a catalyst. The catalyst can be some type of crop or sapling or even sugar, though a better fermentation starter can be achieved through alchemy. Once all three components have been added to the vat, it's a matter of simply closing the lid and letting it operate undisturbed for a short time, after which the niter will be ready for extraction."
+				"{@pagebreak}"
+				"Much like with the sulfur before, you will need both a target and a source niter, both of the same tier. Then you will be able to use the reformation apparatus as you would with sulfurs."
+				"With this niter you may now reform it a second time, but instead of turning it into another niter you may turn it into a sulfur."
+			]
+			hide_until_deps_visible: true
+			icon: "theurgy:fermentation_vat"
+			id: "7B89A3307EA9CFF8"
+			rewards: [{
+				count: 10
+				id: "6062BDA2C958843D"
+				item: "theurgy:fermentation_starter"
+				type: "item"
+			}]
+			subtitle: "Elements of the same tier but of different type"
+			tasks: [{
+				id: "66BDBE0D18F88E1D"
+				item: "theurgy:fermentation_vat"
+				type: "item"
+			}]
+			title: "Replication through Transmutation"
+			x: 11.6d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"5E2755FCA8618792"
+				"7B89A3307EA9CFF8"
+			]
+			description: [
+				"At last is the process of &6Exaltation&r,  which allows one to turn a sulfur into another of a different tier, provided they're of the same type."
+				"{@pagebreak}"
+				"To begin exaltation it's necessary to create one final apparatus, the &3Digestion Vat&r. This machine will require the niter you wish to exalt, some liquid sal ammoniac, and alchemically pure gold, should the desired exaltation be a tier upgrade. Once all the ingredients are provided, the vat will begin exaltation of the provided niter."
+				"Once exaltation is complete, you may do with your niter as you wish."
+				"{@pagebreak}"
+				"Now, as to how you obtain alchemically pure gold, it's not hard at all. You will require an ingot of gold, any alchemical salt, and a whole bucket's worth of water, then you may insert these components into a digestion vat. The salts will incorporate all the impurities into themselves, leaving the gold perfectly pure."
+			]
+			hide_until_deps_visible: true
+			icon: "theurgy:digestion_vat"
+			id: "26C3C9BF897A0CCF"
+			rewards: [{
+				count: 12
+				id: "1A2F8C56A7EEAA70"
+				item: "theurgy:purified_gold"
+				type: "item"
+			}]
+			subtitle: "Elements of the same type but of different tier"
+			tasks: [
+				{
+					id: "3CAC87AA09C390D7"
+					item: "theurgy:digestion_vat"
+					type: "item"
+				}
+				{
+					id: "01A6195497478B91"
+					item: "theurgy:purified_gold"
+					type: "item"
+				}
+			]
+			title: "Replication through Exaltation"
+			x: 11.6d
+			y: -1.4d
+		}
+		{
+			dependencies: [
+				"232D6B544D7A8AAC"
+				"7B89A3307EA9CFF8"
+				"26C3C9BF897A0CCF"
+			]
+			description: ["Well then my dear pupil, it seems your journey has reached its end! You are now a master of the elements, a refined scholar of the most wonderful of scientific arts, you are a true alchemist. You've allowed yourself to learn this noble art in spite of what those ignorant fools said about it. Oh I am sure, they will be red with envy once they see your vast wealth and power! Their every scorn and ridicule turned into jealousy and regret! How the will wish they had followed this path instead of rejecting it! Truly, there is no better feeling than seeing those who held you at low regard writhe and squirm at last. Savor these feelings my young colleague, for you have more than earned them."]
+			hide_until_deps_visible: true
+			icon: "theurgy:purified_gold"
+			id: "3469D3E0322AC497"
+			shape: "octagon"
+			subtitle: "A true alchemist you have become"
+			tasks: [{
+				id: "5846F431B3E0E935"
+				title: "Mastery of matter"
+				type: "checkmark"
+			}]
+			x: 13.8d
+			y: 1.4d
+		}
+	]
+	subtitle: ["Classical science"]
+	title: "Theurgy"
+}

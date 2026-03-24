@@ -6,6 +6,14 @@
 	group: "39068329430FF10F"
 	icon: "cold_sweat:thermometer"
 	id: "781216FD0BE37447"
+	images: [{
+		height: 3.5d
+		image: "kubejs:textures/quests/overheat.png"
+		rotation: 0.0d
+		width: 7.0d
+		x: -4.2d
+		y: 2.1d
+	}]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
@@ -243,13 +251,14 @@
 				"-To locate humid biomes, the chameleon must be fed slimeball, ink sac or cocoa beans."
 			]
 			hide_dependent_lines: true
+			icon: "cold_sweat:thermolith"
 			id: "07060D1344DA19A4"
 			rewards: [{
 				id: "6E597BFC8F0851B2"
 				type: "xp_levels"
 				xp_levels: 3
 			}]
-			subtitle: "He killed the Jenkins brothers, all seven of them, with just one bullet!"
+			subtitle: "Don't tango with the Rango"
 			tasks: [{
 				advancement: "cold_sweat:tame_chameleon"
 				criterion: ""

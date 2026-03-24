@@ -1,0 +1,652 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "hexerei"
+	group: "39068329430FF10F"
+	icon: {
+		Count: 1
+		ForgeCaps: {
+			"cold_sweat:item_insulation": {
+				Insulation: [ ]
+			}
+		}
+		id: "hexerei:mushroom_witch_hat"
+		tag: {
+			Damage: 0
+		}
+	}
+	id: "5F57FE436A3A5F02"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["The path of witchcraft is one chosen by the most reclusive, those who wish to conduct arcane practices undisturbed. In this chapter you will learn how to become a real witch, flying broom and all!"]
+			icon: {
+				Count: 1
+				id: "hexerei:book_of_shadows"
+				tag: {
+					bookmarks: { }
+					chapter: 0
+					opened: 0b
+					page: 0
+				}
+			}
+			id: "04F4E4AC7E4E64B8"
+			rewards: [
+				{
+					id: "49359B2EFF10246D"
+					item: {
+						Count: 1
+						id: "hexerei:book_of_shadows"
+						tag: {
+							bookmarks: { }
+							chapter: 0
+							opened: 0b
+							page: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1C348DCE45A8C3E4"
+					item: "hexerei:book_of_shadows_altar"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Truly wicked"
+			tasks: [{
+				id: "4134288037472843"
+				title: "Begin your path to witchery"
+				type: "checkmark"
+			}]
+			title: "For the aspiring witch"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["04F4E4AC7E4E64B8"]
+			description: [
+				"Your first order of business should be getting your hands on some special plants. The easiest one to find is sage, as it can be found while breaking grass as you would wheat. The rest however grow in the mulch and decay of swamps, so they will prove a little harder to obtain."
+				"{@pagebreak}"
+				"Luckily, witches have a way to circumvent this problem. It's possible to create a tool called a dwosing rod, capable of locating either a swamp or a jungle. By simply shift right-clicking, the rod will change target to either biome, and the leaves will change color from green to red depending on whether or not you're looking in the direction of a nearby valid biome."
+			]
+			hide_until_deps_complete: true
+			icon: "hexerei:belladonna_plant"
+			id: "00A097E157CBE414"
+			rewards: [{
+				id: "51CFD01B4EF4B45D"
+				item: {
+					Count: 1
+					id: "hexerei:herb_jar"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "The first step"
+			tasks: [
+				{
+					id: "0FB3CD3E6A5A9ECE"
+					item: "hexerei:sage_seed"
+					type: "item"
+				}
+				{
+					id: "47E11DBD7621E7F8"
+					item: "hexerei:mandrake_plant"
+					type: "item"
+				}
+				{
+					id: "6AAADCBE75315CDA"
+					item: "hexerei:belladonna_plant"
+					type: "item"
+				}
+				{
+					id: "26A4A1A29C809F49"
+					item: "hexerei:yellow_dock_bush"
+					type: "item"
+				}
+				{
+					id: "396C8220CC1B9856"
+					item: "hexerei:mugwort_bush"
+					type: "item"
+				}
+				{
+					id: "0FF863849B607186"
+					item: "hexerei:dowsing_rod"
+					type: "item"
+				}
+			]
+			title: "Foul foliage"
+			x: 2.4d
+			y: 0.0d
+		}
+		{
+			dependencies: ["00A097E157CBE414"]
+			description: ["Now that you  have collected yourself some plants for your wicked garden, it's time to get to making some early tools. A drying rack for all the plants you've gathered and, of course, your very own cauldron, will suffice. Of course, remember to provide your new cauldron some heat!"]
+			hide_until_deps_complete: true
+			icon: "hexerei:mixing_cauldron"
+			id: "20A0D6BE5B0693DC"
+			subtitle: "An eye of newt, a toad's tongue..."
+			tasks: [
+				{
+					id: "2E6693B6E0BCCE94"
+					item: "hexerei:mixing_cauldron"
+					type: "item"
+				}
+				{
+					id: "59A18EFA3F8BC0C5"
+					item: "hexerei:herb_drying_rack"
+					type: "item"
+				}
+			]
+			title: "The trademark tool"
+			x: 4.8d
+			y: 0.0d
+		}
+		{
+			dependencies: ["20A0D6BE5B0693DC"]
+			description: ["A mortar and pestle will be useful considering the amount of plants you work with."]
+			hide_until_deps_complete: true
+			id: "5A6864952798563F"
+			subtitle: "Brutalizing plantlife"
+			tasks: [{
+				id: "5BE7BBCBF161B312"
+				item: "hexerei:pestle_and_mortar"
+				type: "item"
+			}]
+			title: "Mashing it"
+			x: 3.6d
+			y: -1.2d
+		}
+		{
+			dependencies: ["20A0D6BE5B0693DC"]
+			description: ["Allows you to see what time it is and tells you what phase the moon is at."]
+			hide_until_deps_complete: true
+			id: "12F1A90577FB6F07"
+			subtitle: "For the shut-in witch"
+			tasks: [{
+				id: "0B2667503DF6C899"
+				item: "hexerei:crystal_ball"
+				type: "item"
+			}]
+			title: "Scrolling the orb"
+			x: 4.8d
+			y: -1.2d
+		}
+		{
+			dependencies: ["20A0D6BE5B0693DC"]
+			description: ["This dark sigil will allow you to shed your own blood inside the cauldron to be bottled up for nefarious purposes."]
+			hide_until_deps_complete: true
+			id: "5C10E7285FBD3C08"
+			rewards: [{
+				count: 3
+				id: "3ADE04F47B404533"
+				item: "minecraft:glass_bottle"
+				type: "item"
+			}]
+			subtitle: "Blood Magic would be that way."
+			tasks: [{
+				id: "20ED99F7A7F3B681"
+				item: "hexerei:blood_sigil"
+				type: "item"
+			}]
+			title: "Forbidden rituals"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["20A0D6BE5B0693DC"]
+			description: ["With help from your cauldron you can create a powerful weapon, perfect to dispatch of any annoyance that may show up on your lawn."]
+			hide_until_deps_complete: true
+			id: "2FBD9730187AFD5F"
+			rewards: [{
+				count: 4
+				id: "11E78218C5247966"
+				item: "minecraft:iron_block"
+				type: "item"
+			}]
+			subtitle: "Fourty thousand of these, please."
+			tasks: [{
+				id: "1573D16212B0B63E"
+				item: {
+					Count: 1
+					id: "hexerei:warhammer"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Big and mean"
+			x: 4.8d
+			y: 1.3d
+		}
+		{
+			dependencies: ["20A0D6BE5B0693DC"]
+			description: [
+				"Your cauldron allows you to make some new kind of fabric that will allow you to sew an appropriate outfit for all your witchery ventures."
+				"You can also infuse your hat with mushrooms to look even more fashionable!"
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"cold_sweat:item_insulation": {
+						Insulation: [ ]
+					}
+				}
+				id: "hexerei:witch_helmet"
+				tag: {
+					Damage: 0
+					Insulation: [ ]
+				}
+			}
+			id: "14F1179404C76AB2"
+			rewards: [{
+				id: "4D31B53E4B13E762"
+				item: "hexerei:waxing_kit"
+				type: "item"
+			}]
+			subtitle: "Gucci'd down to the socks"
+			tasks: [
+				{
+					id: "3C4211A014FB9CAE"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "hexerei:witch_helmet"
+						tag: {
+							Damage: 0
+							Insulation: [ ]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0A09BD0403DE88CF"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "hexerei:witch_chestplate"
+						tag: {
+							Damage: 0
+							Insulation: [ ]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "694BE8D9B5C3C6D3"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "hexerei:witch_boots"
+						tag: {
+							Damage: 0
+							Insulation: [ ]
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Up to dress code"
+			x: 3.6d
+			y: 1.3d
+		}
+		{
+			dependencies: ["20A0D6BE5B0693DC"]
+			description: ["With this plate and some sage to burn on it, you're able to create a zone safe from any and all monsters, up to 48 blocks away from the plate."]
+			hide_until_deps_complete: true
+			icon: "hexerei:sage_burning_plate"
+			id: "606C5916AC7DE9E8"
+			rewards: [{
+				count: 3
+				id: "511D0888DEAB641B"
+				item: {
+					Count: 1
+					id: "hexerei:dried_sage_bundle"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Reach a zen state"
+			tasks: [
+				{
+					id: "11DA9488D7F6BA02"
+					item: "hexerei:sage_burning_plate"
+					type: "item"
+				}
+				{
+					id: "4B63602303381343"
+					item: {
+						Count: 1
+						id: "hexerei:dried_sage_bundle"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Smell of incense"
+			x: 6.0d
+			y: 1.3d
+		}
+		{
+			dependencies: ["20A0D6BE5B0693DC"]
+			description: ["By boiling some animal fat in a cauldron it's possible to create tallow, and with help from a dipper you can create up to three candles by dipping string."]
+			hide_until_deps_complete: true
+			id: "31C6C4AA26AE08FD"
+			rewards: [{
+				count: 8
+				id: "11438E110EC492BE"
+				item: "hexerei:animal_fat"
+				type: "item"
+			}]
+			subtitle: "What a familiar name!"
+			tasks: [{
+				id: "29EB8FAEC3326E03"
+				item: "hexerei:candle_dipper"
+				type: "item"
+			}]
+			title: "Better candles"
+			x: 6.0d
+			y: -1.2d
+		}
+		{
+			dependencies: ["5A6864952798563F"]
+			description: [
+				"Crows are very intelligent birds, well suited to help out with certain tasks. And even beyond that, what's a witch without her familiar?"
+				"By tossing the seeds on the ground instead of feeding them directly the crows will tame faster."
+			]
+			hide_until_deps_complete: true
+			id: "0DE859FC67B72DF5"
+			rewards: [{
+				id: "5FF1EFA031B46DFF"
+				item: {
+					Count: 1
+					id: "hexerei:crow_flute"
+					tag: {
+						commandMode: 0b
+						commandSelected: 0
+						crowList: { }
+						dyeColor1: -1
+						dyeColor2: -1
+						helpCommandSelected: 0
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Tame a crow"
+			tasks: [{
+				id: "5DC198CA6EC76309"
+				item: "hexerei:seed_mixture"
+				type: "item"
+			}]
+			title: "Avian friends"
+			x: 3.6d
+			y: -2.6d
+		}
+		{
+			dependencies: ["0DE859FC67B72DF5"]
+			description: ["Occasionally you may come across an owl in the woods. These birds have a great sense of direction and possess extraordinary strength for their size, making them perfect couriers for the needs of two long-distance witches. Simply throwing some cod or salmon to the ground will get them tamed."]
+			hide_until_deps_complete: true
+			id: "490C1B5B5B1D1B93"
+			subtitle: "Tame an owl"
+			tasks: [{
+				id: "5BA2B4B493C6DFD4"
+				item: "minecraft:salmon"
+				type: "item"
+			}]
+			title: "More avian friends"
+			x: 3.6d
+			y: -4.0d
+		}
+		{
+			dependencies: ["0DE859FC67B72DF5"]
+			description: ["It's a terrible, terrible world out there, and crows are such delicate little creatures, if harm were to come their way, they surely wouldn't come out of it alive. Thankfully, this handy amulet will protect them from fatalities should they occur to them."]
+			hide_until_deps_complete: true
+			id: "142DCF0B4123BBA8"
+			subtitle: "A Terraria reference?"
+			tasks: [{
+				id: "3F6AC5C33BB1605B"
+				item: "hexerei:crow_ankh_amulet"
+				type: "item"
+			}]
+			title: "Second chance"
+			x: 4.8d
+			y: -2.6d
+		}
+		{
+			dependencies: ["490C1B5B5B1D1B93"]
+			description: ["Owls require specific places to deliver their parcels to. By using these depots you can set specific destinations for your winged workers."]
+			hide_until_deps_complete: true
+			icon: "hexerei:mahogany_courier_depot"
+			id: "76D7F6B1A3C1C452"
+			rewards: [{
+				id: "644B1C2F01D77C23"
+				item: {
+					Count: 1
+					id: "hexerei:coffer"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "Get those birds to work"
+			tasks: [
+				{
+					id: "1AD33F9405B051E8"
+					item: "hexerei:willow_courier_depot"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "0062EF0262EC0796"
+					item: "hexerei:witch_hazel_courier_depot"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7BC93523979E0BD0"
+					item: "hexerei:mahogany_courier_depot"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "The post office"
+			x: 4.8d
+			y: -4.0d
+		}
+		{
+			dependencies: ["76D7F6B1A3C1C452"]
+			description: ["Now, to actually deliver anything to these depots, you will need either a package to send goods, or an envelope to send a message."]
+			icon: "hexerei:courier_letter"
+			id: "58867069A42DF057"
+			rewards: [{
+				count: 16
+				id: "794827BC41B6F934"
+				item: "hexerei:packing_peanut"
+				type: "item"
+			}]
+			subtitle: "Your package has arrived"
+			tasks: [
+				{
+					id: "651AF55DB3F53DBA"
+					item: "hexerei:courier_package"
+					type: "item"
+				}
+				{
+					id: "3754D4667BE20BCC"
+					item: "hexerei:courier_letter"
+					type: "item"
+				}
+			]
+			title: "Delivery"
+			x: 6.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["5C10E7285FBD3C08"]
+			description: ["With blood on hand you can now create your very own magic broom! Show those idiots you mean business!"]
+			hide_until_deps_complete: true
+			id: "7CA5D9E1C09D07D6"
+			rewards: [{
+				id: "37232677879FE2D6"
+				item: {
+					Count: 1
+					id: "hexerei:broom_whistle"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Take flight and curse them all!"
+			tasks: [{
+				id: "1904C3946B7513CC"
+				item: {
+					Count: 1
+					id: "hexerei:witch_hazel_broom"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "The witching hour"
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7CA5D9E1C09D07D6"]
+			description: ["Indeed, your broom brush will eventually give out and scatter to the wind, as if it never even was. So it's best if you prepare for this event."]
+			hide_until_deps_complete: true
+			id: "63C4334E4CC1D3F9"
+			subtitle: "Why does everything break???"
+			tasks: [{
+				id: "053A56C072FA9CFE"
+				item: {
+					Count: 1
+					id: "hexerei:broom_brush"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Replacement brush"
+			x: 7.5d
+			y: 1.3d
+		}
+		{
+			dependencies: ["7CA5D9E1C09D07D6"]
+			description: ["When your awesome broom is on break, mind giving her a nice place to rest her weary handle?"]
+			hide_until_deps_complete: true
+			icon: "hexerei:mahogany_broom_stand"
+			id: "5EB7115BE5452E06"
+			subtitle: "Fancy broom storage"
+			tasks: [
+				{
+					id: "134F99C927FC91CE"
+					item: "hexerei:willow_broom_stand"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "166CDF413FCC8DBC"
+					item: "hexerei:witch_hazel_broom_stand"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "60BBF04E943AEA95"
+					item: "hexerei:mahogany_broom_stand"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Some rest for the wicked"
+			x: 7.5d
+			y: -1.2d
+		}
+		{
+			dependencies: ["7CA5D9E1C09D07D6"]
+			description: ["With netherite you can make a broom of superior quality, much better suited for a wicked witch such as yourself!"]
+			hide_until_deps_complete: true
+			id: "0286664C8FE5FEAB"
+			rewards: [{
+				count: 3
+				id: "31D43DBA62D9ACB1"
+				item: "minecraft:gold_block"
+				type: "item"
+			}]
+			subtitle: "No one will escape your hexes"
+			tasks: [{
+				id: "09D183BAA6C91D3E"
+				item: {
+					Count: 1
+					id: "hexerei:mahogany_broom"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "Terror of the skies"
+			x: 8.9d
+			y: 0.0d
+		}
+		{
+			dependencies: ["63C4334E4CC1D3F9"]
+			description: ["This enhanced brush has twice the durability as the basic one and grants a slight boost in speed."]
+			id: "541A8D457FA21DED"
+			subtitle: "Feel the breeze"
+			tasks: [{
+				id: "33AE622D3A46F579"
+				item: {
+					Count: 1
+					id: "hexerei:herb_enhanced_broom_brush"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Stupenduous sweepers"
+			x: 8.9d
+			y: 1.3d
+		}
+		{
+			dependencies: ["541A8D457FA21DED"]
+			description: ["This special brush not only grants a good speed boost, but also further increases speed while the full moon is out."]
+			id: "4040827678F36847"
+			subtitle: "Just stay clear of silver..."
+			tasks: [{
+				id: "5D332E4F39A48F3E"
+				item: {
+					Count: 1
+					id: "hexerei:moon_dust_brush"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Howling at the moon"
+			x: 10.4d
+			y: 1.3d
+		}
+	]
+	subtitle: ["Curse the countryside"]
+	title: "Hexerei"
+}

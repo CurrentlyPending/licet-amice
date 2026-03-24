@@ -180,6 +180,7 @@
 				"But feeble human hands aren't meant to interface with such a beast of technology, which is why a mechanical core is essential to allow logistical systems to do it instead."
 				"{@pagebreak}"
 				"Of course, a machine this strong can't run on nothing, and will require some kind of fuel. Any type of fuel that can be burnt in a furnace will be valid."
+				"{image:kubejs:textures/quests/ember_bore.png width:160 height:75 align:center}"
 			]
 			icon: "embers:ember_bore"
 			id: "2A86FA8D3E681780"
@@ -464,6 +465,7 @@
 				"With the metal now in liquid form, it's necessary to mold it into a useful shape. To that end, a &l&8stamper&r is needed. The stamper is made of two parts, the &l&7stamper base&r, in which the molten material is inserted, and the &l&8stamper&r itself, which, when provided with a mold and embers, will stamp out a solid product."
 				"{@pagebreak}"
 				"This machine is however very clumsy and carefree and seems to enjoy throwing all of its products on the ground. A &l&8bin&r placed below the stamper base will be able to catch the machine's output and prevent any losses."
+				"{image:kubejs:textures/quests/stamper.png width:160 height:75 align:center}"
 			]
 			icon: "embers:melter"
 			id: "21F5B0DA434AF8D1"
@@ -665,15 +667,16 @@
 				"Now that greater potential has been unlocked, it will be necessary to generate a lot more power to meet its demand, and the simple activator can't keep up with such task. Luckily, the ancestral devouts already figured out a way."
 				"Through the use of a machine known as a &l&cpressure refinery&r, it's possible to generate more embers for a reduced cost. However, it will require water to be inserted into it, which is where the &l&9mechanical pump&r comes into play."
 				"{@pagebreak}"
-				"This system by itself is already much better than anything that was possible before, but it can be made even better with basically no additional cost. By placing the refinery atop a metal block surrounded on all sides by either fire or lava, it will generate up to double the amount of embers."
+				"This system by itself is already much better than anything that was possible before, but it can be made even better with basically no additional cost. By placing the refinery atop a metal block surrounded on all sides by either fire or lava, it will generate up to triple the amount of embers depending on what metal it is placed on."
+				"{image:kubejs:textures/quests/refinery.png width:160 height:75 align:center}"
 			]
 			hide_until_deps_complete: true
 			icon: "embers:pressure_refinery"
 			id: "13F8432AF0192FB9"
 			rewards: [
 				{
-					id: "781649B9748E059D"
-					item: "minecraft:iron_block"
+					id: "757EBC8FBD8FAA2D"
+					item: "embers:silver_block"
 					type: "item"
 				}
 				{
@@ -987,6 +990,7 @@
 				"Copper cells are all well and good, but they don't hold much embers inside of themselves. While not an issue before, with such abundance of energy they will surely lag behind. Instead, the embers could be stored inside a crystalline lattice more akin to their original source. This way, embers storage would become much more efficient than before."
 				"{@pagebreak}"
 				"While the &l&ccrystal cell&r is already leagues above its copper counterpart, it still has a lot of hidden potential. By feeding it ember crystals, the cell will grow in size and capacity, becoming a much better storage device."
+				"{image:kubejs:textures/quests/crystal_cell.png width:160 height:75 align:center}"
 			]
 			id: "5D05885D8388D2B1"
 			rewards: [{
@@ -1033,6 +1037,7 @@
 			description: [
 				"There it is! Ancestral alchemy, now returned to the world!"
 				"It all begins with the &l&6exchanging tablet&r, upon which will rest the item to transfuse. Next, around the tablet must be placed &l&6alchemy pedestals&r, as many as required by the desired recipe. Lastly, the &l&4beam cannon&r must be pointed downwards towards the exchange tablet, ready to fire at will. These are the basic mechanical components of alchemy, but the proces itself will require a bit more brainpower than first thought..."
+				"{image:kubejs:textures/quests/alchemy.png width:160 height:75 align:center}"
 			]
 			hide_until_deps_complete: true
 			icon: "embers:alchemy_tablet"
@@ -1058,7 +1063,7 @@
 		{
 			dependencies: ["0061374677D5C58B"]
 			description: [
-				"&l&5Aspecti&r are a crucial component of alchemy. All alchemical processes require these peculiar items to be succesful. While the knowledge of which aspecti are required for each recipe is still preserved, the order and quantity of each aspecti has been lost to time and will require experimentation."
+				"&l&5Aspecti&r are a crucial component of alchemy. All alchemical processes require these peculiar items to be succesful. While the knowledge of which aspecti are required for each recipe is still preserved, the order and quantity of each aspectus has been lost to time and will require experimentation."
 				"To use the aspecti properly, they must be put at the foot of the pedestals in a specific order, which, again, must be rediscovered."
 			]
 			icon: "embers:dawnstone_aspectus"
@@ -1156,6 +1161,7 @@
 				"Both augments can be attached to a machine up to two times each before losing efficiency."
 			]
 			hide_until_deps_complete: true
+			icon: "embers:wildfire_stirling"
 			id: "08305EC12DBC6520"
 			rewards: [
 				{
@@ -1888,6 +1894,7 @@
 				"Up until now, these wonderful gems had no apparent use, but with the discovery of the Wildfire Core it's now possible to construct a device capable of making use of these formidable formations, the &l&cember injector&r. This machine will shoot forth a beam of continuous embers when pointed at the crystal seed, causing it to grow and eventually shed precious nuggets. Up to six can feed the same seed. If the seed is fed long enough, it will increase in purity, increasing its output. However, should the seed ever be relocated, it will become impure again. Purity level can be seen with a tinker's lens."
 				"{@pagebreak}"
 				"It's also possible to transmute crystal seeds into other variants through alchemy."
+				"{image:kubejs:textures/quests/crystal_seed.png width:160 height:75 align:center}"
 			]
 			hide_until_deps_complete: true
 			id: "62206B21C60190EC"
@@ -1914,8 +1921,10 @@
 				"{@pagebreak}"
 				"To make it work however, it will need two more attachments: The &l&ccatalysis chamber&r and the &l&ccombustion chamber&r. Both require different materials to be inserted into them, and they must be attached on opposite sides of the reactor itself. Two pairs can be mounted on the same reactor."
 				"The better the materials in the chambers, the more embers will be produced by the reactor when fed with crystals."
+				"{image:kubejs:textures/quests/ignem_reactor.png width:160 height:75 align:center}"
 			]
 			hide_until_deps_complete: true
+			icon: "embers:ignem_reactor"
 			id: "4E8E9D2040DBBA6C"
 			rewards: [
 				{
@@ -1966,6 +1975,7 @@
 				"Now that the tool is tempered and it's gotten a new augment slot, it may be smithed together with one of several augments to make it more powerful."
 				"{@pagebreak}"
 				"If there's ever the need for more augments on a tool, it can always be given more augment slots by repeating this process."
+				"{image:kubejs:textures/quests/inferno_forge.png width:160 height:75 align:center}"
 			]
 			hide_until_deps_complete: true
 			id: "4000A88FAF1B0E43"

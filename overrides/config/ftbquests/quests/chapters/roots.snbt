@@ -1017,6 +1017,7 @@
 			]
 			description: [
 				"With the following mixture it's possible to create a spell that will send forth a powerful beam of light that will do massive damage to anything it strikes."
+				"{image:kubejs:textures/quests/solaire.png width:50 height:50 align:center}"
 				"{@pagebreak}"
 				"In order to create the flower necessary for the mixture, one must throw a glowstone block and a prismarine crystal next to an oxeye daisy. Then, at noon, while under the effect of night vision, mutating powder needs to be used on the flower."
 			]
@@ -1214,6 +1215,7 @@
 			description: [
 				"The druidic arts allow to cast rituals by making offerings to nature."
 				"All rituals require one or more items to be placed on the altar itself, and also one or more items to be burnt as incense around the altar."
+				"{image:kubejs:textures/quests/altar.png width:160 height:75 align:center}"
 			]
 			hide_until_deps_complete: true
 			icon: "rootsclassic:altar"
@@ -1237,7 +1239,10 @@
 		}
 		{
 			dependencies: ["3C4F209849E28B98"]
-			description: ["The more advanced rituals will require standing stones to be placed around the altar. Eight stones must be placed with a two block gap away from the altar, in a square shape."]
+			description: [
+				"The more advanced rituals will require standing stones to be placed around the altar. Eight stones must be placed with a two block gap away from the altar, in a square shape."
+				"{image:kubejs:textures/quests/stone_basic.png width:160 height:75 align:center}"
+			]
 			hide_until_deps_complete: true
 			id: "1FB2DA816DD94FF3"
 			rewards: [{
@@ -1258,7 +1263,10 @@
 		}
 		{
 			dependencies: ["1FB2DA816DD94FF3"]
-			description: ["Some even more advanced rituals will require better standing stones to be completed. Four stones must be placed with a four block gap away from the altar, in all cardinal directions."]
+			description: [
+				"Some even more advanced rituals will require better standing stones to be completed. Four stones must be placed with a four block gap away from the altar, in all cardinal directions."
+				"{image:kubejs:textures/quests/stone_advanced.png width:160 height:75 align:center}"
+			]
 			hide_until_deps_complete: true
 			id: "0C666DC220FF8179"
 			rewards: [{
